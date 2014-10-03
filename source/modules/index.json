@@ -2,6 +2,7 @@
 	"components": [
 		"divider",
 		"hero",
+		"image-full",
 		"intro",
 		"quote"
 	],

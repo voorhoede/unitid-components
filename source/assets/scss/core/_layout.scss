@@ -18,6 +18,10 @@ html {
     width: 60em;
   }
 
+  @include min-screen-xlarge {
+    width: 80em;
+  }
+
   section {
     @include clearfix;
     position: relative;
