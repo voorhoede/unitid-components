@@ -1,6 +1,9 @@
 {
 	"components": [
-		"hero"
+		"hero",
+		"quote"
 	],
-	"views": []
+	"views": [
+		"case"
+	]
 }

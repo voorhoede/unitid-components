@@ -12,6 +12,7 @@
 //
 
 @import '../../modules/components/hero/hero';
+@import '../../modules/components/quote/quote';
 
 //
 // Views
@@ -20,3 +21,4 @@
 // Use `grunt remove-view:view-name` to delete a view.
 //
 
+@import '../../modules/views/case/case';
