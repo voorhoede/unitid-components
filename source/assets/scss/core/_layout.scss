@@ -29,10 +29,6 @@ html {
     padding-bottom: 2 * $baseline;
     background-color: $white;
 
-    &.smoke {
-      background-color: $smoke;
-    }
-
     &.invert {
       background-color: $key;
       h1, h2, h3, h4, h5, h6, p, li {
@@ -50,8 +46,34 @@ html {
       margin: 0 auto;
     }
   }
+
+  @include min-screen-medium {
+    .after-column {
+      margin-left: 50%;
+    }
+
+    .column {
+      width: 50%;
+
+      &.left {
+        float: left;
+      }
+    }
+  }
+}
+
+.column {
+  h2, p {
+    @include min-screen-medium {
+      padding: 0 $baseline;
+    }
+    @include min-screen-large {
+      padding: 0 $baseline * 2;
+    }
+  }
 }
 
 [data-component] {
   padding: 0 $margin;
+  margin-bottom: $baseline;
 }

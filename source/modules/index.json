@@ -5,7 +5,8 @@
 		"image-full",
 		"intro",
 		"quote",
-		"text-visual"
+		"text-visual",
+		"visual-text"
 	],
 	"views": [
 		"case"
