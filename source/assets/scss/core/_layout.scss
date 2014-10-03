@@ -5,8 +5,8 @@ html {
   }
 }
 
-body {
-  background: $metal;
+body.case {
+  background-color: $metal;
 }
 
 .container {
@@ -21,28 +21,28 @@ body {
   @include min-screen-large {
     width: 60em;
   }
-}
 
-section {
-  @include clearfix;
-  position: relative;
-  width: 100%;
-  padding-bottom: 2 * $baseline;
-  background-color: $white;
+  section {
+    @include clearfix;
+    position: relative;
+    width: 100%;
+    padding-bottom: 2 * $baseline;
+    background-color: $white;
 
-  &.smoke {
-    background-color: $smoke;
-  }
-
-  &.invert {
-    background-color: $key;
-    h1, h2, h3, h4, h5, h6, p, li {
-      color: $white;
+    &.smoke {
+      background-color: $smoke;
     }
-  }
 
-  &.accent {
-    background-color: $accent;
+    &.invert {
+      background-color: $key;
+      h1, h2, h3, h4, h5, h6, p, li {
+        color: $white;
+      }
+    }
+
+    &.accent {
+      background-color: $accent;
+    }
   }
 }
 
