@@ -8,12 +8,7 @@ $divider-size: 50 * $baseline;
 .divider {
   position: relative;
   height: 3 * $baseline;
-  margin-top: 2 * $baseline;
   overflow: hidden;
-
-  @include min-screen-large {
-    margin-top: 3 * $baseline;
-  }
 
   &:after {
     display: block;

@@ -5,11 +5,7 @@ h1, h2, h3, h4, h5, h6, p, li, {
 }
 
 h1 {
-  font-size: $font-medium;
-
-  @include min-screen-medium {
-    font-size: $font-large;
-  }
+  font-size: $font-large;
 
   @include min-screen-large {
     font-size: $font-xlarge;

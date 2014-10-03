@@ -1,11 +1,14 @@
 {% extends "views/_base-view/base-view.html" %}
 
 {% block content %}
-    <section class="streamer container">
-        {% include "components/hero/_hero.html" %}
-        {% include "components/quote/_quote.html" %}
-    </section>
-    <section class="container">
-        {% include "components/divider/_divider.html" %}
-    </section>
+    <div id="container" class="container" role="document">
+        <section class="streamer">
+            {% include "components/hero/_hero.html" %}
+            {% include "components/quote/_quote.html" %}
+        </section>
+        <section class="define invert accent">
+            {% include "components/divider/_divider.html" %}
+            {% include "components/intro/_intro.html" %}
+        </section>
+    </div>
 {% endblock %}

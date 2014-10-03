@@ -5,7 +5,7 @@
 
 .hero {
   position: relative;
-  height: 8 * $baseline;
+  height: 10 * $baseline;
   background: transparent url('http://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg') center no-repeat;
   background-size: cover;
   margin-bottom: 3 * $baseline;
@@ -16,8 +16,8 @@
 
   h1 {
     @include text-shadow;
-    color: $white;
     padding-top: $margin;
+    color: $white;
 
     @include min-screen-small {
       position: absolute;

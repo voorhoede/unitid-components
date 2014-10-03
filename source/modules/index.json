@@ -2,6 +2,7 @@
 	"components": [
 		"divider",
 		"hero",
+		"intro",
 		"quote"
 	],
 	"views": [

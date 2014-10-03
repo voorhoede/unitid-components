@@ -5,18 +5,44 @@ html {
   }
 }
 
+body {
+  background: $metal;
+}
+
 .container {
-  @include clearfix;
-  position: relative;
   width: 100%;
-  margin: 0 auto;
 
   @include min-screen-medium {
+    margin: $baseline auto;
+    box-shadow: 0 0 0.5em $alpha-medium;
     width: 40em;
   }
 
   @include min-screen-large {
     width: 60em;
+  }
+}
+
+section {
+  @include clearfix;
+  position: relative;
+  width: 100%;
+  padding-bottom: 2 * $baseline;
+  background-color: $white;
+
+  &.smoke {
+    background-color: $smoke;
+  }
+
+  &.invert {
+    background-color: $key;
+    h1, h2, h3, h4, h5, h6, p, li {
+      color: $white;
+    }
+  }
+
+  &.accent {
+    background-color: $accent;
   }
 }
 
