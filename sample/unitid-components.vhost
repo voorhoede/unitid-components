@@ -1,0 +1,9 @@
+<VirtualHost *:8888>
+	ServerName local.unitid-components.voorhoede.nl
+	DocumentRoot "/Volumes/Voorhoede/www/unitid-components/web"
+</VirtualHost>
+
+<VirtualHost *:8888>
+	ServerName distribution.unitid-components.voorhoede.nl
+	DocumentRoot "/Volumes/Voorhoede/www/unitid-components/distribution"
+</VirtualHost>

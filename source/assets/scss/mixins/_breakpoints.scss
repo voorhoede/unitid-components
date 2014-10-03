@@ -1,0 +1,32 @@
+// Source:
+// Paranoida's SASS media queries
+// https://github.com/paranoida/sass-mediaqueries/blob/master/_media-queries.scss
+
+@mixin min-screen($res)
+{
+  @media screen and (min-width: $res)
+  {
+    @content;
+  }
+}
+
+@mixin min-screen-small
+{
+  @include min-screen($breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin min-screen-medium
+{
+  @include min-screen($breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin min-screen-large
+{
+  @include min-screen($breakpoint-large) {
+    @content;
+  }
+}

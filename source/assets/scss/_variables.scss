@@ -1,0 +1,33 @@
+//
+// Global variables
+//
+// This file doesn't output any CSS rules, so you can import it as often as needed without sending
+// duplicate styles to the browser.
+//
+
+// Functions
+@function emToRem($size) {
+  @return $size / 1em + 0rem;
+}
+
+// Typography
+$font-normal: 1em;
+$font-medium: 1.25em;
+$font-large: 1.625em;
+$font-xlarge: 2.625em;
+$line-height: 1.4;
+
+// Grid & margins
+$baseline: emToRem($line-height * $font-normal);
+$margin: $baseline;
+
+// Responsiveness
+$breakpoint-small: 400px;
+$breakpoint-medium: 720px;
+$breakpoint-large: 1024px;
+
+// Colors
+$white: #fff;
+
+// Alpha colors
+$alpha-dark: rgba(0, 0, 0, 0.5);

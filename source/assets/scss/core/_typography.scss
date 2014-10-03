@@ -1,0 +1,17 @@
+// Add typography styles here
+
+h1, h2, h3, h4, h5, h6, p, li, {
+  line-height: $line-height;
+  margin: 0 0 $baseline 0;
+}
+
+h1 {
+  font-size: $font-medium;
+
+  @include min-screen-small {
+    font-size: $font-large;
+  }
+  @include min-screen-large {
+    font-size: $font-xlarge;
+  }
+}

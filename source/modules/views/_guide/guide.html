@@ -1,0 +1,91 @@
+{% extends "views/_base-view/base-view.html" %}
+
+{% macro linkSection(section) %}
+<a href="{{ '#section-' + section }}"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+{% endmacro %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ pathToAssets + 'style/main.css' }}">
+<!--<link rel="stylesheet" href="{{ pathToGuide }}/voorhoede-core-styles.css">-->
+<!--<link rel="stylesheet" href="{{ pathToGuide }}/core-layout.css">-->
+<link rel="stylesheet" href="{{ pathToGuide }}guide.css">
+{% endblock %}
+
+
+{% block content %}
+<div class="page">
+	<div class="core-layout">
+		<header class="app-guide-content">
+			<img src="{{ pathToGuide }}images/voorhoede-logo.svg"
+			     onerror="this.src='{{ pathToGuide }}images/voorhoede-logo.min.png'"
+			     alt="De Voorhoede"
+			     height="75" width="75"/>
+				<h1>{{ project.title }}</h1>
+				<h2>Front-end guide for {{ project.title}} by de Voorhoede</h2>
+		</header>
+
+<!--TODO: enable left menu?-->
+		<!--&lt;!&ndash;left menu&ndash;&gt;-->
+		<!--<nav class="app-guide-nav">-->
+			<!--<h3><a href="/">Home</a></h3>-->
+
+			<!--{% if components.length > 0 %}-->
+			<!--<h3>Components</h3>-->
+			<!--<ul>-->
+				<!--{% for component in components %}-->
+				<!--<li>-->
+					<!--<a href="{{ webRoot + 'modules/components/' + component + '/' + 'preview.html' }}">-->
+						<!--{{ component | replace("-"," ") | capitalize }}-->
+					<!--</a>-->
+				<!--</li>-->
+				<!--{% endfor %}-->
+			<!--</ul>-->
+			<!--{% endif %}-->
+
+			<!--{% if chapters.length > 0 %}-->
+			<!--<h3>Documentation</h3>-->
+			<!--<ul>-->
+				<!--{% for chapter in chapters %}-->
+				<!--<li>-->
+					<!--<a href="{{ webRoot + 'modules/chapters/' + chapter + '/' + chapter + '.html' }}">-->
+						<!--{{ chapter | replace("-"," ") | capitalize }}-->
+					<!--</a>-->
+				<!--</li>-->
+				<!--{% endfor %}-->
+			<!--</ul>-->
+			<!--{% endif %}-->
+
+			<!--{% if views.length > 0 %}-->
+			<!--<h3>Views</h3>-->
+			<!--<ul>-->
+				<!--{% for view in views %}-->guide.scss
+				<!--<li>-->
+					<!--<a href="{{ webRoot + 'modules/views/' + view + '/' + view + '.html' }}">-->
+						<!--{{ view | replace("-"," ") | capitalize }}-->
+					<!--</a>-->
+				<!--</li>-->
+				<!--{% endfor %}-->
+			<!--</ul>-->
+			<!--{% endif %}-->
+		<!--</nav>-->
+
+
+		<!--main content-->
+		{% block maincontent %}
+
+		{% endblock %}
+
+	</div>
+
+</div>
+
+{% endblock %}
+
+
+{% block footer %}
+<footer class="app-guide-footer">
+	This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder
+</footer>
+{% endblock %}
