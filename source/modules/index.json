@@ -4,7 +4,8 @@
 		"hero",
 		"image-full",
 		"intro",
-		"quote"
+		"quote",
+		"text-visual"
 	],
 	"views": [
 		"case"

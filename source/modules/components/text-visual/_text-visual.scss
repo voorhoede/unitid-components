@@ -1,0 +1,29 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* text-visual component */
+
+.text-visual {
+  @include min-screen-medium {
+    .after-column {
+      margin-left: 50%;
+    }
+
+    .column {
+      width: 50%;
+    }
+
+    .left {
+      float: left;
+    }
+  }
+
+  h2, p {
+    @include min-screen-medium {
+      padding: 0 $baseline;
+    }
+    @include min-screen-large {
+      padding: 0 $baseline * 2;
+    }
+  }
+}
