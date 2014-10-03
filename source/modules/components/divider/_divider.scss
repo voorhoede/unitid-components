@@ -1,0 +1,30 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* divider component */
+
+$divider-size: 50 * $baseline;
+
+.divider {
+  position: relative;
+  height: 3 * $baseline;
+  margin-top: 2 * $baseline;
+  overflow: hidden;
+
+  @include min-screen-large {
+    margin-top: 3 * $baseline;
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: $divider-size;
+    width: $divider-size;
+    left: 50%;
+    margin-top: - $divider-size - $baseline / 2;
+    margin-left: - $divider-size / 2;
+    box-shadow: 0 0 5 * $baseline $alpha-medium;
+    border-radius: $divider-size / 2;
+  }
+}
