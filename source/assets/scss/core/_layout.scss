@@ -7,57 +7,57 @@
 }
 
 .container {
-  section {
-    @include clearfix;
-    position: relative;
-    width: 100%;
-    padding-bottom: 2 * $baseline;
-    background-color: $white;
+	section {
+		@include clearfix;
+		position: relative;
+		width: 100%;
+		padding-bottom: 2 * $baseline;
+		background-color: $white;
 
-    &.invert {
-      background-color: $key;
-      h1, h2, h3, h4, h5, h6, p, li, footer {
-        color: $white;
-      }
-    }
+		&.invert {
+			background-color: $key;
+			h1, h2, h3, h4, h5, h6, p, li, footer {
+				color: $white;
+			}
+		}
 
-    &.accent {
-      background-color: $accent;
-    }
+		&.accent {
+			background-color: $accent;
+		}
 
-	&.whitespace {
-		@include whitespace-after;
-		@include whitespace-before;
+		&.whitespace {
+			@include whitespace-after;
+			@include whitespace-before;
+		}
+
+		&.whitespace-before {
+			@include whitespace-before;
+		}
+
+		&.whitespace-after {
+			@include whitespace-after;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+		}
 	}
 
-	&.whitespace-before {
-		@include whitespace-before;
+	@include min-screen-medium {
+		.uc-col {
+			width: 50%;
+		}
+
+		.uc-col:first-child {
+			float: left;
+		}
+
+		.uc-col:last-child {
+			margin-left: 50%;
+		}
 	}
-
-	&.whitespace-after {
-		@include whitespace-after;
-	}
-
-    img {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-    }
-  }
-
-  @include min-screen-medium {
-    .uc-after-col {
-      margin-left: 50%;
-    }
-
-    .uc-col {
-      width: 50%;
-
-      &.left {
-        float: left;
-      }
-    }
-  }
 }
 
 /**
@@ -65,19 +65,18 @@
  * has a really nasty [class*='column'] selector that pretty much always wins
  */
 .uc-col {
-  margin-bottom: $baseline * 2;
+	margin-bottom: $baseline * 2;
 
-  h2, p {
-    @include min-screen-medium {
-      padding: 0 $baseline;
-    }
-    @include min-screen-large {
-      padding: 0 $baseline * 2;
-    }
-  }
+	h2, p {
+		@include min-screen-medium {
+			padding: 0 $baseline;
+		}
+		@include min-screen-large {
+			padding: 0 $baseline * 2;
+		}
+	}
 }
 
 [data-component] {
-  padding: 0 $margin * 2;
-  margin-bottom: $baseline * 2;
+	padding: 0 $margin * 2;
 }

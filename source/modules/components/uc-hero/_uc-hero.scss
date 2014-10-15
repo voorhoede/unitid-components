@@ -4,52 +4,60 @@
 /* uc-hero component */
 
 .uc-hero {
-  position: relative;
-  height: 15 * $baseline;
-  background: transparent url('http://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg') center no-repeat;
-  background-size: cover;
-  margin-bottom: 5 * $baseline;
+	position: relative;
+	height: 15 * $baseline;
+	background: transparent url('http://www.adch.nl/wp-content/uploads/2012/08/Ziggo-Interieur-Central-Office-Heyligers-02.jpg') center no-repeat;
+	background-size: cover;
+	margin-bottom: 5 * $baseline;
 
-  @include min-screen-large {
-    height: 25 * $baseline;
-  }
+	@include min-screen-large {
+		height: 25 * $baseline;
+	}
 
-  h1 {
-    @include text-shadow;
-    padding-top: $margin;
-    color: $white;
+	h1 {
+		@include text-shadow;
+		padding-top: $margin;
+		font-size: $font-medium;
+		font-weight: 700;
+		color: $white;
 
-    @include min-screen-small {
-      position: absolute;
-      z-index: 1;
-      width: 50%;
-      bottom: 0;
-    }
+		@include min-screen-small {
+			position: absolute;
+			z-index: 1;
+			width: 50%;
+			bottom: 0;
+		}
 
-    @include min-screen-large {
-      padding: 0 $margin;
-    }
-  }
+		@include min-screen-between {
+			font-size: $font-large;
+		}
 
-  img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -4 * $baseline;
-    margin: auto;
-    max-width: 75%;
-    max-height: 50%;
+		@include min-screen-large {
+			padding: 0 $margin;
+			font-size: $font-xlarge;
+			margin-bottom: $baseline * 2;
+		}
+	}
 
-    @include min-screen-small {
-      left: auto;
-      right: $margin;
-      max-height: 75%;
-    }
+	img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -4 * $baseline;
+		margin: auto;
+		max-width: 75%;
+		max-height: 50%;
 
-    @include min-screen-medium {
-      right: 2 * $margin;
-      max-width: none;
-    }
-  }
+		@include min-screen-small {
+			left: auto;
+			right: $margin;
+			max-height: 75%;
+		}
+
+		@include min-screen-medium {
+			right: 2 * $margin;
+			max-width: none;
+		}
+	}
 
 }

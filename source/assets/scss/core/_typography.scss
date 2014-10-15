@@ -7,16 +7,18 @@
 
 	h1 {
 		font-size: $font-large;
+		font-weight: 700;
 
-		@include min-screen-large {
+		@include min-screen-medium {
 			font-size: $font-xlarge;
 		}
 	}
 
 	h2 {
 		font-size: $font-medium;
+		font-weight: 700;
 
-		@include min-screen-large {
+		@include min-screen-medium {
 			font-size: $font-large;
 		}
 	}

@@ -17,6 +17,13 @@
   }
 }
 
+@mixin min-screen-between
+{
+	@include min-screen($breakpoint-between) {
+		@content;
+	}
+}
+
 @mixin min-screen-medium
 {
   @include min-screen($breakpoint-medium) {

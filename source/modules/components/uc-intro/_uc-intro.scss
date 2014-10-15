@@ -4,17 +4,14 @@
 /* uc-intro component */
 
 .uc-intro {
-  margin: 0 auto;
+	margin: 0 auto;
 
-  h1 {
-    margin-bottom: 2 * $baseline;
-  }
+	h1, h2 {
+		margin-bottom: 2 * $baseline;
+		text-align: center;
+	}
 
-  h1, h2 {
-    text-align: center;
-  }
-
-  @include min-screen-small {
-    width: 75%;
-  }
+	@include min-screen-small {
+		width: 75%;
+	}
 }
