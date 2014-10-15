@@ -9,7 +9,7 @@
 //	padding-bottom: $baseline * 4;
 
 	h2 {
-		@include font-regular;
+		@extend .font-regular;
 		width: 100%;
 		margin: $margin-header-xlarge auto $margin-header-large;
 		text-align: center;

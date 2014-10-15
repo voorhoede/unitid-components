@@ -3,23 +3,32 @@
 
 /* uc-divider component */
 
-$divider-size: 40 * $baseline;
+@mixin uc-divider-shadow($color) {
+	box-shadow: 0 0 3 * $baseline $color;
+}
+
+$uc-divider-size: 40 * $baseline;
 
 .uc-divider {
-  position: relative;
-  height: 5 * $baseline;
-  overflow: hidden;
+	position: relative;
+	height: 5 * $baseline;
+	margin-bottom: - 5 * $baseline;
+	overflow: hidden;
 
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    height: $divider-size;
-    width: $divider-size;
-    left: 50%;
-    margin-top: - $divider-size - $baseline / 2;
-    margin-left: - $divider-size / 2;
-    box-shadow: 0 0 5 * $baseline $alpha-medium;
-    border-radius: $divider-size / 2.5;
-  }
+	&:after {
+		@include uc-divider-shadow($alpha-light);
+		display: block;
+		content: "";
+		position: absolute;
+		height: $uc-divider-size;
+		width: $uc-divider-size;
+		left: 50%;
+		margin-top: - $uc-divider-size;
+		margin-left: - $uc-divider-size / 2;
+		border-radius: $uc-divider-size / 3;
+	}
+}
+
+.accent .uc-divider:after {
+	@include uc-divider-shadow($alpha-dark);
 }

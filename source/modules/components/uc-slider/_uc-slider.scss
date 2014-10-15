@@ -3,6 +3,8 @@
 
 /* uc-slider component */
 
+$uc-slider-arrow-size: 2 * $baseline;
+
 .uc-slider {
 	position: relative;
 	margin-bottom: $baseline * 4;
@@ -40,13 +42,13 @@
 
 	.next, .prev {
 		display: block;
-		width: 3 * $margin;
-		height: 3 * $baseline;
+		width: $uc-slider-arrow-size;
+		height: $uc-slider-arrow-size;
 		position: absolute;
 		top: 50%;
-		margin-top: -1.5 * $baseline;
+		margin-top: - $uc-slider-arrow-size / 2;
 		background-color: $white;
-		border-radius: 3em;
+		border-radius: $uc-slider-arrow-size / 2;
 		text-decoration: none;
 		line-height: 1;
 		z-index: 1;
@@ -59,7 +61,7 @@
 			height: 45%;
 
 			.triangle {
-				fill: $key;
+				fill: $black;
 			}
 		}
 

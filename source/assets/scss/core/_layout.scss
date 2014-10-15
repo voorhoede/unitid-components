@@ -1,8 +1,8 @@
-@mixin whitespace-before {
+.whitespace-before {
 	padding-top: $baseline * 4;
 }
 
-@mixin whitespace-after {
+.whitespace-after {
 	padding-bottom: $baseline * 4;
 }
 
@@ -14,7 +14,7 @@
 		background-color: $white;
 
 		&.invert {
-			background-color: $key;
+			background-color: $black;
 			h1, h2, h3, h4, h5, h6, p, li, footer {
 				color: $white;
 			}
@@ -29,16 +29,16 @@
 		}
 
 		&.whitespace {
-			@include whitespace-after;
-			@include whitespace-before;
+			@extend .whitespace-after;
+			@extend .whitespace-before;
 		}
 
 		&.whitespace-before {
-			@include whitespace-before;
+			@extend .whitespace-before;
 		}
 
 		&.whitespace-after {
-			@include whitespace-after;
+			@extend .whitespace-after;
 		}
 
 		img {

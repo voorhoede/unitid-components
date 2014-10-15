@@ -8,22 +8,16 @@
 		margin-top: $margin-header-large;
 	}
 
-	h1, h2, h3, h4 {
-		@include font-bold;
+	h1, h3, h4 {
+		@extend .font-bold;
 	}
 
-	h5, h6 {
-		@include font-regular;
+	h2, h5, h6 {
+		@extend .font-regular;
 		margin-bottom: $margin-header-medium;
 	}
 
-	h1 {
-		font-size: $font-size-header-large;
-		margin-top: $margin-header-medium;
-		margin-bottom: $margin-header-large;
-	}
-
-	h3 {
+	h1, h3 {
 		font-size: $font-size-header-large;
 		margin-bottom: $margin-header-large;
 	}
@@ -43,22 +37,8 @@
 
 	p, li {
 		line-height: $line-height-body;
+		margin-bottom: $baseline;
 	}
-
-//	h1 {
-//
-//		@include min-screen-medium {
-//			font-size: $font-xlarge;
-//		}
-//	}
-
-//	h2 {
-//		font-size: $font-medium;
-//
-//		@include min-screen-medium {
-//			font-size: $font-large;
-//		}
-//	}
 
 	q {
 		&:before { content: open-quote; }
