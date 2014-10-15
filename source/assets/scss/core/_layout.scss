@@ -11,7 +11,6 @@
 		@include clearfix;
 		position: relative;
 		width: 100%;
-		padding-bottom: 2 * $baseline;
 		background-color: $white;
 
 		&.invert {
@@ -23,6 +22,10 @@
 
 		&.accent {
 			background-color: $accent;
+		}
+
+		&.smoke {
+			background-color: $smoke;
 		}
 
 		&.whitespace {
@@ -48,6 +51,12 @@
 	@include min-screen-medium {
 		.uc-col {
 			width: 50%;
+
+			img {
+				margin-top: $baseline * 2;
+				margin-bottom: $baseline * 2;
+				width: 85%;
+			}
 		}
 
 		.uc-col:first-child {

@@ -99,12 +99,13 @@
 
 {% block content %}
     <div id="container" class="container" role="document">
-        <section class="streamer">
+        <section class="streamer whitespace-after">
             {% include "components/uc-hero/_uc-hero.html" %}
             {% include "components/uc-quote/_uc-quote.html" %}
 			{% include "components/uc-divider/_uc-divider.html" %}
+			{% include "components/uc-intro/_uc-intro.html" %}
         </section>
-        <section class="define invert accent">
+        <section class="define invert accent whitespace-after">
             {% include "components/uc-divider/_uc-divider.html" %}
             {% include "components/uc-intro/_uc-intro.html" %}
             {% include "components/uc-image-full/_uc-image-full.html" %}
@@ -118,7 +119,7 @@
             {% include "components/uc-slider/_uc-slider.html" %}
             {% include "components/uc-slider/_uc-slider.html" %}
         </section>
-        <section class="action">
+        <section class="action smoke whitespace-after">
             {% include "components/uc-divider/_uc-divider.html" %}
             {% include "components/uc-cta/_uc-cta.html" %}
         </section>

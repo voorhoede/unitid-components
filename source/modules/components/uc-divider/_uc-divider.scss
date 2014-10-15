@@ -3,11 +3,11 @@
 
 /* uc-divider component */
 
-$divider-size: 50 * $baseline;
+$divider-size: 100 * $baseline;
 
 .uc-divider {
   position: relative;
-  height: 3 * $baseline;
+  height: 5 * $baseline;
   overflow: hidden;
 
   &:after {
@@ -20,6 +20,6 @@ $divider-size: 50 * $baseline;
     margin-top: - $divider-size - $baseline / 2;
     margin-left: - $divider-size / 2;
     box-shadow: 0 0 5 * $baseline $alpha-medium;
-    border-radius: $divider-size / 2;
+    border-radius: $divider-size / 2.5;
   }
 }
