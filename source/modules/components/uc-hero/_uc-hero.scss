@@ -15,8 +15,9 @@
 
 	h1 {
 		@include text-shadow;
+		margin-bottom: $baseline;
 		padding-top: $margin;
-//		font-size: $font-medium;
+		font-size: $font-size-header-small;
 		color: $white;
 
 		@include min-screen-small {
@@ -27,13 +28,12 @@
 		}
 
 		@include min-screen-between {
-//			font-size: $font-large;
+			font-size: $font-size-header-between;
 		}
 
 		@include min-screen-large {
 			padding: 0 $margin;
-//			font-size: $font-xlarge;
-			margin-bottom: $baseline * 2;
+			font-size: $font-size-header-large;
 		}
 	}
 

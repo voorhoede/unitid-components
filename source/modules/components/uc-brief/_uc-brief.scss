@@ -1,0 +1,16 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* uc-brief component */
+
+.uc-brief {
+	margin: 0 auto;
+
+	h1, p {
+		text-align: center;
+	}
+
+	@include min-screen-medium {
+		width: 67%;
+	}
+}

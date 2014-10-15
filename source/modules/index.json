@@ -1,5 +1,6 @@
 {
 	"components": [
+		"uc-brief",
 		"uc-cta",
 		"uc-divider",
 		"uc-hero",

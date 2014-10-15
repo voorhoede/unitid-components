@@ -1,11 +1,10 @@
 @mixin button {
+	@extend .font-bold;
 	display: inline-block;
-	margin: $baseline 0;
-	padding: $baseline * 2 $margin * 2;
+	padding: $baseline $margin;
 	background-color: $accent;
-//	font-size: $font-medium;
+	font-size: $font-size-body;
 	border-radius: 0.25em;
-	box-shadow: 0 0.0625em 0.125em $alpha-medium;
 	color: $white;
 	text-decoration: none;
 
@@ -14,7 +13,6 @@
 	}
 
 	@include min-screen-medium {
-		margin: $baseline * 2 0;
-//		font-size: $font-large;
+		font-size: $font-size-button;
 	}
 }

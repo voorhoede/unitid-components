@@ -16,7 +16,9 @@ $line-height-header: 1.25; // Header of 48px will get line-height of 60px
 
 $font-size-header-large: 3 * $font-size-body; // 48px
 $font-size-header-medium: 2.25 * $font-size-body; // 36px
+$font-size-header-between: 2 * $font-size-body; // 32px
 $font-size-header-small: 1.5 * $font-size-body; // 24px
+$font-size-button: 1.25 * $font-size-body; // 20px
 
 $baseline: $font-size-body * $line-height-body; // ~24px
 
