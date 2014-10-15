@@ -1,0 +1,6 @@
+@mixin font-bold {
+	font-family: 'proxima nova bold', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+	font-weight: normal;
+	// Wish I could add font-weight: bold, but unitid-site's '80s style fonts declaration
+	// prevents this; if 'bold' is added, browser will render it's own perversion of a bold typeface
+}

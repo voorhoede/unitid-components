@@ -5,21 +5,25 @@
 // duplicate styles to the browser.
 //
 
-// Functions
-@function emToRem($size) {
-  @return $size / 1em + 0rem;
-}
+// Typography, baseline grid & margins
+// Note: since Unitid website uses 1em=10px set up, we'll fix the baseline grid on 2.4rem
+//       which effectively means we can go back to using Frontpage ಠ_ಠ
 
-// Typography
-$font-normal: 1em;
-$font-medium: 1.25em;
-$font-large: 1.625em;
-$font-xlarge: 2.625em;
-$line-height: 1.4;
+$font-size-body: 1.6rem; // 16px
 
-// Grid & margins
-$baseline: emToRem($line-height * $font-normal);
+$line-height-body: 1.5; // ~24px
+$line-height-header: 1.25; // Header of 48px will get line-height of 60px
+
+$font-size-header-large: 3 * $font-size-body; // 48px
+$font-size-header-medium: 2.25 * $font-size-body; // 36px
+$font-size-header-small: 1.5 * $font-size-body; // 24px
+
+$baseline: $font-size-body * $line-height-body; // ~24px
+
 $margin: $baseline;
+$margin-header-xlarge: 5 * $baseline; // 120px
+$margin-header-large: 3 * $baseline; // 72px
+$margin-header-medium: 2 * $baseline; // 48px
 
 // Responsiveness
 $breakpoint-small: 400px;

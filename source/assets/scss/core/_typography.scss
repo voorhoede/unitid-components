@@ -1,27 +1,64 @@
 [data-component] { // FIX!
 	h1, h2, h3, h4, h5, h6, p, li, {
 		quotes: '\201C' '\201D' '\2018' '\2019';
-		line-height: $line-height;
-		margin: 0 0 $baseline * 2 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		line-height: $line-height-header;
+		margin-top: $margin-header-large;
+	}
+
+	h1, h2, h3, h4 {
+		@include font-bold;
+	}
+
+	h5, h6 {
+		@include font-regular;
+		margin-bottom: $margin-header-medium;
 	}
 
 	h1 {
-		font-size: $font-large;
-		font-weight: 700;
-
-		@include min-screen-medium {
-			font-size: $font-xlarge;
-		}
+		font-size: $font-size-header-large;
+		margin-top: $margin-header-medium;
+		margin-bottom: $margin-header-large;
 	}
 
-	h2 {
-		font-size: $font-medium;
-		font-weight: 700;
-
-		@include min-screen-medium {
-			font-size: $font-large;
-		}
+	h3 {
+		font-size: $font-size-header-large;
+		margin-bottom: $margin-header-large;
 	}
+
+	h4 {
+		font-size: $font-size-header-medium;
+		margin-bottom: $margin-header-medium;
+	}
+
+	h5 {
+		font-size: $font-size-header-medium;
+	}
+
+	h6 {
+		font-size: $font-size-header-small;
+	}
+
+	p, li {
+		line-height: $line-height-body;
+	}
+
+//	h1 {
+//
+//		@include min-screen-medium {
+//			font-size: $font-xlarge;
+//		}
+//	}
+
+//	h2 {
+//		font-size: $font-medium;
+//
+//		@include min-screen-medium {
+//			font-size: $font-large;
+//		}
+//	}
 
 	q {
 		&:before { content: open-quote; }
