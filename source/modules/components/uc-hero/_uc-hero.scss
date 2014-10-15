@@ -5,13 +5,13 @@
 
 .uc-hero {
   position: relative;
-  height: 10 * $baseline;
+  height: 15 * $baseline;
   background: transparent url('http://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg') center no-repeat;
   background-size: cover;
-  margin-bottom: 3 * $baseline;
+  margin-bottom: 5 * $baseline;
 
   @include min-screen-large {
-    height: 15 * $baseline;
+    height: 25 * $baseline;
   }
 
   h1 {
@@ -35,7 +35,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2 * $baseline;
+    bottom: -4 * $baseline;
     margin: auto;
     max-width: 75%;
     max-height: 50%;

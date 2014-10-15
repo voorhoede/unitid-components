@@ -46,11 +46,11 @@
   }
 
   @include min-screen-medium {
-    .after-column {
+    .uc-after-col {
       margin-left: 50%;
     }
 
-    .column {
+    .uc-col {
       width: 50%;
 
       &.left {
@@ -60,7 +60,13 @@
   }
 }
 
-.column {
+/**
+ * NOTE: Would prefer 'uc-column', but foundation framework
+ * has a really nasty [class*='column'] selector that pretty much always wins
+ */
+.uc-col {
+  margin-bottom: $baseline * 2;
+
   h2, p {
     @include min-screen-medium {
       padding: 0 $baseline;
@@ -72,6 +78,6 @@
 }
 
 [data-component] {
-  padding: 0 $margin;
+  padding: 0 $margin * 2;
   margin-bottom: $baseline * 2;
 }
