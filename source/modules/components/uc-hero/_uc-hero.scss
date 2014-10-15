@@ -1,0 +1,55 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/helpers';
+
+/* uc-hero component */
+
+.uc-hero {
+  position: relative;
+  height: 10 * $baseline;
+  background: transparent url('http://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg') center no-repeat;
+  background-size: cover;
+  margin-bottom: 3 * $baseline;
+
+  @include min-screen-large {
+    height: 15 * $baseline;
+  }
+
+  h1 {
+    @include text-shadow;
+    padding-top: $margin;
+    color: $white;
+
+    @include min-screen-small {
+      position: absolute;
+      z-index: 1;
+      width: 50%;
+      bottom: 0;
+    }
+
+    @include min-screen-large {
+      padding: 0 $margin;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2 * $baseline;
+    margin: auto;
+    max-width: 75%;
+    max-height: 50%;
+
+    @include min-screen-small {
+      left: auto;
+      right: $margin;
+      max-height: 75%;
+    }
+
+    @include min-screen-medium {
+      right: 2 * $margin;
+      max-width: none;
+    }
+  }
+
+}

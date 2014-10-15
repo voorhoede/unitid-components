@@ -1,10 +1,13 @@
 {
     "vendor": [
-
+		"swipe/swipe"
     ],
     "common": [
+		"tools",
+		"app"
     ],
     "components": [
+		"uc-slider"
     ],
     "views": [
     ]

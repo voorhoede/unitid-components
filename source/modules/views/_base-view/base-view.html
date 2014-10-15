@@ -29,14 +29,27 @@
 	<noscript>
 		<link rel="stylesheet" href="{{ pathToAssets }}images/grunticon-output/icons.fallback.css" />
 	</noscript>
-	
+
+	{% block scripts_header %}
+	{% endblock %}
+
 	{% block styles %}
 	<link rel="stylesheet" href="{{ pathToAssets }}style/main.css" />
 	{% endblock %}
 </head>
 <body>
-	<!-- use data attributes to target in JS -->
-	<div id="page">
+
+	<div class="row" id="language">
+		<div class="twelve columns">
+			<div class="ten columns wrapper">
+				<a href="http://www.unitid.nl/">Nederlands</a> | <a
+				href="http://www.unitid.nl/english">English</a>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="container" class="container" role="document">
 		{% block header %}
 		{% endblock %}
 
@@ -56,6 +69,10 @@
 		<script src="{{ pathToAssets + 'scripts/vendor.js' }}"></script>
 		<script src="{{ pathToAssets + 'scripts/main.js' }}"></script>
 		{% endblock %}
+	</div>
+
+	<div class="secondnav">
+		<span class="copyright">© UNITiD 2014</span> &nbsp;<a href="http://unitid.nl/algemene-voorwaarden/">Algemene voorwaarden</a> | <a href="http://www.unitid.nl/english/">English</a> | <a href="http://unitid.nl/event-calendar/">Event kalender</a>
 	</div>
 </body>
 </html>

@@ -1,27 +1,12 @@
-html {
-  font-size: 87.5%;
-  @include min-screen-small {
-    font-size: 100%;
-  }
+@mixin whitespace-before {
+	padding-top: $baseline * 4;
+}
+
+@mixin whitespace-after {
+	padding-bottom: $baseline * 4;
 }
 
 .container {
-  width: 100%;
-
-  @include min-screen-medium {
-    margin: $baseline auto;
-    box-shadow: 0 0 0.5em $alpha-medium;
-    width: 40em;
-  }
-
-  @include min-screen-large {
-    width: 60em;
-  }
-
-  @include min-screen-xlarge {
-    width: 80em;
-  }
-
   section {
     @include clearfix;
     position: relative;
@@ -39,6 +24,19 @@ html {
     &.accent {
       background-color: $accent;
     }
+
+	&.whitespace {
+		@include whitespace-after;
+		@include whitespace-before;
+	}
+
+	&.whitespace-before {
+		@include whitespace-before;
+	}
+
+	&.whitespace-after {
+		@include whitespace-after;
+	}
 
     img {
       display: block;
@@ -75,5 +73,5 @@ html {
 
 [data-component] {
   padding: 0 $margin;
-  margin-bottom: $baseline;
+  margin-bottom: $baseline * 2;
 }

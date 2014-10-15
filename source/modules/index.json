@@ -1,13 +1,14 @@
 {
 	"components": [
-		"cta",
-		"divider",
-		"hero",
-		"image-full",
-		"intro",
-		"quote",
-		"text-visual",
-		"visual-text"
+		"uc-cta",
+		"uc-divider",
+		"uc-hero",
+		"uc-image-full",
+		"uc-intro",
+		"uc-quote",
+		"uc-slider",
+		"uc-text-visual",
+		"uc-visual-text"
 	],
 	"views": [
 		"case"

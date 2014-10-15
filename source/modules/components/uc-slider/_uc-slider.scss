@@ -1,0 +1,103 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* uc-slider component */
+
+.uc-slider {
+	position: relative;
+
+	ul, li { margin: 0; padding: 0; }
+	li {
+		list-style: none;
+	}
+
+	.swipe, .swipe ul {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.swipe {
+		margin: 0 auto;
+		visibility: hidden;
+
+		ul > li {
+			position: relative;
+			float: left;
+			width: 100%;
+		}
+
+		li img {
+			@include min-screen-small {
+				width: 90%;
+			}
+
+			@include min-screen-medium {
+				width: 80%;
+			}
+		}
+	}
+
+	.next, .prev {
+		display: block;
+		width: 3 * $margin;
+		height: 3 * $baseline;
+		position: absolute;
+		top: 50%;
+		margin-top: -1.5 * $baseline;
+		background-color: $white;
+		border-radius: 3em;
+		text-decoration: none;
+		line-height: 1;
+		z-index: 1;
+		box-shadow: 0 0.0625em 0.25em $alpha-dark;
+
+		svg {
+			@include center-center;
+
+			width: 45%;
+			height: 45%;
+
+			.triangle {
+				fill: $key;
+			}
+		}
+
+		&:hover {
+			svg .triangle {
+				fill: $accent;
+			}
+		}
+	}
+
+	.next {
+		right: $margin / 2;
+
+		@include min-screen-small {
+			right: $margin;
+		}
+
+		@include min-screen-medium {
+			right: $margin * 2;
+		}
+
+		svg {
+			left: 10%;
+		}
+	}
+
+	.prev {
+		left: $margin / 2;
+
+		@include min-screen-small {
+			left: $margin;
+		}
+
+		@include min-screen-medium {
+			left: $margin * 2;
+		}
+
+		svg {
+			left: -10%;
+		}
+	}
+}

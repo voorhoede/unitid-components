@@ -11,14 +11,15 @@
 // Use `grunt remove-component:component-name` to delete a component.
 //
 
-@import '../../modules/components/cta/cta';
-@import '../../modules/components/divider/divider';
-@import '../../modules/components/hero/hero';
-@import '../../modules/components/image-full/image-full';
-@import '../../modules/components/intro/intro';
-@import '../../modules/components/quote/quote';
-@import '../../modules/components/text-visual/text-visual';
-@import '../../modules/components/visual-text/visual-text';
+@import '../../modules/components/uc-cta/uc-cta';
+@import '../../modules/components/uc-divider/uc-divider';
+@import '../../modules/components/uc-hero/uc-hero';
+@import '../../modules/components/uc-image-full/uc-image-full';
+@import '../../modules/components/uc-intro/uc-intro';
+@import '../../modules/components/uc-quote/uc-quote';
+@import '../../modules/components/uc-slider/uc-slider';
+@import '../../modules/components/uc-text-visual/uc-text-visual';
+@import '../../modules/components/uc-visual-text/uc-visual-text';
 
 //
 // Views

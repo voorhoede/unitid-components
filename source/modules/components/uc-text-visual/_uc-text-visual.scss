@@ -1,0 +1,8 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* uc-text-visual component */
+
+.uc-text-visual {
+  @include clearfix;
+}
