@@ -18,8 +18,21 @@
 	}
 
 	h1, h3 {
-		font-size: $font-size-header-large;
-		margin-bottom: $margin-header-large;
+		font-size: $font-size-header-between;
+		margin-bottom: $margin-header-medium;
+
+		@include min-screen-medium {
+			font-size: $font-size-header-large;
+			margin-bottom: $margin-header-large;
+		}
+	}
+
+	h2 {
+		font-size: $font-size-header-small;
+
+		@include min-screen-medium {
+			font-size: $font-size-header-medium;
+		}
 	}
 
 	h4 {

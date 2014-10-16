@@ -5,15 +5,12 @@
 
 .uc-quote {
 	margin: 0 auto;
-//	padding-top: $baseline * 2;
-//	padding-bottom: $baseline * 4;
 
 	h2 {
 		@extend .font-regular;
 		width: 100%;
 		margin: $margin-header-xlarge auto $margin-header-large;
 		text-align: center;
-		font-size: $font-size-header-medium;
 
 		@include min-screen-medium {
 			width: 75%;
