@@ -99,24 +99,25 @@
 
 {% block content %}
     <div id="container" class="container" role="document">
-        <section class="streamer whitespace-after">
+        <section role="streamer">
             {% include "components/uc-hero/_uc-hero.html" %}
-            {% include "components/uc-quote/_uc-quote.html" %}
+			{% include "components/uc-streamer/_uc-streamer.html" %}
+		</section>
+		<section role="intro" class="center whitespace-after">
 			{% include "components/uc-divider/_uc-divider.html" %}
 			{% include "components/uc-brief/_uc-brief.html" %}
         </section>
-        <section class="define invert accent whitespace-after">
+        <section class="center invert accent whitespace-after">
             {% include "components/uc-divider/_uc-divider.html" %}
             {% include "components/uc-intro/_uc-intro.html" %}
             {% include "components/uc-image-full/_uc-image-full.html" %}
         </section>
-        <section class="develop">
-            {% include "components/uc-divider/_uc-divider.html" %}
+        <section class="whitespace-after">
             {% include "components/uc-text-visual/_uc-text-visual.html" %}
             {% include "components/uc-visual-text/_uc-visual-text.html" %}
         </section>
-        <section class="showcase whitespace-before">
-            {% include "components/uc-slider/_uc-slider.html" %}
+        <section class="center">
+			{% include "components/uc-divider/_uc-divider.html" %}
             {% include "components/uc-slider/_uc-slider.html" %}
         </section>
         <section class="action smoke whitespace-after">

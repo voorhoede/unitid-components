@@ -1,19 +1,16 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/helpers";
 
-/* uc-quote component */
+/* uc-streamer component */
 
-.uc-quote {
-	margin: 0 auto;
-
+.uc-streamer {
 	h2 {
 		@extend .font-regular;
-		width: 100%;
 		margin: $margin-header-xlarge auto $margin-header-large;
 		text-align: center;
 
 		@include min-screen-medium {
-			width: 75%;
+			width: 80%;
 		}
 	}
 }

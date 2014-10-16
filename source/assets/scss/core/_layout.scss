@@ -12,6 +12,7 @@
 		position: relative;
 		width: 100%;
 		background-color: $white;
+		border-bottom: 0; // override unitid stylesheet
 
 		&.invert {
 			background-color: $black;
@@ -39,6 +40,18 @@
 
 		&.whitespace-after {
 			@extend .whitespace-after;
+		}
+
+		&.center {
+			h1, h2, h3, h4, h5, h6, p, li {
+				text-align: center;
+
+				@include min-screen-medium {
+					margin-left: auto;
+					margin-right: auto;
+					width: 67%;
+				}
+			}
 		}
 
 		img {

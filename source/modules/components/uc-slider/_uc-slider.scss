@@ -14,6 +14,15 @@ $uc-slider-arrow-size: 2 * $baseline;
 		list-style: none;
 	}
 
+	[role=slideshow] {
+		position: relative;
+		margin-bottom: $margin-header-medium;
+
+		@include min-screen-medium {
+			margin-bottom: $margin-header-large;
+		}
+	}
+
 	.swipe, .swipe ul {
 		overflow: hidden;
 		position: relative;
@@ -73,14 +82,10 @@ $uc-slider-arrow-size: 2 * $baseline;
 	}
 
 	.next {
-		right: $margin / 2;
-
-		@include min-screen-small {
-			right: $margin;
-		}
+		right: - $margin;
 
 		@include min-screen-medium {
-			right: $margin * 2;
+			right: 0;
 		}
 
 		svg {
@@ -89,14 +94,10 @@ $uc-slider-arrow-size: 2 * $baseline;
 	}
 
 	.prev {
-		left: $margin / 2;
-
-		@include min-screen-small {
-			left: $margin;
-		}
+		left: - $margin;
 
 		@include min-screen-medium {
-			left: $margin * 2;
+			left: 0;
 		}
 
 		svg {
