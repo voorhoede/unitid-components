@@ -60,43 +60,6 @@
 			margin: 0 auto;
 		}
 	}
-
-	@include min-screen-medium {
-		.uc-col {
-			width: 50%;
-
-			img {
-				margin-top: $baseline * 2;
-				margin-bottom: $baseline * 2;
-				width: 85%;
-			}
-		}
-
-		.uc-col:first-child {
-			float: left;
-		}
-
-		.uc-col:last-child {
-			margin-left: 50%;
-		}
-	}
-}
-
-/**
- * NOTE: Would prefer 'uc-column', but foundation framework
- * has a really nasty [class*='column'] selector that pretty much always wins
- */
-.uc-col {
-	margin-bottom: $baseline * 2;
-
-	h2, p {
-		@include min-screen-medium {
-			padding: 0 $baseline;
-		}
-		@include min-screen-large {
-			padding: 0 $baseline * 2;
-		}
-	}
 }
 
 [data-component] {

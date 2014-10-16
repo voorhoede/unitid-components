@@ -7,6 +7,10 @@
 	padding: 0;
 
 	.uc-imagebox {
-		height: 15 * $baseline;
+		height: 10 * $baseline;
+
+		@include min-screen-medium {
+			height: 20 * $baseline;
+		}
 	}
 }

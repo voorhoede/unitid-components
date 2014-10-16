@@ -1,6 +1,7 @@
 {
 	"components": [
 		"uc-brief",
+		"uc-columns-5050",
 		"uc-cta",
 		"uc-divider",
 		"uc-fullbleed",
@@ -8,9 +9,7 @@
 		"uc-image-full",
 		"uc-intro",
 		"uc-slider",
-		"uc-streamer",
-		"uc-text-visual",
-		"uc-visual-text"
+		"uc-streamer"
 	],
 	"views": [
 		"case"
