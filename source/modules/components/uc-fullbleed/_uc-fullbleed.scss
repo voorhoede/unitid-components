@@ -1,0 +1,12 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* uc-fullbleed component */
+
+.uc-fullbleed {
+	padding: 0;
+
+	.uc-imagebox {
+		height: 15 * $baseline;
+	}
+}

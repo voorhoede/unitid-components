@@ -3,11 +3,12 @@
 		"uc-brief",
 		"uc-cta",
 		"uc-divider",
+		"uc-fullbleed",
 		"uc-hero",
 		"uc-image-full",
 		"uc-intro",
-		"uc-streamer",
 		"uc-slider",
+		"uc-streamer",
 		"uc-text-visual",
 		"uc-visual-text"
 	],
