@@ -10,11 +10,11 @@
 	}
 
 	h1, h3, h4 {
-		@extend .font-bold;
+		@include font-bold;
 	}
 
 	h2, h5, h6 {
-		@extend .font-regular;
+		@include font-regular;
 		margin-bottom: $margin-header-medium;
 	}
 
@@ -57,5 +57,13 @@
 	q {
 		&:before { content: open-quote; }
 		&:after  { content: close-quote; }
+	}
+}
+
+[uc-column] {
+	h3 {
+		@include font-bold;
+		font-size: $font-size-header-small;
+		margin: 0 0 $baseline;
 	}
 }

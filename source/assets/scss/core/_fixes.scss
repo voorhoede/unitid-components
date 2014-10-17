@@ -1,0 +1,5 @@
+// These are fixes to counter drama caused by Foundation or other frameworks
+
+[class*="column"] + [class*="column"]:last-child {
+	float: none;
+}

@@ -21,8 +21,9 @@ $font-size-header-small: 1.5 * $font-size-body; // 24px
 $font-size-button: 1.25 * $font-size-body; // 20px
 
 $baseline: $font-size-body * $line-height-body; // ~24px
-
 $margin: $baseline;
+$gutter: $margin;
+
 $margin-header-xlarge: 5 * $baseline; // 120px
 $margin-header-large: 3 * $baseline; // 72px
 $margin-header-medium: 2 * $baseline; // 48px
@@ -32,7 +33,7 @@ $breakpoint-small: 400px;
 $breakpoint-between: 568px;
 $breakpoint-medium: 720px;
 $breakpoint-large: 1024px;
-$breakpoint-xlarge: 1440px;
+$breakpoint-xlarge: 1280px;
 
 // Colors
 $black: #362F34;

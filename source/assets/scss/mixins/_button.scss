@@ -1,5 +1,5 @@
 @mixin button {
-	@extend .font-bold;
+	@include font-bold;
 	display: inline-block;
 	padding: $baseline $margin;
 	background-color: $accent;

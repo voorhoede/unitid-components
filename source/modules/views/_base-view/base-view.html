@@ -30,8 +30,19 @@
 		<link rel="stylesheet" href="{{ pathToAssets }}images/grunticon-output/icons.fallback.css" />
 	</noscript>
 
-	{% block scripts_header %}
-	{% endblock %}
+	<!-- START Unitid website specific scripts/css -->
+	<script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
+	<link rel="stylesheet" href="/guide/vendor/unitid-site/css/fonts.css" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0" type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
+	<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+	<!-- END Unitid website specific scripts/css -->
 
 	{% block styles %}
 	<link rel="stylesheet" href="{{ pathToAssets }}style/main.css" />

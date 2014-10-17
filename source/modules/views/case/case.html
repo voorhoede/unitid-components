@@ -1,23 +1,5 @@
 {% extends "views/_base-view/base-view.html" %}
 
-{% block scripts_header %}
-    <script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
-{% endblock %}
-
-{% block styles %}
-    <link rel="stylesheet" href="/guide/vendor/unitid-site/css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
-    <link rel="stylesheet" href="{{ pathToAssets }}style/main.css" />
-{% endblock %}
-
 {% block header %}
     <div class="row">
         <header class="twelve columns" role="banner">
@@ -118,7 +100,23 @@
 		</section>
 		<section class="whitespace-after">
             {% include "components/uc-fullbleed/_uc-fullbleed.html" %}
-			{% include "components/uc-columns-5050/_uc-columns-5050.html" %}
+			<div uc-row>
+				{% include "components/uc-column-half/_uc-column-half.html" %}
+				{% include "components/uc-column-half/_uc-column-half.html" %}
+			</div>
+			<div uc-row>
+				{% include "components/uc-column-third/_uc-column-third.html" %}
+				{% include "components/uc-column-third/_uc-column-third.html" %}
+				{% include "components/uc-column-third/_uc-column-third.html" %}
+			</div>
+			<div uc-row>
+				{% include "components/uc-column-twothirds/_uc-column-twothirds.html" %}
+				{% include "components/uc-column-third/_uc-column-third.html" %}
+			</div>
+			<div uc-row>
+				{% include "components/uc-column-third/_uc-column-third.html" %}
+				{% include "components/uc-column-twothirds/_uc-column-twothirds.html" %}
+			</div>
         </section>
         <section class="action smoke whitespace-after">
             {% include "components/uc-divider/_uc-divider.html" %}

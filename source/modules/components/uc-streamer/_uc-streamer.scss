@@ -5,7 +5,7 @@
 
 .uc-streamer {
 	h2 {
-		@extend .font-regular;
+		@include font-regular;
 		margin: $margin-header-xlarge auto $margin-header-large;
 		text-align: center;
 

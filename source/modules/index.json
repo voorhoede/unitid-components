@@ -1,7 +1,9 @@
 {
 	"components": [
 		"uc-brief",
-		"uc-columns-5050",
+		"uc-column-half",
+		"uc-column-third",
+		"uc-column-twothirds",
 		"uc-cta",
 		"uc-divider",
 		"uc-fullbleed",
