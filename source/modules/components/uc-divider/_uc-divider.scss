@@ -4,15 +4,14 @@
 /* uc-divider component */
 
 @mixin uc-divider-shadow($color) {
-	box-shadow: 0 0 3 * $baseline $color;
+	box-shadow: 0 0 3 * $margin $color;
 }
 
-$uc-divider-size: 40 * $baseline;
+$uc-divider-size: 40 * $margin;
 
 .uc-divider {
 	position: relative;
-	height: 5 * $baseline;
-	margin-bottom: - 5 * $baseline;
+	height: 3 * $margin;
 	overflow: hidden;
 
 	&:after {

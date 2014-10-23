@@ -1,44 +1,64 @@
-[data-component] { // FIX!
-	h1, h2, h3, h4, h5, h6, p, li, {
-		quotes: '\201C' '\201D' '\2018' '\2019';
-	}
+* {
+	quotes: '\201C' '\201D' '\2018' '\2019';
+}
 
+/**
+ * Note: .case selector is needed to differentiate between
+ *       case pages and other pages on Unitid website
+ */
+
+.case {
 	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
 		line-height: $line-height-header;
-		margin-top: $margin-header-large;
 		text-align: left; // Fixes Unitid global 'center' style
 	}
 
-	h1, h3, h4 {
-		@include font-bold;
-	}
-
-	h2, h5, h6 {
-		@include font-regular;
-		margin-bottom: $margin-header-medium;
-	}
-
 	h1, h3 {
-		font-size: $font-size-header-between;
+		@include font-bold;
+
+		@include min-screen-medium {
+			font-size: $font-size-header-xlarge;
+		}
+	}
+
+	h2, h4, h5, h6 {
+		@include font-regular;
+	}
+
+	h1 {
+		font-size: $font-size-header-medium;
 		margin-bottom: $margin-header-medium;
 
 		@include min-screen-medium {
 			font-size: $font-size-header-large;
 			margin-bottom: $margin-header-large;
+			& + p, & + h2 {
+				margin-top: - 1rem;
+			}
+		}
+
+		@include min-screen-xlarge {
+			font-size: $font-size-header-xlarge;
 		}
 	}
 
 	h2 {
 		font-size: $font-size-header-small;
+		margin-bottom: $margin-header-medium;
 
 		@include min-screen-medium {
-			font-size: $font-size-header-medium;
+			font-size: $font-size-header-large;
+			margin-bottom: $margin-header-small;
 		}
+	}
+
+	h3 {
+		font-size: $font-size-header-medium;
 	}
 
 	h4 {
 		font-size: $font-size-header-medium;
-		margin-bottom: $margin-header-medium;
 	}
 
 	h5 {
@@ -51,7 +71,16 @@
 
 	p, li {
 		line-height: $line-height-body;
-		margin-bottom: $baseline;
+		margin-bottom: $margin;
+		font-size: $font-size-body;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	p:last-child {
+		margin-bottom: $margin-header-large + 1rem;
 	}
 
 	q {
@@ -64,6 +93,6 @@
 	h3 {
 		@include font-bold;
 		font-size: $font-size-header-small;
-		margin: 0 0 $baseline;
+		margin: 0 0 $margin;
 	}
 }

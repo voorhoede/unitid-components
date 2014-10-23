@@ -5,19 +5,18 @@
 
 .uc-hero {
 	position: relative;
-	height: 10 * $baseline;
+	height: 10 * $margin;
 	background: transparent url('http://www.adch.nl/wp-content/uploads/2012/08/Ziggo-Interieur-Central-Office-Heyligers-02.jpg') center no-repeat;
 	background-size: cover;
 
 	@include min-screen-large {
-		height: 15 * $baseline;
+		height: 15 * $margin;
 	}
 
 	h1 {
 		@include text-shadow;
-		margin-bottom: $baseline;
+		margin-bottom: $margin;
 		padding-top: $margin;
-		font-size: $font-size-header-small;
 		color: $white;
 
 		@include min-screen-small {
@@ -27,13 +26,8 @@
 			bottom: 0;
 		}
 
-		@include min-screen-between {
-			font-size: $font-size-header-between;
-		}
-
 		@include min-screen-large {
 			padding: 0 $margin;
-			font-size: $font-size-header-large;
 		}
 	}
 
@@ -41,7 +35,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: -3 * $baseline;
+		bottom: -3 * $margin;
 		margin: auto;
 		max-width: 75%;
 		max-height: 50%;

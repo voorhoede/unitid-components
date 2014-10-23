@@ -3,24 +3,15 @@
 
 /* uc-slider component */
 
-$uc-slider-arrow-size: 2 * $baseline;
+$uc-slider-arrow-size: 2 * $margin;
 
 .uc-slider {
 	position: relative;
-	margin-bottom: $baseline * 4;
+	margin-bottom: $margin-header-large + $base-size / 2;
 
 	ul, li { margin: 0; padding: 0; }
 	li {
 		list-style: none;
-	}
-
-	[role=slideshow] {
-		position: relative;
-		margin-bottom: $margin-header-medium;
-
-		@include min-screen-medium {
-			margin-bottom: $margin-header-large;
-		}
 	}
 
 	.swipe, .swipe ul {
@@ -82,10 +73,10 @@ $uc-slider-arrow-size: 2 * $baseline;
 	}
 
 	.next {
-		right: - $margin;
+		right: $margin;
 
-		@include min-screen-medium {
-			right: 0;
+		@include min-screen-xlarge {
+			right: $margin * 2;
 		}
 
 		svg {
@@ -94,10 +85,10 @@ $uc-slider-arrow-size: 2 * $baseline;
 	}
 
 	.prev {
-		left: - $margin;
+		left: $margin;
 
-		@include min-screen-medium {
-			left: 0;
+		@include min-screen-xlarge {
+			left: $margin * 2;
 		}
 
 		svg {
@@ -105,3 +96,4 @@ $uc-slider-arrow-size: 2 * $baseline;
 		}
 	}
 }
+

@@ -1,0 +1,22 @@
+{
+  "name": "Swipe",
+  "main": [
+    "./swipe.js"
+  ],
+  "author": "Brad Birdsall",
+  "license": "MIT",
+  "ignore": [
+    "**/*.html",
+    "**/*.css",
+    "Gruntfile.js"
+  ],
+  "homepage": "https://github.com/bradbirdsall/Swipe",
+  "_release": "32c19c95ea",
+  "_resolution": {
+    "type": "commit",
+    "commit": "32c19c95ea09092167cd07cc783da24f79f5adf6"
+  },
+  "_source": "git://github.com/bradbirdsall/Swipe.git",
+  "_target": "32c19c95ea09092167cd07cc783da24f79f5adf6",
+  "_originalSource": "swipe"
+}

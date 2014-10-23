@@ -5,12 +5,48 @@
 
 .uc-fullbleed {
 	padding: 0;
+	margin-bottom: $margin-header-large + 1rem;
 
 	.uc-imagebox {
-		height: 10 * $baseline;
+		position: relative;
+		height: 15 * $margin;
+		overflow: hidden;
 
 		@include min-screen-medium {
-			height: 20 * $baseline;
+			height: 30 * $margin;
 		}
+	}
+
+	.uc-inset {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		padding: 0 $margin $margin;
+
+		.wrapper {
+			background: $white;
+			padding: $margin;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		@include min-screen-medium {
+			width: 25 * $margin;
+			padding: 0 0 $margin-header-large 3 * $margin;
+		}
+
+		@include min-screen-xlarge {
+			padding: 0 0 $margin-header-large + $margin 4 * $margin;
+		}
+	}
+}
+
+[uc-column] .uc-fullbleed {
+	.uc-inset {
+		width: 100%;
+		padding: 0 $margin $margin;
 	}
 }

@@ -1,7 +1,7 @@
 @mixin button {
 	@include font-bold;
 	display: inline-block;
-	padding: $baseline $margin;
+	padding: $margin;
 	background-color: $accent;
 	font-size: $font-size-body;
 	border-radius: 0.25em;
@@ -10,9 +10,5 @@
 
 	&:hover {
 		text-decoration: underline;
-	}
-
-	@include min-screen-medium {
-		font-size: $font-size-button;
 	}
 }

@@ -9,24 +9,37 @@
 // Note: since Unitid website uses 1em=10px set up, we'll fix the baseline grid on 2.4rem
 //       which effectively means we can go back to using Frontpage ಠ_ಠ
 
-$font-size-body: 1.6rem; // 16px
+$base-size: 1.6rem; // 16px
 
 $line-height-body: 1.5; // ~24px
 $line-height-header: 1.25; // Header of 48px will get line-height of 60px
 
-$font-size-header-large: 3 * $font-size-body; // 48px
-$font-size-header-medium: 2.25 * $font-size-body; // 36px
-$font-size-header-between: 2 * $font-size-body; // 32px
-$font-size-header-small: 1.5 * $font-size-body; // 24px
-$font-size-button: 1.25 * $font-size-body; // 20px
+$font-size-body: 1.25 * $base-size; // 20px
+$font-size-header-xlarge: 3 * $base-size; // 48px
+$font-size-header-large: 2.25 * $base-size; // 36px
+$font-size-header-medium: 2 * $base-size; // 32px
+$font-size-header-small: 1.5 * $base-size; // 24px
 
-$baseline: $font-size-body * $line-height-body; // ~24px
-$margin: $baseline;
-$gutter: $margin;
+$margin: 2.4rem;
 
-$margin-header-xlarge: 5 * $baseline; // 120px
-$margin-header-large: 3 * $baseline; // 72px
-$margin-header-medium: 2 * $baseline; // 48px
+$margin-header-xlarge: 7.5 * $base-size; // 120px
+$margin-header-large:  4 * $base-size; // 64px
+$margin-header-medium: 3 * $base-size; // 48px
+$margin-header-small: 2 * $base-size; // 32px
+
+// xlarge = 1200, inner content = 960: 960/1200 = 0.8
+// large  = 960,  inner content = 768 (0.8 x 960)
+// below that, use ~2 * gutter for tablet/small desktop, 1 * gutter for mobile
+
+$whitespace-xlarge: 5 * $margin; // 120px
+$whitespace-large: 0.8 * $whitespace-xlarge;
+$whitespace-centered-xlarge: 8 * $margin;
+$whitespace-centered-large: 0.8 * $whitespace-centered-xlarge;
+$container-xlarge: 120rem - ($whitespace-xlarge * 2);
+$container-large: 96rem - ($whitespace-large * 2);
+$container-centered-xlarge: 120rem - ($whitespace-centered-xlarge * 2);
+$container-centered-large: 96rem - ($whitespace-centered-large * 2);
+$margin-twice: $margin * 2;
 
 // Responsiveness
 $breakpoint-small: 400px;
