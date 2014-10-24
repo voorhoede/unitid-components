@@ -26,26 +26,26 @@ section {
 		background-color: $smoke;
 	}
 
-	&.center {
-		h1, h2, h3, h4, h5, h6, p, li {
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-
-			@include min-screen-large {
-				width: $container-centered-large;
-			}
-
-			@include min-screen-xlarge {
-				width: $container-centered-xlarge;
-			}
-		}
-	}
-
 	img {
 		display: block;
 		max-width: 100%;
 		margin: 0 auto;
+	}
+}
+
+.center {
+	h1, h2, h3, h4, h5, h6, p, li {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		@include min-screen-large {
+			width: $container-centered-large;
+		}
+
+		@include min-screen-xlarge {
+			width: $container-centered-xlarge;
+		}
 	}
 }
 

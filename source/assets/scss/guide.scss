@@ -152,106 +152,29 @@ a.app-guide-icon {
     height: $guide-swatch-size;
 }
 
-// yellow
+[title="accent"] .app-guide-swatch {
+	background-color: $accent;
+}
 
-//[title="yellow-dark"] .app-guide-swatch {
-//    background-color: $yellow-dark;
-//}
-//
-//[title="yellow-medium"] .app-guide-swatch {
-//    background-color: $yellow-medium;
-//}
-//
-//[title="yellow-pale"] .app-guide-swatch {
-//    background-color: $yellow-pale;
-//}
-//
-//[title="yellow-light"] .app-guide-swatch {
-//    background-color: $yellow-light;
-//}
-//
-//// blue
-//
-//[title="blue-extra-light"] .app-guide-swatch {
-//    background-color: $blue-extra-light;
-//}
-//
-//[title="blue-light-pale"] .app-guide-swatch {
-//    background-color: $blue-light-pale;
-//}
-//
-//[title="blue-light"] .app-guide-swatch {
-//    background-color: $blue-light;
-//}
-//
-//[title="blue-medium-pale"] .app-guide-swatch {
-//    background-color: $blue-medium-pale;
-//}
-//
-//[title="blue-medium"] .app-guide-swatch {
-//    background-color: $blue-medium;
-//}
-//
-//[title="blue-dark"] .app-guide-swatch {
-//    background-color: $blue-dark;
-//}
-//
-//[title="blue-darker"] .app-guide-swatch {
-//    background-color: $blue-darker;
-//}
-//
-//// grey
-//
-//[title="grey-extra-light"] .app-guide-swatch {
-//    background-color: $grey-extra-light;
-//}
-//
-//[title="grey-lighter"] .app-guide-swatch {
-//    background-color: $grey-lighter;
-//}
-//
-//[title="grey-light-pale"] .app-guide-swatch {
-//    background-color: $grey-light-pale;
-//}
-//
-//[title="grey-light"] .app-guide-swatch {
-//    background-color: $grey-light;
-//}
-//
-//[title="grey-medium"] .app-guide-swatch {
-//    background-color: $grey-medium;
-//}
-//
-//// social icon colors
-//
-//
-//[title="facebook-color"] .app-guide-swatch {
-//    background-color: $facebook-color;
-//}
-//
-//[title="twitter-color"] .app-guide-swatch {
-//    background-color: $twitter-color;
-//}
-//
-//[title="google-color"] .app-guide-swatch {
-//    background-color: $google-color;
-//}
-//
-//[title="instagram-color"] .app-guide-swatch {
-//    background-color: $instagram-color;
-//}
-//
-//[title="pinterest-color"] .app-guide-swatch {
-//    background-color: $pinterest-color;
-//}
-//
-//[title="linkedin-color"] .app-guide-swatch {
-//    background-color: $linkedin-color;
-//}
-//
-//[title="youtube-color"] .app-guide-swatch {
-//    background-color: $youtube-color;
-//}
+[title="accent-dark"] .app-guide-swatch {
+	background-color: $accent-dark;
+}
+
+[title="black"] .app-guide-swatch {
+	background-color: $black;
+}
+
+[title="silver"] .app-guide-swatch {
+	background-color: $silver;
+}
+
+[title="smoke"] .app-guide-swatch {
+	background-color: $smoke;
+}
+
+[title="whitesmoke"] .app-guide-swatch {
+	background-color: $whitesmoke;
+}
 
 .app-guide-swatches li {
     float: left;

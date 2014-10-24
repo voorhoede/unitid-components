@@ -12,6 +12,7 @@ $uc-divider-size: 40 * $margin;
 .uc-divider {
 	position: relative;
 	height: 3 * $margin;
+	margin-bottom: - 3 * $margin;
 	overflow: hidden;
 
 	&:after {

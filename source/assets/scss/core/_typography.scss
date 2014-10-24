@@ -28,6 +28,7 @@
 
 	h1 {
 		font-size: $font-size-header-medium;
+		margin-top: $margin-header-large;
 		margin-bottom: $margin-header-medium;
 
 		@include min-screen-medium {
@@ -51,10 +52,15 @@
 			font-size: $font-size-header-large;
 			margin-bottom: $margin-header-small;
 		}
+
+		&:first-child {
+			margin-top: $margin-header-large + 1rem;
+		}
 	}
 
 	h3 {
-		font-size: $font-size-header-medium;
+		font-size: $font-size-header-small;
+		margin: 0 0 $margin;
 	}
 
 	h4 {
@@ -86,13 +92,5 @@
 	q {
 		&:before { content: open-quote; }
 		&:after  { content: close-quote; }
-	}
-}
-
-[uc-column] {
-	h3 {
-		@include font-bold;
-		font-size: $font-size-header-small;
-		margin: 0 0 $margin;
 	}
 }
