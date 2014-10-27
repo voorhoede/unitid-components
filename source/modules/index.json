@@ -1,5 +1,9 @@
 {
 	"components": [
+		"disclaimer",
+		"footer",
+		"language",
+		"navigation",
 		"uc-brief",
 		"uc-column-half",
 		"uc-column-third",

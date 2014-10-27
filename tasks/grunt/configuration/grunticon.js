@@ -14,13 +14,7 @@ function getConfiguration(grunt) {
                 }
             ],
             options: {
-                customselectors: {
-                },
-                prefix: {
-                    prefix: '.icon-'
-                },
-	            colors: {
-	            },
+				cssprefix: '.app-guide-icon-',
                 defaultWidth: '30px',
                 defaultHeight: '30px'
             }

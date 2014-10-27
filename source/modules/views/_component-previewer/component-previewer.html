@@ -92,10 +92,6 @@
 			</h3>
 			<div class="app-guide-code">
 				<pre class="language-markup"><code>{{ code.html | replace("<","&lt;") }}</code></pre>
-				<ul class="app-guide-code-options">
-					<li><a class="app-guide-icon app-guide-icon-code" href="_{{name}}.html" title="view source HTML"></a></li>
-					<li><a class="app-guide-icon app-guide-icon-download" href="_{{name}}.html" download="_{{name}}.html" title="download HTML"></a></li>
-				</ul>
 			</div>
 		</section>
 		{% endif %}
@@ -107,10 +103,6 @@
 			</h3>
 			<div class="app-guide-code">
 				<pre class="language-css"><code>{{ code.css | replace("<","&lt;") }}</code></pre>
-				<ul class="app-guide-code-options">
-					<li><a class="app-guide-icon app-guide-icon-code" href="_{{name}}.css" title="view source CSS"></a></li>
-					<li><a class="app-guide-icon app-guide-icon-download" href="_{{name}}.css" download="_{{name}}.css" title="download CSS"></a></li>
-				</ul>
 			</div>
 		</section>
 		{% endif %}

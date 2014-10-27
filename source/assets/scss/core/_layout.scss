@@ -4,7 +4,7 @@
  * More info here: http://glenmaddern.com/articles/introducing-am-css
  */
 
-section {
+.case section {
 	@include clearfix;
 	position: relative;
 	width: 100%;
@@ -40,11 +40,11 @@ section {
 		margin-right: auto;
 
 		@include min-screen-large {
-			width: $container-centered-large;
+			max-width: $container-centered-large;
 		}
 
 		@include min-screen-xlarge {
-			width: $container-centered-xlarge;
+			max-width: $container-centered-xlarge;
 		}
 	}
 }

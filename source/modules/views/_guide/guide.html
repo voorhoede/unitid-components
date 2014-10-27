@@ -15,66 +15,14 @@
 
 
 {% block content %}
-<div class="page">
+<div class="page app-guide">
 	<div class="core-layout">
 		<header class="app-guide-content">
-			<img src="{{ pathToGuide }}images/voorhoede-logo.svg"
-			     onerror="this.src='{{ pathToGuide }}images/voorhoede-logo.min.png'"
-			     alt="De Voorhoede"
-			     height="75" width="75"/>
-				<h1>{{ project.title }}</h1>
-				<h2>Front-end guide for {{ project.title}} by de Voorhoede</h2>
+			<img class="logo" src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"/>
+			<h1>{{ project.title }}</h1>
 		</header>
 
-<!--TODO: enable left menu?-->
-		<!--&lt;!&ndash;left menu&ndash;&gt;-->
-		<!--<nav class="app-guide-nav">-->
-			<!--<h3><a href="/">Home</a></h3>-->
-
-			<!--{% if components.length > 0 %}-->
-			<!--<h3>Components</h3>-->
-			<!--<ul>-->
-				<!--{% for component in components %}-->
-				<!--<li>-->
-					<!--<a href="{{ webRoot + 'modules/components/' + component + '/' + 'preview.html' }}">-->
-						<!--{{ component | replace("-"," ") | capitalize }}-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--{% endfor %}-->
-			<!--</ul>-->
-			<!--{% endif %}-->
-
-			<!--{% if chapters.length > 0 %}-->
-			<!--<h3>Documentation</h3>-->
-			<!--<ul>-->
-				<!--{% for chapter in chapters %}-->
-				<!--<li>-->
-					<!--<a href="{{ webRoot + 'modules/chapters/' + chapter + '/' + chapter + '.html' }}">-->
-						<!--{{ chapter | replace("-"," ") | capitalize }}-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--{% endfor %}-->
-			<!--</ul>-->
-			<!--{% endif %}-->
-
-			<!--{% if views.length > 0 %}-->
-			<!--<h3>Views</h3>-->
-			<!--<ul>-->
-				<!--{% for view in views %}-->guide.scss
-				<!--<li>-->
-					<!--<a href="{{ webRoot + 'modules/views/' + view + '/' + view + '.html' }}">-->
-						<!--{{ view | replace("-"," ") | capitalize }}-->
-					<!--</a>-->
-				<!--</li>-->
-				<!--{% endfor %}-->
-			<!--</ul>-->
-			<!--{% endif %}-->
-		<!--</nav>-->
-
-
-		<!--main content-->
 		{% block maincontent %}
-
 		{% endblock %}
 
 	</div>
@@ -84,8 +32,3 @@
 {% endblock %}
 
 
-{% block footer %}
-<footer class="app-guide-footer">
-	This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder
-</footer>
-{% endblock %}
