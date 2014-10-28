@@ -126,3 +126,19 @@
 		width: ($container-xlarge - $margin) / 2;
 	}
 }
+
+[uc-column~="1/4"] {
+	@include min-screen-medium {
+		width: 21%;
+		margin-left: 4%;
+	}
+
+	@include min-screen-large {
+		width: ($container-large - $margin-tripled) / 4;
+		margin-left: $margin;
+	}
+
+	@include min-screen-xlarge {
+		width: ($container-xlarge - $margin-tripled) / 4;
+	}
+}

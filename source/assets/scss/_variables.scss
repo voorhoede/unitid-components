@@ -40,6 +40,7 @@ $container-large: 96rem - ($whitespace-large * 2);
 $container-centered-xlarge: 120rem - ($whitespace-centered-xlarge * 2);
 $container-centered-large: 96rem - ($whitespace-centered-large * 2);
 $margin-twice: $margin * 2;
+$margin-tripled: $margin * 3;
 
 // Responsiveness
 $breakpoint-small: 400px;
@@ -50,6 +51,7 @@ $breakpoint-xlarge: 1280px;
 
 // Colors
 $black: #362F34;
+$grey: #999;
 $silver: #ececec;
 $smoke: #f1f1f1;
 $whitesmoke: #f8f8f8;

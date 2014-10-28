@@ -1,5 +1,16 @@
 figure {
-	margin: 0;
+	margin: 0 0 $margin-header-medium;
+	position: relative;
+}
+
+figcaption {
+	margin-top: $margin;
+	text-align: center;
+
+	&.large {
+		@include font-bold;
+		font-size: $font-size-header-small;
+	}
 }
 
 .uc-imagebox {

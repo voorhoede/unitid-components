@@ -93,4 +93,8 @@
 		&:before { content: open-quote; }
 		&:after  { content: close-quote; }
 	}
+
+	strong, b {
+		@include font-bold;
+	}
 }

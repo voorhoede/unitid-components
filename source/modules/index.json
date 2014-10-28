@@ -5,6 +5,7 @@
 		"language",
 		"navigation",
 		"uc-brief",
+		"uc-column-fourth",
 		"uc-column-half",
 		"uc-column-third",
 		"uc-column-twothirds",
@@ -17,6 +18,7 @@
 		"uc-streamer"
 	],
 	"views": [
+		"NU.nl",
 		"case"
 	]
 }

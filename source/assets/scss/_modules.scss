@@ -12,6 +12,7 @@
 //
 
 @import '../../modules/components/uc-brief/uc-brief';
+@import '../../modules/components/uc-column-fourth/uc-column-fourth';
 @import '../../modules/components/uc-column-half/uc-column-half';
 @import '../../modules/components/uc-column-third/uc-column-third';
 @import '../../modules/components/uc-column-twothirds/uc-column-twothirds';
@@ -30,4 +31,5 @@
 // Use `grunt remove-view:view-name` to delete a view.
 //
 
+@import '../../modules/views/NU.nl/NU.nl';
 @import '../../modules/views/case/case';
