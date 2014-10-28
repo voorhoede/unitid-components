@@ -40,6 +40,7 @@
 		}
 
 		@include min-screen-xlarge {
+			margin-top: $margin-header-large + 1rem;
 			font-size: $font-size-header-xlarge;
 		}
 	}

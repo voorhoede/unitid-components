@@ -4,6 +4,23 @@
  * More info here: http://glenmaddern.com/articles/introducing-am-css
  */
 
+$uc-divider-size: 40 * $margin;
+
+@mixin uc-divider-shadow($color) {
+	box-shadow: 0 0 3 * $margin $color;
+}
+
+.uc-divider-shadow {
+	@include uc-divider-shadow($alpha-light);
+	position: absolute;
+	height: $uc-divider-size;
+	width: $uc-divider-size;
+	left: 50%;
+	margin-left: - $uc-divider-size / 2;
+	border-radius: $uc-divider-size / 3;
+	z-index: 1;
+}
+
 .case section {
 	@include clearfix;
 	position: relative;
@@ -26,10 +43,42 @@
 		background-color: $smoke;
 	}
 
+	&.divider-before, &.divider-after {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&.divider-before {
+		margin-bottom: - 3 * $margin;
+
+		&:before {
+			@extend .uc-divider-shadow;
+			margin-top: - $uc-divider-size;
+		}
+	}
+
+	&.accent.divider-before:before {
+		@include uc-divider-shadow($alpha-dark);
+	}
+
+	&.divider-after {
+		margin-top: -3 * $margin;
+
+		&:after {
+			@extend .uc-divider-shadow;
+			margin-bottom: - $uc-divider-size;
+		}
+	}
+
+	&.accent.divider-after:after {
+		@include uc-divider-shadow($alpha-dark);
+	}
+
 	img {
 		display: block;
 		max-width: 100%;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
