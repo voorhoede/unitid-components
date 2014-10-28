@@ -1,0 +1,70 @@
+{% extends "views/_base-view/base-view.html" %}
+
+{% block language %}
+{% include "components/language/_language.html" %}
+{% endblock %}
+
+{% block specific_scripts %}
+<!-- START Unitid website specific scripts/css -->
+<link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+<!-- END Unitid website specific scripts/css -->
+{% endblock %}
+
+{% block header %}
+{% include "components/navigation/_navigation.html" %}
+{% endblock %}
+
+{% block content %}
+<div id="container" class="case container" role="document">
+	<section role="streamer">
+		<div class="uc-hero" data-component="uc-hero">
+			<h1>
+				NU.nl redesign, terug naar de basis over het hele platform
+			</h1>
+			<img src="http://www.welkebrowser.nl/wp-content/uploads/2014/04/html5-300x300.png">
+		</div>
+		<div class="uc-streamer" data-component="uc-streamer">
+			<h2><span class="dropcap" aria-hidden="true"></span>Er was eens...</h2>
+			<h3>Na lancering in 1996 werd <strong>NU.nl</strong> in een paar jaar tijd de grootste nieuwssite van Nederland. Ze zijn op elk digitaal scherm aanwezig. Nog voordat de iPhone uitkwam had NU.nl al een app innoverend en super snel. <strong>Het snelle nieuws blijkt een succes!</strong></h3>
+		</div>
+	</section>
+	<section class="how">
+		<div uc-row>
+			<div uc-column="1/4" data-component="uc-column-third">
+				<figure>
+					<img src="http://placehold.it/300x300&text=spraycans" alt="Spuitbus">
+					<figcaption class="large">Nieuw uiterlijk</figcaption>
+				</figure>
+			</div>
+			<div uc-column="1/2" data-component="uc-column-third">
+				<figure>
+					<img src="http://placehold.it/300x300&text=devices" alt="Laptop & mobiele apparaten">
+					<figcaption class="large">Responsive design</figcaption>
+				</figure>
+			</div>
+			<div uc-column="1/4" data-component="uc-column-third">
+				<figure>
+					<img src="http://placehold.it/300x300&text=coin">
+					<figcaption class="large">Slim adverteren</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "components/footer/_footer.html" %}
+{% endblock %}
+
+{% block disclaimer %}
+{% include "components/disclaimer/_disclaimer.html" %}
+{% endblock %}

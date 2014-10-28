@@ -1,0 +1,42 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* NU.NL VIEW */
+
+.uc-streamer {
+	h2:first-letter {
+		@include visually-hidden;
+	}
+
+	.dropcap {
+		display: inline-block;
+		width: 3em;
+		height: 3em;
+
+		&:after {
+			content: url('../../../assets/images/nu.nl/e.svg');
+		}
+	}
+}
+
+figcaption {
+	color: $grey;
+}
+
+.how {
+	@include min-screen-medium {
+		figure {
+			height: 18em;
+		}
+
+		figcaption {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+		}
+
+		img {
+			max-height: 14em;
+		}
+	}
+}
