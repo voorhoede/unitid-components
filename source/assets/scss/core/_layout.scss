@@ -49,8 +49,6 @@ $uc-divider-size: 40 * $margin;
 	}
 
 	&.divider-before {
-		margin-bottom: - 3 * $margin;
-
 		&:before {
 			@extend .uc-divider-shadow;
 			margin-top: - $uc-divider-size;
@@ -62,8 +60,6 @@ $uc-divider-size: 40 * $margin;
 	}
 
 	&.divider-after {
-		margin-top: -3 * $margin;
-
 		&:after {
 			@extend .uc-divider-shadow;
 			margin-bottom: - $uc-divider-size;

@@ -3,6 +3,10 @@
 
 /* NU.NL VIEW */
 
+.case section.smoke {
+	background-color: #f5f5f5;
+}
+
 .uc-streamer {
 	h2:first-letter {
 		@include visually-hidden;
@@ -39,4 +43,8 @@ figcaption {
 			max-height: 14em;
 		}
 	}
+}
+
+.uc-fullbleed .uc-imagebox {
+	height: 35rem;
 }
