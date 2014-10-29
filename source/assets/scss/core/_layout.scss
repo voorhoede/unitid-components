@@ -70,6 +70,10 @@ $uc-divider-size: 40 * $margin;
 		@include uc-divider-shadow($alpha-dark);
 	}
 
+	&.whitespace-after {
+		padding-bottom: $margin-header-large;
+	}
+
 	img {
 		display: block;
 		max-width: 100%;

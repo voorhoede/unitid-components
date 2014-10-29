@@ -33,6 +33,46 @@ var u = {
 
 		return obj;
 	},
+	/**
+	 * Wait for timer until debounced function fires
+	 * Source: http://remysharp.com/2010/07/21/throttling-function-calls
+	 */
+	debounce: function(fn, delay) {
+		var timer = null;
+		return function () {
+			var context = this,
+				args = arguments;
+			clearTimeout(timer);
+			timer = setTimeout(function() {
+				fn.apply(context, args);
+			}, delay);
+		};
+	},
+	/**
+	 * Fire function every <delay>ms and discard function calls
+	 *   that happen while the delay is active
+	 * Source: http://remysharp.com/2010/07/21/throttling-function-calls
+	 */
+	throttle: function(fn, delay, scope) {
+		delay || (delay = 250);
+		var last,
+			deferTimer;
+		return function () {
+			var context = scope || this;
+			var now = +new Date,
+				args = arguments;
+			if (last && now < last + delay) {
+				clearTimeout(deferTimer);
+				deferTimer = setTimeout(function () {
+					last = now;
+					fn.apply(context, args);
+				}, delay);
+			} else {
+				last = now;
+				fn.apply(context, args);
+			}
+		};
+	},
 	isArray: function(obj) {
 		return toString.call(obj) === "[object Array]";
 	},
