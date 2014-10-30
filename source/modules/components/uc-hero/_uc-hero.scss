@@ -13,8 +13,7 @@
 		height: 15 * $margin;
 	}
 
-	h1 {
-		@include text-shadow;
+	header {
 		margin-bottom: $margin;
 		padding-top: $margin;
 		color: $white;
@@ -22,13 +21,21 @@
 		@include min-screen-small {
 			position: absolute;
 			z-index: 1;
-			width: 50%;
+			width: 40%;
 			bottom: 0;
 		}
 
 		@include min-screen-large {
-			padding: 0 $margin;
+			padding: 0 0 0 $margin * 5;
 		}
+	}
+
+	h1, h2 {
+		@include text-shadow;
+	}
+
+	h1 {
+		margin-bottom: 0.125em;
 	}
 
 	img {

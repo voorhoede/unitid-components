@@ -4,21 +4,25 @@
  * More info here: http://glenmaddern.com/articles/introducing-am-css
  */
 
-$uc-divider-size: 40 * $margin;
-
 @mixin uc-divider-shadow($color) {
 	box-shadow: 0 0 3 * $margin $color;
 }
 
-.uc-divider-shadow {
+@mixin uc-divider($position, $size: 40 * $margin) {
 	@include uc-divider-shadow($alpha-light);
+	content: "";
 	position: absolute;
-	height: $uc-divider-size;
-	width: $uc-divider-size;
+	height: $size;
+	width: $size;
 	left: 50%;
-	margin-left: - $uc-divider-size / 2;
-	border-radius: $uc-divider-size / 3;
+	margin-left: - $size / 2;
+	border-radius: $size / 3;
 	z-index: 1;
+	@if $position == "before" {
+		margin-top: - $size;
+	} @else {
+		margin-bottom: - $size;
+	}
 }
 
 .case section {
@@ -43,31 +47,16 @@ $uc-divider-size: 40 * $margin;
 		background-color: $smoke;
 	}
 
-	&.divider-before, &.divider-after {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&.divider-before {
-		&:before {
-			@extend .uc-divider-shadow;
-			margin-top: - $uc-divider-size;
-		}
-	}
-
 	&.accent.divider-before:before {
 		@include uc-divider-shadow($alpha-dark);
 	}
 
-	&.divider-after {
-		&:after {
-			@extend .uc-divider-shadow;
-			margin-bottom: - $uc-divider-size;
-		}
-	}
-
 	&.accent.divider-after:after {
 		@include uc-divider-shadow($alpha-dark);
+	}
+
+	&.whitespace-before {
+		padding-top: $margin-header-large;
 	}
 
 	&.whitespace-after {
@@ -82,8 +71,38 @@ $uc-divider-size: 40 * $margin;
 	}
 }
 
+.divider-before, .divider-after, .divider-before-wide, .divider-after-wide {
+	position: relative;
+	overflow: hidden;
+}
+
+
+.divider-before {
+	&:before {
+		@include uc-divider("before");
+	}
+}
+
+.divider-before-wide {
+	&:before {
+		@include uc-divider("before", 90 * $margin);
+	}
+}
+
+.divider-after {
+	&:after {
+		@include uc-divider("after");
+	}
+}
+
+.divider-after-wide {
+	&:after {
+		@include uc-divider("after", 90 * $margin);
+	}
+}
+
 .center {
-	h1, h2, h3, h4, h5, h6, p, li {
+	h1, h2, h3, h4, h5, h6, p {
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;

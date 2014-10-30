@@ -24,13 +24,20 @@
 
 {% block content %}
 <div id="container" class="case container" role="document">
-	<section role="streamer" class="whitespace-after">
+	<section role="hero" class="whitespace-after">
 		<div class="uc-hero" data-component="uc-hero" style="background-image: url(/assets/images/nu.nl/header.png)">
-			<h1>
-				NU.nl redesign, terug naar de basis over het hele platform
-			</h1>
-			<img src="http://www.welkebrowser.nl/wp-content/uploads/2014/04/html5-300x300.png">
+			<header>
+				<h1>
+					NU.nl redesign,
+				</h1>
+				<h2>
+					terug naar de basis over het hele platform
+				</h2>
+			</header>
+			<img src="/assets/images/nu.nl/devices.png">
 		</div>
+	</section>
+	<section class="whitespace-after">
 		<div class="uc-streamer" data-component="uc-streamer">
 			<h2>Er was eens...</h2>
 			<h3>Na lancering in 1996 werd <strong>NU.nl</strong> in een paar jaar tijd de grootste nieuwssite van Nederland. Ze zijn op elk digitaal scherm aanwezig. Nog voordat de iPhone uitkwam had NU.nl al een app innoverend en super snel. <strong>Het snelle nieuws blijkt een succes!</strong></h3>
@@ -41,54 +48,90 @@
 	</section>
 	<section class="smoke numbers whitespace-after">
 		<div uc-row>
-		<ul>
-			<li>
-				<label>
-					<figure>
-						<img src="/assets/images/nu.nl/bezoekers.svg">
-						<figcaption>Dagelijkse<br/>bezoeken</figcaption>
-					</figure>
-				</label>
-				<span>2.75mln</span>
-			</li>
-			<li>
-				<label>
-					<figure>
-						<img src="/assets/images/nu.nl/journalisten.svg">
-						<figcaption>Journalisten</figcaption>
-					</figure>
-				</label>
-				<span>40</span>
-			</li>
-			<li>
-				<label>
-					<figure>
-						<img src="/assets/images/nu.nl/apps.svg">
-						<figcaption>Apps</figcaption>
-					</figure>
-				</label>
-				<span>25</span>
-			</li>
-			<li>
-				<label>
-					<figure>
-						<img src="/assets/images/nu.nl/artikelen.svg">
-						<figcaption>Artikelen</figcaption>
-					</figure>
-				</label>
-				<span>275</span>
-			</li>
-			<li>
-				<label>
-					<figure>
-						<figcaption>12 verschillende<br/>extensies</figcaption>
-					</figure>
-				</label>
-				<span>
-					(icons)
-				</span>
-			</li>
-		</ul>
+			<ul>
+				<li>
+					<label>
+						<figure>
+							<img src="/assets/images/nu.nl/bezoekers.svg">
+							<figcaption>Dagelijkse<br/>bezoeken</figcaption>
+						</figure>
+					</label>
+					<div>2.75mln</div>
+				</li>
+				<li>
+					<label>
+						<figure>
+							<img src="/assets/images/nu.nl/journalisten.svg">
+							<figcaption>Journalisten</figcaption>
+						</figure>
+					</label>
+					<div>40</div>
+				</li>
+				<li>
+					<label>
+						<figure>
+							<img src="/assets/images/nu.nl/apps.svg">
+							<figcaption>Apps</figcaption>
+						</figure>
+					</label>
+					<div>25</div>
+				</li>
+				<li>
+					<label>
+						<figure>
+							<img src="/assets/images/nu.nl/artikelen.svg">
+							<figcaption>Artikelen</figcaption>
+						</figure>
+					</label>
+					<div>275</div>
+				</li>
+				<li>
+					<label>
+						<figure>
+							<figcaption>12 verschillende<br/>extensies</figcaption>
+						</figure>
+					</label>
+					<div>
+						(icons)
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="smoke divider-before whitespace-after center">
+		<h2><strong>Vernieuwen,</strong> waarom?</h2>
+	</section>
+	<section class="smoke bullets whitespace-after">
+		<div uc-row>
+			<ol>
+				<li>
+					<label>
+						<h3>1</h3>
+					</label>
+					<div>
+						<h4>Versnipperde stijl</h4>
+						<p>Het productportfolio is gedurende de jaren aangevuld met veel verschillende producten. Snelheid heeft altijd voorop gestaan daardoor is een versnipperde stijl ontstaan</p>
+					</div>
+				</li>
+				<li>
+					<label>
+						<h3>2</h3>
+					</label>
+					<div>
+						<h4>Verschillende viewports</h4>
+						<p>Doordat er voor bijna ieder denkbaar apparaat wel een applicatie is, is er weinig aandacht voor de browser op kleinere apparaten </p>
+					</div>
+				</li>
+				<li>
+					<label>
+						<h3>3</h3>
+					</label>
+					<div>
+						<h4>Optimaal adverteren</h4>
+						<p>Nu.nl kan niet bestaan zonder adverteerders. Gebruikers zijn al een tijdje grotendeels verhuisd naar mobiel maar adverteren is niet optimaal voor de mobile sites</p>
+					</div>
+				</li>
+			</ol>
 		</div>
 	</section>
 	<section class="center whitespace-after">
@@ -132,7 +175,7 @@
 		<h2>Is Nu.nl toe aan een nieuw kleurpalet?</h2>
 		<p>Het palet van nu.nl werd steeds aangevuld met nieuwe kleuren. De kleuren werden vaak verschillend toegepast, waardoor het geheel niet  meer op elkaar aansloot. We hebben Samen met nu.nl twee paletten samen gesteld waabij we voor het heldere kleuren palet zijn gegaan. </p>
 	</section>
-	<section class="smoke">
+	<section class="smoke whitespace-after">
 		<div uc-row>
 			<div uc-column="1/2">
 				<h3>Helder...</h3>
@@ -192,10 +235,37 @@
 			</div>
 		</div>
 	</section>
-	<section class="center invert ">
+	<section class="center invert gradient-navy">
 		<h1>Het eindresultaat</h1>
 		<h2>Hier komt al het werk samen</h2>
 		<p>Intensief met elkaar samenwerken in een scrum team, ontwerpen, user testen en aanpassen. Weken lang werden alle kennis en ervaring tot het uiterste op de proef gesteld om te komen tot het uiteindelijke resultaat. Een vernieuwd, solide en herkenbaar ontwerp voor de grootste nieuwssite van Nederland.</p>
+	</section>
+	<section class="whitespace-before">
+		<div class="uc-slider divider-after-wide" data-component="uc-slider">
+			<a href="#/prev" class="prev">
+				<svg viewBox="0 0 60 60" xml:space="preserve">
+			<polyline class="triangle" points="60,0 0,30 60,60"/>
+		</svg>
+			</a>
+			<div class="swipe divider-after" data-slider>
+				<ul>
+					<li>
+						<img src="/assets/images/nu.nl/slides-home.png">
+					</li>
+					<li>
+						<img src="/assets/images/nu.nl/slides-home.png">
+					</li>
+					<li>
+						<img src="/assets/images/nu.nl/slides-home.png">
+					</li>
+				</ul>
+			</div>
+			<a href="#/next" class="next">
+				<svg viewBox="0 0 60 60" xml:space="preserve">
+			<polyline class="triangle" points="0,0 60,30 0,60"/>
+		</svg>
+			</a>
+		</div>
 	</section>
 	<section class="center">
 		<div class="uc-cta" data-component="uc-cta">

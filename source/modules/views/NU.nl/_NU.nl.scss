@@ -25,23 +25,26 @@ figcaption {
 	}
 }
 
+.uc-hero img {
+	max-height: 100%;
+}
+
 .uc-fullbleed .uc-imagebox {
 	height: 35rem;
 }
 
-.numbers {
+.numbers, .bullets {
 	li {
 		@include clearfix;
-		list-style: none;
 		margin-top: 0;
 		margin-bottom: 0;
 		height: 18rem;
 
-
+		list-style: none;
 		overflow: hidden;
 
 		&.inview {
-			span {
+			div {
 				opacity: 1;
 				margin-top: 0;
 			}
@@ -52,17 +55,20 @@ figcaption {
 			figure {
 				opacity: 1;
 			}
+			label h3 {
+				opacity: 1;
+				right: 6rem;
+			}
 		}
 
 	}
 	label {
 		display: block;
+		position: relative;
 		float: left;
 		width: 30%;
 		height: 100%;
 		margin: 0;
-		padding: 5rem 8rem 0 0;
-		font-size: $font-size-body;
 		border-right: 1px solid $grey;
 		text-align: right;
 
@@ -70,23 +76,30 @@ figcaption {
 		overflow: hidden;
 
 	}
+
+	li div {
+		margin-left: 35%;
+		opacity: 0;
+		margin-top: -5rem;
+		transition: all 500ms;
+	}
+}
+
+.numbers {
+	label {
+		padding-top: 5rem;
+		font-size: $font-size-body;
+	}
 	img {
 		width: 7rem;
 		float: left;
 		opacity: 0.5;
 	}
-	span {
+	li div {
 		@include font-bold;
-		display: block;
-		margin-left: 40%;
 		font-size: 6em;
 		color: $silver;
 		line-height: 1;
-
-
-		opacity: 0;
-		margin-top: -5rem;
-		transition: all 500ms;
 	}
 	figure {
 		margin: 0;
@@ -98,6 +111,7 @@ figcaption {
 
 	}
 	figcaption {
+		padding-right: 6rem;
 		margin-top: 0;
 		line-height: $line-height-header;
 		vertical-align: middle;
@@ -112,6 +126,43 @@ figcaption {
 
 		opacity: 0;
 		transition: all 500ms;
+	}
+}
+
+.bullets {
+	// This might be hacky; first h3 is number 1, which doesn't text-align center prettily
+	li:first-child {
+		h3 {
+			letter-spacing: 0.0625em;
+		}
+	}
+	h3 {
+		position: absolute;
+		height: 1.25em;
+		width: 1.25em;
+		margin: 0;
+		top: 50%;
+		margin-top: - 1.25em / 2;
+		background: $accent;
+		color: $white;
+		text-align: center;
+		font-size: 5em;
+		line-height: 1.3125;
+		border-radius: 2em;
+
+		opacity: 0;
+		right: -2rem;
+		transition: all 500ms;
+
+	}
+	h4 {
+		margin-bottom: $margin / 2;
+	}
+	li div {
+		p {
+			font-size: $font-size-body * 0.9;
+			width: 70%;
+		}
 	}
 }
 
@@ -133,3 +184,6 @@ figcaption {
 	}
 }
 
+.gradient-navy {
+	@include linear-gradient(#00084F, #363975);
+}
