@@ -239,10 +239,12 @@ $logo-transition-delay: 25ms;
 	}
 
   .extensions {
+    margin: $margin * 2 0 0;
+    
     li {
       list-style: none;
       display: inline-block;
-      margin: $margin * 2 0 0;
+      margin: 0;
     }
     .logo {
       display: block;
