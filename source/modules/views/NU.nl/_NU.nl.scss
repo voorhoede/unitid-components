@@ -25,8 +25,64 @@ figcaption {
 	}
 }
 
-.uc-hero img {
-	max-height: 100%;
+$hero-image-width-mobile: 390px;
+$hero-image-height-mobile: 252px;
+$hero-image-width-desktop: 893px;
+$hero-image-height-desktop: 412px;
+
+$logo-width: 40px;
+$logo-height: 52px;
+$logo-transition-delay: 25ms;
+
+@mixin transition($delay: 25ms) {
+  transition: all 200ms ease-in $delay;
+}
+
+.uc-hero {
+  header {
+    h1, h2 {
+      text-align: center;
+      padding-left: $margin;
+
+      @include min-screen-small {
+        text-align: left;
+        padding-left: 0;
+      }
+    }
+  }
+
+	.image-over {
+		background-size: cover;
+		background-position: center;
+		background-image: url('/assets/images/nu.nl/devices-mobile.png');
+
+		width: $hero-image-width-mobile * 0.5;
+		height: $hero-image-height-mobile * 0.5;
+
+    @include min-screen-small {
+      left: auto;
+      right: $margin;
+      width: $hero-image-width-mobile * 0.75;
+      height: $hero-image-height-mobile * 0.75;
+    }
+
+    @include min-screen-between {
+      width: $hero-image-width-mobile * 0.9;
+      height: $hero-image-height-mobile * 0.9;
+    }
+
+    @include min-screen-medium {
+      background-image: url('/assets/images/nu.nl/devices-desktop.png');
+      width: $hero-image-width-desktop * 0.7;
+      height: $hero-image-height-desktop * 0.7;
+    }
+
+		@include min-screen-xlarge {
+			right: $margin;
+      width: $hero-image-width-desktop * 0.85;
+      height: $hero-image-height-desktop * 0.85;
+		}
+	}
 }
 
 .uc-fullbleed .uc-imagebox {
@@ -34,19 +90,28 @@ figcaption {
 }
 
 .numbers, .bullets {
-	li {
+	> li {
 		@include clearfix;
 		margin-top: 0;
 		margin-bottom: 0;
-		height: 18rem;
+    height: 18rem;
 
 		list-style: none;
 		overflow: hidden;
 
 		&.inview {
+      img {
+        margin-left: 0;
+        opacity: 0.5;
+      }
 			div {
 				opacity: 1;
 				margin-top: 0;
+
+        h4 {
+          margin-bottom: $margin / 2;
+          opacity: 1;
+        }
 			}
 			figcaption {
 				right: 0;
@@ -59,9 +124,13 @@ figcaption {
 				opacity: 1;
 				right: 6rem;
 			}
+      ul.extensions .logo {
+        opacity: 1;
+        margin-left: 0;
+      }
 		}
-
 	}
+
 	label {
 		display: block;
 		position: relative;
@@ -77,30 +146,66 @@ figcaption {
 
 	}
 
-	li div {
+	> li div {
 		margin-left: 35%;
 		opacity: 0;
 		margin-top: -5rem;
 		transition: all 500ms;
+    line-height: 1.375;
 	}
 }
 
 .numbers {
-	label {
+  label {
 		padding-top: 5rem;
 		font-size: $font-size-body;
 	}
-	img {
-		width: 7rem;
+
+  img {
 		float: left;
-		opacity: 0.5;
+    transition: all 500ms;
+		opacity: 0;
+    margin-left: -5rem;
 	}
-	li div {
-		@include font-bold;
-		font-size: 6em;
-		color: $silver;
-		line-height: 1;
-	}
+
+  li {
+
+    div {
+      @include font-bold;
+      font-size: 6em;
+      color: $silver;
+    }
+
+    &.about-visitors {
+      img {
+        height: 6rem;
+      }
+    }
+
+    &.about-journalists {
+      img {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        height: 5rem;
+      }
+    }
+
+    &.about-apps {
+      img {
+        margin-top: 0.5rem;
+        padding-left: 1.5rem;
+        height: 6rem;
+      }
+    }
+
+    &.about-articles {
+      img {
+        padding-left: 2rem;
+        height: 5rem;
+      }
+    }
+  }
+
 	figure {
 		margin: 0;
 
@@ -111,6 +216,7 @@ figcaption {
 
 	}
 	figcaption {
+    padding-top: 1em;
 		padding-right: 6rem;
 		margin-top: 0;
 		line-height: $line-height-header;
@@ -126,16 +232,94 @@ figcaption {
 
 		opacity: 0;
 		transition: all 500ms;
+
+    &.double {
+      padding-top: 0;
+    }
 	}
+
+  .extensions {
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: $margin * 2 0 0;
+    }
+    .logo {
+      display: block;
+      float: left;
+      margin-right: 5px;
+      width: $logo-width;
+      height: $logo-height;
+      background-size: cover;
+      background-image: url('/assets/images/nu.nl/logo-sprite.svg');
+
+      opacity: 0;
+      margin-left: -3rem;
+
+      &.nu-nu {
+        @include transition($logo-transition-delay);
+      }
+      &.nu-z {
+        background-position: - $logo-width top;
+        @include transition($logo-transition-delay * 2);
+      }
+      &.nu-t {
+        background-position: - $logo-width * 2 top;
+        @include transition($logo-transition-delay * 3);
+      }
+      &.nu-s {
+        background-position: - $logo-width * 3 top;
+        @include transition($logo-transition-delay * 4);
+      }
+      &.nu-g {
+        background-position: - $logo-width * 4 top;
+        @include transition($logo-transition-delay * 5);
+      }
+      &.nu-e {
+        background-position: - $logo-width * 5 top;
+        @include transition($logo-transition-delay * 6);
+      }
+      &.nu-w {
+        background-position: - $logo-width * 6 top;
+        @include transition($logo-transition-delay * 7);
+      }
+      &.nu-dag {
+        background-position: - $logo-width * 7 top;
+        @include transition($logo-transition-delay * 8);
+      }
+      &.nu-live {
+        background-position: - $logo-width * 8 top;
+        @include transition($logo-transition-delay * 9);
+      }
+      &.nu-lab {
+        background-position: - $logo-width * 9 top;
+        @include transition($logo-transition-delay * 10);
+      }
+      &.nu-foto {
+        background-position: - $logo-width * 10 top;
+        @include transition($logo-transition-delay * 11);
+      }
+      &.nu-jij {
+        background-position: - $logo-width * 11 top;
+        @include transition($logo-transition-delay * 12);
+      }
+    }
+  }
 }
 
 .bullets {
-	// This might be hacky; first h3 is number 1, which doesn't text-align center prettily
-	li:first-child {
-		h3 {
-			letter-spacing: 0.0625em;
-		}
-	}
+  > li {
+    &.about-style {
+      h3 {
+        letter-spacing: 0.0625em;
+      }
+    }
+
+    &.about-style, &.about-ads {
+      height: 22rem;
+    }
+  }
+
 	h3 {
 		position: absolute;
 		height: 1.25em;
@@ -156,7 +340,9 @@ figcaption {
 
 	}
 	h4 {
-		margin-bottom: $margin / 2;
+    margin-bottom: 10rem;
+    opacity: 0;
+    transition: all 500ms;
 	}
 	li div {
 		p {
@@ -177,11 +363,31 @@ figcaption {
 			width: 100%;
 			bottom: 0;
 		}
-
-		img {
-			max-height: 14em;
-		}
 	}
+
+  img {
+    opacity: 0.5;
+  }
+
+  .spraycan {
+    padding-top: 1rem;
+
+    img {
+      height: 18rem;
+    }
+  }
+
+  .devices {
+    padding-top: 2rem;
+
+    img {
+      height: 19rem;
+    }
+  }
+
+  .coins {
+    padding-top: 3rem;
+  }
 }
 
 .gradient-navy {

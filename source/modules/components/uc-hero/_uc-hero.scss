@@ -6,28 +6,47 @@
 .uc-hero {
 	position: relative;
 	height: 10 * $margin;
-	background: transparent url('http://www.adch.nl/wp-content/uploads/2012/08/Ziggo-Interieur-Central-Office-Heyligers-02.jpg') center no-repeat;
+	margin-bottom: $margin-header-large;
+	background: transparent url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==') center no-repeat;
 	background-size: cover;
 
-	@include min-screen-large {
+	@include min-screen-medium {
+		height: 12 * $margin;
+	}
+
+	@include min-screen-xlarge {
 		height: 15 * $margin;
 	}
 
 	header {
-		margin-bottom: $margin;
 		padding-top: $margin;
 		color: $white;
 
 		@include min-screen-small {
 			position: absolute;
+			padding-left: $margin;
 			z-index: 1;
-			width: 40%;
-			bottom: 0;
+			width: 50%;
+		}
+
+    @include min-screen-between {
+      padding-left: $margin * 2;
+    }
+
+		@include min-screen-medium {
+			width: 50%;
+			bottom: $margin;
 		}
 
 		@include min-screen-large {
-			padding: 0 0 0 $margin * 5;
+			padding: 0 0 0 $margin * 3;
 		}
+
+		@include min-screen-xlarge {
+			padding: 0 0 0 $margin * 5;
+			width: 40%;
+		}
+
 	}
 
 	h1, h2 {
@@ -35,27 +54,37 @@
 	}
 
 	h1 {
-		margin-bottom: 0.125em;
+		margin: $margin / 2 0 0;
+
+		@include min-screen-small {
+			margin-bottom: 0.125em;
+		}
 	}
 
-	img {
+	.image-over {
 		position: absolute;
+		background-position: center;
+		background-size: cover;
 		left: 0;
 		right: 0;
 		bottom: -3 * $margin;
 		margin: auto;
-		max-width: 75%;
-		max-height: 50%;
+//		max-width: 75%;
+//		max-height: 50%;
 
 		@include min-screen-small {
-			left: auto;
-			right: $margin;
-			max-height: 75%;
+//			max-height: 75%;
 		}
 
 		@include min-screen-medium {
-			right: 2 * $margin;
-			max-width: none;
+			left: auto;
+			right: $margin;
+//			max-height: 11 * $margin;
+		}
+
+		@include min-screen-xlarge {
+//			max-height: 15 * $margin;
+//			max-width: 100%;
 		}
 	}
 

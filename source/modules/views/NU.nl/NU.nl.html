@@ -25,7 +25,7 @@
 {% block content %}
 <div id="container" class="case container" role="document">
 	<section role="hero" class="whitespace-after">
-		<div class="uc-hero" data-component="uc-hero" style="background-image: url(/assets/images/nu.nl/header.png)">
+		<div class="uc-hero" data-component="uc-hero" style="background-image: url({{ pathToAssets }}images/nu.nl/header.png)">
 			<header>
 				<h1>
 					NU.nl redesign,
@@ -34,65 +34,102 @@
 					terug naar de basis over het hele platform
 				</h2>
 			</header>
-			<img src="/assets/images/nu.nl/devices.png">
+			<div class="image-over"></div>
 		</div>
-	</section>
-	<section class="whitespace-after">
 		<div class="uc-streamer" data-component="uc-streamer">
-			<h2>Er was eens...</h2>
-			<h3>Na lancering in 1996 werd <strong>NU.nl</strong> in een paar jaar tijd de grootste nieuwssite van Nederland. Ze zijn op elk digitaal scherm aanwezig. Nog voordat de iPhone uitkwam had NU.nl al een app innoverend en super snel. <strong>Het snelle nieuws blijkt een succes!</strong></h3>
+      <div uc-row>
+  			<h2>Er was eens...</h2>
+	  		<h3>Na lancering in 1996 werd <strong>NU.nl</strong> in een paar jaar tijd de grootste nieuwssite van Nederland. Ze zijn op elk digitaal scherm aanwezig. Nog voordat de iPhone uitkwam had NU.nl al een app innoverend en super snel. <strong>Het snelle nieuws blijkt een succes!</strong></h3>
+      </div>
 		</div>
 	</section>
 	<section class="smoke whitespace-after center">
 		<h1>Harde cijfers</h1>
 	</section>
-	<section class="smoke numbers whitespace-after">
+	<section class="smoke whitespace-after">
 		<div uc-row>
-			<ul>
-				<li>
+			<ul class="numbers">
+				<li class="about-visitors">
 					<label>
-						<figure>
-							<img src="/assets/images/nu.nl/bezoekers.svg">
-							<figcaption>Dagelijkse<br/>bezoeken</figcaption>
+						<figure class="visitors">
+							<img src="{{ pathToAssets }}images/nu.nl/icon-visitors.svg" alt="Pictogram voor bezoekers">
+							<figcaption class="double">Dagelijkse<br/>bezoeken</figcaption>
 						</figure>
 					</label>
 					<div>2.75mln</div>
 				</li>
-				<li>
+				<li class="about-journalists">
 					<label>
 						<figure>
-							<img src="/assets/images/nu.nl/journalisten.svg">
+							<img src="{{ pathToAssets }}images/nu.nl/icon-journalists.svg" alt="Pictogram voor journalisten">
 							<figcaption>Journalisten</figcaption>
 						</figure>
 					</label>
 					<div>40</div>
 				</li>
-				<li>
+				<li class="about-apps">
 					<label>
 						<figure>
-							<img src="/assets/images/nu.nl/apps.svg">
+							<img src="{{ pathToAssets }}images/nu.nl/icon-apps.svg" alt="Pictogram voor applicaties">
 							<figcaption>Apps</figcaption>
 						</figure>
 					</label>
 					<div>25</div>
 				</li>
-				<li>
+				<li class="about-articles">
 					<label>
 						<figure>
-							<img src="/assets/images/nu.nl/artikelen.svg">
-							<figcaption>Artikelen</figcaption>
+							<img src="{{ pathToAssets }}images/nu.nl/icon-articles.svg" alt="Pictogram voor artikelen">
+							<figcaption class="double">Artikelen<br/>per dag</figcaption>
 						</figure>
 					</label>
 					<div>275</div>
 				</li>
-				<li>
+				<li class="about-extensions">
 					<label>
 						<figure>
-							<figcaption>12 verschillende<br/>extensies</figcaption>
+							<figcaption class="double">12 verschillende<br/>extensies</figcaption>
 						</figure>
 					</label>
 					<div>
-						(icons)
+            <ul class="extensions">
+              <li>
+                <span class="logo nu-nu"></span>
+              </li>
+              <li>
+                <span class="logo nu-z"></span>
+              </li>
+              <li>
+                <span class="logo nu-t"></span>
+              </li>
+              <li>
+                <span class="logo nu-s"></span>
+              </li>
+              <li>
+                <span class="logo nu-g"></span>
+              </li>
+              <li>
+                <span class="logo nu-e"></span>
+              </li>
+              <li>
+                <span class="logo nu-w"></span>
+              </li>
+              <li>
+                <span class="logo nu-dag"></span>
+              </li>
+              <li>
+                <span class="logo nu-live"</span>
+              </li>
+              <li>
+                <span class="logo nu-lab"></span>
+              </li>
+              <li>
+                <span class="logo nu-foto"></span>
+              </li>
+              <li>
+                <span class="logo nu-jij"></span>
+              </li>
+            </ul>
 					</div>
 				</li>
 			</ul>
@@ -101,10 +138,10 @@
 	<section class="smoke divider-before whitespace-after center">
 		<h2><strong>Vernieuwen,</strong> waarom?</h2>
 	</section>
-	<section class="smoke bullets whitespace-after">
+	<section class="smoke whitespace-after">
 		<div uc-row>
-			<ol>
-				<li>
+			<ol class="bullets">
+				<li class="about-style">
 					<label>
 						<h3>1</h3>
 					</label>
@@ -113,7 +150,7 @@
 						<p>Het productportfolio is gedurende de jaren aangevuld met veel verschillende producten. Snelheid heeft altijd voorop gestaan daardoor is een versnipperde stijl ontstaan</p>
 					</div>
 				</li>
-				<li>
+				<li class="about-viewports">
 					<label>
 						<h3>2</h3>
 					</label>
@@ -122,7 +159,7 @@
 						<p>Doordat er voor bijna ieder denkbaar apparaat wel een applicatie is, is er weinig aandacht voor de browser op kleinere apparaten </p>
 					</div>
 				</li>
-				<li>
+				<li class="about-ads">
 					<label>
 						<h3>3</h3>
 					</label>
@@ -140,31 +177,31 @@
 	<section class="how">
 		<div uc-row>
 			<div uc-column="1/4" data-component="uc-column-third">
-				<figure>
-					<img src="http://placehold.it/300x300&text=spraycans" alt="Spuitbus">
+				<figure class="spraycan">
+					<img src="{{ pathToAssets }}images/nu.nl/spraycans.svg" alt="Spuitbus">
 					<figcaption class="large">Nieuw uiterlijk</figcaption>
 				</figure>
 			</div>
 			<div uc-column="1/2" data-component="uc-column-third">
-				<figure>
-					<img src="http://placehold.it/300x300&text=devices" alt="Laptop & mobiele apparaten">
-					<figcaption class="large">Responsive design</figcaption>
+				<figure class="devices">
+					<img src="{{ pathToAssets }}images/nu.nl/icon-devices.svg" alt="Laptop & mobiele apparaten">
+					<figcaption class="large">Responsive design</figca  ption>
 				</figure>
 			</div>
 			<div uc-column="1/4" data-component="uc-column-third">
-				<figure>
-					<img src="http://placehold.it/300x300&text=coin">
+				<figure class="coins">
+					<img src="{{ pathToAssets }}images/nu.nl/icon-coins.svg" alt="Kleingeld">
 					<figcaption class="large">Slim adverteren</figcaption>
 				</figure>
 			</div>
 		</div>
 	</section>
 	<section class="smoke center divider-after">
-		<img class="icon" src="/assets/images/nu.nl/spraycans.svg" alt="spraycans">
+		<img class="icon" src="{{ pathToAssets }}images/nu.nl/spraycans.svg" alt="spraycans">
 		<h1>Een nieuw uiterlijk</h1>
 		<h2>We gaan terug naar de basis</h2>
 		<p>Om de versnippering van NU.nl aan te kunnen pakken moesten we terug naar de basis. In een workshop branding en identiteit zijn we terug gegaan naar deze basis. Een aantal punten waar we mee aan de slag zijn gegaan zijn de Informatie dichtheid, scanbaarheid, kort en snelle nieuws.</p>
-		<img src="/assets/images/nu.nl/branding_identiteit.png" alt="NU.nl branding en identiteit">
+		<img class="full need-space" src="{{ pathToAssets }}images/nu.nl/branding_identiteit.png" alt="NU.nl branding en identiteit">
 		<p>
 			<strong>Branding en identiteit</strong><br/>
 			De styleguide vormt de basis voor alle (digitale) uitingen.<br/>
@@ -179,24 +216,24 @@
 		<div uc-row>
 			<div uc-column="1/2">
 				<h3>Helder...</h3>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras nec ipsum a erat tempus eleifend. Nam ultricies congue massa, sit amet varius felis. Phasellus efficitur sem a lacus porttitor, ut aliquet ex maximus. </p>
+				<p>De extensies zoals NUsport hadden voorheen felle kleuren. Na aanleiding van deze kleuren hebben we het heldere kleurenpalet samengesteld. Dit heldere kleurenpalet zorgt voor een frisse uitstraling, met herkenbare kleuren die de secties ook duidelijk onderscheiden van elkaar.</p>
 			</div>
 			<div uc-column="1/2">
-				<img src="/assets/images/nu.nl/kleurpalet_helder.png" alt="Helder kleurpalet voor NU.nl">
+				<img src="{{ pathToAssets }}images/nu.nl/kleurpalet_helder.png" alt="Helder kleurpalet voor NU.nl">
 			</div>
 		</div>
 		<div uc-row>
 			<div uc-column="1/2">
-				<img src="/assets/images/nu.nl/kleurpalet_helder.png" alt="Helder kleurpalet voor NU.nl">
+				<img src="{{ pathToAssets }}images/nu.nl/kleurpalet_helder.png" alt="Helder kleurpalet voor NU.nl">
 			</div>
 			<div uc-column="1/2">
 				<h3>...of ingetogen?</h3>
-				<p>Duis quis finibus mauris. Donec sodales vel sem sed volutpat. Sed sit amet arcu dolor. Donec vel cursus ante. Proin vitae ultrices quam, iaculis scelerisque ante. Maecenas suscipit, urna id sagittis egestas, odio risus tincidunt nisl, eu euismod eros eros sed urna.</p>
+				<p>NU.nl is met zijn vele bezoekers 'de huiskamer van Nederland' geworden. Iets om trots op te zijn, maar dat betekent ook dat je uit moet kijken met hele grote veranderingen. Zo werden de katernen op de homepage van NU.nl voorheen aangeduid met pastelkleuren. Om de herkenbaarheid te behouden, hebben we ook een ingetogen kleurenpalet voorgesteld, met ingetogen, frisse kleuren.</p>
 			</div>
 		</div>
 	</section>
 	<section class="center">
-		<img class="icon" src="/assets/images/nu.nl/spraycans.svg" alt="spraycans">
+		<img class="icon" src="{{ pathToAssets }}images/nu.nl/spraycans.svg" alt="spraycans">
 		<h1>Responsive design</h1>
 		<h2>Revolutie of evolutie?</h2>
 		<p>Uit user stories, tientallen sessies, iteraties, presentaties en ‘rapid prototyping’ vloeiden twee concepten: een evolutie en een iets radicaler concept.  Deze twee concepten zijn getest door onder andere het interne testlab van Sanoma. Uiteindelijk is er gekozen voor een evolutie, waarbij er wel ruimte is voor revolutionaire, nieuwe redactionele formats.</p>
@@ -204,12 +241,12 @@
 	<section>
 		<div uc-row>
 			<div uc-column="1/2">
-				<img src="/assets/images/nu.nl/revolutie.png" alt="Responsive design revolutie voor NU.nl">
+				<img src="{{ pathToAssets }}images/nu.nl/revolutie.png" alt="Responsive design revolutie voor NU.nl">
 				<h3>Revolutie</h3>
 				<p>Voor het iets radicalere ontwerp hebben we gekozen voor een twee kolloms grid. Waarbij het menu verborgen zit achter de hamburger. Alleen de extensies zijn direct zichtbaar. De focus ligt daardoor volledig op de content. Door de extra ruimte die er ontstond kon ook de informatie dichtheid iets om laag waardoor het allemaal een stuk ruimtelijker aan voelt.  </p>
 			</div>
 			<div uc-column="1/2">
-				<img src="/assets/images/nu.nl/evolutie.png" alt="Responsive design evolutie voor NU.nl">
+				<img src="{{ pathToAssets }}images/nu.nl/evolutie.png" alt="Responsive design evolutie voor NU.nl">
 				<h3>Evolutie</h3>
 				<p>Bij evolutie hebben we er voor gekozen om een 3 koloms grid aan te houden waarbij we alle atoms hebben aangepakt. Wat zorgt voor een stuk meer rust en constentie over het geheel. Zo heeft de gebruiker weinig tijd nogdig om te wennen aan de veranderingen terwijl er op de achtergrond een hoop is opgeruimd en veranderd. </p>
 			</div>
@@ -217,9 +254,9 @@
 	</section>
 	<section class="center">
 		<div class="uc-fullbleed" data-component="uc-fullbleed">
-			<figure class="uc-imagebox" style="background-image: url('/assets/images/nu.nl/sketch_workshop.png')"></figure>
+			<figure class="uc-imagebox" style="background-image: url('{{ pathToAssets }}images/nu.nl/sketch_workshop.png')"></figure>
 		</div>
-		<img class="icon" src="/assets/images/nu.nl/spraycans.svg" alt="spraycans">
+		<img class="icon" src="{{ pathToAssets }}images/nu.nl/spraycans.svg" alt="spraycans">
 		<h1>Slim adverteren</h1>
 		<h2>Content versus advertenties</h2>
 	</section>
@@ -250,13 +287,13 @@
 			<div class="swipe divider-after" data-slider>
 				<ul>
 					<li>
-						<img src="/assets/images/nu.nl/slides-home.png">
+						<img src="{{ pathToAssets }}images/nu.nl/slides-home.png">
 					</li>
 					<li>
-						<img src="/assets/images/nu.nl/slides-home.png">
+						<img src="{{ pathToAssets }}images/nu.nl/slides-home.png">
 					</li>
 					<li>
-						<img src="/assets/images/nu.nl/slides-home.png">
+						<img src="{{ pathToAssets }}images/nu.nl/slides-home.png">
 					</li>
 				</ul>
 			</div>

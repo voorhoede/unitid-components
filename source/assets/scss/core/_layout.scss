@@ -63,12 +63,17 @@
 		padding-bottom: $margin-header-large;
 	}
 
-	img {
+	.full {
 		display: block;
 		max-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+  .need-space {
+    margin-top: $margin-header-xlarge - 1rem;
+    margin-bottom: $margin-header-large;
+  }
 }
 
 .divider-before, .divider-after, .divider-before-wide, .divider-after-wide {

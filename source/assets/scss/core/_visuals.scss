@@ -20,8 +20,9 @@ figcaption {
 }
 
 .icon {
+  display: block;
 	width: 5.5rem;
-	margin-top: $margin-header-large + 1rem;
+	margin: $margin-header-large + 1rem auto 0;
 
 	& + h1 {
 		margin-top: $margin-header-small;

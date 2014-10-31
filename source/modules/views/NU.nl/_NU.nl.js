@@ -29,5 +29,5 @@ var InView = (function(document) {
 }(document));
 
 (function(window) {
-	window.inView = new InView(u.qsa('.numbers li, .bullets li'));
+	window.inView = new InView(u.qsa('.numbers > li, .bullets > li'));
 })(window);
