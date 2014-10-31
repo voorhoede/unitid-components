@@ -134,9 +134,20 @@
 		padding: 0 $whitespace-xlarge;
 	}
 
-	p:last-child {
+	p:last-child, img:last-child {
 		margin-bottom: $margin-header-large;
 	}
+
+  &.vertical-align {
+    display: table;
+
+    [uc-column] {
+      display: table-cell;
+      float: none;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
 }
 
 [uc-column] {
@@ -149,6 +160,24 @@
 			margin-left: 0;
 		}
 	}
+
+  &.breathe-before {
+    padding-left: 8%;
+  }
+
+  &.breathe-after {
+    padding-right: 8%;
+  }
+
+  h3 {
+    @include font-bold;
+    font-size: $font-size-header-medium;
+    margin-bottom: 0.25em;
+  }
+
+  img {
+    margin-bottom: $margin-header-medium;
+  }
 }
 
 [uc-column~="1/3"] {
