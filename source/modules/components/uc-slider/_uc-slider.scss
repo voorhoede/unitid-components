@@ -5,6 +5,22 @@
 
 $uc-slider-arrow-size: 2 * $margin;
 
+html.js {
+  .uc-slider {
+    .swipe {
+      visibility: hidden;
+    }
+
+    ul > li {
+      margin-top: $margin;
+    }
+
+    .prev, .next {
+      display: block;
+    }
+  }
+}
+
 .uc-slider {
 	position: relative;
 	margin-bottom: $margin-header-large + $base-size / 2;
@@ -21,27 +37,18 @@ $uc-slider-arrow-size: 2 * $margin;
 
 	.swipe {
 		margin: 0 auto;
-		visibility: hidden;
 
 		ul > li {
 			position: relative;
+      margin-top: $margin-header-medium;
 			float: left;
 			width: 100%;
 		}
 
-		li img {
-			@include min-screen-small {
-				width: 90%;
-			}
-
-			@include min-screen-medium {
-				width: 80%;
-			}
-		}
 	}
 
 	.next, .prev {
-		display: block;
+		display: none;
 		width: $uc-slider-arrow-size;
 		height: $uc-slider-arrow-size;
 		position: absolute;
@@ -76,7 +83,7 @@ $uc-slider-arrow-size: 2 * $margin;
 		right: $margin;
 
 		@include min-screen-xlarge {
-			right: $margin * 2;
+			right: $margin * 1.5;
 		}
 
 		svg {
@@ -88,7 +95,7 @@ $uc-slider-arrow-size: 2 * $margin;
 		left: $margin;
 
 		@include min-screen-xlarge {
-			left: $margin * 2;
+			left: $margin * 1.5;
 		}
 
 		svg {

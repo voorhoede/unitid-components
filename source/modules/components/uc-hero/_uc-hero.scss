@@ -59,6 +59,10 @@
 		@include min-screen-small {
 			margin-bottom: 0.125em;
 		}
+
+    & + h2 {
+      margin-top: - 1rem;
+    }
 	}
 
 	.image-over {
@@ -69,23 +73,12 @@
 		right: 0;
 		bottom: -3 * $margin;
 		margin: auto;
-//		max-width: 75%;
-//		max-height: 50%;
-
-		@include min-screen-small {
-//			max-height: 75%;
-		}
 
 		@include min-screen-medium {
 			left: auto;
 			right: $margin;
-//			max-height: 11 * $margin;
 		}
 
-		@include min-screen-xlarge {
-//			max-height: 15 * $margin;
-//			max-width: 100%;
-		}
 	}
 
 }

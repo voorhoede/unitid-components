@@ -1,6 +1,26 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/helpers";
 
+// VARIABLES
+
+$hero-image-width-mobile: 390px;
+$hero-image-height-mobile: 252px;
+$hero-image-width-desktop: 893px;
+$hero-image-height-desktop: 412px;
+
+$logo-size: 40px;
+$logo-transition-delay: 25ms;
+$logo-transition-speed: 200ms;
+
+// MIXINS
+
+@mixin transition($speed: 500ms, $delay: 0ms) {
+  -webkit-transition: all $speed ease $delay;
+          transition: all $speed ease $delay;
+}
+
+// FONTS
+
 @font-face {
 	font-family: 'NUnl-E';
 	src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'),
@@ -9,8 +29,66 @@
 	font-style: normal;
 }
 
+// JS & TRANSITION STATES
+
+html.js.csstransitions {
+  .numbers {
+    figure,
+    img,
+    figcaption {
+      @include transition();
+    }
+    .js-hide {
+      img {
+        opacity: 0;
+        margin-left: -5rem;
+      }
+      figcaption {
+        opacity: 0;
+        right: -25rem;
+      }
+      .extensions .logo {
+        opacity: 0;
+        margin-left: -3rem;
+      }
+    }
+  }
+  .bullets {
+    h3, h4 {
+      @include transition();
+    }
+    .js-hide {
+      h3 {
+        opacity: 0;
+        right: -2rem;
+      }
+      h4 {
+        opacity: 0;
+        margin-bottom: 10rem;
+      }
+    }
+  }
+  .numbers, .bullets {
+    > li div {
+      @include transition();
+    }
+    > li.js-hide div {
+      opacity: 0;
+      margin-top: -5rem;
+    }
+  }
+}
+
+// GLOBAL STYLES
+
 figcaption {
 	color: $grey;
+}
+
+// CLASS STYLES
+
+.gradient-navy {
+  @include linear-gradient(#00084F, #363975);
 }
 
 .case section.smoke {
@@ -18,27 +96,19 @@ figcaption {
 }
 
 .uc-streamer {
-	h2:first-letter {
-		font-family: "Nunl-E", "proxima nova regular", "Helvetica Neue", sans-serif;
-		font-size: 2.75em;
-		letter-spacing: -0.1875em;
-	}
+  h2:first-letter {
+    font-family: "Nunl-E", "proxima nova regular", "Helvetica Neue", sans-serif;
+    font-size: 2.75em;
+    letter-spacing: -0.1875em;
+  }
 }
 
-$hero-image-width-mobile: 390px;
-$hero-image-height-mobile: 252px;
-$hero-image-width-desktop: 893px;
-$hero-image-height-desktop: 412px;
-
-$logo-width: 40px;
-$logo-height: 52px;
-$logo-transition-delay: 25ms;
-
-@mixin transition($delay: 25ms) {
-  transition: all 200ms ease-in $delay;
+.uc-fullbleed .uc-imagebox {
+  height: 35rem;
 }
 
 .uc-hero {
+
   header {
     h1, h2 {
       text-align: center;
@@ -85,50 +155,22 @@ $logo-transition-delay: 25ms;
 	}
 }
 
-.uc-fullbleed .uc-imagebox {
-	height: 35rem;
-}
-
 .numbers, .bullets {
+
 	> li {
 		@include clearfix;
 		margin-top: 0;
 		margin-bottom: 0;
     height: 18rem;
-
 		list-style: none;
 		overflow: hidden;
 
-		&.inview {
-      img {
-        margin-left: 0;
-        opacity: 0.5;
-      }
-			div {
-				opacity: 1;
-				margin-top: 0;
-
-        h4 {
-          margin-bottom: $margin / 2;
-          opacity: 1;
-        }
-			}
-			figcaption {
-				right: 0;
-				opacity: 1;
-			}
-			figure {
-				opacity: 1;
-			}
-			label h3 {
-				opacity: 1;
-				right: 6rem;
-			}
-      ul.extensions .logo {
-        opacity: 1;
-        margin-left: 0;
-      }
-		}
+    div {
+      margin-top: 0;
+      margin-left: 35%;
+      line-height: 1.375;
+      opacity: 1;
+    }
 	}
 
 	label {
@@ -140,22 +182,13 @@ $logo-transition-delay: 25ms;
 		margin: 0;
 		border-right: 1px solid $grey;
 		text-align: right;
-
-
 		overflow: hidden;
-
 	}
 
-	> li div {
-		margin-left: 35%;
-		opacity: 0;
-		margin-top: -5rem;
-		transition: all 500ms;
-    line-height: 1.375;
-	}
 }
 
 .numbers {
+
   label {
 		padding-top: 5rem;
 		font-size: $font-size-body;
@@ -163,9 +196,8 @@ $logo-transition-delay: 25ms;
 
   img {
 		float: left;
-    transition: all 500ms;
-		opacity: 0;
-    margin-left: -5rem;
+    margin-left: 0;
+    opacity: 0.5;
 	}
 
   li {
@@ -208,30 +240,20 @@ $logo-transition-delay: 25ms;
 
 	figure {
 		margin: 0;
-
-
-
-		opacity: 0;
-		transition: all 1000ms;
-
+    opacity: 1;
 	}
+
 	figcaption {
+    right: 0;
     padding-top: 1em;
 		padding-right: 6rem;
 		margin-top: 0;
+    position: absolute;
 		line-height: $line-height-header;
 		vertical-align: middle;
 		color: $black;
 		text-align: right;
-
-
-		position: absolute;
-		right: -25rem;
-
-
-
-		opacity: 0;
-		transition: all 500ms;
+    opacity: 1;
 
     &.double {
       padding-top: 0;
@@ -239,78 +261,84 @@ $logo-transition-delay: 25ms;
 	}
 
   .extensions {
+
     margin: $margin * 2 0 0;
-    
+
     li {
       list-style: none;
       display: inline-block;
       margin: 0;
     }
+
     .logo {
       display: block;
       float: left;
+      margin-left: 0;
       margin-right: 5px;
-      width: $logo-width;
-      height: $logo-height;
-      background-size: cover;
+      width: $logo-size;
+      height: $logo-size;
+      background-size: 13 * $logo-size $logo-size;
       background-image: url('/assets/images/nu.nl/logo-sprite.svg');
-
-      opacity: 0;
-      margin-left: -3rem;
+      opacity: 1;
 
       &.nu-nu {
-        @include transition($logo-transition-delay);
+        @include transition($logo-transition-speed, $logo-transition-delay);
       }
       &.nu-z {
-        background-position: - $logo-width top;
-        @include transition($logo-transition-delay * 2);
+        background-position: - $logo-size top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 2);
       }
       &.nu-t {
-        background-position: - $logo-width * 2 top;
-        @include transition($logo-transition-delay * 3);
+        background-position: - $logo-size * 2 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 3);
       }
       &.nu-s {
-        background-position: - $logo-width * 3 top;
-        @include transition($logo-transition-delay * 4);
+        background-position: - $logo-size * 3 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 4);
       }
       &.nu-g {
-        background-position: - $logo-width * 4 top;
-        @include transition($logo-transition-delay * 5);
+        background-position: - $logo-size * 4 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 5);
       }
       &.nu-e {
-        background-position: - $logo-width * 5 top;
-        @include transition($logo-transition-delay * 6);
+        background-position: - $logo-size * 5 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 6);
       }
       &.nu-w {
-        background-position: - $logo-width * 6 top;
-        @include transition($logo-transition-delay * 7);
+        background-position: - $logo-size * 6 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 7);
       }
       &.nu-dag {
-        background-position: - $logo-width * 7 top;
-        @include transition($logo-transition-delay * 8);
+        background-position: - $logo-size * 7 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 8);
       }
       &.nu-live {
-        background-position: - $logo-width * 8 top;
-        @include transition($logo-transition-delay * 9);
+        background-position: - $logo-size * 8 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 9);
       }
       &.nu-lab {
-        background-position: - $logo-width * 9 top;
-        @include transition($logo-transition-delay * 10);
+        background-position: - $logo-size * 9 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 10);
       }
       &.nu-foto {
-        background-position: - $logo-width * 10 top;
-        @include transition($logo-transition-delay * 11);
+        background-position: - $logo-size * 10 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 11);
       }
       &.nu-jij {
-        background-position: - $logo-width * 11 top;
-        @include transition($logo-transition-delay * 12);
+        background-position: - $logo-size * 11 top;
+        @include transition($logo-transition-speed, $logo-transition-delay * 12);
       }
+
     }
+
   }
+
 }
 
 .bullets {
+
   > li {
+
     &.about-style {
       h3 {
         letter-spacing: 0.0625em;
@@ -320,41 +348,43 @@ $logo-transition-delay: 25ms;
     &.about-style, &.about-ads {
       height: 22rem;
     }
+
   }
 
 	h3 {
 		position: absolute;
 		height: 1.25em;
 		width: 1.25em;
-		margin: 0;
+    margin: - 1.25em / 2 0 0 0;
 		top: 50%;
-		margin-top: - 1.25em / 2;
+    right: 6rem;
+    opacity: 1;
 		background: $accent;
 		color: $white;
 		text-align: center;
 		font-size: 5em;
 		line-height: 1.3125;
 		border-radius: 2em;
-
-		opacity: 0;
-		right: -2rem;
-		transition: all 500ms;
-
 	}
-	h4 {
-    margin-bottom: 10rem;
-    opacity: 0;
-    transition: all 500ms;
-	}
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: $margin / 2;
+    opacity: 1;
+  }
+
 	li div {
 		p {
 			font-size: $font-size-body * 0.9;
 			width: 70%;
 		}
+
 	}
+
 }
 
 .how {
+
 	@include min-screen-medium {
 		figure {
 			height: 18em;
@@ -390,8 +420,14 @@ $logo-transition-delay: 25ms;
   .coins {
     padding-top: 3rem;
   }
+
 }
 
-.gradient-navy {
-	@include linear-gradient(#00084F, #363975);
+.swipe img {
+  outline: 1px solid $silver;
+}
+
+.boxshadow .swipe img {
+  outline: 0;
+  box-shadow: 0 0.0625em 0.25em $alpha-light;
 }

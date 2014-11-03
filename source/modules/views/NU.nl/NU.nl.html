@@ -49,7 +49,7 @@
 	<section class="smoke whitespace-after">
 		<div uc-row>
 			<ul class="numbers">
-				<li class="about-visitors">
+				<li class="about-visitors js-hide">
 					<label>
 						<figure class="visitors">
 							<img src="{{ pathToAssets }}images/nu.nl/icon-visitors.svg" alt="Pictogram voor bezoekers">
@@ -58,7 +58,7 @@
 					</label>
 					<div>2.75mln</div>
 				</li>
-				<li class="about-journalists">
+				<li class="about-journalists js-hide">
 					<label>
 						<figure>
 							<img src="{{ pathToAssets }}images/nu.nl/icon-journalists.svg" alt="Pictogram voor journalisten">
@@ -67,7 +67,7 @@
 					</label>
 					<div>40</div>
 				</li>
-				<li class="about-apps">
+				<li class="about-apps js-hide">
 					<label>
 						<figure>
 							<img src="{{ pathToAssets }}images/nu.nl/icon-apps.svg" alt="Pictogram voor applicaties">
@@ -76,7 +76,7 @@
 					</label>
 					<div>25</div>
 				</li>
-				<li class="about-articles">
+				<li class="about-articles js-hide">
 					<label>
 						<figure>
 							<img src="{{ pathToAssets }}images/nu.nl/icon-articles.svg" alt="Pictogram voor artikelen">
@@ -85,7 +85,7 @@
 					</label>
 					<div>275</div>
 				</li>
-				<li class="about-extensions">
+				<li class="about-extensions js-hide">
 					<label>
 						<figure>
 							<figcaption class="double">12 verschillende<br/>extensies</figcaption>
@@ -141,7 +141,7 @@
 	<section class="smoke whitespace-after">
 		<div uc-row>
 			<ol class="bullets">
-				<li class="about-style">
+				<li class="about-style js-hide">
 					<label>
 						<h3>1</h3>
 					</label>
@@ -150,7 +150,7 @@
 						<p>Het productportfolio is gedurende de jaren aangevuld met veel verschillende producten. Snelheid heeft altijd voorop gestaan daardoor is een versnipperde stijl ontstaan</p>
 					</div>
 				</li>
-				<li class="about-viewports">
+				<li class="about-viewports js-hide">
 					<label>
 						<h3>2</h3>
 					</label>
@@ -159,7 +159,7 @@
 						<p>Doordat er voor bijna ieder denkbaar apparaat wel een applicatie is, is er weinig aandacht voor de browser op kleinere apparaten </p>
 					</div>
 				</li>
-				<li class="about-ads">
+				<li class="about-ads js-hide">
 					<label>
 						<h3>3</h3>
 					</label>
@@ -281,25 +281,26 @@
 	</section>
 	<section class="center">
     <h2>Strak, helder en eenduidig</h2>
-  </section>
-  <section class="whitespace-before">
 		<div class="uc-slider divider-after-wide" data-component="uc-slider">
 			<a href="#/prev" class="prev">
 				<svg viewBox="0 0 60 60" xml:space="preserve">
 			<polyline class="triangle" points="60,0 0,30 60,60"/>
 		</svg>
 			</a>
-			<div class="swipe divider-after" data-slider>
+			<div class="swipe" data-slider>
 				<ul>
 					<li>
-						<img class="full" src="{{ pathToAssets }}images/nu.nl/slides-home.png">
+						<img class="full" src="{{ pathToAssets }}images/nu.nl/screen-home-large.jpg">
 					</li>
 					<li>
-						<img class="full" src="{{ pathToAssets }}images/nu.nl/slides-home.png">
+						<img class="full" src="{{ pathToAssets }}images/nu.nl/screen-katern-large.jpg">
 					</li>
 					<li>
-						<img class="full" src="{{ pathToAssets }}images/nu.nl/slides-home.png">
+						<img class="full" src="{{ pathToAssets }}images/nu.nl/screen-katern-medium.jpg">
 					</li>
+          <li>
+            <img class="full" src="{{ pathToAssets }}images/nu.nl/screen-katern-menu-medium.jpg">
+          </li>
 				</ul>
 			</div>
 			<a href="#/next" class="next">
@@ -313,7 +314,7 @@
 		<div class="uc-cta" data-component="uc-cta">
 			<h1>Het laatste nieuws,<br/>
 				bekijk je het eerst op nu.nl</h1>
-			<a class="uc-button" href="#">Bekijk het resultaat</a>
+			<a class="uc-button" href="http://nu.nl/" target="_blank">Bekijk het resultaat</a>
 		</div>
 	</section>
 </div>

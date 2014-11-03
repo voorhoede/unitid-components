@@ -8,8 +8,8 @@
 	box-shadow: 0 0 3 * $margin $color;
 }
 
-@mixin uc-divider($position, $size: 40 * $margin) {
-	@include uc-divider-shadow($alpha-light);
+@mixin uc-divider($position, $size: 40 * $margin, $shadow: $alpha-light) {
+	@include uc-divider-shadow($shadow);
 	content: "";
 	position: absolute;
 	height: $size;
@@ -90,7 +90,7 @@
 
 .divider-before-wide {
 	&:before {
-		@include uc-divider("before", 90 * $margin);
+		@include uc-divider("before", 90 * $margin, $alpha-medium);
 	}
 }
 
@@ -102,7 +102,7 @@
 
 .divider-after-wide {
 	&:after {
-		@include uc-divider("after", 90 * $margin);
+		@include uc-divider("after", 90 * $margin, $alpha-medium);
 	}
 }
 

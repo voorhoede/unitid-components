@@ -1,9 +1,9 @@
-var InView = (function(document) {
+var UnHide = (function(document) {
 	'use strict';
 
 	var hasClassList = 'classList' in document.documentElement;
 
-	function InView(elements) {
+	function UnHide(elements) {
 
 		var box;
 
@@ -18,16 +18,16 @@ var InView = (function(document) {
 
 		function makeActive(el) {
 			if (hasClassList) {
-				el.classList.add('inview');
+				el.classList.remove('js-hide');
 			} else {
-				el.className += ' inview';
-			}
+        el.className = el.className.replace(/js\-hide/g, '');
+      }
 		}
 	}
 
-	return InView;
+	return UnHide;
 }(document));
 
 (function(window) {
-	window.inView = new InView(u.qsa('.numbers > li, .bullets > li'));
+	window.UnHide = new UnHide(u.qsa('.js-hide'));
 })(window);
