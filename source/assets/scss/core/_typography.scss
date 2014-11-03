@@ -83,7 +83,11 @@
 	p, li {
 		line-height: $line-height-body;
 		margin-bottom: $margin;
-		font-size: $font-size-body;
+		font-size: $font-size-body-small;
+
+    @include min-screen-xlarge {
+      font-size: $font-size-body;
+    }
 
 		&:last-child {
 			margin-bottom: 0;

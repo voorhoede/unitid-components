@@ -19,6 +19,14 @@ $logo-transition-speed: 200ms;
           transition: all $speed ease $delay;
 }
 
+@mixin transformRotate($degrees: 45deg) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform:    rotate($degrees);
+  -ms-transform:     rotate($degrees);
+  -o-transform:      rotate($degrees);
+  transform:         rotate($degrees);
+}
+
 // FONTS
 
 @font-face {
@@ -107,6 +115,16 @@ figcaption {
   height: 35rem;
 }
 
+.uc-slider {
+  &:after {
+    display: none;
+
+    @include min-screen-medium {
+      display: block;
+    }
+  }
+}
+
 .uc-hero {
 
   header {
@@ -161,9 +179,13 @@ figcaption {
 		@include clearfix;
 		margin-top: 0;
 		margin-bottom: 0;
-    height: 18rem;
+    height: 14rem;
 		list-style: none;
 		overflow: hidden;
+
+    @include min-screen-xlarge {
+      height: 18rem;
+    }
 
     div {
       margin-top: 0;
@@ -204,13 +226,31 @@ figcaption {
 
     div {
       @include font-bold;
-      font-size: 6em;
+      font-size: 5em;
       color: $silver;
+
+      @include min-screen-xlarge {
+        font-size: 6em;
+      }
+    }
+
+    img {
+      display: none;
+
+      @include min-screen-medium {
+        display: block;
+      }
     }
 
     &.about-visitors {
       img {
-        height: 6rem;
+        margin-top: 0.5rem;
+        height: 4rem;
+
+        @include min-screen-xlarge {
+          margin-top: 0;
+          height: 6rem;
+        }
       }
     }
 
@@ -218,7 +258,11 @@ figcaption {
       img {
         margin-top: 1rem;
         padding-left: 1rem;
-        height: 5rem;
+        height: 4rem;
+
+        @include min-screen-xlarge {
+          height: 5rem;
+        }
       }
     }
 
@@ -226,14 +270,24 @@ figcaption {
       img {
         margin-top: 0.5rem;
         padding-left: 1.5rem;
-        height: 6rem;
+        height: 5rem;
+
+        @include min-screen-xlarge {
+          height: 6rem;
+        }
       }
     }
 
     &.about-articles {
       img {
+        margin-top: 0.5rem;
         padding-left: 2rem;
-        height: 5rem;
+        height: 4rem;
+
+        @include min-screen-xlarge {
+          margin-top: 0;
+          height: 5rem;
+        }
       }
     }
   }
@@ -253,16 +307,29 @@ figcaption {
 		vertical-align: middle;
 		color: $black;
 		text-align: right;
+    font-size: 1.75rem;
     opacity: 1;
 
     &.double {
       padding-top: 0;
     }
+
+    @include min-screen-xlarge {
+      font-size: $font-size-body;
+    }
 	}
 
   .extensions {
-
+    width: 100%;
     margin: $margin * 2 0 0;
+
+    @include min-screen-medium {
+      width: 66%;
+    }
+
+    @include min-screen-xlarge {
+      width: auto;
+    }
 
     li {
       list-style: none;
@@ -336,17 +403,19 @@ figcaption {
 }
 
 .bullets {
+  margin-bottom: 10rem; // Make space for note
 
   > li {
+    height: 25rem;
+
+    @include min-screen-xlarge {
+      height: 22rem;
+    }
 
     &.about-style {
       h3 {
         letter-spacing: 0.0625em;
       }
-    }
-
-    &.about-style, &.about-ads {
-      height: 22rem;
     }
 
   }
@@ -442,4 +511,45 @@ figcaption {
 
 .header-coins {
   width: 8rem;
+}
+
+.note {
+  @include transformRotate(-5deg);
+  position: absolute;
+  width: 25rem;
+  bottom: 0;
+  right: 10rem;
+
+  p {
+    margin: 0;
+    font-family: "the great escape", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: $grey;
+    line-height: $line-height-header;
+  }
+
+  &:before {
+    display: block;
+    content: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="70px" height="45px" viewBox="0 0 70 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><g id="Casepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-880.000000, -3189.000000)" stroke-linecap="square" stroke="#C9C9C9" stroke-width="2"><g id="Path-350-+-Path-351-+-Path-352" sketch:type="MSLayerGroup" transform="translate(912.228211, 3214.287217) rotate(334.000000) translate(-912.228211, -3214.287217) translate(887.228211, 3182.287217)"><path d="M50,64 C50,64 38.608987,62.03125 24.6866378,43.328125 C10.7642885,24.625 12.0299566,1 12.0299566,1" id="Path-350" sketch:type="MSShapeGroup"></path><path d="M12,0.47608575 L0.777281642,12.7081824" id="Path-351" sketch:type="MSShapeGroup"></path><path d="M12.4383711,0.101205954 L24.4740395,12.0272418" id="Path-352" sketch:type="MSShapeGroup"></path></g></g></g></svg>');
+    position: absolute;
+    left: -10rem;
+    top: -2rem;
+  }
+}
+
+.image-branding {
+  margin: 0 auto;
+  height: 68rem;
+  width: 33rem;
+  background-image: url('/assets/images/nu.nl/branding-identity-vertical.png');
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+
+  @include min-screen-medium {
+    background-image: url('/assets/images/nu.nl/branding-identity-horizontal.png');
+    width: 68rem;
+    height: 33rem;
+  }
 }

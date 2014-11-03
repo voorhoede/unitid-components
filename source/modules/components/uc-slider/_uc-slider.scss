@@ -23,9 +23,13 @@ html.js {
 
 .uc-slider {
 	position: relative;
-	margin-bottom: $margin-header-large + $base-size / 2;
+
+  @include min-screen-medium {
+    margin-bottom: $margin-header-large;
+  }
 
 	ul, li { margin: 0; padding: 0; }
+
 	li {
 		list-style: none;
 	}
@@ -41,9 +45,56 @@ html.js {
 		ul > li {
 			position: relative;
       margin-top: $margin-header-medium;
+      margin-bottom: $margin;
 			float: left;
 			width: 100%;
+      height: auto;
+
+      @include min-screen-small {
+        margin-bottom: $margin-header-medium;
+      }
+
+      @include min-screen-medium {
+        height: 46rem;
+        margin-bottom: 0;
+      }
+
+      @include min-screen-large {
+        height: 60rem;
+      }
+
+      @include min-screen-xlarge {
+        height: 72rem;
+      }
 		}
+
+    img {
+
+      &.large {
+        width: 80%;
+      }
+
+      &.medium {
+        width: 60%;
+      }
+
+      @include min-screen-medium {
+        &.large {
+          width: 80%;
+        }
+        &.medium {
+          width: 60%;
+        }
+      }
+
+      @include min-screen-xlarge {
+        max-width: none;
+
+        &.large, &.medium {
+          width: auto;
+        }
+      }
+    }
 
 	}
 

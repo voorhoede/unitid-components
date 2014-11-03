@@ -138,7 +138,8 @@
 		margin-bottom: $margin-header-large;
 	}
 
-  &.vertical-align {
+  &.vert
+  al-align {
     display: table;
 
     [uc-column] {
@@ -176,7 +177,8 @@
   }
 
   img {
-    margin-bottom: $margin-header-medium;
+    margin: 0 auto $margin-header-medium;
+    display: block;
   }
 }
 
