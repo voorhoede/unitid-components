@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600.228px"
+	 height="515.828px" viewBox="0 276.172 600.228 515.828" enable-background="new 0 276.172 600.228 515.828" xml:space="preserve">
+<title>! + Triangle 1</title>
+<desc>Created with Sketch.</desc>
+<g id="Icons-etc" sketch:type="MSPage">
+	<g id="Landscape" transform="translate(-339.000000, -372.000000)" sketch:type="MSArtboardGroup">
+		<g id="_x21_-_x2B_-Triangle-1" transform="translate(341.000000, 374.000000)" sketch:type="MSLayerGroup">
+			<path id="_x21_" sketch:type="MSShapeGroup" fill="#353234" d="M319.347,621.388l7.493-166.113h-57.453l7.494,166.113H319.347z
+				 M298.113,705.069c16.237,0,29.976-13.738,29.976-29.975c0-16.237-13.738-29.977-29.976-29.977
+				c-16.236,0-29.975,13.739-29.975,29.977C268.138,691.331,281.877,705.069,298.113,705.069L298.113,705.069z"/>
+			<g id="Triangle-1">
+				<path fill="#353234" d="M564.146,790H32.081c-13.739,0-24.979-6.245-29.976-16.236c-6.245-9.991-4.996-22.481,1.249-33.723
+					l266.033-448.384c6.245-11.24,17.486-17.485,28.726-17.485c11.241,0,22.482,6.245,28.727,17.485l266.033,448.384
+					c6.244,11.241,7.494,23.73,1.249,33.723C589.126,783.755,577.885,790,564.146,790z M40.824,752.53h515.829L298.113,316.637
+					L40.824,752.53z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
