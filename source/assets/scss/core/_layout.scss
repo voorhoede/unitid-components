@@ -56,11 +56,19 @@
 	}
 
 	&.whitespace-before {
-		padding-top: $margin-header-large;
+		padding-top: $margin-header-small;
+
+    @include min-screen-medium {
+      padding-bottom: $margin-header-large;
+    }
 	}
 
 	&.whitespace-after {
-		padding-bottom: $margin-header-large;
+		padding-bottom: $margin-header-small;
+
+    @include min-screen-medium {
+      padding-bottom: $margin-header-large;
+    }
 	}
 
 	.full {
@@ -71,8 +79,13 @@
 	}
 
   .need-space {
-    margin-top: $margin-header-xlarge - 1rem;
-    margin-bottom: $margin-header-large;
+    margin-top: $margin-header-large - 1rem;
+    margin-bottom: $margin-header-medium;
+
+    @include min-screen-xlarge {
+      margin-top: $margin-header-xlarge - 1rem;
+      margin-bottom: $margin-header-large;
+    }
   }
 }
 
@@ -107,7 +120,7 @@
 }
 
 .center {
-	h1, h2, h3, h4, h5, h6, p {
+	h1, h2, h3, h4, h5, h6 {
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
@@ -120,6 +133,12 @@
 			max-width: $container-centered-xlarge;
 		}
 	}
+
+  @include min-screen-between {
+    p {
+      text-align: center;
+    }
+  }
 }
 
 [uc-row] {
@@ -127,8 +146,12 @@
 	padding: 0 $margin;
 
 	@include min-screen-medium {
-		padding: 0 $whitespace-large;
+		padding: 0 $margin * 2;
 	}
+
+  @include min-screen-large {
+    padding: 0 $whitespace-large;
+  }
 
 	@include min-screen-xlarge {
 		padding: 0 $whitespace-xlarge;
@@ -165,17 +188,29 @@
 	}
 
   &.breathe-before {
-    padding-left: 8%;
+    padding-left: 5%;
+
+    @include min-screen-xlarge {
+      padding-left: 8%;
+    }
   }
 
   &.breathe-after {
-    padding-right: 8%;
+    padding-right: 5%;
+
+    @include min-screen-xlarge {
+      padding-right: 8%;
+    }
   }
 
   h3 {
     @include font-bold;
-    font-size: $font-size-header-medium;
+    font-size: $font-size-header-small;
     margin-bottom: 0.25em;
+
+    @include min-screen-xlarge {
+      font-size: $font-size-header-medium;
+    }
   }
 
   img {

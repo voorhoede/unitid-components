@@ -12,6 +12,9 @@ $logo-size: 40px;
 $logo-transition-delay: 25ms;
 $logo-transition-speed: 200ms;
 
+$font-face: 'proxima nova regular', 'Helvetica Neue', sans-serif;
+$font-face-dropcap: 'NUnl-E', $font-face;
+
 // MIXINS
 
 @mixin transition($speed: 500ms, $delay: 0ms) {
@@ -103,6 +106,10 @@ figcaption {
 	color: $grey;
 }
 
+figcaption, li, p {
+  font-family: $font-face;
+}
+
 // CLASS STYLES
 
 .gradient-navy {
@@ -115,7 +122,7 @@ figcaption {
 
 .uc-streamer {
   h2:first-letter {
-    font-family: "Nunl-E", "proxima nova regular", "Helvetica Neue", sans-serif;
+    font-family: $font-face-dropcap;
     font-size: 2.75em;
     letter-spacing: -0.1875em;
   }
@@ -189,9 +196,13 @@ figcaption {
 		@include clearfix;
 		margin-top: 0;
 		margin-bottom: 0;
-    height: 14rem;
+    height: 8rem;
 		list-style: none;
 		overflow: hidden;
+
+    @include min-screen-between {
+      height: 14rem;
+    }
 
     @include min-screen-xlarge {
       height: 18rem;
@@ -202,6 +213,11 @@ figcaption {
       margin-left: 35%;
       line-height: 1.375;
       opacity: 1;
+      padding-top: 1rem;
+
+      @include min-screen-xlarge {
+        padding-top: 0;
+      }
     }
 	}
 
@@ -222,8 +238,12 @@ figcaption {
 .numbers {
 
   label {
-		padding-top: 5rem;
+		padding-top: 3rem;
 		font-size: $font-size-body;
+
+    @include min-screen-between {
+      padding-top: 5rem;
+    }
 	}
 
   img {
@@ -236,8 +256,12 @@ figcaption {
 
     div {
       @include font-bold;
-      font-size: 5em;
+      font-size: 3em;
       color: $silver;
+
+      @include min-screen-between {
+        font-size: 5em;
+      }
 
       @include min-screen-xlarge {
         font-size: 6em;
@@ -300,6 +324,15 @@ figcaption {
         }
       }
     }
+
+    &.about-extensions {
+      height: 26rem;
+
+      @include min-screen-between {
+        height: 14rem;
+      }
+    }
+
   }
 
 	figure {
@@ -310,18 +343,23 @@ figcaption {
 	figcaption {
     right: 0;
     padding-top: 1em;
-		padding-right: 6rem;
+		padding-right: 1rem;
 		margin-top: 0;
     position: absolute;
 		line-height: $line-height-header;
 		vertical-align: middle;
 		color: $black;
 		text-align: right;
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     opacity: 1;
 
     &.double {
       padding-top: 0;
+    }
+
+    @include min-screen-between {
+      font-size: 1.75rem;
+      padding-right: 6rem;
     }
 
     @include min-screen-xlarge {
@@ -331,13 +369,14 @@ figcaption {
 
   .extensions {
     width: 100%;
-    margin: $margin * 2 0 0;
+    margin: $margin 0 0;
 
     @include min-screen-medium {
       width: 66%;
     }
 
     @include min-screen-xlarge {
+      margin: $margin * 2 0 0;
       width: auto;
     }
 
@@ -413,10 +452,19 @@ figcaption {
 }
 
 .bullets {
-  margin-bottom: 10rem; // Make space for note
+  margin-bottom: 15rem; // Make space for note
+
+
+  @include min-screen-xlarge {
+    margin-bottom: 10rem;
+  }
 
   > li {
-    height: 25rem;
+    height: 28rem;
+
+    @include min-screen-small {
+      height: 20rem;
+    }
 
     @include min-screen-xlarge {
       height: 22rem;
@@ -436,14 +484,19 @@ figcaption {
 		width: 1.25em;
     margin: - 1.25em / 2 0 0 0;
 		top: 50%;
-    right: 6rem;
+    right: 2rem;
     opacity: 1;
 		background: $accent;
 		color: $white;
 		text-align: center;
-		font-size: 5em;
+		font-size: 3em;
 		line-height: 1.3125;
 		border-radius: 2em;
+
+    @include min-screen-between {
+      font-size: 5em;
+      right: 6rem;
+    }
 	}
 
   h4 {
@@ -454,8 +507,12 @@ figcaption {
 
 	li div {
 		p {
-			font-size: $font-size-body * 0.9;
-			width: 70%;
+      font-size: $font-size-body * 0.8;
+
+      @include min-screen-medium {
+        width: 70%;
+        font-size: $font-size-body * 0.9;
+      }
 		}
 
 	}
@@ -484,7 +541,13 @@ figcaption {
     padding-top: 1rem;
 
     img {
-      height: 18rem;
+      height: 15rem;
+      max-width: 85%;
+
+      @include min-screen-large {
+        max-width: none;
+        height: 18rem;
+      }
     }
   }
 
@@ -492,12 +555,24 @@ figcaption {
     padding-top: 2rem;
 
     img {
-      height: 19rem;
+      height: 16rem;
+
+      @include min-screen-large {
+        height: 19rem;
+      }
     }
   }
 
   .coins {
-    padding-top: 3rem;
+    padding-top: 0;
+
+    @include min-screen-medium {
+      padding-top: 5rem;
+    }
+
+    @include min-screen-large {
+      padding-top: 3rem;
+    }
   }
 
 }
@@ -527,25 +602,36 @@ figcaption {
   @include transformRotate(-5deg);
   position: absolute;
   width: 25rem;
-  bottom: 0;
-  right: 10rem;
+  bottom: -2rem;
+  right: 3rem;
   opacity: 1;
+
+  @include min-screen-between {
+    right: 10rem;
+    bottom: 0;
+  }
 
   p {
     margin: 0;
     font-family: "the great escape", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
     color: $grey;
     line-height: $line-height-header;
+
+    @include min-screen-between {
+      font-size: 1.5em;
+    }
   }
 
-  &:before {
-    display: block;
-    content: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="70px" height="45px" viewBox="0 0 70 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><g id="Casepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-880.000000, -3189.000000)" stroke-linecap="square" stroke="#C9C9C9" stroke-width="2"><g id="Path-350-+-Path-351-+-Path-352" sketch:type="MSLayerGroup" transform="translate(912.228211, 3214.287217) rotate(334.000000) translate(-912.228211, -3214.287217) translate(887.228211, 3182.287217)"><path d="M50,64 C50,64 38.608987,62.03125 24.6866378,43.328125 C10.7642885,24.625 12.0299566,1 12.0299566,1" id="Path-350" sketch:type="MSShapeGroup"></path><path d="M12,0.47608575 L0.777281642,12.7081824" id="Path-351" sketch:type="MSShapeGroup"></path><path d="M12.4383711,0.101205954 L24.4740395,12.0272418" id="Path-352" sketch:type="MSShapeGroup"></path></g></g></g></svg>');
-    position: absolute;
-    left: -10rem;
-    top: -2rem;
+  @include min-screen-small {
+    &:before {
+      display: block;
+      content: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="70px" height="45px" viewBox="0 0 70 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><g id="Casepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-880.000000, -3189.000000)" stroke-linecap="square" stroke="#C9C9C9" stroke-width="2"><g id="Path-350-+-Path-351-+-Path-352" sketch:type="MSLayerGroup" transform="translate(912.228211, 3214.287217) rotate(334.000000) translate(-912.228211, -3214.287217) translate(887.228211, 3182.287217)"><path d="M50,64 C50,64 38.608987,62.03125 24.6866378,43.328125 C10.7642885,24.625 12.0299566,1 12.0299566,1" id="Path-350" sketch:type="MSShapeGroup"></path><path d="M12,0.47608575 L0.777281642,12.7081824" id="Path-351" sketch:type="MSShapeGroup"></path><path d="M12.4383711,0.101205954 L24.4740395,12.0272418" id="Path-352" sketch:type="MSShapeGroup"></path></g></g></g></svg>');
+      position: absolute;
+      left: -10rem;
+      top: -2rem;
+    }
   }
 }
 

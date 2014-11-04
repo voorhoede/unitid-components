@@ -18,4 +18,12 @@
 	h2 {
 		margin: $margin-header-xlarge auto $margin-header-large;
 	}
+
+  h3 {
+    font-size: $font-size-body;
+
+    @include min-screen-between {
+      font-size: $font-size-header-small;
+    }
+  }
 }
