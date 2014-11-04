@@ -142,10 +142,13 @@
     display: table;
 
     [uc-column] {
-      display: table-cell;
       float: none;
       height: 100%;
       vertical-align: middle;
+
+      @include min-screen-medium {
+        display: table-cell;
+      }
     }
   }
 }
