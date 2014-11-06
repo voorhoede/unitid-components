@@ -8,7 +8,8 @@ $hero-image-height-mobile: 252px;
 $hero-image-width-desktop: 893px;
 $hero-image-height-desktop: 412px;
 
-$logo-size: 40px;
+$logo-size-x: 40px;
+$logo-size-y: 40px;
 $logo-transition-delay: 25ms;
 $logo-transition-speed: 200ms;
 
@@ -52,15 +53,15 @@ html.js.csstransitions {
     .js-hide {
       img {
         opacity: 0;
-        margin-left: -5rem;
+        @include rem(margin-left, -5rem);
       }
       figcaption {
         opacity: 0;
-        right: -25rem;
+        @include rem(right, -25rem);
       }
       .extensions .logo {
         opacity: 0;
-        margin-left: -3rem;
+        @include rem(margin-left, -3rem);
       }
     }
   }
@@ -71,11 +72,11 @@ html.js.csstransitions {
     .js-hide {
       h3 {
         opacity: 0;
-        right: -2rem;
+        @include rem(right, -2rem);
       }
       h4 {
         opacity: 0;
-        margin-bottom: 10rem;
+        @include rem(margin-bottom, 10rem);
       }
     }
   }
@@ -85,8 +86,8 @@ html.js.csstransitions {
     &.js-hide {
       @include transformRotate(5deg);
       opacity: 0;
-      right: 5rem;
-      bottom: -5rem;
+      @include rem(right, 5rem);
+      @include rem(bottom, -5rem);
     }
   }
   .numbers, .bullets {
@@ -95,7 +96,7 @@ html.js.csstransitions {
     }
     > li.js-hide div {
       opacity: 0;
-      margin-top: -5rem;
+      @include rem(margin-top, -5rem);
     }
   }
 }
@@ -129,7 +130,7 @@ figcaption, li, p {
 }
 
 .uc-fullbleed .uc-imagebox {
-  height: 35rem;
+  @include rem(height, 35rem);
 }
 
 .uc-slider {
@@ -143,11 +144,12 @@ figcaption, li, p {
 }
 
 .uc-hero {
+  background-image: url('/assets/images/nu.nl/header.jpg');
 
   header {
     h1, h2 {
       text-align: center;
-      padding-left: $margin;
+      @include rem(padding-left, $margin);
 
       @include min-screen-small {
         text-align: left;
@@ -166,7 +168,7 @@ figcaption, li, p {
 
     @include min-screen-small {
       left: auto;
-      right: $margin;
+      @include rem(right, $margin);
       width: $hero-image-width-mobile * 0.75;
       height: $hero-image-height-mobile * 0.75;
     }
@@ -183,7 +185,7 @@ figcaption, li, p {
     }
 
 		@include min-screen-xlarge {
-			right: $margin;
+			@include rem(right, $margin);
       width: $hero-image-width-desktop * 0.85;
       height: $hero-image-height-desktop * 0.85;
 		}
@@ -196,16 +198,16 @@ figcaption, li, p {
 		@include clearfix;
 		margin-top: 0;
 		margin-bottom: 0;
-    height: 8rem;
+    @include rem(height, 8rem);
 		list-style: none;
 		overflow: hidden;
 
     @include min-screen-between {
-      height: 14rem;
+      @include rem(height, 14rem);
     }
 
     @include min-screen-xlarge {
-      height: 18rem;
+      @include rem(height, 18rem);
     }
 
     div {
@@ -213,7 +215,7 @@ figcaption, li, p {
       margin-left: 35%;
       line-height: 1.375;
       opacity: 1;
-      padding-top: 1rem;
+      @include rem(padding-top, 1rem);
 
       @include min-screen-xlarge {
         padding-top: 0;
@@ -238,11 +240,11 @@ figcaption, li, p {
 .numbers {
 
   label {
-		padding-top: 3rem;
-		font-size: $font-size-body;
+		@include rem(padding-top, 3rem);
+		@include rem(font-size, $font-size-body);
 
     @include min-screen-between {
-      padding-top: 5rem;
+      @include rem(padding-top, 5rem);
     }
 	}
 
@@ -278,24 +280,24 @@ figcaption, li, p {
 
     &.about-visitors {
       img {
-        margin-top: 0.5rem;
-        height: 4rem;
+        @include rem(margin-top, 0.5rem);
+        @include rem(height, 4rem);
 
         @include min-screen-xlarge {
           margin-top: 0;
-          height: 6rem;
+          @include rem(height, 6rem);
         }
       }
     }
 
     &.about-journalists {
       img {
-        margin-top: 1rem;
-        padding-left: 1rem;
-        height: 4rem;
+        @include rem(margin-top, 1rem);
+        @include rem(padding-left, 1rem);
+        @include rem(height, 4rem);
 
         @include min-screen-xlarge {
-          height: 5rem;
+          @include rem(height, 5rem);
         }
       }
     }
@@ -304,10 +306,10 @@ figcaption, li, p {
       img {
         margin-top: 2.5rem;
         padding-left: 1.5rem;
-        height: 3rem;
+        @include rem(height, 3rem);
 
         @include min-screen-xlarge {
-          height: 4rem;
+          @include rem(height, 4rem);
         }
       }
     }
@@ -315,21 +317,21 @@ figcaption, li, p {
     &.about-articles {
       img {
         margin-top: 0.5rem;
-        padding-left: 2rem;
-        height: 4rem;
+        @include rem(padding-left, 2rem);
+        @include rem(height, 4rem);
 
         @include min-screen-xlarge {
           margin-top: 0;
-          height: 5rem;
+          @include rem(height, 5rem);
         }
       }
     }
 
     &.about-extensions {
-      height: 26rem;
+      @include rem(height, 26rem);
 
       @include min-screen-between {
-        height: 14rem;
+        @include rem(height, 14rem);
       }
     }
 
@@ -343,7 +345,7 @@ figcaption, li, p {
 	figcaption {
     right: 0;
     padding-top: 1em;
-		padding-right: 1rem;
+		@include rem(padding-right, 1rem);
 		margin-top: 0;
     position: absolute;
 		line-height: $line-height-header;
@@ -359,24 +361,24 @@ figcaption, li, p {
 
     @include min-screen-between {
       font-size: 1.75rem;
-      padding-right: 6rem;
+      @include rem(padding-right, 6rem);
     }
 
     @include min-screen-xlarge {
-      font-size: $font-size-body;
+      @include rem(font-size, $font-size-body);
     }
 	}
 
   .extensions {
     width: 100%;
-    margin: $margin 0 0;
+    @include rem(margin, $margin 0 0);
 
     @include min-screen-medium {
       width: 66%;
     }
 
     @include min-screen-xlarge {
-      margin: $margin * 2 0 0;
+      @include rem(margin, $margin * 2 0 0);
       width: auto;
     }
 
@@ -391,57 +393,57 @@ figcaption, li, p {
       float: left;
       margin-left: 0;
       margin-right: 5px;
-      width: $logo-size;
-      height: $logo-size;
-      background-size: 13 * $logo-size $logo-size;
+      width: $logo-size-x;
+      height: $logo-size-y;
       background-image: url('/assets/images/nu.nl/logo-sprite.svg');
+      background-size: 13 * $logo-size-x $logo-size-y;
       opacity: 1;
 
       &.nu-nu {
         @include transition($logo-transition-speed, $logo-transition-delay);
       }
       &.nu-z {
-        background-position: - $logo-size top;
+        background-position: - $logo-size-x top;
         @include transition($logo-transition-speed, $logo-transition-delay * 2);
       }
       &.nu-t {
-        background-position: - $logo-size * 2 top;
+        background-position: - $logo-size-x * 2 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 3);
       }
       &.nu-s {
-        background-position: - $logo-size * 3 top;
+        background-position: - $logo-size-x * 3 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 4);
       }
       &.nu-g {
-        background-position: - $logo-size * 4 top;
+        background-position: - $logo-size-x * 4 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 5);
       }
       &.nu-e {
-        background-position: - $logo-size * 5 top;
+        background-position: - $logo-size-x * 5 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 6);
       }
       &.nu-w {
-        background-position: - $logo-size * 6 top;
+        background-position: - $logo-size-x * 6 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 7);
       }
       &.nu-dag {
-        background-position: - $logo-size * 7 top;
+        background-position: - $logo-size-x * 7 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 8);
       }
       &.nu-live {
-        background-position: - $logo-size * 8 top;
+        background-position: - $logo-size-x * 8 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 9);
       }
       &.nu-lab {
-        background-position: - $logo-size * 9 top;
+        background-position: - $logo-size-x * 9 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 10);
       }
       &.nu-foto {
-        background-position: - $logo-size * 10 top;
+        background-position: - $logo-size-x * 10 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 11);
       }
       &.nu-jij {
-        background-position: - $logo-size * 11 top;
+        background-position: - $logo-size-x * 11 top;
         @include transition($logo-transition-speed, $logo-transition-delay * 12);
       }
 
@@ -452,22 +454,22 @@ figcaption, li, p {
 }
 
 .bullets {
-  margin-bottom: 15rem; // Make space for note
+  @include rem(margin-bottom, 15rem); // Make space for note
 
 
   @include min-screen-xlarge {
-    margin-bottom: 10rem;
+    @include rem(margin-bottom, 10rem);
   }
 
   > li {
-    height: 28rem;
+    @include rem(height, 28rem);
 
     @include min-screen-small {
-      height: 20rem;
+      @include rem(height, 20rem);
     }
 
     @include min-screen-xlarge {
-      height: 22rem;
+      @include rem(height, 22rem);
     }
 
     &.about-style {
@@ -484,7 +486,7 @@ figcaption, li, p {
 		width: 1.25em;
     margin: - 1.25em / 2 0 0 0;
 		top: 50%;
-    right: 2rem;
+    @include rem(right, 2rem);
     opacity: 1;
 		background: $accent;
 		color: $white;
@@ -495,23 +497,23 @@ figcaption, li, p {
 
     @include min-screen-between {
       font-size: 5em;
-      right: 6rem;
+      @include rem(right, 6rem);
     }
 	}
 
   h4 {
     margin-top: 0;
-    margin-bottom: $margin / 2;
+    @include rem(margin-bottom, $margin / 2);
     opacity: 1;
   }
 
 	li div {
 		p {
-      font-size: $font-size-body * 0.8;
+      @include rem(font-size, $font-size-body * 0.8);
 
       @include min-screen-medium {
         width: 70%;
-        font-size: $font-size-body * 0.9;
+        @include rem(font-size, $font-size-body * 0.9);
       }
 		}
 
@@ -538,27 +540,27 @@ figcaption, li, p {
   }
 
   .spraycans {
-    padding-top: 1rem;
+    @include rem(padding-top, 1rem);
 
     img {
-      height: 15rem;
+      @include rem(height, 15rem);
       max-width: 85%;
 
       @include min-screen-large {
         max-width: none;
-        height: 18rem;
+        @include rem(height, 18rem);
       }
     }
   }
 
   .devices {
-    padding-top: 2rem;
+    @include rem(padding-top, 2rem);
 
     img {
-      height: 16rem;
+      @include rem(height, 16rem);
 
       @include min-screen-large {
-        height: 19rem;
+        @include rem(height, 19rem);
       }
     }
   }
@@ -567,11 +569,11 @@ figcaption, li, p {
     padding-top: 0;
 
     @include min-screen-medium {
-      padding-top: 5rem;
+      @include rem(padding-top, 5rem);
     }
 
     @include min-screen-large {
-      padding-top: 3rem;
+      @include rem(padding-top, 3rem);
     }
   }
 
@@ -587,27 +589,27 @@ figcaption, li, p {
 }
 
 .header-spraycans {
-  width: 6rem;
+  @include rem(width, 6rem);
 }
 
 .header-devices {
-  width: 14rem;
+  @include rem(width, 14rem);
 }
 
 .header-coins {
-  width: 8rem;
+  @include rem(width, 8rem);
 }
 
 .note {
   @include transformRotate(-5deg);
   position: absolute;
-  width: 25rem;
-  bottom: -2rem;
-  right: 3rem;
+  @include rem(width, 25rem);
+  @include rem(bottom, -2rem);
+  @include rem(right, 3rem);
   opacity: 1;
 
   @include min-screen-between {
-    right: 10rem;
+    @include rem(right, 10rem);
     bottom: 0;
   }
 
@@ -629,16 +631,16 @@ figcaption, li, p {
       display: block;
       content: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="70px" height="45px" viewBox="0 0 70 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><g id="Casepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-880.000000, -3189.000000)" stroke-linecap="square" stroke="#C9C9C9" stroke-width="2"><g id="Path-350-+-Path-351-+-Path-352" sketch:type="MSLayerGroup" transform="translate(912.228211, 3214.287217) rotate(334.000000) translate(-912.228211, -3214.287217) translate(887.228211, 3182.287217)"><path d="M50,64 C50,64 38.608987,62.03125 24.6866378,43.328125 C10.7642885,24.625 12.0299566,1 12.0299566,1" id="Path-350" sketch:type="MSShapeGroup"></path><path d="M12,0.47608575 L0.777281642,12.7081824" id="Path-351" sketch:type="MSShapeGroup"></path><path d="M12.4383711,0.101205954 L24.4740395,12.0272418" id="Path-352" sketch:type="MSShapeGroup"></path></g></g></g></svg>');
       position: absolute;
-      left: -10rem;
-      top: -2rem;
+      @include rem(left, -10rem);
+      @include rem(top, -2rem);
     }
   }
 }
 
 .image-branding {
   margin: 0 auto;
-  height: 68rem;
-  width: 33rem;
+  @include rem(height, 68rem);
+  @include rem(width, 33rem);
   background-image: url('/assets/images/nu.nl/branding-identity-vertical.png');
   background-size: cover;
   background-position: center;
@@ -646,7 +648,27 @@ figcaption, li, p {
 
   @include min-screen-medium {
     background-image: url('/assets/images/nu.nl/branding-identity-horizontal.png');
-    width: 68rem;
-    height: 33rem;
+    @include rem(width, 68rem);
+    @include rem(height, 33rem);
+  }
+}
+
+.numbers .extensions .logo {
+  background-image: url('/assets/images/nu.nl/logo-sprite.svg');
+}
+
+// Hide from IE old; too much hassle
+.no-svg .numbers .about-extensions {
+  display: none;
+}
+
+.no-backgroundsize .uc-hero {
+  background-color: white;
+  background-image: url('/assets/images/nu.nl/header-fixed.jpg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  .image-over {
+    display: none;
   }
 }

@@ -5,15 +5,15 @@
 
 .uc-fullbleed {
 	padding: 0;
-	margin-bottom: $margin-header-large + 1rem;
+	@include rem(margin-bottom, $margin-header-large + 1rem);
 
 	.uc-imagebox {
 		position: relative;
-		height: 15 * $margin;
+		@include rem(height, 15 * $margin);
 		overflow: hidden;
 
 		@include min-screen-medium {
-			height: 30 * $margin;
+			@include rem(height, 30 * $margin);
 		}
 	}
 
@@ -22,11 +22,11 @@
 		width: 100%;
 		left: 0;
 		bottom: 0;
-		padding: 0 $margin $margin;
+		@include rem(padding, 0 $margin $margin);
 
 		.wrapper {
 			background: $white;
-			padding: $margin;
+			@include rem(padding, $margin);
 		}
 
 		p:last-child {
@@ -34,12 +34,12 @@
 		}
 
 		@include min-screen-medium {
-			width: 25 * $margin;
-			padding: 0 0 $margin-header-large 3 * $margin;
+			@include rem(width, 25 * $margin);
+			@include rem(padding, 0 0 $margin-header-large 3 * $margin);
 		}
 
 		@include min-screen-xlarge {
-			padding: 0 0 $margin-header-large + $margin 4 * $margin;
+			@include rem(padding, 0 0 $margin-header-large + $margin 4 * $margin);
 		}
 	}
 }
@@ -47,6 +47,6 @@
 [uc-column] .uc-fullbleed {
 	.uc-inset {
 		width: 100%;
-		padding: 0 $margin $margin;
+		@include rem(padding, 0 $margin $margin);
 	}
 }

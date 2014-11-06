@@ -1,6 +1,6 @@
 {
     "vendor": [
-		"swipe/swipe"
+  		"swipe/swipe"
     ],
     "common": [
 		"tools",

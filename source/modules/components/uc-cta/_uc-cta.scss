@@ -7,11 +7,11 @@
 	text-align: center;
 
 	h2 {
-		margin-bottom: $margin-header-large;
+		@include rem(margin-bottom, $margin-header-large);
 	}
 
 	.uc-button {
 		@include button;
-		margin-bottom: $margin-header-large + $base-size;
+		@include rem(margin-bottom, $margin-header-large + $base-size);
 	}
 }

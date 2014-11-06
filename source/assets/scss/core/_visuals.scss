@@ -21,7 +21,7 @@ figcaption {
 
 .icon {
   display: block;
-	margin: $margin-header-large + 1rem auto 0;
+	@include rem(margin, $margin-header-large + 1rem auto 0);
 
 	& + h1 {
 		margin-top: $margin-header-small;

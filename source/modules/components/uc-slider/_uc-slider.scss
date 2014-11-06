@@ -12,7 +12,7 @@ html.js {
     }
 
     ul > li {
-      margin-top: $margin;
+      @include rem(margin-top, $margin);
     }
 
     .prev, .next {
@@ -25,7 +25,7 @@ html.js {
 	position: relative;
 
   @include min-screen-medium {
-    margin-bottom: $margin-header-large;
+    @include rem(margin-bottom, $margin-header-large);
   }
 
 	ul, li { margin: 0; padding: 0; }
@@ -44,27 +44,27 @@ html.js {
 
 		ul > li {
 			position: relative;
-      margin-top: $margin-header-medium;
-      margin-bottom: $margin;
+      @include rem(margin-top, $margin-header-medium);
+      @include rem(margin-bottom, $margin);
 			float: left;
 			width: 100%;
       height: auto;
 
       @include min-screen-small {
-        margin-bottom: $margin-header-medium;
+        @include rem(margin-bottom, $margin-header-medium);
       }
 
       @include min-screen-medium {
-        height: 46rem;
+        @include rem(height, 46rem);
         margin-bottom: 0;
       }
 
       @include min-screen-large {
-        height: 60rem;
+        @include rem(height, 60rem);
       }
 
       @include min-screen-xlarge {
-        height: 72rem;
+        @include rem(height, 72rem);
       }
 		}
 
@@ -100,13 +100,13 @@ html.js {
 
 	.next, .prev {
 		display: none;
-		width: $uc-slider-arrow-size;
-		height: $uc-slider-arrow-size;
+		@include rem(width, $uc-slider-arrow-size);
+		@include rem(height, $uc-slider-arrow-size);
 		position: absolute;
 		top: 50%;
-		margin-top: - $uc-slider-arrow-size / 2;
+		@include rem(margin-top, - $uc-slider-arrow-size / 2);
 		background-color: $white;
-		border-radius: $uc-slider-arrow-size / 2;
+		@include rem(border-radius, $uc-slider-arrow-size / 2);
 		text-decoration: none;
 		line-height: 1;
 		z-index: 1;
@@ -131,10 +131,10 @@ html.js {
 	}
 
 	.next {
-		right: $margin;
+		@include rem(right, $margin);
 
 		@include min-screen-xlarge {
-			right: $margin * 1.5;
+			@include rem(right, $margin * 1.5);
 		}
 
 		svg {
@@ -143,10 +143,10 @@ html.js {
 	}
 
 	.prev {
-		left: $margin;
+		@include rem(left, $margin);
 
 		@include min-screen-xlarge {
-			left: $margin * 1.5;
+			@include rem(left, $margin * 1.5);
 		}
 
 		svg {

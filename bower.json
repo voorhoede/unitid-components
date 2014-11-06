@@ -3,5 +3,5 @@
 	"version": "0.0.0",
 	"dependencies": {
 		"swipe": "#32c19c95ea09092167cd07cc783da24f79f5adf6"
-	}
+  }
 }

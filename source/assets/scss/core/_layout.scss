@@ -56,18 +56,18 @@
 	}
 
 	&.whitespace-before {
-		padding-top: $margin-header-small;
+		@include rem(padding-top, $margin-header-small);
 
     @include min-screen-medium {
-      padding-bottom: $margin-header-large;
+      @include rem(padding-bottom, $margin-header-large);
     }
 	}
 
 	&.whitespace-after {
-		padding-bottom: $margin-header-small;
+		@include rem(padding-bottom, $margin-header-small);
 
     @include min-screen-medium {
-      padding-bottom: $margin-header-large;
+      @include rem(padding-bottom, $margin-header-large);
     }
 	}
 
@@ -79,12 +79,12 @@
 	}
 
   .need-space {
-    margin-top: $margin-header-large - 1rem;
-    margin-bottom: $margin-header-medium;
+    @include rem(margin-top, $margin-header-large - 1rem);
+    @include rem(margin-bottom, $margin-header-medium);
 
     @include min-screen-xlarge {
-      margin-top: $margin-header-xlarge - 1rem;
-      margin-bottom: $margin-header-large;
+      @include rem(margin-top, $margin-header-xlarge - 1rem);
+      @include rem(margin-bottom, $margin-header-large);
     }
   }
 }
@@ -126,11 +126,11 @@
 		margin-right: auto;
 
 		@include min-screen-large {
-			max-width: $container-centered-large;
+			@include rem(max-width, $container-centered-large);
 		}
 
 		@include min-screen-xlarge {
-			max-width: $container-centered-xlarge;
+			@include rem(max-width, $container-centered-xlarge);
 		}
 	}
 
@@ -143,22 +143,22 @@
 
 [uc-row] {
 	@include clearfix;
-	padding: 0 $margin;
+	@include rem(padding, 0 $margin);
 
 	@include min-screen-medium {
-		padding: 0 $margin * 2;
+		@include rem(padding, 0 $margin * 2);
 	}
 
   @include min-screen-large {
-    padding: 0 $whitespace-large;
+    @include rem(padding, 0 $whitespace-large);
   }
 
 	@include min-screen-xlarge {
-		padding: 0 $whitespace-xlarge;
+		@include rem(padding, 0 $whitespace-xlarge);
 	}
 
 	p:last-child, img:last-child {
-		margin-bottom: $margin-header-large;
+		@include rem(margin-bottom, $margin-header-large);
 	}
 
   &.vertical-align {
@@ -205,16 +205,16 @@
 
   h3 {
     @include font-bold;
-    font-size: $font-size-header-small;
+    @include rem(font-size, $font-size-header-small);
     margin-bottom: 0.25em;
 
     @include min-screen-xlarge {
-      font-size: $font-size-header-medium;
+      @include rem(font-size, $font-size-header-medium);
     }
   }
 
   img {
-    margin: 0 auto $margin-header-medium;
+    @include rem(margin, 0 auto $margin-header-medium);
     display: block;
   }
 }
@@ -226,12 +226,12 @@
 	}
 
 	@include min-screen-large {
-		width: ($container-large - $margin-twice) / 3;
-		margin-left: $margin;
+		@include rem(width, ($container-large - $margin-twice) / 3);
+		@include rem(margin-left, $margin);
 	}
 
 	@include min-screen-xlarge {
-		width: ($container-xlarge - $margin-twice) / 3;
+		@include rem(width, ($container-xlarge - $margin-twice) / 3);
 	}
 }
 
@@ -242,13 +242,13 @@
 	}
 
 	@include min-screen-large {
-		width: ($container-large - ($margin / 2)) * 2/3; // not entirely 2/3, since 1/3 column is
+		@include rem(width, ($container-large - ($margin / 2)) * 2/3); // not entirely 2/3, since 1/3 column is
 		                                                 // based on 2 gutters, not 1
-		margin-left: $margin;
+		@include rem(margin-left, $margin);
 	}
 
 	@include min-screen-xlarge {
-		width: ($container-xlarge - ($margin / 2)) * 2/3;
+		@include rem(width, ($container-xlarge - ($margin / 2)) * 2/3);
 	}
 }
 
@@ -259,12 +259,12 @@
 	}
 
 	@include min-screen-large {
-		width: ($container-large - $margin) / 2;
-		margin-left: $margin;
+		@include rem(width, ($container-large - $margin) / 2);
+		@include rem(margin-left, $margin);
 	}
 
 	@include min-screen-xlarge {
-		width: ($container-xlarge - $margin) / 2;
+		@include rem(width, ($container-xlarge - $margin) / 2);
 	}
 }
 
@@ -275,11 +275,11 @@
 	}
 
 	@include min-screen-large {
-		width: ($container-large - $margin-tripled) / 4;
-		margin-left: $margin;
+		@include rem(width, ($container-large - $margin-tripled) / 4);
+		@include rem(margin-left, $margin);
 	}
 
 	@include min-screen-xlarge {
-		width: ($container-xlarge - $margin-tripled) / 4;
+		@include rem(width, ($container-xlarge - $margin-tripled) / 4);
 	}
 }

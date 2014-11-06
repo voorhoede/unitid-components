@@ -24,11 +24,11 @@ var Slider = (function() {
 		}
 
 		function attachHandlers(element) {
-			element.querySelector('.prev').addEventListener('click', function(event) {
+      u.listen(element.querySelector('.prev'), 'click', function(event) {
 				event.preventDefault();
 				moveAlong(element.swipe, 'prev');
 			});
-			element.querySelector('.next').addEventListener('click', function(event) {
+      u.listen(element.querySelector('.next'), 'click', function(event) {
 				event.preventDefault();
 				moveAlong(element.swipe, 'next');
 			});

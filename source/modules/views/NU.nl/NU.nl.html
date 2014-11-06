@@ -6,6 +6,7 @@
 
 {% block specific_scripts %}
 <!-- START Unitid website specific scripts/css -->
+<link rel="stylesheet" href="/guide/vendor/unitid-site/css/fonts.css" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
@@ -15,6 +16,8 @@
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+
+<script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
 <!-- END Unitid website specific scripts/css -->
 {% endblock %}
 
@@ -25,7 +28,7 @@
 {% block content %}
 <div id="container" class="case container" role="document">
 	<section role="hero" class="whitespace-after">
-		<div class="uc-hero" data-component="uc-hero" style="background-image: url({{ pathToAssets }}images/nu.nl/header.jpg)">
+		<div class="uc-hero" data-component="uc-hero">
 			<header>
 				<h1>
 					NU.nl redesign
@@ -53,7 +56,7 @@
         <li class="about-breaking-news js-hide">
           <label>
             <figure>
-              <img src="{{ pathToAssets }}images/nu.nl/icon-breaking-news.svg" alt="Brekend nieuws">
+              <img src="{{ pathToAssets }}images/nu.nl/icon-breaking-news.svg" alt="Brekend nieuws" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <figcaption>Breaking news<br/>abonnees</figcaption>
             </figure>
           </label>
@@ -62,7 +65,7 @@
 				<li class="about-visitors js-hide">
 					<label>
 						<figure class="visitors">
-							<img src="{{ pathToAssets }}images/nu.nl/icon-visitors.svg" alt="Pictogram voor bezoekers">
+							<img src="{{ pathToAssets }}images/nu.nl/icon-visitors.svg" alt="Pictogram voor bezoekers" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
 							<figcaption class="double">Dagelijkse<br/>bezoeken</figcaption>
 						</figure>
 					</label>
@@ -71,7 +74,7 @@
         <li class="about-articles js-hide">
           <label>
             <figure>
-              <img src="{{ pathToAssets }}images/nu.nl/icon-articles.svg" alt="Pictogram voor artikelen">
+              <img src="{{ pathToAssets }}images/nu.nl/icon-articles.svg" alt="Pictogram voor artikelen" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <figcaption class="double">Artikelen<br/>per dag</figcaption>
             </figure>
           </label>
@@ -80,7 +83,7 @@
         <li class="about-journalists js-hide">
 					<label>
 						<figure>
-							<img src="{{ pathToAssets }}images/nu.nl/icon-journalists.svg" alt="Pictogram voor journalisten">
+							<img src="{{ pathToAssets }}images/nu.nl/icon-journalists.svg" alt="Pictogram voor journalisten" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
 							<figcaption>Journalisten</figcaption>
 						</figure>
 					</label>
@@ -183,19 +186,19 @@
 		<div uc-row>
 			<div uc-column="1/4" data-component="uc-column-third">
 				<figure class="spraycans">
-					<img src="{{ pathToAssets }}images/nu.nl/icon-spraycans.svg" alt="Spuitbus">
+					<img src="{{ pathToAssets }}images/nu.nl/icon-spraycans.svg" alt="Spuitbus" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
 					<figcaption class="large">Een nieuw uiterlijk</figcaption>
 				</figure>
 			</div>
 			<div uc-column="1/2" data-component="uc-column-third">
 				<figure class="devices">
-					<img src="{{ pathToAssets }}images/nu.nl/icon-devices.svg" alt="Laptop & mobiele apparaten">
+					<img src="{{ pathToAssets }}images/nu.nl/icon-devices.svg" alt="Laptop & mobiele apparaten" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
 					<figcaption class="large">Responsive design</figcaption>
 				</figure>
 			</div>
 			<div uc-column="1/4" data-component="uc-column-third">
 				<figure class="coins">
-					<img src="{{ pathToAssets }}images/nu.nl/icon-coins.svg" alt="Kleingeld">
+					<img src="{{ pathToAssets }}images/nu.nl/icon-coins.svg" alt="Kleingeld" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
 					<figcaption class="large">Slim adverteren</figcaption>
 				</figure>
 			</div>
@@ -203,7 +206,7 @@
 	</section>
 	<section class="smoke center divider-after">
     <div uc-row>
-      <img class="icon header-spraycans" src="{{ pathToAssets }}images/nu.nl/icon-spraycans.svg" alt="Spuitbus">
+      <img class="icon header-spraycans" src="{{ pathToAssets }}images/nu.nl/icon-spraycans.svg" alt="Spuitbus" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
       <h1>Een nieuw uiterlijk</h1>
       <h2>Terug naar de basis</h2>
       <p>Om de versnippering aan te pakken moesten we terug naar de basis. Hiervoor deden we samen met het team van NU.nl een workshop ‘Branding en Identiteit’. Hierbij gingen we aan de slag met zaken als de informatiedichtheid, scanbaarheid en kort en snel nieuws.</p>
@@ -241,7 +244,7 @@
 		</div>
 	</section>
 	<section class="center">
-		<img class="icon header-devices" src="{{ pathToAssets }}images/nu.nl/icon-devices.svg" alt="Laptop & mobiele apparaten">
+		<img class="icon header-devices" src="{{ pathToAssets }}images/nu.nl/icon-devices.svg" alt="Laptop & mobiele apparaten" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
     <div uc-row>
       <h1>Responsive design</h1>
   		<h2>Revolutie of evolutie</h2>
@@ -266,7 +269,7 @@
 		<div class="uc-fullbleed" data-component="uc-fullbleed">
 			<figure class="uc-imagebox" style="background-image: url('{{ pathToAssets }}images/nu.nl/visual-workshop.jpg')"></figure>
 		</div>
-		<img class="icon header-coins" src="{{ pathToAssets }}images/nu.nl/icon-coins.svg" alt="Kleingeld">
+		<img class="icon header-coins" src="{{ pathToAssets }}images/nu.nl/icon-coins.svg" alt="Kleingeld" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
 		<h1>Slim adverteren</h1>
 		<h2>Content versus advertenties</h2>
 	</section>

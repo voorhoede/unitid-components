@@ -1,9 +1,9 @@
 @mixin button {
 	@include font-bold;
 	display: inline-block;
-	padding: $margin;
+	@include rem(padding, $margin);
 	background-color: $accent;
-	font-size: $font-size-body;
+	@include rem(font-size, $font-size-body);
 	border-radius: 0.25em;
 	color: $white;
 	text-decoration: none;

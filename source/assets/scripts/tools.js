@@ -9,8 +9,18 @@ var u = {
 		}
 		return this.isArray(obj) ? obj.slice() : this.extend(obj);
 	},
+  /**
+   * Source: https://github.com/voorhoede/airhooks/blob/master/airhooks/forEach.js
+   */
 	each: function(obj, fn) {
-		return [].forEach.call(obj, fn);
+    var nativeForEach = Array.prototype.forEach;
+    if (nativeForEach && obj.foreach === nativeForEach) {
+      [].forEach.call(obj, fn);
+    } else {
+      for (var i = 0, length = obj.length; i < length; i++) {
+        fn.call(this, obj[i], i, obj);
+      }
+    }
 	},
 	extend: function(obj) {
 		var i = 1,
@@ -82,7 +92,14 @@ var u = {
 	},
 	qsa: function(selector) {
 		return document.querySelectorAll(selector)
-	}
+	},
+  listen: function(el, type, fn) {
+    if (el.addEventListener) {
+      el.addEventListener(type, fn, false);
+    } else {
+      el.attachEvent("on" + type, fn);
+    }
+  }
 };
 
 window.u = u;
