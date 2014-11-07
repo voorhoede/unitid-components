@@ -35,7 +35,7 @@
 			@include rem(font-size, $font-size-header-large);
 			@include rem(margin-bottom, $margin-header-large);
 			& + p, & + h2 {
-				@include rem(margin-top, - 4rem);
+				@include rem(margin-top, - 5.5rem);
 			}
 		}
 
