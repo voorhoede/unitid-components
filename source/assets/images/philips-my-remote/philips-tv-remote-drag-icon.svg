@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>philips-tv-remote-drag-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Casepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-644.000000, -3847.000000)" fill="#FFFFFF">
+            <g id="Concept-board" sketch:type="MSLayerGroup" transform="translate(120.000000, 3450.000000)">
+                <g id="canvas" transform="translate(0.000000, 344.000000)" sketch:type="MSShapeGroup">
+                    <g id="Drag-around" transform="translate(504.000000, 42.000000)">
+                        <g id="Icon" transform="translate(20.000000, 11.000000)">
+                            <path d="M13.34,13.34 L13.34,4.93 L9.57,4.93 L14.5,0 L19.43,4.93 L15.66,4.93 L15.66,13.34 L24.07,13.34 L24.07,9.57 L29,14.5 L24.07,19.43 L24.07,15.66 L15.66,15.66 L15.66,24.07 L19.43,24.07 L14.5,29 L9.57,24.07 L13.34,24.07 L13.34,15.66 L4.93,15.66 L4.93,19.43 L0,14.5 L4.93,9.57 L4.93,13.34 L13.34,13.34 Z" id="philips-tv-remote-drag-icon"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

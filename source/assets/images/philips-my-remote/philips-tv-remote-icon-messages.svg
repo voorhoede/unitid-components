@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="113px" height="113px" viewBox="0 0 113 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>philips-tv-remote-icon-messages</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#92F16D" offset="0%"></stop>
+            <stop stop-color="#3FD706" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#67E1FC" offset="0%"></stop>
+            <stop stop-color="#3B76F4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Casepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-902.000000, -11104.000000)">
+            <g id="Communicating" sketch:type="MSLayerGroup" transform="translate(120.000000, 10769.000000)">
+                <g id="philips-tv-remote-icon-messages" transform="translate(782.000000, 335.000000)" sketch:type="MSShapeGroup">
+                    <path d="M26.2725201,85.9144939 C10.491338,77.690421 0,63.1125571 0,46.5 C0,20.8187591 25.072054,0 56,0 C86.927946,0 112,20.8187591 112,46.5 C112,72.1812409 86.927946,93 56,93 C53.7481132,93 51.5272708,92.8896313 49.3448903,92.6750531 C47.0684079,92.7490172 44.3283735,92.7656747 43,92.5 C40.5,92 38,94 31.5,97.5 C25,101 19.5,100.5 19.5,100.5 C19.4999999,100.5 26.5,91.5 26.5,91.5 C26.5,91.5 28.3790549,88.1177012 26.2725201,85.9144939 Z" id="Oval-140" fill="url(#linearGradient-1)"></path>
+                    <path d="M59.6789289,103.437391 C49.8632952,98.3221538 43.3378569,89.2549641 43.3378569,78.922229 C43.3378569,62.948923 58.9322588,50 78.1689285,50 C97.4055981,50 113,62.948923 113,78.922229 C113,94.8955351 97.4055981,107.844458 78.1689285,107.844458 C76.7682922,107.844458 75.386965,107.775811 74.0295606,107.642347 C72.6136263,107.688351 70.9093703,107.698712 70.083144,107.533466 C68.5281854,107.222475 66.9732269,108.466442 62.9303347,110.643383 C58.8874424,112.820325 55.4665336,112.509334 55.4665336,112.509334 C55.4665335,112.509334 59.8204176,106.911483 59.8204176,106.911483 C59.8204176,106.911483 60.9891585,104.807749 59.6789289,103.437391 Z" id="Oval-141" fill="url(#linearGradient-2)" transform="translate(78.168928, 81.262346) scale(-1, 1) translate(-78.168928, -81.262346) "></path>
+                    <circle id="Oval-142" fill="#FFFFFF" cx="63" cy="80" r="6"></circle>
+                    <circle id="Oval-143" fill="#FFFFFF" cx="78" cy="80" r="6"></circle>
+                    <circle id="Oval-144" fill="#FFFFFF" cx="93" cy="80" r="6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

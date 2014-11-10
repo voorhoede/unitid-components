@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="109px" height="96px" viewBox="0 0 109 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>philips-tv-remote-icon-calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="42.8917395%" y1="9.10077904%" x2="55.8940969%" y2="89.7153817%" id="linearGradient-1">
+            <stop stop-color="#C21A00" offset="0%"></stop>
+            <stop stop-color="#FF462C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.9317602%" id="linearGradient-2">
+            <stop stop-color="#595959" offset="0%"></stop>
+            <stop stop-color="#353535" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Casepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-420.000000, -11111.000000)">
+            <g id="Communicating" sketch:type="MSLayerGroup" transform="translate(120.000000, 10769.000000)">
+                <g id="philips-tv-remote-icon-calendar" transform="translate(300.000000, 343.000000)">
+                    <path d="M0.340042434,16.4566505 L14.192304,95.0167295 L108.733848,78.3465045 L94.8815867,-0.213574552 L0.340042434,16.4566505 Z M9,40 L18.0511168,91.3314341 L105,76 L95.9488832,24.6685659 L9,40 Z" id="Rectangle-500" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+                    <text id="FEB" sketch:type="MSTextLayer" transform="translate(28.500000, 24.500000) rotate(-10.000000) translate(-28.500000, -24.500000) " font-family="Helvetica Neue" font-size="15" font-weight="normal" letter-spacing="-0.5" fill="#FFFFFF">
+                        <tspan x="13" y="30">FEB</tspan>
+                    </text>
+                    <text id="5" fill="url(#linearGradient-2)" sketch:type="MSTextLayer" transform="translate(56.500000, 57.000000) rotate(-10.000000) translate(-56.500000, -57.000000) " font-family="Helvetica Neue" font-size="49" font-weight="bold" sketch:alignment="middle" letter-spacing="-1.63333356">
+                        <tspan x="43.6946668" y="75" fill="#3F3F3F">5</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
