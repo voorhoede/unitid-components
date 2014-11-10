@@ -1,0 +1,13 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* PHILIPS-MYREMOTE VIEW */
+.uc-hero {
+
+    .philips-image-over {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/assets/images/philips-my-remote/over-header.png');
+    }
+}

@@ -1,0 +1,368 @@
+{% extends "views/_base-view/base-view.html" %}
+
+{% block language %}
+{% include "components/language/_language.html" %}
+{% endblock %}
+
+{% block specific_scripts %}
+<!-- START Unitid website specific scripts/css -->
+<link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+<!-- END Unitid website specific scripts/css -->
+{% endblock %}
+
+{% block header %}
+{% include "components/navigation/_navigation.html" %}
+{% endblock %}
+
+{% block content %}
+<div id="container"
+     class="case container"
+     role="document">
+    <section>
+        <div class="uc-hero"
+             data-component="uc-hero"
+             style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-header@2x.jpg)">
+            <header>
+                <h1>
+                    Phillips&nbsp;TV&nbsp;Remote
+                </h1>
+                <h2>
+                    Control your Smart TV<br />
+                    with a touch
+                </h2>
+            </header>
+            <div class="image-over philips-image-over"></div>
+        </div>
+        <div class="uc-streamer"
+             data-component="uc-streamer">
+            <h2>
+                <q>Helping you discover content with the
+                    <br />ease of a swipe in the
+                <strong>Phillips TV Remote.</strong></q>
+            </h2>
+        </div>
+    </section>
+    <section class="center divider-before">
+        <div uc-row>
+            <div class="uc-brief"
+                 data-component="uc-brief">
+                <h2>
+                    People love content, not a remote
+                </h2>
+                <p>
+                    Philips challenged us to come up with a revolutionairy app to control your Smart TV. By looking at the current landscape of apps we sighed. There was no diversity and all remotes do exactly the same: control the interface of your TV. We can do better! Since we love to design anything TV related we jumped aboard. Read on and find out how we came up with the solution.
+                </p>
+            </div>
+        </div>
+        <div class="uc-fullbleed"
+             data-component="uc-fullbleed">
+            <figure class="uc-imagebox"
+                    style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-apps.jpg)">
+            </figure>
+        </div>
+    </section>
+    <section class="center">
+        <div uc-row>
+            <div class="uc-intro">
+                <h1>
+                    What our users want
+                </h1>
+                <p>
+                    Often our clients have done a lot of work defining their product and researching users. We want to elloborate on their expertise, we believe this is important. Thatâs why at the start of this project we analysed dozens of documents and extracted the requirements needed for this app.
+                </p>
+            </div>
+        </div>
+        <div class="uc-fullbleed"
+             data-component="uc-fullbleed">
+            <figure class="uc-imagebox"
+                    style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-documents.jpg)">
+            </figure>
+        </div>
+    </section>
+    <section class="center smoke">
+        <div>
+            <h2>
+                <strong>We keep listening</strong> to our users
+            </h2>
+            <p>
+                How we do that? We create user stories, small cards with the most important features described as a task our users do. User stories are the North Star of our project, we keep getting back to them.
+            </p>
+            <div>
+                <div class="bullets">
+                    <h3>1</h3>
+                    <p>
+                        As a user I want to be able to control basic things (volume, mute, power) from anywhere in the app so that donât have to go looking for those options when I need them now.
+                    </p>
+                </div>
+                <div class="bullets">
+                    <h3>2</h3>
+                    <p>
+                        As a user I want to push video content from my mobile device directly to my TV so that I can continue watching the content on my big screen.
+                    </p>
+                </div>
+                <div class="bullets">
+                    <h3>3</h3>
+                    <p>
+                        As a user I want to be able to search for any content type inside my TV so that I can find the content what I am looking for.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="center">
+        <div>
+            <h2>
+                <strong>Communicating with the client</strong>
+                <br />and share our ideas
+            </h2>
+            <div>
+                <p>
+                    On a large canvas we paste our first ideas, sketches and usefull design inspiration. We group them and share them with team members very early in the design proces. The collection grows rapidly whilst consolidating the birds eye view.
+                </p>
+                <p>
+                    During the design proces we update the document with the visual designs. You get a visual overview of your product design. Bonus: You can see your design evolving from the early start on.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="center smoke">
+        <div>
+            <h2>
+                <strong>Two directions,</strong> pick your battles
+            </h2>
+            <p>
+                We donât believe in approaching projects from a technology perspective. Often more and more features are cramped in. Thatâs why we helped our client picking his battles by desiging two different concepts, side by side. Either you go left or you go right.
+            </p>
+            <div uc-row>
+                <div uc-column="1/2">
+                    <div class="uc-fullbleed"
+                         data-component="uc-fullbleed">
+                        <figure class="uc-imagebox"
+                                style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-wireframe-A.jpg)">
+                        </figure>
+                    </div>
+                    <h3>
+                        All content is equal
+                    </h3>
+                    <p>
+                        There is no menu, only content. Users want the app to open with all relevant content available at this moment. From here you can drill down to make the selection smaller using the filters in the sidebar.
+                    </p>
+                </div>
+                <div uc-column="1/2">
+                    <div class="uc-fullbleed"
+                         data-component="uc-fullbleed">
+                        <figure class="uc-imagebox"
+                                style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-wireframe-B.jpg)">
+                        </figure>
+                    </div>
+                    <h3>
+                        Familiar menu
+                    </h3>
+                    <p>
+                        From the menu, you can instantly access all content through the familiar content domains you also find on your TV. Launch a channel from the TV Guide or rent a movie in Video On Demand.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="center">
+        <div>
+            <h1>
+                What it looks like
+            </h1>
+            <div class="uc-fullbleed"
+                 data-component="uc-fullbleed">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-overview2.jpg)">
+                </figure>
+            </div>
+            <div uc-row>
+                <div uc-column="1/3"><p></p></div>
+                <div uc-column="1/3"><p></p></div>
+                <div uc-column="1/3"><p></p></div>
+            </div>
+            <div uc-row>
+                <div uc-column="1/2">
+                    <div class="uc-fullbleed"
+                         data-component="uc-fullbleed">
+                        <figure class="uc-imagebox"
+                                style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-visuals-heart.jpg)">
+                        </figure>
+                    </div>
+                    <h3>
+                        When you love that show
+                    </h3>
+                    <p>
+                        Favouriting is a big part in the viewing experience. We found that users love to mark shows or episodes as favourite. Thatâs why we put in this beautifull animation.
+                    </p>
+                </div>
+                <div uc-column="1/2">
+                    <div class="uc-fullbleed"
+                         data-component="uc-fullbleed">
+                        <figure class="uc-imagebox"
+                                style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-visuals-pairing.jpg)">
+                        </figure>
+                    </div>
+                    <h3>
+                        Enhancing the User Experience
+                    </h3>
+                    <p>
+                        Throughout the entire app we use nifty animations to enhance the User Experience and communicate with the user.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="center divider-before">
+        <div>
+            <h1>
+                Convenient interactions
+            </h1>
+            <h2>
+                Watching content is only one tap away
+            </h2>
+            <p>
+                Our users find it extremly important to instantly watch the content the are looking for. They donât bother if the show is now on TV, on Demand or stored in their recordings. Welcome Watch Actions. It is a contextual playbutton that letâs you watch or record content right away.
+            </p>
+        </div>
+        <div class="uc-fullbleed"
+             data-component="uc-fullbleed">
+            <figure class="uc-imagebox"
+                    style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-watch-actions.jpg)">
+            </figure>
+        </div>
+    </section>
+    <section class="center invert">
+        <div uc-row>
+            <h2>
+                <strong>Switching channels with a swipe.</strong><br />
+                Never look down again
+            </h2>
+            <p>
+                Whether you are watching Video On Demand, streaming pictures to your Smart TV or listening to music: You want total control. We provide streamlined sets of essential controls that you can swipe or flick. The sets change according to the content. Swiping became the new standard.
+            </p>
+            <div class="uc-fullbleed"
+                 data-component="uc-fullbleed">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-controls.png)">
+                </figure>
+            </div>
+            <h2>
+                <strong>
+                    The user is in control
+                </strong>
+            </h2>
+            <p>
+                The app design is tested using the Nano-testing method. Together with 6foot7 we prototyped a realistic version of the controls. We tweaked the animations, enlarged the hit areas and even adjusted the zapping speed. By actually feel how the controls work and running usability tests with users we were able to iterate on the design and polish it. Read about our Nano-test method âº
+            </p>
+        </div>
+        <div class="uc-fullbleed"
+             data-component="uc-fullbleed">
+            <figure class="uc-imagebox"
+                    style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-proto-A.jpg)">
+            </figure>
+        </div>
+        <div uc-row class="uc-fullbleed"
+             data-component="uc-fullbleed">
+            <div uc-column="1/3">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-proto-B.jpg)">
+                </figure>
+            </div>
+            <div uc-column="1/3">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-proto-C.jpg)">
+                </figure>
+            </div>
+            <div uc-column="1/3">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-proto-D.jpg)">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="center divider-before">
+        <div>
+            <h1>
+                keeping the client in the loop
+            </h1>
+            <h2>
+                How can you make quick decissions whilst working remotely?
+            </h2>
+            <div uc-row>
+                <div uc-column="1/2">
+                    <div class="uc-fullbleed"
+                         data-component="uc-fullbleed">
+                        <figure class="uc-imagebox"
+                                style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-icon-calendar.svg)">
+                        </figure>
+                    </div>
+                    <p>
+                        Every monday morning we prepaired an agenda with decissions to be made, questions to be answered and new designs to be reviewed. During this morning our client focused on that. Only that. With a green marker everything was checked, with the red marker designs were annotated.
+                    </p>
+                </div>
+                <div uc-column="1/2">
+                    <div class="uc-fullbleed"
+                         data-component="uc-fullbleed">
+                        <figure class="uc-imagebox"
+                                style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-icon-messages.svg)">
+                        </figure>
+                    </div>
+                    <p>
+                        During the other days we focused on solving  complex flows and creating designs. We shared everything over iMessage so our product owner could reply instantly. All exports where cropped to fit on his iPhone. Decissions were made in a few minutes. It proved to be very effective.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div uc-row class="uc-fullbleed"
+             data-component="uc-fullbleed">
+            <div uc-column="1/3">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-photo-A.jpg)">
+                </figure>
+            </div>
+            <div uc-column="1/3">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-photo-B.jpg)">
+                </figure>
+            </div>
+            <div uc-column="1/3">
+                <figure class="uc-imagebox"
+                        style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-photo-C.jpg)">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="center">
+        <div>
+            <h1>
+                One family. Multiple platforms.
+            </h1>
+            <h2>
+                We designed the Philips TV Remote as a family. It is availble for phone and tablet and matches perfectly with your Philips Smart TV.
+            </h2>
+        </div>
+        <div>
+            <h2>
+                Get it now. While itâs hot.
+            </h2>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "components/footer/_footer.html" %}
+{% endblock %}
+
+{% block disclaimer %}
+{% include "components/disclaimer/_disclaimer.html" %}
+{% endblock %}
