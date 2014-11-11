@@ -2,12 +2,127 @@
 @import "../../../assets/scss/helpers";
 
 /* PHILIPS-MYREMOTE VIEW */
-.uc-hero {
+.philips-uc-hero {
+    background-size: 100% 100%;
 
     .philips-image-over {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         background-image: url('/assets/images/philips-my-remote/over-header.png');
+        margin-bottom: 2%;
+        right: 6rem;
     }
 }
+.philips-uc-fullbleed {
+
+    margin: 0;
+    figure {
+        background-size: contain;
+    }
+    .tv-icon-svg {
+        background-size: 25%;
+        height: 24rem;
+        margin: 0;
+    }
+    @include min-screen-medium {
+        .tv-controls-png {
+            background-size: 100%;
+            height: 72rem;
+        }
+        .tv-icon-svg {
+            background-size: 50%;
+            height: 24rem;
+            margin: 0;
+        }
+        figure {
+            background-size: 100% 100%;
+        }
+        .tv-wireframe-jpg, .tv-overview2-jpg, .tv-visuals-jpg, .tv-overview-jpg {
+            background-size: 75%;
+            height: 72rem;
+        }
+        .tv-overview-jpg {
+          height: 52rem;
+        }
+        .tv-visuals-jpg {
+            height: 35rem;
+        }
+    }
+    @include min-screen-xlarge {
+        .tv-overview2-jpg, .tv-controls-png {
+            height: 83rem;
+        }
+    }
+    .tv-apps-jpg {
+        background-size: 100% auto;
+    }
+}
+.philips-uc-images {
+    .philips-uc-fullbleed {
+        margin: 0;
+        [uc-column~="1/3"] {
+            margin: 0 0.5%;
+            width: 33%;
+            float: left;
+            figure {
+                height: 22rem;
+                @include min-screen-medium {
+                    height: 35rem;
+                }
+            }
+        }
+        [uc-column~="1/3"]:first-child, [uc-column~="1/3"]:last-child {
+            margin: 0;
+        }
+        figure {
+            margin: 0;
+        }
+    }
+    .philips-uc-fullbleed:first-child {
+        margin-bottom: 3px;
+    }
+}
+
+.philips-uc-overlapping-images {
+    .philips-uc-fullbleed {
+        [uc-column~="1/3"] {
+            overflow: visible;
+            float: left;
+            margin: 0 0 0 -12px;
+            z-index: 0;
+            width: 33.3%;
+            .tv-photo-png {
+                width: 115%;
+            }
+        }
+        [uc-column~="1/3"]:first-child, [uc-column~="1/3"]:last-child {
+            .tv-photo-png {
+                z-index: 1;
+            }
+        }
+    }
+}
+.philips-buttons {
+    margin: 0 0 30px 25%;
+    button {
+        border-radius: 20px;
+        background-size: cover;
+        width: 32rem;
+        height: 11rem;
+        margin: 0 0 30px 0;
+    }
+}
+@include min-screen-medium {
+    .philips-buttons {
+        margin: 0 0 30px 10%;
+        button:first-child {
+          margin-right: 20px;
+            float: left;
+        }
+        button:last-child {
+            float: left;
+        }
+    }
+}
+
