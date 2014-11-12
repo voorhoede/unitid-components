@@ -2,6 +2,61 @@
 @import "../../../assets/scss/helpers";
 
 /* PHILIPS-MYREMOTE VIEW */
+.philips-container {
+  /*
+    h1, h3 {
+        font-weight: bold;
+    }
+  */
+    strong {
+        font-weight: bold;
+    }
+    h2 + .philips-p {
+        margin-top: 0px;
+    }
+    .philips-p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .philips-pointer {
+    }
+    @include min-screen-medium {
+        .philips-pointer {
+            margin-left: 58%;
+            margin-top: -85px;
+            .philips-p {
+                margin-left: 11rem;
+                margin-top: -25px;
+            }
+        }
+    }
+}
+.philips-panels {
+    margin: 0 10%;
+}
+.philips-bullets {
+    border-radius: 1rem;
+    background-color: $white;
+    width: 44rem;
+    padding: 2rem;
+    float: left;
+    transform: rotate(2deg);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
+    h3 {
+        position: relative;
+        font-size: 3rem;
+        margin: 0 0 0 60%;
+    }
+    p {
+        text-align: left;
+    }
+}
+.philips-bullets:first-child {
+    margin-right: 50px;
+    transform: rotate(358deg);
+} .philips-bullets:last-child {
+    margin-left: 25%;
+  }
 .philips-uc-hero {
     background-size: 100% 100%;
 
@@ -23,6 +78,12 @@
     .tv-icon-svg {
         background-size: 25%;
         height: 24rem;
+        margin: 0;
+    }
+    .tv-arrow-jpg {
+        height: 8rem;
+        width: 9rem;
+        background-size: contain;
         margin: 0;
     }
     @include min-screen-medium {
