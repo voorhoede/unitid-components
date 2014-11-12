@@ -3,11 +3,21 @@
 
 /* PHILIPS-MYREMOTE VIEW */
 .philips-container {
-  /*
-    h1, h3 {
-        font-weight: bold;
+    h1 {
+      span {
+        @include font-regular;
+      }
     }
-  */
+    .invert {
+        a {
+            color: $white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        p {
+            text-align: left;
+        }
+    }
     strong {
         font-weight: bold;
     }
@@ -19,17 +29,37 @@
         margin-right: 10%;
     }
     .philips-pointer {
+        .philips-p {
+            font-family: "the great escape", sans-serif;
+            margin-top: -80px;
+        }
+    }
+    .philips-note {
+        [uc-column~="1/3"] {
+            width: 30%;
+            float: left;
+        }
+    }
+    [uc-column~="1/3"] {
+        .philips-p {
+          font-family: "the great escape", sans-serif;
+        }
     }
     @include min-screen-medium {
         .philips-pointer {
             margin-left: 58%;
-            margin-top: -85px;
+            margin-top: -50px;
             .philips-p {
                 margin-left: 11rem;
                 margin-top: -25px;
             }
         }
     }
+  [uc-column~="1/2"] {
+      .philips-p {
+          text-align: left;
+      }
+  }
 }
 .philips-panels {
     margin: 0 10%;
@@ -37,7 +67,13 @@
 .philips-bullets {
     border-radius: 1rem;
     background-color: $white;
-    width: 44rem;
+    width: 100%;
+    @include min-screen-medium {
+        width: 45%
+    }
+    @include min-screen-xlarge {
+        width: 44rem;
+    }
     padding: 2rem;
     float: left;
     transform: rotate(2deg);
@@ -54,8 +90,11 @@
 .philips-bullets:first-child {
     margin-right: 50px;
     transform: rotate(358deg);
-} .philips-bullets:last-child {
-    margin-left: 25%;
+}
+.philips-bullets:last-child {
+      @include min-screen-medium {
+          margin-left: 25%;
+      }
   }
 .philips-uc-hero {
     background-size: 100% 100%;
@@ -74,6 +113,7 @@
     margin: 0;
     figure {
         background-size: contain;
+        margin-bottom: 0;
     }
     .tv-icon-svg {
         background-size: 25%;
@@ -81,13 +121,19 @@
         margin: 0;
     }
     .tv-arrow-jpg {
-        height: 8rem;
-        width: 9rem;
-        background-size: contain;
-        margin: 0;
+        display: none;
+        visibility: hidden;
     }
     @include min-screen-medium {
-        .tv-controls-png {
+        .tv-arrow-jpg {
+          display: block;
+          visibility: visible;
+          height: 8rem;
+          width: 9rem;
+          background-size: contain;
+          margin: 0;
+        }
+        .tv-controls-png, .canvas-png {
             background-size: 100%;
             height: 72rem;
         }

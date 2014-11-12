@@ -6,6 +6,7 @@
 
 {% block specific_scripts %}
 <!-- START Unitid website specific scripts/css -->
+<link rel="stylesheet" href="/guide/vendor/unitid-site/css/fonts.css" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
@@ -15,6 +16,8 @@
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+
+<script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
 <!-- END Unitid website specific scripts/css -->
 {% endblock %}
 
@@ -135,16 +138,28 @@
                 <strong>Communicating with the client</strong>
                 <br />and share our ideas
             </h2>
-            <div>
-                <p class="philips-p">
-                    On a large canvas we paste our first ideas, sketches and usefull design inspiration. We group them and share them with team members very early in the design proces. The collection grows rapidly whilst consolidating the birds eye view.
-                </p>
-                <p class="philips-p">
-                    During the design proces we update the document with the visual designs. You get a visual overview of your product design. Bonus: You can see your design evolving from the early start on.
-                </p>
+            <div uc-row>
+                <div uc-column="1/2">
+                    <p class="philips-p">
+                       On a large canvas we paste our first ideas, sketches and usefull design inspiration. We group them and share them with team members very early in the design proces. The collection grows rapidly whilst consolidating the birds eye view.
+                    </p>
+                </div>
+                <div uc-column="1/2">
+                    <p class="philips-p">
+                        During the design proces we update the document with the visual designs. You get a visual overview of your product design. Bonus: You can see your design evolving from the early start on.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+  <section class="center">
+      <div class="uc-fullbleed philips-uc-fullbleed"
+           data-component="uc-fullbleed">
+          <figure class="uc-imagebox canvas-png"
+                  style="background-image: url({{ pathToAssets }}images/philips-my-remote/canvas.png)">
+          </figure>
+      </div>
+  </section>
     <section class="center smoke">
         <div>
             <h2>
@@ -196,10 +211,10 @@
                         style="background-image: url({{ pathToAssets }}images/philips-my-remote/philips-tv-remote-overview2.jpg)">
                 </figure>
             </div>
-            <div uc-row>
-                <div uc-column="1/3"><p>Find content</p></div>
-                <div uc-column="1/3"><p>Explore content</p></div>
-                <div uc-column="1/3"><p>Watch it!</p></div>
+            <div uc-row class="philips-note">
+                <div uc-column="1/3"><p class="philips-p">Find content</p></div>
+                <div uc-column="1/3"><p class="philips-p">Explore content</p></div>
+                <div uc-column="1/3"><p class="philips-p">Watch it!</p></div>
             </div>
             <div uc-row>
                 <div uc-column="1/2">
@@ -309,7 +324,7 @@
     <section class="center divider-before">
         <div>
             <h1>
-                keeping the client in the loop
+                <span>Keeping the </span>client in the loop
             </h1>
             <h2>
                 How can you make quick decissions whilst working remotely?
@@ -364,7 +379,7 @@
     <section class="center">
         <div>
             <h1>
-                One family. Multiple platforms.
+                One family.<span> Multiple platforms.</span>
             </h1>
             <h2>
                 We designed the Philips TV Remote as a family. It is availble for phone and tablet and matches perfectly with your Philips Smart TV.
