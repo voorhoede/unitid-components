@@ -1,7 +1,6 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/helpers";
 
-/* PHILIPS-MYREMOTE VIEW */
 .philips-container {
     h1 {
       span {
@@ -95,20 +94,83 @@
       @include min-screen-medium {
           margin-left: 25%;
       }
-  }
+}
+
+.uc-hero {
+  padding: 0 0 0 1em;
+}
+
 .philips-uc-hero {
+    @include rem(height, 15 * $margin);
 
     @include min-screen-xlarge {
       @include rem(height, 19 * $margin);
     }
 
-    .philips-image-over {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url('/assets/images/philips-my-remote/over-header.png');
-        margin-bottom: 2%;
-        right: 6rem;
+    header {
+      position: absolute;
+      bottom: 0;
+      width: 66%;
+
+      @include min-screen-medium {
+        width: 50%;
+      }
+    }
+
+    h1 {
+      font-size: 1.375em;
+
+      @include min-screen-small {
+        font-size: 1.75em;
+      }
+
+      @include min-screen-between {
+        font-size: 2.25em;
+      }
+
+      @include min-screen-medium {
+        font-size: 3em;
+      }
+    }
+
+    h2 {
+      font-size: 1.25em;
+
+      @include min-screen-small {
+        font-size: 1.5em;
+      }
+
+      @include min-screen-between {
+        font-size: 2em;
+      }
+
+      @include min-screen-medium {
+        font-size: 2.5em;
+      }
+    }
+
+    img {
+      position: absolute;
+      height: 100%;
+      right: -3.25em;
+      bottom: -2em;
+
+      @include min-screen-between {
+        right: 2em;
+      }
+
+      @include min-screen-medium {
+        right: 12em;
+      }
+
+      @include min-screen-large {
+        right: 15em;
+      }
+
+      @include min-screen-xlarge {
+        @include rem(bottom, -3 * $margin);
+        @include rem(right, 15 * $margin);
+      }
     }
 }
 .philips-uc-fullbleed {

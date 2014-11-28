@@ -81,5 +81,9 @@
 
 // Specificity sucks, but necessary for IE
 .case .uc-hero h1 + h2 {
-  @include rem(margin-top, -1rem);
+  margin-top: 0;
+
+  @include min-screen-small {
+    @include rem(margin-top, -1rem);
+  }
 }
