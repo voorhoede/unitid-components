@@ -97,7 +97,10 @@
       }
   }
 .philips-uc-hero {
-    background-size: 100% 100%;
+
+    @include min-screen-xlarge {
+      @include rem(height, 19 * $margin);
+    }
 
     .philips-image-over {
         background-size: contain;

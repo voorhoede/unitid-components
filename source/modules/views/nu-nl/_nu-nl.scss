@@ -146,7 +146,7 @@ figcaption, li, p {
 }
 
 .uc-hero {
-  background-image: url('/assets/images/nu.nl/header.jpg');
+  background-image: url('/assets/images/nu-nl/header.jpg');
 
   header {
     h1, h2 {
@@ -163,7 +163,7 @@ figcaption, li, p {
 	.image-over {
 		background-size: cover;
 		background-position: center;
-		background-image: url('/assets/images/nu.nl/devices-mobile.png');
+		background-image: url('/assets/images/nu-nl/devices-mobile.png');
 
 		width: $hero-image-width-mobile * 0.5;
 		height: $hero-image-height-mobile * 0.5;
@@ -181,7 +181,7 @@ figcaption, li, p {
     }
 
     @include min-screen-medium {
-      background-image: url('/assets/images/nu.nl/devices-desktop.png');
+      background-image: url('/assets/images/nu-nl/devices-desktop.png');
       width: $hero-image-width-desktop * 0.7;
       height: $hero-image-height-desktop * 0.7;
     }
@@ -397,7 +397,7 @@ figcaption, li, p {
       margin-right: 5px;
       width: $logo-size-x;
       height: $logo-size-y;
-      background-image: url('/assets/images/nu.nl/logo-sprite.svg');
+      background-image: url('/assets/images/nu-nl/logo-sprite.svg');
       background-size: 13 * $logo-size-x $logo-size-y;
       opacity: 1;
 
@@ -643,20 +643,20 @@ figcaption, li, p {
   margin: 0 auto;
   @include rem(height, 68rem);
   @include rem(width, 33rem);
-  background-image: url('/assets/images/nu.nl/branding-identity-vertical.png');
+  background-image: url('/assets/images/nu-nl/branding-identity-vertical.png');
   background-size: cover;
   background-position: center;
   max-width: 100%;
 
   @include min-screen-medium {
-    background-image: url('/assets/images/nu.nl/branding-identity-horizontal.png');
+    background-image: url('/assets/images/nu-nl/branding-identity-horizontal.png');
     @include rem(width, 68rem);
     @include rem(height, 33rem);
   }
 }
 
 .numbers .extensions .logo {
-  background-image: url('/assets/images/nu.nl/logo-sprite.svg');
+  background-image: url('/assets/images/nu-nl/logo-sprite.svg');
 }
 
 // Hide from IE old; too much hassle
@@ -666,7 +666,7 @@ figcaption, li, p {
 
 .no-backgroundsize .uc-hero {
   background-color: white;
-  background-image: url('/assets/images/nu.nl/header-fixed.jpg');
+  background-image: url('/assets/images/nu-nl/header-fixed.jpg');
   background-position: right bottom;
   background-repeat: no-repeat;
 

@@ -3,13 +3,14 @@
   		"swipe/swipe"
     ],
     "common": [
-		"tools",
-		"app"
+  		"tools",
+		  "app"
     ],
     "components": [
-		"uc-slider"
+	  	"uc-slider"
     ],
     "views": [
-		"NU.nl"
+  		"nu-nl",
+      "philips-myremote"
     ]
 }
