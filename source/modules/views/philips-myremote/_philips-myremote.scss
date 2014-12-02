@@ -1,6 +1,21 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/helpers";
 
+.uc-fullbleed .uc-imagebox {
+    @include rem(height, 44rem);
+
+    &.tv-apps-jpg {
+        background-size: 108%;
+        @include rem(height, 31rem);
+    }
+}
+
+.divider {
+    @include rem(height, 20rem);
+    background-color: $white;
+    margin: -4em 0 0;
+}
+
 .philips-container {
     h1 {
       span {
@@ -23,14 +38,20 @@
     h2 + .philips-p {
         margin-top: 0px;
     }
-    .philips-p {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .philips-pointer {
-        .philips-p {
+    .philips-note {
+        position: relative;
+
+        p {
+            width: 35%;
+            margin: 2em 13em 0 auto;
             font-family: "the great escape", sans-serif;
-            margin-top: -80px;
+
+            &:before {
+              display: block;
+              content: url('/assets/images/philips-myremote/arrow.jpg');
+              position: absolute;
+              top: -1em;
+            }
         }
     }
     .philips-note {
@@ -60,40 +81,90 @@
       }
   }
 }
-.philips-panels {
-    margin: 0 10%;
+
+.philips-phones {
+    span {
+        font-size: $font-size-body;
+        float: left;
+        width: 33%;
+        font-family: "the great escape", sans-serif;
+        @include rem(margin-top, 2 * $margin);
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-top: 0;
+        }
+    }
 }
+
+.philips-panels {
+    margin-bottom: $margin-header-medium;
+}
+
 .philips-bullets {
-    border-radius: 1rem;
+    border-radius: 1em;
     background-color: $white;
     width: 100%;
+    margin-top: 2.5em;
+    padding: 2em;
+    float: left;
+    transform: rotate(1deg);
+    box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
+    @include rem(height, 9.5 * $margin);
+
+    &:first-child {
+        margin-right: 50px;
+        margin-top: 0;
+        transform: rotate(-1deg);
+
+        h3 {
+            letter-spacing: 2px;
+        }
+    }
+
+    &:last-child {
+        transform: rotate(2deg);
+
+        @include min-screen-medium {
+          margin-left: 25%;
+        }
+    }
+
     @include min-screen-medium {
         width: 45%
     }
+
     @include min-screen-xlarge {
         width: 44rem;
     }
-    padding: 2rem;
-    float: left;
-    transform: rotate(2deg);
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
+
     h3 {
+        margin-top: 0.25em;
+        text-align: center;
+        display: block;
+        background: #EA5930;
         position: relative;
-        font-size: 3rem;
-        margin: 0 0 0 60%;
+        @include rem(font-size, 3rem);
+        color: $white;
+        border-radius: 2em;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5675;
+        letter-spacing: -1px;
     }
+
     p {
+        line-height: 1.3;
+        font-size: 1.0625em;
         text-align: left;
+        color: $darkgrey;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
     }
-}
-.philips-bullets:first-child {
-    margin-right: 50px;
-    transform: rotate(358deg);
-}
-.philips-bullets:last-child {
-      @include min-screen-medium {
-          margin-left: 25%;
-      }
 }
 
 .uc-hero {
@@ -177,7 +248,6 @@
 
     margin: 0;
     figure {
-        background-size: contain;
         margin-bottom: 0;
     }
     .tv-icon-svg {
@@ -195,12 +265,12 @@
           visibility: visible;
           height: 8rem;
           width: 9rem;
-          background-size: contain;
+//          background-size: contain;
           margin: 0;
         }
         .tv-controls-png, .canvas-png {
-            background-size: 100%;
-            height: 72rem;
+//            background-size: 100%;
+//            height: 72rem;
         }
         .tv-icon-svg {
             background-size: 50%;
@@ -208,26 +278,23 @@
             margin: 0;
         }
         figure {
-            background-size: 100% 100%;
+//            background-size: 100% 100%;
         }
         .tv-wireframe-jpg, .tv-overview2-jpg, .tv-visuals-jpg, .tv-overview-jpg {
             background-size: 75%;
-            height: 72rem;
+//            height: 72rem;
         }
         .tv-overview-jpg {
-          height: 52rem;
+//          height: 52rem;
         }
         .tv-visuals-jpg {
-            height: 35rem;
+//            height: 35rem;
         }
     }
     @include min-screen-xlarge {
         .tv-overview2-jpg, .tv-controls-png {
-            height: 83rem;
+//            height: 83rem;
         }
-    }
-    .tv-apps-jpg {
-        background-size: 100% auto;
     }
 }
 .philips-uc-images {
@@ -257,44 +324,30 @@
 }
 
 .philips-uc-overlapping-images {
-    .philips-uc-fullbleed {
-        [uc-column~="1/3"] {
-            overflow: visible;
-            float: left;
-            margin: 0 0 0 -12px;
-            z-index: 0;
-            width: 33.3%;
-            .tv-photo-png {
-                width: 115%;
-            }
-        }
-        [uc-column~="1/3"]:first-child, [uc-column~="1/3"]:last-child {
-            .tv-photo-png {
-                z-index: 1;
-            }
-        }
-    }
-}
-.philips-buttons {
-    margin: 0 0 30px 25%;
-    button {
-        border-radius: 20px;
+    .uc-imagebox.tv-apps-jpg {
         background-size: cover;
-        width: 32rem;
-        height: 11rem;
-        margin: 0 0 30px 0;
-    }
-}
-@include min-screen-medium {
-    .philips-buttons {
-        margin: 0 0 30px 10%;
-        button:first-child {
-          margin-right: 20px;
-            float: left;
-        }
-        button:last-child {
-            float: left;
-        }
+        @include rem(height, 42rem);
     }
 }
 
+.philips-buttons {
+  margin: 0;
+  text-align: center;
+
+  button {
+    background: none;
+    border: 0;
+    display: inline-block;
+
+    img:last-child {
+      margin: 0;
+    }
+
+    @include min-screen-large {
+        &:first-child {
+            margin-right: $margin;
+        }
+    }
+
+  }
+}
