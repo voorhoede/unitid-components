@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <title> {% block title %} {{ name | capitalize }} | {{ project.title }} {% endblock %} </title>
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="ADD A DESCRIPTION" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="shortcut icon" href="{{ pathToAssets }}images/favicon.ico" type="image/ico" />
+    <script>
+        (function(e) {
+            e.className = e.className.replace('no-js', 'js');
+        }(document.documentElement));
+    </script> {% block specific_scripts %} {% endblock %} {% block styles %}
+    <link rel="stylesheet" href="{{ pathToAssets }}style/main.css"
+    />
+    <link rel="stylesheet" href="/modules/views/{{ name }}/_{{ name }}.css" /> {% endblock %}
+    <!--[if IE 8 ]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body> {% block language %} {% endblock %}
+    <div id="container" class="container" role="document"> {% block header %} {% endblock %} {% block content %} Include content here {% endblock %} {% block
+        footer %} {% endblock %} {% if (mode == 'development') %}
+        <script src="//localhost:35729/livereload.js"></script> {% endif %} {% block scripts %}
+        <script src="{{ pathToAssets + 'scripts/vendor.js' }}"></script>
+        <script src="{{ pathToAssets + 'scripts/main.js' }}"></script> {% endblock %} </div> {% block disclaimer %} {% endblock %} </body>
+
+</html>

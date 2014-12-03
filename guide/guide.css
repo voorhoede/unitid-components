@@ -1,0 +1,161 @@
+html {
+  font-family: "proxima nova regular", sans-serif;
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+h1 {
+  font-family: "proxima nova bold", sans-serif;
+  text-align: center;
+}
+h1 + h2 {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: #f93c05;
+}
+a:hover {
+  color: #362F34;
+}
+
+code {
+  font-size: 0.875em;
+}
+
+.core-layout {
+  margin: 1em;
+}
+
+.app-guide {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 400px) {
+  .app-guide {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .app-guide {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .app-guide {
+    width: 800px;
+  }
+}
+
+a.app-guide-icon {
+  color: #fff;
+  text-decoration: none;
+}
+
+.app-guide-icon-code:before {
+  content: "\e600";
+}
+
+.app-guide-icon-download:before {
+  content: "\e601";
+}
+
+.app-guide-code {
+  position: relative;
+}
+
+.app-guide-code-options {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  background: #362F34;
+}
+.app-guide-code-options li {
+  display: inline-block;
+}
+.app-guide-code-options a {
+  color: white;
+  padding: 2px 3px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.app-guide-swatches:before, .app-guide-swatches:after {
+  content: ' ';
+  display: table;
+}
+.app-guide-swatches:after {
+  clear: both;
+}
+
+.app-guide-swatch {
+  display: block;
+  border-width: 16px;
+  border-style: solid;
+  border-color: #e3e3e3;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+
+[title="accent"] .app-guide-swatch {
+  background-color: #f93c05;
+}
+
+[title="accent-dark"] .app-guide-swatch {
+  background-color: #8a2105;
+}
+
+[title="black"] .app-guide-swatch {
+  background-color: #362F34;
+}
+
+[title="grey"] .app-guide-swatch {
+  background-color: #999;
+}
+
+[title="silver"] .app-guide-swatch {
+  background-color: #d4d4d4;
+}
+
+[title="smoke"] .app-guide-swatch {
+  background-color: #f1f1f1;
+}
+
+[title="whitesmoke"] .app-guide-swatch {
+  background-color: #f8f8f8;
+}
+
+.app-guide-swatches li {
+  float: left;
+  width: 120px;
+  list-style: none;
+}
+
+.app-guide-info {
+  display: block;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+/*# sourceMappingURL=guide.css.map */

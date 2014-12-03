@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <title> Uc slider (preview) Uc-slider | unitid-components </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="ADD A DESCRIPTION" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="shortcut icon" href="../../..//assets/images/favicon.ico" type="image/ico" />
+    <script>
+        (function(e) {
+            e.className = e.className.replace('no-js', 'js');
+        }(document.documentElement));
+    </script>
+    <link rel="stylesheet" href="../../..//assets/style/main.css">
+    <!--<link rel="stylesheet" href="../../..//guide//voorhoede-core-styles.css">-->
+    <!--<link rel="stylesheet" href="../../..//guide//core-layout.css">-->
+    <link rel="stylesheet" href="../../..//guide/guide.css">
+    <link rel="stylesheet" href="../../..//guide/vendor/prismjs/prism.css">
+    <link rel="stylesheet" href="../../..//assets/style/main.css">
+    <!--[if IE 8 ]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div id="container" class="container" role="document">
+        <div class="page app-guide">
+            <div class="core-layout">
+                <header class="app-guide-content"> <img class="logo" src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
+                    />
+                    <h1>unitid-components</h1> </header>
+                <main class="app-guide-main">
+                    <script>
+                        window.testApp = {}; // namespace to register modules for testing
+                    </script>
+                    <h1 class="section-title">Uc slider</h1>
+                    <div class="app-guide-content language-markdown"> </div>
+                    <div class="resize-buttons">
+                        <button id="desktop">desktop</button>
+                        <button id="phone">phone</button>
+                        <button id="tablet">tablet</button>
+                    </div>
+                    <p>Or set your own width in px:</p>
+                    <form id="resize-form">
+                        <label> <span>Width</span>
+                            <input type="number" name="width" id="resize-width" required/> </label>
+                        <button type="submit">Set!</button>
+                    </form>
+                    <iframe id="preview-iframe" src="object.html" width="100%" height="400px"></iframe>
+                    <section id="section-code" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Code 
+<a href="#section-code"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <section id="section-code-html">
+                            <h3 class="app-guide-section-title">
+				HTML 
+<a href="#section-code-html"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+			</h3>
+                            <div class="app-guide-code"> <pre class="language-markup"><code>&lt;div class="uc-slider" data-component="uc-slider">
+	&lt;a href="#/prev" class="prev">
+		&lt;svg viewBox="0 0 60 60" xml:space="preserve">
+			&lt;polyline class="triangle" points="60,0 0,30 60,60" /> &lt;/svg>
+	&lt;/a>
+	&lt;div class='swipe' data-slider>
+		&lt;ul>
+			&lt;li> &lt;img src="http://placehold.it/1440x900&text=VERY"> &lt;/li>
+			&lt;li> &lt;img src="http://placehold.it/1440x900&text=PRETTY"> &lt;/li>
+			&lt;li> &lt;img src="http://placehold.it/1440x900&text=THINGS"> &lt;/li>
+		&lt;/ul>
+	&lt;/div>
+	&lt;a href="#/next" class="next">
+		&lt;svg viewBox="0 0 60 60" xml:space="preserve">
+			&lt;polyline class="triangle" points="0,0 60,30 0,60" /> &lt;/svg>
+	&lt;/a>
+&lt;/div>
+&lt;!-- TODO: slider needs bullets w/text or thumb; also should have text(alt?)s on top of each slide --></code></pre>                                </div>
+                        </section>
+                        <section id="section-code-css">
+                            <h3 class="app-guide-section-title">
+				CSS 
+<a href="#section-code-css"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+			</h3>
+                            <div class="app-guide-code"> <pre class="language-css"><code>/* uc-slider component */
+html.js .uc-slider .swipe {
+  visibility: hidden;
+}
+html.js .uc-slider ul > li {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 24px;
+  /* 9 */
+  margin-top: 2.4rem;
+  /* 9 */
+}
+html.js .uc-slider .prev, html.js .uc-slider .next {
+  display: block;
+}
+
+.uc-slider {
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  .uc-slider {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-bottom: 64px;
+    /* 9 */
+    margin-bottom: 6.4rem;
+    /* 9 */
+  }
+}
+.uc-slider ul, .uc-slider li {
+  margin: 0;
+  padding: 0;
+}
+.uc-slider li {
+  list-style: none;
+}
+.uc-slider .swipe, .uc-slider .swipe ul {
+  overflow: hidden;
+  position: relative;
+}
+.uc-slider .swipe {
+  margin: 0 auto;
+}
+.uc-slider .swipe ul > li {
+  position: relative;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 48.0px;
+  /* 9 */
+  margin-top: 4.8rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 24px;
+  /* 9 */
+  margin-bottom: 2.4rem;
+  /* 9 */
+  float: left;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 400px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-bottom: 48.0px;
+    /* 9 */
+    margin-bottom: 4.8rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 800px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 460px;
+    /* 9 */
+    height: 46rem;
+    /* 9 */
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 600px;
+    /* 9 */
+    height: 60rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 720px;
+    /* 9 */
+    height: 72rem;
+    /* 9 */
+  }
+}
+.uc-slider .swipe img.large {
+  width: 80%;
+}
+.uc-slider .swipe img.medium {
+  width: 60%;
+}
+@media screen and (min-width: 800px) {
+  .uc-slider .swipe img.large {
+    width: 80%;
+  }
+  .uc-slider .swipe img.medium {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .swipe img {
+    max-width: none;
+  }
+  .uc-slider .swipe img.large, .uc-slider .swipe img.medium {
+    width: auto;
+  }
+}
+.uc-slider .next, .uc-slider .prev {
+  display: none;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  width: 48px;
+  /* 9 */
+  width: 4.8rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 48px;
+  /* 9 */
+  height: 4.8rem;
+  /* 9 */
+  position: absolute;
+  top: 50%;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: -24px;
+  /* 9 */
+  margin-top: -2.4rem;
+  /* 9 */
+  background-color: #fff;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  border-radius: 24px;
+  /* 9 */
+  border-radius: 2.4rem;
+  /* 9 */
+  text-decoration: none;
+  line-height: 1;
+  z-index: 1;
+  box-shadow: 0 0.0625em 0.25em rgba(0, 0, 0, 0.5);
+}
+.uc-slider .next svg, .uc-slider .prev svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 45%;
+  height: 45%;
+}
+.uc-slider .next svg .triangle, .uc-slider .prev svg .triangle {
+  fill: #362F34;
+}
+.uc-slider .next:hover svg .triangle, .uc-slider .prev:hover svg .triangle {
+  fill: #f93c05;
+}
+.uc-slider .next {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  right: 24px;
+  /* 9 */
+  right: 2.4rem;
+  /* 9 */
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .next {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    right: 36px;
+    /* 9 */
+    right: 3.6rem;
+    /* 9 */
+  }
+}
+.uc-slider .next svg {
+  left: 10%;
+}
+.uc-slider .prev {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  left: 24px;
+  /* 9 */
+  left: 2.4rem;
+  /* 9 */
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .prev {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    left: 36px;
+    /* 9 */
+    left: 3.6rem;
+    /* 9 */
+  }
+}
+.uc-slider .prev svg {
+  left: -10%;
+}
+
+/*# sourceMappingURL=_uc-slider.css.map */
+</code></pre> </div>
+                        </section>
+                        <section id="section-code-javascript">
+                            <h3 class="app-guide-section-title">
+				JS 
+<a href="#section-code-js"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+			</h3>
+                            <div class="app-guide-code"> <pre class="language-javascript"><code>var Slider = (function() {
+
+	var defaults = {
+		sliderSelector: '[data-slider]',
+		sliderOptions: {
+			auto: 3000
+		}
+	};
+
+	function Slider(elements, options) {
+		config = u.extend(defaults, options || {});
+
+		function init() {
+			u.each(elements, function(element) {
+				initSwipe(element, config);
+				attachHandlers(element);
+			});
+		}
+
+		function initSwipe(element, config) {
+			if (typeof Swipe === 'function' && Swipe) {
+				element.swipe = new Swipe(element.querySelector(config.sliderSelector), config.sliderOptions);
+			}
+		}
+
+		function attachHandlers(element) {
+      u.listen(element.querySelector('.prev'), 'click', function(event) {
+				event.preventDefault();
+				moveAlong(element.swipe, 'prev');
+			});
+      u.listen(element.querySelector('.next'), 'click', function(event) {
+				event.preventDefault();
+				moveAlong(element.swipe, 'next');
+			});
+		}
+
+		function moveAlong(swipeObj, action) {
+			swipeObj[action]();
+		}
+
+		init();
+	}
+
+	return Slider;
+}());
+
+(function(window) {
+	window.slider = new Slider(u.qsa('[data-component=uc-slider]'), { sliderOptions: { auto: 0 } });
+})(window);
+</code></pre>
+                                <ul class="app-guide-code-options">
+                                    <li>
+                                        <a class="app-guide-icon app-guide-icon-code" href="_uc-slider.js"
+                                        title="view source JavaScript"></a>
+                                    </li>
+                                    <li>
+                                        <a class="app-guide-icon app-guide-icon-download" href="_uc-slider.js"
+                                        download="_uc-slider.js" title="download JavaScript"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <script src="../../..//assets/scripts/vendor.js"></script>
+        <script src="../../..//assets/scripts/main.js"></script>
+        <script src="../../..//guide/vendor/prismjs/prism.js"></script>
+        <script>
+            (function() {
+                var iframe = document.getElementById('preview-iframe'),
+                    widthInput = document.getElementById('resize-width');
+                iframe.addEventListener('load', function() {
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                    iframe.height = iframe.contentWindow.document.body.clientHeight +
+                        10;
+                }, false);
+                window.onresize = function() {
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                };
+                document.getElementById('desktop').addEventListener("click", function() {
+                    iframe.width = "1224px";
+                }, false);
+                document.getElementById('phone').addEventListener("click", function() {
+                    iframe.width = "320px";
+                }, false);
+                document.getElementById('tablet').addEventListener("click", function() {
+                    iframe.width = "1024px";
+                }, false);
+                iframe.addEventListener('transitionend', function() {
+                    iframe.height = iframe.contentWindow.document.body.clientHeight +
+                        10;
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                }, false);
+                document.getElementById('resize-form').addEventListener('submit', function(
+                    event) {
+                    event.preventDefault();
+                    iframe.width = widthInput.value + 'px';
+                }, false);
+            }());
+        </script>
+    </div>
+</body>
+
+</html>

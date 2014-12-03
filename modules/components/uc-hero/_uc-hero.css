@@ -1,0 +1,231 @@
+/* uc-hero component */
+.uc-hero {
+  position: relative;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 240px;
+  /* 9 */
+  height: 24rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 64px;
+  /* 9 */
+  margin-bottom: 6.4rem;
+  /* 9 */
+  background: transparent url("data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==") center no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 800px) {
+  .uc-hero {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 288px;
+    /* 9 */
+    height: 28.8rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-hero {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 360px;
+    /* 9 */
+    height: 36rem;
+    /* 9 */
+  }
+}
+.uc-hero header {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding-top: 24px;
+  /* 9 */
+  padding-top: 2.4rem;
+  /* 9 */
+  color: #fff;
+}
+@media screen and (min-width: 400px) {
+  .uc-hero header {
+    position: absolute;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-left: 24px;
+    /* 9 */
+    padding-left: 2.4rem;
+    /* 9 */
+    z-index: 1;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 568px) {
+  .uc-hero header {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-left: 48px;
+    /* 9 */
+    padding-left: 4.8rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 800px) {
+  .uc-hero header {
+    width: 50%;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    bottom: 24px;
+    /* 9 */
+    bottom: 2.4rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1024px) {
+  .uc-hero header {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding: 0 0 0 72px;
+    /* 9 */
+    padding: 0 0 0 7.2rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-hero header {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding: 0 0 0 120px;
+    /* 9 */
+    padding: 0 0 0 12rem;
+    /* 9 */
+    width: 40%;
+  }
+}
+.uc-hero h1, .uc-hero h2 {
+  text-shadow: 0 0.0625em 0.0625em rgba(0, 0, 0, 0.5);
+}
+.uc-hero h1 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  /* 4 */
+  /* 5 */
+  /* 4 */
+  /* 5 */
+  margin: 12px 0 0;
+  /* 9 */
+  margin: 1.2rem 0 0;
+  /* 9 */
+}
+@media screen and (min-width: 400px) {
+  .uc-hero h1 {
+    margin-bottom: 0.25em;
+  }
+}
+.uc-hero .image-over {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  bottom: -72px;
+  /* 9 */
+  bottom: -7.2rem;
+  /* 9 */
+  margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .uc-hero .image-over {
+    left: auto;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    right: 24px;
+    /* 9 */
+    right: 2.4rem;
+    /* 9 */
+  }
+}
+
+.case .uc-hero h1 + h2 {
+  margin-top: 0;
+}
+@media screen and (min-width: 400px) {
+  .case .uc-hero h1 + h2 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-top: -10px;
+    /* 9 */
+    margin-top: -1rem;
+    /* 9 */
+  }
+}
+
+/*# sourceMappingURL=_uc-hero.css.map */

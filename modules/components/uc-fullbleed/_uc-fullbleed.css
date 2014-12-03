@@ -1,0 +1,156 @@
+/* uc-fullbleed component */
+.uc-fullbleed {
+  padding: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 74px;
+  /* 9 */
+  margin-bottom: 7.4rem;
+  /* 9 */
+}
+.uc-fullbleed .uc-imagebox {
+  position: relative;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 360px;
+  /* 9 */
+  height: 36rem;
+  /* 9 */
+  overflow: hidden;
+}
+@media screen and (min-width: 800px) {
+  .uc-fullbleed .uc-imagebox {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 720px;
+    /* 9 */
+    height: 72rem;
+    /* 9 */
+  }
+}
+.uc-fullbleed .uc-inset {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 0 24px 24px;
+  /* 9 */
+  padding: 0 2.4rem 2.4rem;
+  /* 9 */
+}
+.uc-fullbleed .uc-inset .wrapper {
+  background: #fff;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 24px;
+  /* 9 */
+  padding: 2.4rem;
+  /* 9 */
+}
+.uc-fullbleed .uc-inset p:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 800px) {
+  .uc-fullbleed .uc-inset {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    width: 600px;
+    /* 9 */
+    width: 60rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding: 0 0 64px 72px;
+    /* 9 */
+    padding: 0 0 6.4rem 7.2rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-fullbleed .uc-inset {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 5 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding: 0 0 88px 96px;
+    /* 9 */
+    padding: 0 0 8.8rem 9.6rem;
+    /* 9 */
+  }
+}
+
+[uc-column] .uc-fullbleed .uc-inset {
+  width: 100%;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 0 24px 24px;
+  /* 9 */
+  padding: 0 2.4rem 2.4rem;
+  /* 9 */
+}
+
+/*# sourceMappingURL=_uc-fullbleed.css.map */

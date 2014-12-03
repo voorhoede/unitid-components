@@ -1,0 +1,60 @@
+/* uc-cta component */
+.uc-cta {
+  text-align: center;
+}
+.uc-cta h2 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 64px;
+  /* 9 */
+  margin-bottom: 6.4rem;
+  /* 9 */
+}
+.uc-cta .uc-button {
+  font-family: 'proxima nova bold', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  font-weight: normal;
+  display: inline-block;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 24px;
+  /* 9 */
+  padding: 2.4rem;
+  /* 9 */
+  background-color: #f93c05;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 20px;
+  /* 9 */
+  font-size: 2rem;
+  /* 9 */
+  border-radius: 0.25em;
+  color: #fff;
+  text-decoration: none;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 80px;
+  /* 9 */
+  margin-bottom: 8rem;
+  /* 9 */
+}
+.uc-cta .uc-button:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=_uc-cta.css.map */

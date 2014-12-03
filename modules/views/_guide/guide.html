@@ -1,0 +1,12 @@
+{% extends "views/_base-view/base-view.html" %} {% macro linkSection(section) %}
+<a href="{{ '#section-' + section }}"
+class="app-guide-permalink app-guide-icon" title="permalink to this section"></a> {% endmacro %} {% block styles %}
+<link rel="stylesheet" href="{{ pathToAssets + 'style/main.css' }}">
+<!--<link rel="stylesheet" href="{{ pathToGuide }}/voorhoede-core-styles.css">-->
+<!--<link rel="stylesheet" href="{{ pathToGuide }}/core-layout.css">-->
+<link rel="stylesheet" href="{{ pathToGuide }}guide.css"> {% endblock %} {% block content %}
+<div class="page app-guide">
+    <div class="core-layout">
+        <header class="app-guide-content"> <img class="logo" src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739" />
+            <h1>{{ project.title }}</h1> </header> {% block maincontent %} {% endblock %} </div>
+</div> {% endblock %}

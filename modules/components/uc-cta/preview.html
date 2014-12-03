@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <title> Uc cta (preview) Uc-cta | unitid-components </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="ADD A DESCRIPTION" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="shortcut icon" href="../../..//assets/images/favicon.ico" type="image/ico" />
+    <script>
+        (function(e) {
+            e.className = e.className.replace('no-js', 'js');
+        }(document.documentElement));
+    </script>
+    <link rel="stylesheet" href="../../..//assets/style/main.css">
+    <!--<link rel="stylesheet" href="../../..//guide//voorhoede-core-styles.css">-->
+    <!--<link rel="stylesheet" href="../../..//guide//core-layout.css">-->
+    <link rel="stylesheet" href="../../..//guide/guide.css">
+    <link rel="stylesheet" href="../../..//guide/vendor/prismjs/prism.css">
+    <link rel="stylesheet" href="../../..//assets/style/main.css">
+    <!--[if IE 8 ]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div id="container" class="container" role="document">
+        <div class="page app-guide">
+            <div class="core-layout">
+                <header class="app-guide-content"> <img class="logo" src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
+                    />
+                    <h1>unitid-components</h1> </header>
+                <main class="app-guide-main">
+                    <script>
+                        window.testApp = {}; // namespace to register modules for testing
+                    </script>
+                    <h1 class="section-title">Uc cta</h1>
+                    <div class="app-guide-content language-markdown"> </div>
+                    <div class="resize-buttons">
+                        <button id="desktop">desktop</button>
+                        <button id="phone">phone</button>
+                        <button id="tablet">tablet</button>
+                    </div>
+                    <p>Or set your own width in px:</p>
+                    <form id="resize-form">
+                        <label> <span>Width</span>
+                            <input type="number" name="width" id="resize-width" required/> </label>
+                        <button type="submit">Set!</button>
+                    </form>
+                    <iframe id="preview-iframe" src="object.html" width="100%" height="400px"></iframe>
+                    <section id="section-code" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Code 
+<a href="#section-code"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <section id="section-code-html">
+                            <h3 class="app-guide-section-title">
+				HTML 
+<a href="#section-code-html"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+			</h3>
+                            <div class="app-guide-code"> <pre class="language-markup"><code>&lt;div class="uc-cta" data-component="uc-cta">
+	&lt;h2>Climate change donors frontline thinkers who make change happen&lt;/h2> &lt;a class="uc-button" href="#">Ga naar de website&lt;/a> &lt;/div></code></pre>                                </div>
+                        </section>
+                        <section id="section-code-css">
+                            <h3 class="app-guide-section-title">
+				CSS 
+<a href="#section-code-css"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+			</h3>
+                            <div class="app-guide-code"> <pre class="language-css"><code>/* uc-cta component */
+.uc-cta {
+  text-align: center;
+}
+.uc-cta h2 {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 64px;
+  /* 9 */
+  margin-bottom: 6.4rem;
+  /* 9 */
+}
+.uc-cta .uc-button {
+  font-family: 'proxima nova bold', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  font-weight: normal;
+  display: inline-block;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 24px;
+  /* 9 */
+  padding: 2.4rem;
+  /* 9 */
+  background-color: #f93c05;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 20px;
+  /* 9 */
+  font-size: 2rem;
+  /* 9 */
+  border-radius: 0.25em;
+  color: #fff;
+  text-decoration: none;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 80px;
+  /* 9 */
+  margin-bottom: 8rem;
+  /* 9 */
+}
+.uc-cta .uc-button:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=_uc-cta.css.map */
+</code></pre> </div>
+                        </section>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <script src="../../..//assets/scripts/vendor.js"></script>
+        <script src="../../..//assets/scripts/main.js"></script>
+        <script src="../../..//guide/vendor/prismjs/prism.js"></script>
+        <script>
+            (function() {
+                var iframe = document.getElementById('preview-iframe'),
+                    widthInput = document.getElementById('resize-width');
+                iframe.addEventListener('load', function() {
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                    iframe.height = iframe.contentWindow.document.body.clientHeight +
+                        10;
+                }, false);
+                window.onresize = function() {
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                };
+                document.getElementById('desktop').addEventListener("click", function() {
+                    iframe.width = "1224px";
+                }, false);
+                document.getElementById('phone').addEventListener("click", function() {
+                    iframe.width = "320px";
+                }, false);
+                document.getElementById('tablet').addEventListener("click", function() {
+                    iframe.width = "1024px";
+                }, false);
+                iframe.addEventListener('transitionend', function() {
+                    iframe.height = iframe.contentWindow.document.body.clientHeight +
+                        10;
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                }, false);
+                document.getElementById('resize-form').addEventListener('submit', function(
+                    event) {
+                    event.preventDefault();
+                    iframe.width = widthInput.value + 'px';
+                }, false);
+            }());
+        </script>
+    </div>
+</body>
+
+</html>

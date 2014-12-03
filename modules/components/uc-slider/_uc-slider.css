@@ -1,0 +1,282 @@
+/* uc-slider component */
+html.js .uc-slider .swipe {
+  visibility: hidden;
+}
+html.js .uc-slider ul > li {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 24px;
+  /* 9 */
+  margin-top: 2.4rem;
+  /* 9 */
+}
+html.js .uc-slider .prev, html.js .uc-slider .next {
+  display: block;
+}
+
+.uc-slider {
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  .uc-slider {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-bottom: 64px;
+    /* 9 */
+    margin-bottom: 6.4rem;
+    /* 9 */
+  }
+}
+.uc-slider ul, .uc-slider li {
+  margin: 0;
+  padding: 0;
+}
+.uc-slider li {
+  list-style: none;
+}
+.uc-slider .swipe, .uc-slider .swipe ul {
+  overflow: hidden;
+  position: relative;
+}
+.uc-slider .swipe {
+  margin: 0 auto;
+}
+.uc-slider .swipe ul > li {
+  position: relative;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 48.0px;
+  /* 9 */
+  margin-top: 4.8rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 24px;
+  /* 9 */
+  margin-bottom: 2.4rem;
+  /* 9 */
+  float: left;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 400px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-bottom: 48.0px;
+    /* 9 */
+    margin-bottom: 4.8rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 800px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 460px;
+    /* 9 */
+    height: 46rem;
+    /* 9 */
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 600px;
+    /* 9 */
+    height: 60rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .swipe ul > li {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 720px;
+    /* 9 */
+    height: 72rem;
+    /* 9 */
+  }
+}
+.uc-slider .swipe img.large {
+  width: 80%;
+}
+.uc-slider .swipe img.medium {
+  width: 60%;
+}
+@media screen and (min-width: 800px) {
+  .uc-slider .swipe img.large {
+    width: 80%;
+  }
+  .uc-slider .swipe img.medium {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .swipe img {
+    max-width: none;
+  }
+  .uc-slider .swipe img.large, .uc-slider .swipe img.medium {
+    width: auto;
+  }
+}
+.uc-slider .next, .uc-slider .prev {
+  display: none;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  width: 48px;
+  /* 9 */
+  width: 4.8rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 48px;
+  /* 9 */
+  height: 4.8rem;
+  /* 9 */
+  position: absolute;
+  top: 50%;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: -24px;
+  /* 9 */
+  margin-top: -2.4rem;
+  /* 9 */
+  background-color: #fff;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  border-radius: 24px;
+  /* 9 */
+  border-radius: 2.4rem;
+  /* 9 */
+  text-decoration: none;
+  line-height: 1;
+  z-index: 1;
+  box-shadow: 0 0.0625em 0.25em rgba(0, 0, 0, 0.5);
+}
+.uc-slider .next svg, .uc-slider .prev svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 45%;
+  height: 45%;
+}
+.uc-slider .next svg .triangle, .uc-slider .prev svg .triangle {
+  fill: #362F34;
+}
+.uc-slider .next:hover svg .triangle, .uc-slider .prev:hover svg .triangle {
+  fill: #f93c05;
+}
+.uc-slider .next {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  right: 24px;
+  /* 9 */
+  right: 2.4rem;
+  /* 9 */
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .next {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    right: 36px;
+    /* 9 */
+    right: 3.6rem;
+    /* 9 */
+  }
+}
+.uc-slider .next svg {
+  left: 10%;
+}
+.uc-slider .prev {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  left: 24px;
+  /* 9 */
+  left: 2.4rem;
+  /* 9 */
+}
+@media screen and (min-width: 1280px) {
+  .uc-slider .prev {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    left: 36px;
+    /* 9 */
+    left: 3.6rem;
+    /* 9 */
+  }
+}
+.uc-slider .prev svg {
+  left: -10%;
+}
+
+/*# sourceMappingURL=_uc-slider.css.map */
