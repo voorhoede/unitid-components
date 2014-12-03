@@ -68,7 +68,7 @@
     @include min-screen-medium {
         .philips-pointer {
             margin-left: 58%;
-            margin-top: -50px;
+            margin-top: -7px;
             .philips-p {
                 margin-left: 11rem;
                 margin-top: -25px;
@@ -165,6 +165,9 @@
           margin-bottom: 0;
         }
     }
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .uc-hero {
@@ -252,12 +255,28 @@
     }
     .tv-icon-svg {
         background-size: 25%;
-        height: 24rem;
+        height: 13rem;
         margin: 0;
+        @include min-screen-between {
+            height: 24rem;
+        }
     }
     .tv-arrow-jpg {
         display: none;
         visibility: hidden;
+    }
+    .tv-documents-jpg {
+        height: 16rem;
+    }
+    @include min-screen-small {
+        .tv-documents-jpg {
+            height: 21rem;
+        }
+    }
+    @include min-screen-between {
+        .tv-documents-jpg {
+            height: 30rem;
+        }
     }
     @include min-screen-medium {
         .tv-arrow-jpg {
@@ -305,7 +324,13 @@
             width: 33%;
             float: left;
             figure {
-                height: 22rem;
+                height: 13rem;
+                @include min-screen-small {
+                    height: 16rem;
+                }
+                @include min-screen-between {
+                    height: 22.8rem;
+                }
                 @include min-screen-medium {
                     height: 35rem;
                 }
@@ -316,6 +341,13 @@
         }
         figure {
             margin: 0;
+            height: 17.4rem;
+            @include min-screen-small {
+                height: 22.6rem;
+            }
+            @include min-screen-between {
+                height: 32rem;
+            }
         }
     }
     .philips-uc-fullbleed:first-child {
@@ -327,6 +359,11 @@
     .uc-imagebox.tv-apps-jpg {
         background-size: cover;
         @include rem(height, 42rem);
+    }
+    [uc-column~="1/3"]:first-child, [uc-column~="1/3"]:last-child {
+        .tv-photo-png {
+            z-index: 1;
+        }
     }
 }
 
