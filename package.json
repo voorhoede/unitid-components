@@ -4,6 +4,10 @@
     "version": "0.0.0",
     "repository": "https://github.com/voorhoede/unitid-components.git",
     "private": true,
+    "scripts": {
+      "deploy": "grunt deploy",
+      "travis": "npm run deploy && ./tasks/travis/update-gh-pages.sh"
+    },
     "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-bump": "0.0.13",
