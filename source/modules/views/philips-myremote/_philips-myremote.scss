@@ -1,13 +1,40 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/helpers";
 
-.uc-fullbleed .uc-imagebox {
-    @include rem(height, 44rem);
+$font-face: 'proxima nova regular', 'Helvetica Neue', sans-serif;
 
-    &.tv-apps-jpg {
-        background-size: 108%;
-        @include rem(height, 31rem);
+figcaption, li, p {
+  font-family: $font-face;
+}
+
+.uc-fullbleed .uc-imagebox {
+
+  &.small {
+    @include rem(height, 14rem);
+  }
+
+  @include min-screen-medium {
+    @include rem(height, 32rem);
+
+    &.xlarge {
+      @include rem(height, 60rem);
     }
+  }
+
+  @include min-screen-large {
+    @include rem(height, 31rem);
+    background-size: 108%;
+
+    &.large {
+      @include rem(height, 44rem);
+    }
+  }
+
+  @include min-screen-xlarge {
+    &.xlarge {
+      @include rem(height, 88rem);
+    }
+  }
 }
 
 .divider {
@@ -23,13 +50,19 @@
       }
     }
     .invert {
+        &.invert {
+          background-color: #2B3038;
+        }
+
         a {
             color: $white;
-            font-weight: bold;
             text-decoration: underline;
         }
+
         p {
             text-align: left;
+            width: 80%;
+            margin: 0 auto $margin-header-medium;
         }
     }
     strong {
@@ -50,7 +83,7 @@
               display: block;
               content: url('/assets/images/philips-myremote/arrow.jpg');
               position: absolute;
-              top: -1em;
+              top: -1.5em;
             }
         }
     }
@@ -112,7 +145,7 @@
     float: left;
     transform: rotate(1deg);
     box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
-    @include rem(height, 9.5 * $margin);
+    @include rem(min-height, 9.5 * $margin);
 
     &:first-child {
         margin-right: 50px;
@@ -242,7 +275,7 @@
       }
 
       @include min-screen-xlarge {
-        @include rem(bottom, -3 * $margin);
+        @include rem(bottom, -2.5 * $margin);
         @include rem(right, 15 * $margin);
       }
     }
@@ -284,85 +317,12 @@
           visibility: visible;
           height: 8rem;
           width: 9rem;
-//          background-size: contain;
           margin: 0;
-        }
-        .tv-controls-png, .canvas-png {
-//            background-size: 100%;
-//            height: 72rem;
         }
         .tv-icon-svg {
             background-size: 50%;
             height: 24rem;
             margin: 0;
-        }
-        figure {
-//            background-size: 100% 100%;
-        }
-        .tv-wireframe-jpg, .tv-overview2-jpg, .tv-visuals-jpg, .tv-overview-jpg {
-            background-size: 75%;
-//            height: 72rem;
-        }
-        .tv-overview-jpg {
-//          height: 52rem;
-        }
-        .tv-visuals-jpg {
-//            height: 35rem;
-        }
-    }
-    @include min-screen-xlarge {
-        .tv-overview2-jpg, .tv-controls-png {
-//            height: 83rem;
-        }
-    }
-}
-.philips-uc-images {
-    .philips-uc-fullbleed {
-        margin: 0;
-        [uc-column~="1/3"] {
-            margin: 0 0.5%;
-            width: 33%;
-            float: left;
-            figure {
-                height: 13rem;
-                @include min-screen-small {
-                    height: 16rem;
-                }
-                @include min-screen-between {
-                    height: 22.8rem;
-                }
-                @include min-screen-medium {
-                    height: 35rem;
-                }
-            }
-        }
-        [uc-column~="1/3"]:first-child, [uc-column~="1/3"]:last-child {
-            margin: 0;
-        }
-        figure {
-            margin: 0;
-            height: 17.4rem;
-            @include min-screen-small {
-                height: 22.6rem;
-            }
-            @include min-screen-between {
-                height: 32rem;
-            }
-        }
-    }
-    .philips-uc-fullbleed:first-child {
-        margin-bottom: 3px;
-    }
-}
-
-.philips-uc-overlapping-images {
-    .uc-imagebox.tv-apps-jpg {
-        background-size: cover;
-        @include rem(height, 42rem);
-    }
-    [uc-column~="1/3"]:first-child, [uc-column~="1/3"]:last-child {
-        .tv-photo-png {
-            z-index: 1;
         }
     }
 }
@@ -387,4 +347,8 @@
     }
 
   }
+}
+
+.apps .uc-imagebox {
+  background-size: 108%;
 }

@@ -1,5 +1,5 @@
-var compiler    = require('../utilities/html-compiler');
-var marked      = require('marked');						// https://github.com/chjj/marked
+var compiler	= require('../utilities/html-compiler');
+var marked	  = require('marked');						// https://github.com/chjj/marked
 
 module.exports = function (grunt) {
 	'use strict';
@@ -11,14 +11,14 @@ module.exports = function (grunt) {
 		 */
 		function (mode) {
 
-            mode = mode || 'distribution';
+			mode = mode || 'distribution';
 
 			var file = grunt.file;
-            var pkg = grunt.config('pkg');
-            var project = {
-                title: pkg.title,
-                version: pkg.version
-            };
+			var pkg = grunt.config('pkg');
+			var project = {
+				title: pkg.title,
+				version: pkg.version
+			};
 
 			var previewer = compiler.getTemplate(
 				'views/_component-previewer/component-previewer.html');
@@ -37,8 +37,8 @@ module.exports = function (grunt) {
 				var jsFilename = componentDir + '_' + name + '.js';
 				var js = file.exists(jsFilename) ? file.read(jsFilename) : '';
 
-                var testFilename = componentDir + '_' + name + '.test.js';
-                var hasTest = file.exists(testFilename);
+				var testFilename = componentDir + '_' + name + '.test.js';
+				var hasTest = file.exists(testFilename);
 
 				var readmeFilename = componentDir + 'README.md';
 				var readme = file.exists(readmeFilename) ? file.read(readmeFilename) : '';
@@ -47,21 +47,21 @@ module.exports = function (grunt) {
 
 				var previewerHtml = previewer.render({
 					'name': name,
-                    'project': project,
+					'project': project,
 					'webRoot': webRoot,
 					'pathToAssets': webRoot + compiler.pathToAssets,
 					'pathToGuide': webRoot + '/guide/',
-                    'chapters': compiler.getChapters(),
-                    'components': compiler.getComponents(),
-                    'views': compiler.getViews(),
+					'chapters': compiler.getChapters(),
+					'components': compiler.getComponents(),
+					'views': compiler.getViews(),
 					'code': {
 						'html': html,
 						'css': css,
 						'js': js,
 						'readme': readme
 					},
-                    'mode': mode,
-                    'hasTest': hasTest
+					'mode': mode,
+					'hasTest': hasTest
 				});
 				file.write(componentDir + 'preview.html', previewerHtml);
 			}
