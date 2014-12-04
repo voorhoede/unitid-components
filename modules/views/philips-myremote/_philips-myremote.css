@@ -1,27 +1,85 @@
-.uc-fullbleed .uc-imagebox {
+figcaption, li, p {
+  font-family: "proxima nova regular", "Helvetica Neue", sans-serif;
+}
+
+.uc-fullbleed .uc-imagebox.small {
   /* 3 */
   /* 3 */
   /* 4 */
   /* 6 */
   /* 6 */
   /* 7 */
-  height: 440px;
+  height: 140px;
   /* 9 */
-  height: 44rem;
+  height: 14rem;
   /* 9 */
 }
-.uc-fullbleed .uc-imagebox.tv-apps-jpg {
-  background-size: 108%;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  height: 310px;
-  /* 9 */
-  height: 31rem;
-  /* 9 */
+@media screen and (min-width: 800px) {
+  .uc-fullbleed .uc-imagebox {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 320px;
+    /* 9 */
+    height: 32rem;
+    /* 9 */
+  }
+  .uc-fullbleed .uc-imagebox.xlarge {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 600px;
+    /* 9 */
+    height: 60rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1024px) {
+  .uc-fullbleed .uc-imagebox {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 310px;
+    /* 9 */
+    height: 31rem;
+    /* 9 */
+    background-size: 108%;
+  }
+  .uc-fullbleed .uc-imagebox.large {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 440px;
+    /* 9 */
+    height: 44rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-fullbleed .uc-imagebox.xlarge {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 880px;
+    /* 9 */
+    height: 88rem;
+    /* 9 */
+  }
 }
 
 .divider {
@@ -43,13 +101,17 @@
   font-family: 'proxima nova regular', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
   font-weight: normal;
 }
+.philips-container .invert.invert {
+  background-color: #2B3038;
+}
 .philips-container .invert a {
   color: #fff;
-  font-weight: bold;
   text-decoration: underline;
 }
 .philips-container .invert p {
   text-align: left;
+  width: 80%;
+  margin: 0 auto 4.8rem;
 }
 .philips-container strong {
   font-weight: bold;
@@ -69,7 +131,7 @@
   display: block;
   content: url("/assets/images/philips-myremote/arrow.jpg");
   position: absolute;
-  top: -1em;
+  top: -1.5em;
 }
 .philips-container .philips-note [uc-column~="1/3"] {
   width: 30%;
@@ -134,9 +196,9 @@
   /* 6 */
   /* 6 */
   /* 7 */
-  height: 228px;
+  min-height: 228px;
   /* 9 */
-  height: 22.8rem;
+  min-height: 22.8rem;
   /* 9 */
 }
 .philips-bullets:first-child {
@@ -306,9 +368,9 @@
     /* 6 */
     /* 6 */
     /* 7 */
-    bottom: -72px;
+    bottom: -60px;
     /* 9 */
-    bottom: -7.2rem;
+    bottom: -6rem;
     /* 9 */
     /* 3 */
     /* 3 */
@@ -369,73 +431,6 @@
     height: 24rem;
     margin: 0;
   }
-  .philips-uc-fullbleed .tv-wireframe-jpg, .philips-uc-fullbleed .tv-overview2-jpg, .philips-uc-fullbleed .tv-visuals-jpg, .philips-uc-fullbleed .tv-overview-jpg {
-    background-size: 75%;
-  }
-}
-
-.philips-uc-images .philips-uc-fullbleed {
-  margin: 0;
-}
-.philips-uc-images .philips-uc-fullbleed [uc-column~="1/3"] {
-  margin: 0 0.5%;
-  width: 33%;
-  float: left;
-}
-.philips-uc-images .philips-uc-fullbleed [uc-column~="1/3"] figure {
-  height: 13rem;
-}
-@media screen and (min-width: 400px) {
-  .philips-uc-images .philips-uc-fullbleed [uc-column~="1/3"] figure {
-    height: 16rem;
-  }
-}
-@media screen and (min-width: 568px) {
-  .philips-uc-images .philips-uc-fullbleed [uc-column~="1/3"] figure {
-    height: 22.8rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  .philips-uc-images .philips-uc-fullbleed [uc-column~="1/3"] figure {
-    height: 35rem;
-  }
-}
-.philips-uc-images .philips-uc-fullbleed [uc-column~="1/3"]:first-child, .philips-uc-images .philips-uc-fullbleed [uc-column~="1/3"]:last-child {
-  margin: 0;
-}
-.philips-uc-images .philips-uc-fullbleed figure {
-  margin: 0;
-  height: 17.4rem;
-}
-@media screen and (min-width: 400px) {
-  .philips-uc-images .philips-uc-fullbleed figure {
-    height: 22.6rem;
-  }
-}
-@media screen and (min-width: 568px) {
-  .philips-uc-images .philips-uc-fullbleed figure {
-    height: 32rem;
-  }
-}
-.philips-uc-images .philips-uc-fullbleed:first-child {
-  margin-bottom: 3px;
-}
-
-.philips-uc-overlapping-images .uc-imagebox.tv-apps-jpg {
-  background-size: cover;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  height: 420px;
-  /* 9 */
-  height: 42rem;
-  /* 9 */
-}
-.philips-uc-overlapping-images [uc-column~="1/3"]:first-child .tv-photo-png, .philips-uc-overlapping-images [uc-column~="1/3"]:last-child .tv-photo-png {
-  z-index: 1;
 }
 
 .philips-buttons {
@@ -454,6 +449,10 @@
   .philips-buttons button:first-child {
     margin-right: 2.4rem;
   }
+}
+
+.apps .uc-imagebox {
+  background-size: 108%;
 }
 
 /*# sourceMappingURL=_philips-myremote.css.map */

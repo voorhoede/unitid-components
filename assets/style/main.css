@@ -1104,6 +1104,28 @@ th {
     display: table-cell;
   }
 }
+[uc-row].align-text [uc-column] h3, [uc-row].align-text [uc-column] p {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-left: 48.0px;
+  /* 9 */
+  margin-left: 4.8rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-right: 48.0px;
+  /* 9 */
+  margin-right: 4.8rem;
+  /* 9 */
+}
 
 [uc-column] {
   width: 100%;
