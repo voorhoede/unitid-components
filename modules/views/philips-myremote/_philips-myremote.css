@@ -40,7 +40,21 @@ figcaption, li, p {
     /* 9 */
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 400px) {
+  .uc-fullbleed .uc-imagebox.large, .uc-fullbleed .uc-imagebox.large.mobile-flat {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 360px;
+    /* 9 */
+    height: 36rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
   .uc-fullbleed .uc-imagebox {
     /* 3 */
     /* 3 */
@@ -54,7 +68,7 @@ figcaption, li, p {
     /* 9 */
     background-size: 108%;
   }
-  .uc-fullbleed .uc-imagebox.large {
+  .uc-fullbleed .uc-imagebox.large, .uc-fullbleed .uc-imagebox.large.mobile-flat {
     /* 3 */
     /* 3 */
     /* 4 */
@@ -81,20 +95,47 @@ figcaption, li, p {
     /* 9 */
   }
 }
-
-.divider {
+.uc-fullbleed .uc-imagebox.mobile-flat {
   /* 3 */
   /* 3 */
   /* 4 */
   /* 6 */
   /* 6 */
   /* 7 */
-  height: 200px;
+  height: 160px;
   /* 9 */
-  height: 20rem;
+  height: 16rem;
   /* 9 */
+}
+
+.divider {
   background-color: #fff;
-  margin: -4em 0 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 220px;
+  /* 9 */
+  height: 22rem;
+  /* 9 */
+  margin: -6em 0 0;
+}
+@media screen and (min-width: 800px) {
+  .divider {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 200px;
+    /* 9 */
+    height: 20rem;
+    /* 9 */
+    margin: -4em 0 0;
+  }
 }
 
 .philips-container h1 span {
@@ -110,8 +151,12 @@ figcaption, li, p {
 }
 .philips-container .invert p {
   text-align: left;
-  width: 80%;
   margin: 0 auto 4.8rem;
+}
+@media screen and (min-width: 800px) {
+  .philips-container .invert p {
+    width: 80%;
+  }
 }
 .philips-container strong {
   font-weight: bold;
@@ -123,15 +168,22 @@ figcaption, li, p {
   position: relative;
 }
 .philips-container .philips-note p {
-  width: 35%;
-  margin: 2em 13em 0 auto;
+  margin-top: 2em;
+  text-align: center;
   font-family: "the great escape", sans-serif;
 }
-.philips-container .philips-note p:before {
-  display: block;
-  content: url("/assets/images/philips-myremote/arrow.jpg");
-  position: absolute;
-  top: -1.5em;
+@media screen and (min-width: 800px) {
+  .philips-container .philips-note p {
+    width: 35%;
+    margin: 2em 13em 0 auto;
+  }
+  .philips-container .philips-note p:before {
+    display: block;
+    content: url("/assets/images/philips-myremote/arrow.jpg");
+    position: absolute;
+    top: -1.5em;
+    margin-left: -1em;
+  }
 }
 .philips-container .philips-note [uc-column~="1/3"] {
   width: 30%;
@@ -453,6 +505,21 @@ figcaption, li, p {
 
 .apps .uc-imagebox {
   background-size: 108%;
+}
+
+.slim-images img {
+  max-width: 80%;
+}
+
+#container {
+  overflow: hidden;
+}
+
+.client-loop p {
+  text-align: left;
+}
+.client-loop img {
+  height: 6em;
 }
 
 /*# sourceMappingURL=_philips-myremote.css.map */
