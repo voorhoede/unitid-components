@@ -21,11 +21,17 @@ figcaption, li, p {
     }
   }
 
-  @include min-screen-large {
+  @include min-screen-small {
+    &.large, &.large.mobile-flat {
+      @include rem(height, 36rem);
+    }
+  }
+
+  @include min-screen-xlarge {
     @include rem(height, 31rem);
     background-size: 108%;
 
-    &.large {
+    &.large, &.large.mobile-flat {
       @include rem(height, 44rem);
     }
   }
@@ -35,12 +41,22 @@ figcaption, li, p {
       @include rem(height, 88rem);
     }
   }
+
+  &.mobile-flat {
+    @include rem(height, 16rem);
+  }
+
 }
 
 .divider {
-    @include rem(height, 20rem);
     background-color: $white;
-    margin: -4em 0 0;
+    @include rem(height, 22rem);
+    margin: -6em 0 0;
+
+    @include min-screen-medium {
+        @include rem(height, 20rem);
+        margin: -4em 0 0;
+    }
 }
 
 .philips-container {
@@ -61,8 +77,11 @@ figcaption, li, p {
 
         p {
             text-align: left;
-            width: 80%;
             margin: 0 auto $margin-header-medium;
+
+            @include min-screen-medium {
+               width: 80%;
+            }
         }
     }
     strong {
@@ -75,15 +94,21 @@ figcaption, li, p {
         position: relative;
 
         p {
-            width: 35%;
-            margin: 2em 13em 0 auto;
+            margin-top: 2em;
+            text-align: center;
             font-family: "the great escape", sans-serif;
 
-            &:before {
-              display: block;
-              content: url('/assets/images/philips-myremote/arrow.jpg');
-              position: absolute;
-              top: -1.5em;
+            @include min-screen-medium {
+                width: 35%;
+                margin: 2em 13em 0 auto;
+
+                &:before {
+                    display: block;
+                    content: url('/assets/images/philips-myremote/arrow.jpg');
+                    position: absolute;
+                    top: -1.5em;
+                    margin-left: -1em;
+                }
             }
         }
     }
@@ -351,4 +376,22 @@ figcaption, li, p {
 
 .apps .uc-imagebox {
   background-size: 108%;
+}
+
+.slim-images img {
+  max-width: 80%;
+}
+
+#container {
+  overflow: hidden;
+}
+
+.client-loop {
+    p {
+      text-align: left;
+    }
+
+    img {
+        height: 6em;
+    }
 }

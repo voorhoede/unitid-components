@@ -176,9 +176,11 @@
   }
 
   &.align-text [uc-column] {
-    h3, p {
-      @include rem(margin-left, $margin-header-medium);
-      @include rem(margin-right, $margin-header-medium);
+    @include min-screen-medium {
+      h3, p {
+        @include rem(margin-left, $margin-header-medium);
+        @include rem(margin-right, $margin-header-medium);
+      }
     }
   }
 }

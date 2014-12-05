@@ -34,7 +34,7 @@
 		@include min-screen-medium {
 			@include rem(font-size, $font-size-header-large);
 			@include rem(margin-bottom, $margin-header-large);
-			& + p, & + h2 {
+			& + p, & + h2, & + h6 {
 				@include rem(margin-top, - 5.5rem);
 			}
 		}
