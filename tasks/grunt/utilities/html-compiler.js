@@ -25,7 +25,7 @@ var nunjucks = require('nunjucks');
 		return getModulesDir(dir) + 'chapters/';
 	}
 
-    var pathToAssets = '/assets/';
+    var pathToAssets = '/unitid-components/assets/';
 
     var env = new nunjucks.Environment([
         new nunjucks.FileSystemLoader(getModulesDir('source'))
