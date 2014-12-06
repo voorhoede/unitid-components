@@ -1,0 +1,525 @@
+figcaption, li, p {
+  font-family: "proxima nova regular", "Helvetica Neue", sans-serif;
+}
+
+.uc-fullbleed .uc-imagebox.small {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 140px;
+  /* 9 */
+  height: 14rem;
+  /* 9 */
+}
+@media screen and (min-width: 800px) {
+  .uc-fullbleed .uc-imagebox {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 320px;
+    /* 9 */
+    height: 32rem;
+    /* 9 */
+  }
+  .uc-fullbleed .uc-imagebox.xlarge {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 600px;
+    /* 9 */
+    height: 60rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 400px) {
+  .uc-fullbleed .uc-imagebox.large, .uc-fullbleed .uc-imagebox.large.mobile-flat {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 360px;
+    /* 9 */
+    height: 36rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-fullbleed .uc-imagebox {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 310px;
+    /* 9 */
+    height: 31rem;
+    /* 9 */
+    background-size: 108%;
+  }
+  .uc-fullbleed .uc-imagebox.large, .uc-fullbleed .uc-imagebox.large.mobile-flat {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 440px;
+    /* 9 */
+    height: 44rem;
+    /* 9 */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .uc-fullbleed .uc-imagebox.xlarge {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 880px;
+    /* 9 */
+    height: 88rem;
+    /* 9 */
+  }
+}
+.uc-fullbleed .uc-imagebox.mobile-flat {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 160px;
+  /* 9 */
+  height: 16rem;
+  /* 9 */
+}
+
+.divider {
+  background-color: #fff;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 220px;
+  /* 9 */
+  height: 22rem;
+  /* 9 */
+  margin: -6em 0 0;
+}
+@media screen and (min-width: 800px) {
+  .divider {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 200px;
+    /* 9 */
+    height: 20rem;
+    /* 9 */
+    margin: -4em 0 0;
+  }
+}
+
+.philips-container h1 span {
+  font-family: 'proxima nova regular', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  font-weight: normal;
+}
+.philips-container .invert.invert {
+  background-color: #2B3038;
+}
+.philips-container .invert a {
+  color: #fff;
+  text-decoration: underline;
+}
+.philips-container .invert p {
+  text-align: left;
+  margin: 0 auto 4.8rem;
+}
+@media screen and (min-width: 800px) {
+  .philips-container .invert p {
+    width: 80%;
+  }
+}
+.philips-container strong {
+  font-weight: bold;
+}
+.philips-container h2 + .philips-p {
+  margin-top: 0px;
+}
+.philips-container .philips-note {
+  position: relative;
+}
+.philips-container .philips-note p {
+  margin-top: 2em;
+  text-align: center;
+  font-family: "the great escape", sans-serif;
+}
+@media screen and (min-width: 800px) {
+  .philips-container .philips-note p {
+    width: 35%;
+    margin: 2em 13em 0 auto;
+  }
+  .philips-container .philips-note p:before {
+    display: block;
+    content: url("/assets/images/philips-myremote/arrow.jpg");
+    position: absolute;
+    top: -1.5em;
+    margin-left: -1em;
+  }
+}
+.philips-container .philips-note [uc-column~="1/3"] {
+  width: 30%;
+  float: left;
+}
+.philips-container [uc-column~="1/3"] .philips-p {
+  font-family: "the great escape", sans-serif;
+}
+@media screen and (min-width: 800px) {
+  .philips-container .philips-pointer {
+    margin-left: 58%;
+    margin-top: -7px;
+  }
+  .philips-container .philips-pointer .philips-p {
+    margin-left: 11rem;
+    margin-top: -25px;
+  }
+}
+.philips-container [uc-column~="1/2"] .philips-p {
+  text-align: left;
+}
+
+.philips-phones span {
+  font-size: 2rem;
+  float: left;
+  width: 33%;
+  font-family: "the great escape", sans-serif;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 48px;
+  /* 9 */
+  margin-top: 4.8rem;
+  /* 9 */
+}
+.philips-phones span:first-child {
+  margin-top: 0;
+}
+.philips-phones span:last-child {
+  margin-top: 0;
+}
+
+.philips-panels {
+  margin-bottom: 4.8rem;
+}
+
+.philips-bullets {
+  border-radius: 1em;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 2.5em;
+  padding: 2em;
+  float: left;
+  transform: rotate(1deg);
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  min-height: 228px;
+  /* 9 */
+  min-height: 22.8rem;
+  /* 9 */
+}
+.philips-bullets:first-child {
+  margin-right: 50px;
+  margin-top: 0;
+  transform: rotate(-1deg);
+}
+.philips-bullets:first-child h3 {
+  letter-spacing: 2px;
+}
+.philips-bullets:last-child {
+  transform: rotate(2deg);
+}
+@media screen and (min-width: 800px) {
+  .philips-bullets:last-child {
+    margin-left: 25%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .philips-bullets {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .philips-bullets {
+    width: 44rem;
+  }
+}
+.philips-bullets h3 {
+  margin-top: 0.25em;
+  text-align: center;
+  display: block;
+  background: #EA5930;
+  position: relative;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 30px;
+  /* 9 */
+  font-size: 3rem;
+  /* 9 */
+  color: #fff;
+  border-radius: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5675;
+  letter-spacing: -1px;
+}
+.philips-bullets p {
+  line-height: 1.3;
+  font-size: 1.0625em;
+  text-align: left;
+  color: #6d5e69;
+}
+.philips-bullets p:last-child {
+  margin-bottom: 0;
+}
+.philips-bullets p:last-child {
+  margin-bottom: 0;
+}
+
+.uc-hero {
+  padding: 0 0 0 1em;
+}
+
+.philips-uc-hero {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  height: 360px;
+  /* 9 */
+  height: 36rem;
+  /* 9 */
+}
+@media screen and (min-width: 1280px) {
+  .philips-uc-hero {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    height: 456px;
+    /* 9 */
+    height: 45.6rem;
+    /* 9 */
+  }
+}
+.philips-uc-hero header {
+  position: absolute;
+  bottom: 0;
+  width: 66%;
+}
+@media screen and (min-width: 800px) {
+  .philips-uc-hero header {
+    width: 50%;
+  }
+}
+.philips-uc-hero h1 {
+  font-size: 1.375em;
+}
+@media screen and (min-width: 400px) {
+  .philips-uc-hero h1 {
+    font-size: 1.75em;
+  }
+}
+@media screen and (min-width: 568px) {
+  .philips-uc-hero h1 {
+    font-size: 2.25em;
+  }
+}
+@media screen and (min-width: 800px) {
+  .philips-uc-hero h1 {
+    font-size: 3em;
+  }
+}
+.philips-uc-hero h2 {
+  font-size: 1.25em;
+}
+@media screen and (min-width: 400px) {
+  .philips-uc-hero h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 568px) {
+  .philips-uc-hero h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 800px) {
+  .philips-uc-hero h2 {
+    font-size: 2.5em;
+  }
+}
+.philips-uc-hero img {
+  position: absolute;
+  height: 100%;
+  right: -3.25em;
+  bottom: -2em;
+}
+@media screen and (min-width: 568px) {
+  .philips-uc-hero img {
+    right: 2em;
+  }
+}
+@media screen and (min-width: 800px) {
+  .philips-uc-hero img {
+    right: 12em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .philips-uc-hero img {
+    right: 15em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .philips-uc-hero img {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    bottom: -60px;
+    /* 9 */
+    bottom: -6rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    right: 360px;
+    /* 9 */
+    right: 36rem;
+    /* 9 */
+  }
+}
+
+.philips-uc-fullbleed {
+  margin: 0;
+}
+.philips-uc-fullbleed figure {
+  margin-bottom: 0;
+}
+.philips-uc-fullbleed .tv-icon-svg {
+  background-size: 25%;
+  height: 13rem;
+  margin: 0;
+}
+@media screen and (min-width: 568px) {
+  .philips-uc-fullbleed .tv-icon-svg {
+    height: 24rem;
+  }
+}
+.philips-uc-fullbleed .tv-arrow-jpg {
+  display: none;
+  visibility: hidden;
+}
+.philips-uc-fullbleed .tv-documents-jpg {
+  height: 16rem;
+}
+@media screen and (min-width: 400px) {
+  .philips-uc-fullbleed .tv-documents-jpg {
+    height: 21rem;
+  }
+}
+@media screen and (min-width: 568px) {
+  .philips-uc-fullbleed .tv-documents-jpg {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .philips-uc-fullbleed .tv-arrow-jpg {
+    display: block;
+    visibility: visible;
+    height: 8rem;
+    width: 9rem;
+    margin: 0;
+  }
+  .philips-uc-fullbleed .tv-icon-svg {
+    background-size: 50%;
+    height: 24rem;
+    margin: 0;
+  }
+}
+
+.philips-buttons {
+  margin: 0;
+  text-align: center;
+}
+.philips-buttons button {
+  background: none;
+  border: 0;
+  display: inline-block;
+}
+.philips-buttons button img:last-child {
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .philips-buttons button:first-child {
+    margin-right: 2.4rem;
+  }
+}
+
+.apps .uc-imagebox {
+  background-size: 108%;
+}
+
+.slim-images img {
+  max-width: 80%;
+}
+
+#container {
+  overflow: hidden;
+}
+
+.client-loop p {
+  text-align: left;
+}
+.client-loop img {
+  height: 6em;
+}
+
+/*# sourceMappingURL=philips-myremote.css.map */
