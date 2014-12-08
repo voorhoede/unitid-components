@@ -1,0 +1,34 @@
+distribution
+web
+
+# OS
+.DS_Store
+thumbs.db
+
+# Cache directories
+.bower
+.cache
+.sass-cache
+.scss-cache
+
+# Source maps
+# *.js.map
+*.css.map
+
+# Editor/IDE files
+*.iml
+*.ipr
+*.iws
+.idea
+*.sublime-workspace
+*.swp
+nb-configuration.xml
+nbactions.xml
+nbproject/private
+
+# Server logs
+log
+logs
+
+# Node
+node_modules
