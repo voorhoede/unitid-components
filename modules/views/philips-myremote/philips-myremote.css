@@ -179,7 +179,7 @@ figcaption, li, p {
   }
   .philips-container .philips-note p:before {
     display: block;
-    content: url("/unitid-components/assets/images/philips-myremote/arrow.jpg");
+    content: url("/assets/images/philips-myremote/arrow.jpg");
     position: absolute;
     top: -1.5em;
     margin-left: -1em;
