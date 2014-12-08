@@ -17,8 +17,13 @@ function getConfiguration(grunt) {
                 dest: 'web/assets/images/'
             }, {
                 expand: true,
-                cwd: 'source/vendor/',
+                cwd: 'source/vendor/unitid-site/',
                 src: ['**'],
+                dest: 'web/vendor/unitid-site/'
+            }, {
+                expand: true,
+                cwd: 'source/vendor/',
+                src: ['**', '!unitid-site'],
                 dest: 'web/guide/vendor/'
             }, {
                 expand: true,
@@ -37,8 +42,7 @@ function getConfiguration(grunt) {
                 expand: true,
                 cwd: 'source/',
                 src: [
-                    'vendor/prismjs/**',
-                    'vendor/jasmine-2.0/**'
+                    'vendor/prismjs/**'
                 ],
                 dest: 'distribution/guide/'
             }]
