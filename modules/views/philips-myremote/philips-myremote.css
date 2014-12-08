@@ -205,6 +205,9 @@ figcaption, li, p {
 .philips-container [uc-column~="1/2"] .philips-p {
   text-align: left;
 }
+.philips-container [uc-column~="1/2"] .icon-messages {
+  margin-bottom: 4.8rem;
+}
 
 .philips-phones span {
   font-size: 2rem;
