@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="/assets/style/main.css" />
     <link rel="stylesheet" href="/vendor/unitid-site/css/fonts.css" type="text/css">
     <link rel="stylesheet" href="/modules/views/philips-myremote/philips-myremote.css" />
+    <script src="http://unitid.nl/wp-content/themes/unitid/js/jquery.min.js?ver=4.0.1"></script>
     <!--[if IE 8 ]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
@@ -225,8 +226,10 @@
                 </div>
             </section>
             <section class="center">
-                <div class="uc-fullbleed philips-uc-fullbleed" data-component="uc-fullbleed">
-                    <figure class="uc-imagebox large" style="background-image: url(/assets/images/philips-myremote/canvas.png)">
+                <div class="uc-fullbleed philips-uc-fullbleed divider-before" data-component="uc-fullbleed">
+                    <figure class="uc-imagebox xlarge" data-dragme style="background-image: url(/assets/images/philips-myremote/visual-canvas.jpg)">
+                        <div class="dragnotice"> <img src="/assets/images/philips-myremote/icon-drag.svg" alt="Pictogram voor verslepen"
+                            onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">                            Drag around </div>
                     </figure>
                 </div>
             </section>
