@@ -150,10 +150,15 @@
         </div>
     </section>
     <section class="center">
-        <div class="uc-fullbleed philips-uc-fullbleed"
+        <div class="uc-fullbleed philips-uc-fullbleed divider-before"
              data-component="uc-fullbleed">
-            <figure class="uc-imagebox large"
-                    style="background-image: url({{ pathToAssets }}images/philips-myremote/canvas.png)">
+            <figure class="uc-imagebox xlarge" data-dragme
+                    style="background-image: url({{ pathToAssets }}images/philips-myremote/visual-canvas.jpg)">
+              <div class="dragnotice">
+                <img src="{{ pathToAssets }}images/philips-myremote/icon-drag.svg" alt="Pictogram voor verslepen" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                Drag around
+              </div>
+
             </figure>
         </div>
     </section>
