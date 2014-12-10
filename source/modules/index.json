@@ -17,8 +17,9 @@
 		"uc-streamer"
 	],
 	"views": [
-		"nu-nl",
+		"apple-watch",
 		"case",
+		"nu-nl",
 		"philips-myremote"
 	]
 }

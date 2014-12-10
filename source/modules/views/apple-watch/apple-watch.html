@@ -1,0 +1,138 @@
+{% extends "views/_base-view/base-view.html" %}
+
+{% block language %}
+{% include "components/language/_language.html" %}
+{% endblock %}
+
+{% block specific_scripts %}
+<!-- START Unitid website specific scripts/css -->
+<link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+<!-- END Unitid website specific scripts/css -->
+{% endblock %}
+
+{% block header %}
+{% include "components/navigation/_navigation.html" %}
+{% endblock %}
+
+{% block content %}
+<div id="container"
+       class="case container philips-container"
+       role="document">
+<section role="hero" class="whitespace-after">
+  <div class="uc-hero" data-component="uc-hero">
+    <div class="image-over"></div>
+  </div>
+  <div class="uc-streamer" data-component="uc-streamer">
+    <div uc-row="">
+      <h2>heading</h2>
+      <h3>Intro tekst</h3>
+    </div>
+  </div>
+</section>
+
+<section class="divider-before whitespace-after">
+  <div uc-row class="whitespace-after whitespace-before">
+    <div uc-column="1/2" data-component="uc-column-half">
+  <dl>
+    <dt>Heartbeat sensor</dt>
+    <dd>text</dd>
+    <dt>Heartbeat sensor</dt>
+    <dd>text</dd>
+    <dt>Heartbeat sensor</dt>
+    <dd>text</dd>
+  </dl>
+    </div>
+    <div uc-column="1/2" data-component="uc-column-half">
+  <dl>
+    <dt>Heartbeat sensor</dt>
+    <dd>text</dd>
+    <dt>Heartbeat sensor</dt>
+    <dd>text</dd>
+    <dt>Heartbeat sensor</dt>
+    <dd>text</dd>
+  </dl>
+  </div>
+</div>
+</section>
+
+
+<section class="divider-before center whitespace-after">
+  <h2>Een <strong>voorproefje</strong></h2>
+  <p>Intro tekst</p>
+</section>
+
+
+<section class="smoke center">
+  <div uc-row>
+    <h2>Soundhound</h2>
+    <p>tekst</p>
+
+    <div uc-column="1/2" data-component="uc-column-half">
+      <ul class="icon-list">
+        <li>Tekst</li>
+        <li>Tekst</li>
+      </ul>
+    </div>
+    <div uc-column="1/2" data-component="uc-column-half">
+      <img src="">
+    </div>
+  </div>
+</section>
+
+<section class="invert center">
+  <div uc-row>
+    <h2>Strava</h2>
+    <p>tekst</p>
+
+    <div uc-column="1/2" data-component="uc-column-half">
+      <img src="">
+    </div>
+    <div uc-column="1/2" data-component="uc-column-half">
+      <ul class="icon-list">
+        <li>Tekst</li>
+        <li>Tekst</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="action center">
+  <h2>Schiphol</h2>
+  <p>Tekst</p>
+
+  <div uc-column="1/2" data-component="uc-column-half">
+    <ul class="icon-list">
+      <li>Tekst</li>
+      <li>Tekst</li>
+    </ul>
+  </div>
+  <div uc-column="1/2" data-component="uc-column-half">
+    <img src="">
+  </div>
+
+  <section class="divider-before">
+    <h3>Interesse in een ontwerp voor de Apple Watch?</h3>
+    {% include "components/uc-cta/_uc-cta.html" %}
+  </section>
+</section>
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% include "components/footer/_footer.html" %}
+{% endblock %}
+
+{% block disclaimer %}
+{% include "components/disclaimer/_disclaimer.html" %}
+{% endblock %}
