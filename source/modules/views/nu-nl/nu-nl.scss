@@ -18,11 +18,6 @@ $font-face-dropcap: 'NUnl-E', $font-face;
 
 // MIXINS
 
-@mixin transition($speed: 500ms, $delay: 0ms) {
-  -webkit-transition: all $speed ease $delay;
-          transition: all $speed ease $delay;
-}
-
 @mixin transformRotate($degrees: 45deg) {
   -webkit-transform: rotate($degrees);
   -moz-transform:    rotate($degrees);
