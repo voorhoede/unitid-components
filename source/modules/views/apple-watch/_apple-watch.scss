@@ -9,5 +9,18 @@
     background-size: cover;
     background-position: center;
   }
+  [uc-column~="1/2"] {
+    margin-left: 0;
+  }
+  .icon-list {
+    list-style: none;
+    padding-top: 10rem;
+    img {
+      float: left;
+    }
+    p {
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 
