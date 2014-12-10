@@ -276,10 +276,11 @@
                     </figure>
                 </div>
             </section>
-            <section class="whitespace-after whitespace-before slim-images">
+            <section class="whitespace-after whitespace-before">
                 <div uc-row>
                     <div uc-column="1/2">
-                        <figure> <img src="/assets/images/philips-myremote/philips-tv-remote-visuals-heart.jpg">                            </figure>
+                        <figure class="circle" style="background-image: url(/assets/images/philips-myremote/breaking-bad.jpg);">
+                        <img src="/assets/images/philips-myremote/favorite.svg" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">                            </figure>
                         <h3>
                     When you love that show
                 </h3>
@@ -288,7 +289,10 @@
                             beautifull animation. </p>
                     </div>
                     <div uc-column="1/2">
-                        <figure> <img src="/assets/images/philips-myremote/philips-tv-remote-visuals-pairing.jpg">                            </figure>
+                        <figure class="circle pairing" style="background-image: url(/assets/images/philips-myremote/pairing.jpg);">
+                            <div class="bar js-hide"></div>
+                            <div class="spinner"></div>
+                        </figure>
                         <h3>
                     Enhancing the User Experience
                 </h3>
