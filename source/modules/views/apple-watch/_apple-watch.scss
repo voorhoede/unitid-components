@@ -6,6 +6,7 @@
 .apple-watch-container {
   p {
     text-align: center;
+    margin-bottom: 5rem;
   }
   .uc-hero {
     background-image: url('/assets/images/apple-watch/l_header.jpg');
@@ -15,18 +16,24 @@
   [uc-column~="1/2"] {
     margin-left: 0;
     img {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
       @include min-screen-small {
         margin-bottom: -4rem;
       }
       @include min-screen-medium {
         margin-bottom: 6.4rem;
       }
+      @include min-screen-large {
+        margin: 5rem 0 10rem;
+      }
     }
   }
   .invert {
-    [uc-column~="1/2"] {
-      @include min-screen-small {
+    @include min-screen-small {
+      [uc-column~="1/2"] {
+        float: right;
+      }
+      img {
         float: right;
       }
     }
@@ -36,15 +43,21 @@
     @include min-screen-small {
       padding-top: 10rem;
     }
+    li {
+      @include min-screen-small {
+        margin-bottom: 4rem;
+      }
+    }
     img {
       @include min-screen-small {
         float: left;
-        margin-bottom: 0;
+        margin: 0;
       }
     }
     p {
       text-align: center;
       @include min-screen-small {
+        padding-left: 6.7rem;
         text-align: left;
         margin-bottom: 2.5rem;
       }
