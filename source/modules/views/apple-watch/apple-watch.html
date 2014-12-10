@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
 <!-- END Unitid website specific scripts/css -->
+<script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>
 {% endblock %}
 
 {% block header %}
@@ -42,6 +43,7 @@
 
 <section class="divider-before whitespace-after">
   <div class="whitespace-after whitespace-before">
+    <div uc-row>
         <ul class="legend-container flat-list">
           <li class="legend-item" data-toggler>
             <header class="legend-item-header" data-toggler-header>
@@ -98,7 +100,8 @@
             </div>
           </li>
         </ul>
-</div>
+    </div>
+  </div>
 </section>
 
 
@@ -112,7 +115,7 @@
   </section>
 
 
-  <section class="smoke center">
+  <section class="smoke center soundhound">
     <div uc-row>
       <h2><strong>Soundhound</strong></h2>
       <p>
@@ -121,7 +124,7 @@
 
 
       <div uc-column="1/2" data-component="uc-column-half">
-        <img src="https://placekitten.com/200/400">
+        <div id="Stage" class="edge-animation EDGE-9119118"></div>
       </div>
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
@@ -158,7 +161,7 @@
         </ul>
       </div>
       <div uc-column="1/2" data-component="uc-column-half">
-        <img src="https://placekitten.com/200/400">
+        <div id="Stage" class="edge-animation EDGE-151779426"></div>
       </div>
 
     </div>
@@ -171,9 +174,8 @@
         Met de <a href="#">'Actionable Notifications’</a> van Schiphol kun je rustig je reis beginnen; je hoeft namelijk nooit meer de weg te zoeken op het vliegveld en je bent als eerste op de hoogte van de laatste vluchtwijzigingen.
       </p>
 
-      <div uc-column="1/2" data-component="uc-column-half">
-        <img src="https://placekitten.com/200/400">
-
+      <div uc-column="1/2" data-component="uc-column-half edge-animation ">
+        <div id="Stage" class="EDGE-8022608"></div>
       </div>
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
@@ -209,6 +211,50 @@
     </div>
   </section>
 </div>
+
+<div>
+</div>
+<style>
+  .edgeLoad-EDGE-9119118 { visibility:hidden; }
+  .edgeLoad-EDGE-151779426 { visibility:hidden; }
+  .edgeLoad-EDGE-8022608 { visibility:hidden; }
+</style>
+<script>
+  AdobeEdge.loadComposition('strava_v_1.1', 'EDGE-151779426', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "488px",
+    height: "880px"
+  }, {"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"],"fill":["rgba(255,255,255,1)"]}},"dom":[{"rect":["0px","0px","487px","879px","auto","auto"],"id":"Poster2","fill":["rgba(0,0,0,0)","/strava/Poster2.png","0px","0px"],"type":"image","tag":"img"}]});
+</script>
+
+<script>
+  AdobeEdge.loadComposition('Animatie_v3.0', 'EDGE-9119118', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "488px",
+    height: "880px"
+  }, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","1200px","500px"]}},"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"]}},"dom":[{"rect":["0","0","488px","880px","auto","auto"],"id":"Poster2","fill":["rgba(0,0,0,0)","/soundhound/Poster2.png","0px","0px"],"type":"image","tag":"img"}]});
+</script>
+
+<script>
+  AdobeEdge.loadComposition('Schiphol_Wendel', 'EDGE-8022608', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "488px",
+    height: "880px"
+  }, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"]}},"dom":[{"id":"Poster","type":"","rect":["0","0","auto","auto","auto","auto"]},{"rect":["0px","0px","487px","879px","auto","auto"],"id":"Poster22","fill":["rgba(0,0,0,0)","/schiphol/Poster22.png","0px","0px"],"type":"image","tag":"img"}]});
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/edge-strava.js"></script>
+<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/edge-soundhound.js"></script>
+<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/edge-schiphol.js"></script>
 
 {% endblock %}
 
