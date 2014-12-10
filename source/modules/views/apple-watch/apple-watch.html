@@ -41,59 +41,63 @@
 </section>
 
 <section class="divider-before whitespace-after">
-  <div uc-row class="whitespace-after whitespace-before">
-    <div uc-column="1/2" data-component="uc-column-half">
-      <ul>
-        <li>
-          <img src="{{ pathToAssets }}images/apple-watch/icon_Heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-          <h3>Hartslag-sensor</h3>
-          <p>Aan de onderkant van de Apple Watch zit een hartslag-sensor. Deze communiceert met de GPS van je iPhone en meet zo allerlei fysieke bewegingen. Op die manier kan de Watch een goed beeld schetsen van je dagelijkse activiteiten en zie je of je persoonlijke doelen zijn behaald.</p>
-        </li>
-        <li>
-          <img src="{{ pathToAssets }}images/apple-watch/icon_Force.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-          <h3>Taptic Engine</h3>
-          <p>Een bijzondere toevoeging aan de Apple Watch is de ‘Taptic Engine’. Deze is het best te omschrijven als een ‘ultra gevoelige en specifieke vibratie-motor’. Door hele specifieke trillingen uit te voeren kun je bijvoorbeeld tijdens het navigeren het verschil tussen links en rechts voelen als je de Apple Watch draagt.</p>
-        </li>
-        <li>
-          <img src="{{ pathToAssets }}images/apple-watch/icon_Heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-          <h3>
-            Force Touch
-          </h3>
-          <p>
-            Het scherm van de Apple Watch is zó gevoelig dat hij kan onderscheiden of de gebruiker kort ‘tapt’ met zijn vingers of echt drukt. Hierdoor is het bijvoorbeeld mogelijk om een menu op te roepen als de gebruiker duidelijk op het scherm drukt.
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div uc-column="1/2" data-component="uc-column-half">
-      <ul>
-        <li>
-          <img src="{{ pathToAssets }}images/apple-watch/icon_Heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-          <h3>
-            Notificaties
-          </h3>
-          <p>
-            iPhone-apps die hun notificaties op de Apple Watch willen laten verschijnen hebben de mogelijkheid om extra functionaliteiten toe te voegen. Zo kun je via de Apple Watch direct iets met de notificatie doen: bijvoorbeeld een bericht beantwoorden, je telefoon opnemen of een actie binnen een app starten, zoals een navigatie.
-          </p>
-        </li>
-        <li>
-          <img src="{{ pathToAssets }}images/apple-watch/icon_Heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-          <h3>
-            Handoff
-          </h3>
-          <p>
-            Met de Handoff-functie kun je snel switchen tussen je iPhone, iPad en Mac. Zo kun je starten op het ene apparaat en makkelijk verder werken op een ander apparaat. Denk hierbij aan e-mails, berichten, openstaande websites in je browser of zelfs telefoongesprekken. Enorm handig als je vaak met meerdere apparaten bezig bent.
-          </p>
-        </li>
-        <li>
-          <img src="{{ pathToAssets }}images/apple-watch/icon_Heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-          <h3>Glances</h3>
-          <p>
-            Door vanaf de onderkant van het scherm naar boven te vegen komen er ‘glances’ tevoorschijn. Dit zijn korte en beknopte stukjes informatie met bijvoorbeeld het laatste nieuws, het weer of je belangrijkste vluchtgegevens.
-          </p>
-        </li>
-      </ul>
-  </div>
+  <div class="whitespace-after whitespace-before">
+        <ul class="legend-container flat-list">
+          <li class="legend-item" data-toggler>
+            <header class="legend-item-header" data-toggler-header>
+              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <h3>Hartslag-sensor</h3>
+            </header>
+            <div class="legend-item-body" data-toggler-body>
+              <p>Aan de onderkant van de Apple Watch zit een hartslag-sensor. Deze communiceert met de GPS van je iPhone en meet zo allerlei fysieke bewegingen. Op die manier kan de Watch een goed beeld schetsen van je dagelijkse activiteiten en zie je of je persoonlijke doelen zijn behaald.</p>
+            </div>
+          </li>
+          <li class="legend-item" data-toggler>
+            <header class="legend-item-header" data-toggler-header>
+              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_notifications.svg" alt="Notificaties" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <h3>Notificaties</h3>
+            </header>
+            <div class="legend-item-body" data-toggler-body>
+              <p>iPhone-apps die hun notificaties op de Apple Watch willen laten verschijnen hebben de mogelijkheid om extra functionaliteiten toe te voegen. Zo kun je via de Apple Watch direct iets met de notificatie doen: bijvoorbeeld een bericht beantwoorden, je telefoon opnemen of een actie binnen een app starten, zoals een navigatie.</p>
+            </div>
+          </li>
+          <li class="legend-item" data-toggler>
+            <header class="legend-item-header" data-toggler-header>
+              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_taptic.svg" alt="Taptic Engine" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <h3>Taptic Engine</h3>
+            </header>
+            <div class="legend-item-body" data-toggler-body>
+              <p>Een bijzondere toevoeging aan de Apple Watch is de ‘Taptic Engine’. Deze is het best te omschrijven als een ‘ultra gevoelige en specifieke vibratie-motor’. Door hele specifieke trillingen uit te voeren kun je bijvoorbeeld tijdens het navigeren het verschil tussen links en rechts voelen als je de Apple Watch draagt.</p>
+            </div>
+          </li>
+          <li class="legend-item" data-toggler>
+            <header class="legend-item-header" data-toggler-header>
+              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_handoff.svg" alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <h3>Handoff</h3>
+            </header>
+            <div class="legend-item-body" data-toggler-body>
+              <p>Met de Handoff-functie kun je snel switchen tussen je iPhone, iPad en Mac. Zo kun je starten op het ene apparaat en makkelijk verder werken op een ander apparaat. Denk hierbij aan e-mails, berichten, openstaande websites in je browser of zelfs telefoongesprekken. Enorm handig als je vaak met meerdere apparaten bezig bent.</p>
+            </div>
+          </li>
+          <li class="legend-item" data-toggler>
+            <header class="legend-item-header" data-toggler-header>
+              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_force.svg" alt="Force Touch" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <h3>Force Touch</h3>
+            </header>
+            <div class="legend-item-body" data-toggler-body>
+              <p>Het scherm van de Apple Watch is zó gevoelig dat hij kan onderscheiden of de gebruiker kort ‘tapt’ met zijn vingers of echt drukt. Hierdoor is het bijvoorbeeld mogelijk om een menu op te roepen als de gebruiker duidelijk op het scherm drukt.</p>
+            </div>
+          </li>
+          <li class="legend-item" data-toggler>
+            <header class="legend-item-header" data-toggler-header>
+              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_glances.svg" alt="Glances" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <h3>Glances</h3>
+            </header>
+            <div class="legend-item-body" data-toggler-body>
+              <p>Door vanaf de onderkant van het scherm naar boven te vegen komen er ‘glances’ tevoorschijn. Dit zijn korte en beknopte stukjes informatie met bijvoorbeeld het laatste nieuws, het weer of je belangrijkste vluchtgegevens.</p>
+            </div>
+          </li>
+        </ul>
 </div>
 </section>
 

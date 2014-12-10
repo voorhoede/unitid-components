@@ -10,6 +10,22 @@
   }
 }
 
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+@mixin max-screen-between
+{
+  @include max-screen($breakpoint-between) {
+    @content;
+  }
+}
+
+
 @mixin min-screen-small
 {
   @include min-screen($breakpoint-small) {
