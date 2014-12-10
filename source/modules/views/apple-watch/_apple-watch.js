@@ -16,3 +16,5 @@ function toggleAcordeon(event) {
   panel.classList.add(enabledClass);
   panel.addEventListener('click', toggleAcordeon, false);
 })
+
+

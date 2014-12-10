@@ -4,13 +4,14 @@
 /* APPLE-WATCH VIEW */
 
 .apple-watch-container {
-  p {
+  .uc-streamer p {
     text-align: center;
   }
   .uc-hero {
+    height: 25rem;
     background-image: url('/assets/images/apple-watch/l_header.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: right;
   }
   [uc-column~="1/2"] {
     margin-left: 0;
@@ -39,6 +40,17 @@
     list-style: none;
   }
 
+  .edge-animation {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    margin-bottom: -400px;
+  }
+
+
   .legend-container {
     padding: 0;
   }
@@ -57,6 +69,11 @@
       width: 50%;
       float: left;
       padding: 20px;
+      border: none;
+
+      &:first-child {
+        border: none;
+      }
     }
 
     @include min-screen-large {
@@ -132,6 +149,5 @@
       margin-bottom: 0; //overwrite
     }
   }
-
 }
 
