@@ -3,6 +3,11 @@
 
 /* APPLE-WATCH VIEW */
 
-.invert {
-
+.apple-watch-container {
+  .uc-hero {
+    background-image: url('/assets/images/apple-watch/l_Header.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 }
+
