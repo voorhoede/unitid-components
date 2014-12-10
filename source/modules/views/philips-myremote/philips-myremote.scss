@@ -399,3 +399,28 @@ figcaption, li, p {
         height: 6em;
     }
 }
+
+.dragnotice {
+  margin: 2em auto 0;
+  width: 10em;
+  height: 2.5em;
+  padding: 0.5em 1em;
+  background: $accent;
+  line-height: 1.675em;
+  border-radius: 1.25em;
+  color: white;
+  font-family: $font-face;
+
+  img {
+    height: 1.5em;
+    float: left;
+    margin-right: 1em;
+  }
+
+}
+
+[data-dragme] {
+  cursor: move;
+  background-position: -300px 0px;
+  background-size: auto !important;
+}

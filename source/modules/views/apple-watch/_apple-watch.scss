@@ -17,7 +17,9 @@
   }
   .icon-list {
     list-style: none;
-    padding-top: 10rem;
+    @include min-screen-small {
+      padding-top: 10rem;
+    }
     img {
       @include min-screen-small {
         float: left;
