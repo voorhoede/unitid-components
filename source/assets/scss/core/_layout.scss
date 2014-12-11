@@ -23,6 +23,7 @@
 	} @else {
 		margin-bottom: - $size;
 	}
+
 }
 
 .case section {
@@ -99,6 +100,15 @@
 	&:before {
 		@include uc-divider("before");
 	}
+  & > :first-child {
+    margin-top: 48.0px;
+    margin-top: 4.8rem;
+
+    @include min-screen-medium {
+      margin-top: 74px;
+      margin-top: 7.4rem
+    }
+  }
 }
 
 .divider-before-wide {
