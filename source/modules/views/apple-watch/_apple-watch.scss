@@ -5,7 +5,9 @@
 
 .apple-watch-container {
   .uc-streamer p {
+    position: relative;
     text-align: center;
+    margin-bottom: 5rem;
   }
   .uc-hero {
     height: 25rem;
@@ -14,22 +16,100 @@
     background-position: right;
   }
   [uc-column~="1/2"] {
+    z-index: 11;
+    position: relative;
     margin-left: 0;
+    img {
+      margin-bottom: 5rem;
+      @include min-screen-small {
+        margin-bottom: -4rem;
+      }
+      @include min-screen-medium {
+        margin-bottom: 6.4rem;
+      }
+      @include min-screen-large {
+        margin: 5rem 0 10rem;
+      }
+    }
+  }
+  .center {
+    z-index: -2;
+  }
+  .invert {
+    @include min-screen-medium {
+      [uc-column~="1/2"] {
+        float: right;
+      }
+      img {
+        float: right;
+      }
+    }
+  }
+  @include min-screen-medium {
+    .bike:before, .guy:before, .plane:before {
+      background-position: center;
+      position: absolute;
+      z-index: -1;
+    }
+    .bike:before {
+      background-image: url('/assets/images/apple-watch/fiets.svg');
+      background-size: cover;
+      -webkit-transform: rotate(15deg);
+      -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+      -o-transform: rotate(15deg);
+      transform: rotate(15deg);
+      height: 500px;
+      width: 100%;
+      top: 30%;
+    }
+    .guy:before {
+      background-image: url('/assets/images/apple-watch/mannetje.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 529px;
+      width: 43%;
+      top: 30%;
+      left: 25%;
+    }
+    .plane:before {
+      background-image: url('/assets/images/apple-watch/vliegtuig.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      height: 262px;
+      width: 50%;
+      top: 25%;
+      left: 30%;
+    }
   }
   .icon-list {
     list-style: none;
+    position: relative;
+    z-index: 1;
     @include min-screen-small {
       padding-top: 10rem;
+    }
+    li {
+      @include min-screen-small {
+        margin-bottom: 4rem;
+      }
     }
     img {
       @include min-screen-small {
         float: left;
-        margin-bottom: 2.5rem;
+        margin: 0 3rem 0 0;
       }
     }
     p {
+      position: relative;
       text-align: center;
       @include min-screen-small {
+        padding-left: 9.7rem;
         text-align: left;
         margin-bottom: 2.5rem;
       }
