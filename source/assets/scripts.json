@@ -10,6 +10,7 @@
 	  	"uc-slider"
     ],
     "views": [
+      "apple-watch",
   		"nu-nl",
       "philips-myremote"
     ]

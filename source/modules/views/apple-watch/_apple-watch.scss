@@ -4,6 +4,10 @@
 /* APPLE-WATCH VIEW */
 
 .apple-watch-container {
+
+  h2 {
+
+  }
   .uc-streamer p {
     position: relative;
     text-align: center;
@@ -19,18 +23,18 @@
     z-index: 11;
     position: relative;
     margin-left: 0;
-    img {
-      margin-bottom: 5rem;
-      @include min-screen-small {
-        margin-bottom: -4rem;
-      }
-      @include min-screen-medium {
-        margin-bottom: 6.4rem;
-      }
-      @include min-screen-large {
-        margin: 5rem 0 10rem;
-      }
-    }
+//    img {
+//      margin-bottom: 5rem;
+//      @include min-screen-small {
+//        margin-bottom: -4rem;
+//      }
+//      @include min-screen-medium {
+//        margin-bottom: 6.4rem;
+//      }
+//      @include min-screen-large {
+//        margin: 5rem 0 10rem;
+//      }
+//    }
   }
   .center {
     z-index: -2;
@@ -46,45 +50,24 @@
     }
   }
   @include min-screen-medium {
-    .bike:before, .guy:before, .plane:before {
+    .bike, .soundhound, .plane {
       background-position: center;
-      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 75%;
       z-index: -1;
     }
-    .bike:before {
+    .bike {
       background-image: url('/assets/images/apple-watch/fiets.svg');
-      background-size: cover;
-      -webkit-transform: rotate(15deg);
-      -moz-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      -o-transform: rotate(15deg);
-      transform: rotate(15deg);
-      height: 500px;
-      width: 100%;
-      top: 30%;
     }
-    .guy:before {
+    .soundhound {
       background-image: url('/assets/images/apple-watch/mannetje.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 529px;
-      width: 43%;
-      top: 30%;
-      left: 25%;
+      background-position: 50% 75%;
+      background-size: 50%;
+
     }
-    .plane:before {
+    .plane {
       background-image: url('/assets/images/apple-watch/vliegtuig.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      -webkit-transform: rotate(-10deg);
-      -moz-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-      -o-transform: rotate(-10deg);
-      transform: rotate(-10deg);
-      height: 262px;
-      width: 50%;
-      top: 25%;
-      left: 30%;
+      background-position: 25% 30%;
     }
   }
   .icon-list {
@@ -100,9 +83,11 @@
       }
     }
     img {
+      width: 51px;
       @include min-screen-small {
         float: left;
         margin: 0 3rem 0 0;
+
       }
     }
     p {
@@ -124,12 +109,23 @@
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5);
-    -webkit-transform-origin: top center;
-    -ms-transform-origin: top center;
-    transform-origin: top center;
+    -webkit-transform-origin: 25% top;
+    -ms-transform-origin: 25% top;
+    transform-origin: 25% top;
     margin-bottom: -400px;
   }
 
+  @include max-screen-between {
+    .contains-legend .whitespace-before {
+      margin-top: 0;
+    }
+    .divider-before:before {
+      box-shadow: none;
+    }
+    .mobile-spaceless {
+      padding: 0;
+    }
+  }
 
   .legend-container {
     padding: 0;
@@ -139,10 +135,11 @@
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid $smoke;
+    background: $white;
 
     &:first-child {
-      border-top: 1px solid grey;
+      border-top: 1px solid $smoke;
     }
 
     @include min-screen-between {
@@ -158,12 +155,12 @@
 
     @include min-screen-large {
       position: relative;
-      padding-left: 70px;
+      padding-left: 84px;
 
       .legend-item-icon {
         position: absolute;
         left: 0;
-        top: 0;
+        top: 20px;
       }
     }
   }
@@ -175,10 +172,11 @@
       border: none;
     }
 
-    img {
+    .legend-item-icon {
       display: inline;
       vertical-align: middle;
       margin: 0;
+      width: 51px;
     }
 
     h3 {
@@ -187,47 +185,69 @@
 
     }
 
-    @include max-screen-between {
-      &.is-enabled {
-        &:before {
-          content: '';
-          position: absolute;
-          right: 20px;
-          top: 30px;
-
-          width: 0;
-          height: 0;
-          border-left: 6px solid transparent;
-          border-right: 6px solid transparent;
-          border-bottom: 6px solid black;
-
-        }
-      }
-
-      &.is-toggled {
-        &:before {
-          content: '';
-        }
-      }
-    }
   }
 
-  .legend-item-body {
-    @include max-screen-between {
+  .is-enabled {
+   @include max-screen-between {
+    .legend-item-header {
+      height: 74px;
+      line-height: 74px;
+      padding: 0 20px;
 
-      &.is-toggled {
-        border-top: 1px solid grey;
-        background: lightgrey;
+      &:before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 34px;
+
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid black;
       }
     }
+     .legend-item-icon {
+       margin-right: 25px;
+     }
+
+    .legend-item-content {
+      padding: 20px 20px 45px;
+    }
+
+    .legend-item-body {
+      overflow: hidden;
+      max-height: 0;
+    }
+
+    &.is-toggled {
+      background: $whitesmoke;
+      .legend-item-header {
+        border-top: none;
+        box-shadow: inset 0 17px 3px -17px rgba($grey ,0.1);
+      }
+      .legend-item-header:before {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid black;
+        border-top: none;
+      }
+
+      .legend-item-body {
+        max-height: 300px;
+        box-shadow: inset 0 -17px 3px -17px rgba($grey ,0.1);
+      }
+    }
+   }
   }
 
   .legend-item-content {
-    padding: 20px;
+    padding: 20px 0;
 
     &:last-child {
       margin-bottom: 0; //overwrite
     }
   }
+
 }
 
