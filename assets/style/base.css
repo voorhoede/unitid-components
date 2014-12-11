@@ -509,6 +509,18 @@ th {
     margin-top: -5.5rem;
     /* 9 */
   }
+  .case h1 + h2.loose, .case h1 + h6.loose {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-top: -25px;
+    /* 9 */
+    margin-top: -2.5rem;
+    /* 9 */
+  }
 }
 @media screen and (min-width: 1280px) {
   .case h1 {
