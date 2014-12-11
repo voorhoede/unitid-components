@@ -37,6 +37,9 @@
 			& + p, & + h2, & + h6 {
 				@include rem(margin-top, - 5.5rem);
 			}
+      & + h2.loose, & + h6.loose {
+        @include rem(margin-top, - 2.5rem);
+      }
 		}
 
 		@include min-screen-xlarge {
