@@ -4,7 +4,9 @@
 /* APPLE-WATCH VIEW */
 
 .apple-watch-container {
-
+  .center {
+    text-align: center;
+  }
   h2 {
 
   }
@@ -14,31 +16,29 @@
     margin-bottom: 5rem;
   }
   .uc-hero {
-    height: 25rem;
-    background-image: url('/assets/images/apple-watch/l_header.jpg');
-    background-size: cover;
-    background-position: right;
+    height: 32.5rem;
+    background-image: url('/assets/images/apple-watch/S_header.jpg');
+    background-position: bottom;
+
+    @include min-screen-between {
+      height: 25rem;
+      background-image: url('/assets/images/apple-watch/L_header.jpg');
+      background-position: right;
+      background-size: cover;
+    }
   }
   [uc-column~="1/2"] {
-    z-index: 11;
-    position: relative;
     margin-left: 0;
-//    img {
-//      margin-bottom: 5rem;
-//      @include min-screen-small {
-//        margin-bottom: -4rem;
-//      }
-//      @include min-screen-medium {
-//        margin-bottom: 6.4rem;
-//      }
-//      @include min-screen-large {
-//        margin: 5rem 0 10rem;
-//      }
-//    }
+    .edge-animation {
+      @include min-screen-between {
+        margin-top: 3rem;
+      }
+      @include min-screen-large {
+        margin-top: 5rem;
+      }
+    }
   }
-  .center {
-    z-index: -2;
-  }
+
   .invert {
     @include min-screen-medium {
       [uc-column~="1/2"] {
@@ -50,32 +50,29 @@
     }
   }
   @include min-screen-medium {
-    .bike, .soundhound, .plane {
-      background-position: center;
+    .strava, .soundhound, .schiphol {
       background-repeat: no-repeat;
       background-size: 75%;
-      z-index: -1;
     }
-    .bike {
+    .strava {
       background-image: url('/assets/images/apple-watch/fiets.svg');
+      background-position: 20% 90%;
     }
     .soundhound {
       background-image: url('/assets/images/apple-watch/mannetje.svg');
       background-position: 50% 75%;
-      background-size: 50%;
-
     }
-    .plane {
+    .schiphol {
       background-image: url('/assets/images/apple-watch/vliegtuig.svg');
-      background-position: 25% 30%;
+      background-position: 70% 60%;
     }
   }
   .icon-list {
     list-style: none;
     position: relative;
-    z-index: 1;
-    @include min-screen-small {
-      padding-top: 10rem;
+    padding-top: 5rem;
+    @include min-screen-medium {
+      padding-top: 20rem;
     }
     li {
       @include min-screen-small {
@@ -84,16 +81,14 @@
     }
     img {
       width: 51px;
-      @include min-screen-small {
+      @include min-screen-between {
         float: left;
         margin: 0 3rem 0 0;
-
       }
     }
     p {
-      position: relative;
-      text-align: center;
-      @include min-screen-small {
+      @include min-screen-between {
+        position: relative;
         padding-left: 9.7rem;
         text-align: left;
         margin-bottom: 2.5rem;
@@ -105,14 +100,39 @@
     list-style: none;
   }
 
+  @mixin origin($x,$y) {
+  -webkit-transform-origin: $x $y;
+  -ms-transform-origin: $x $y;
+  transform-origin: $x $y;
+  }
+
   .edge-animation {
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 25% top;
-    -ms-transform-origin: 25% top;
-    transform-origin: 25% top;
-    margin-bottom: -400px;
+    overflow: hidden;
+    width: 488px;
+    height: 880px;
+    @include origin(18%, top);
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+
+    margin-top: 25px;
+    margin-bottom: -380px;
+
+    @include min-screen(480px){
+      @include origin(center, top);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include min-screen-medium {
+      @include origin(18%, top);
+      margin-bottom: -300px;
+    }
+
+    @include min-screen-large {
+      @include origin(center, top);
+      margin-bottom: -278px
+    }
   }
 
   @include max-screen-between {
