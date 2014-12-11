@@ -1,0 +1,4 @@
+@mixin animation($params) {
+  -webkit-animation: $params;
+  animation: $params;
+}

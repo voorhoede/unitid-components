@@ -3,8 +3,9 @@
   		"swipe/swipe"
     ],
     "common": [
+      "app",
   		"tools",
-		  "app"
+		  "unhide"
     ],
     "components": [
 	  	"uc-slider"

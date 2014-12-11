@@ -421,74 +421,101 @@ figcaption, li, p {
 
 [data-dragme] {
   cursor: move;
-  background-position: -300px 0px;
+  background-image: url('/assets/images/philips-myremote/visual-canvas.png');
+  background-position: -403px -585px;
   background-size: auto !important;
 }
 
-@-webkit-keyframes heartbeat {
-  0%   { opacity: 0.25; -webkit-transform: scale(0.85, 0.75); }
-  25%  { opacity: 1; -webkit-transform: scale(1); }
-  100% { opacity: 0.25; -webkit-transform: scale(0.85, 0.75); }
+.oldie, html.no-js {
+  .dragnotice {
+    display: none;
+  }
+  [data-dragme] {
+    background-image: url('/assets/images/philips-myremote/visual-canvas-fixed.jpg');
+    background-size: 100%;
+  }
 }
 
-@-webkit-keyframes rotate {
+@include keyframes(heartbeat) {
+  0%   {
+    @include transform(scale(0.9, 0.9));
+    opacity: 0;
+  }
+  20% {
+    @include transform(scale(1));
+    opacity: 1;
+  }
+  50% {
+    @include transform(scale(0.75, 0.65));
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes(rotate) {
   from {
-    -webkit-transform: rotate(0deg);
+    @include transform(rotate(0deg));
   }
   to {
-    -webkit-transform: rotate(360deg)
+    @include transform(rotate(360deg));
   }
 }
 
+
 .circle {
-  background-size: cover;
-  background-position: center;
   width: 18em;
   height: 18em;
+  background-size: cover;
+  background-position: center;
   @include rem(margin, 0 auto 2.5 * $margin);
   border-radius: 10em;
   overflow: hidden;
+}
 
-  img {
-    @include center-center;
-    width: 8em;
-    -webkit-animation: heartbeat 2s infinite;
-  }
+.heart {
+  @include center-center;
+  margin: auto !important; // SORRY
+  width: 8em;
 }
 
 .spinner {
   position: absolute;
-  background-image: url('/assets/images/philips-myremote/spinner-white.svg');
-  background-size: cover;
   height: 1.5em;
   width: 1.5em;
   right: 6em;
   top: 3em;
-  -webkit-animation: rotate 1s steps(12) infinite;
+  background-image: url('/assets/images/philips-myremote/spinner-white.svg');
+  background-size: cover;
 }
 
 .pairing {
   background-size: auto;
-  background-position: -150px -120px;
+  background-position: -58px -43px;
 
   .bar {
     background-color: #3399FF;
-    width: 15em;
+    width: 18em;
     height: 5px;
-    margin-left: 3em;
     margin-top: 2em;
-    -webkit-transition: all 15s ease-out;
-    transition: all 15s ease-out;
   }
 }
 
 html.js.csstransitions {
+  .pairing .bar {
+    margin-left: 3em;
+    width: 15em;
+    @include transition(15s, 0s, ease-out);
+  }
+  .spinner {
+    @include animation(rotate 1s steps(12) infinite);
+  }
+  .circle .heart {
+    @include animation(heartbeat 3s infinite);
+  }
   .pairing .bar.js-hide {
     width: 0em;
   }
 }
 
-// nice.
-[uc-row] figure.circle img:last-child {
-    margin-bottom: auto;
-}

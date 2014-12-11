@@ -4,14 +4,17 @@
 // e.g. '@import 'mixins/border-radius';'
 //
 
+@import 'mixins/animation';
 @import 'mixins/breakpoints';
 @import 'mixins/button';
 @import 'mixins/center-center';
 @import 'mixins/clearfix';
 @import 'mixins/font-bold';
 @import 'mixins/font-regular';
+@import 'mixins/keyframes';
 @import 'mixins/linear-gradient';
 @import 'mixins/rem';
 @import 'mixins/text-shadow';
+@import 'mixins/transform';
 @import 'mixins/transition';
 @import 'mixins/visually-hidden';
