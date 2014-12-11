@@ -1,371 +1,383 @@
-<!DOCTYPE html>
-<html class="no-js">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-    <title> Apple-watch | unitid-components </title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="ADD A DESCRIPTION" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/ico" />
-    <script>
-        (function(e) {
-            e.className = e.className.replace('no-js', 'js');
-        }(document.documentElement));
-    </script>
-    <!-- START Unitid website specific scripts/css -->
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css"
-    type="text/css">
-    <!-- END Unitid website specific scripts/css -->
-    <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>
-    <link rel="stylesheet" href="/assets/style/main.css" />
-    <link rel="stylesheet" href="/vendor/unitid-site/css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="/modules/views/apple-watch/apple-watch.css" />
-    <script src="http://unitid.nl/wp-content/themes/unitid/js/jquery.min.js?ver=4.0.1"></script>
-    <!--[if IE 8 ]>
+
+    <head>
+        <title> Apple-watch | unitid-components </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="ADD A DESCRIPTION" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/ico" />
+        <script>
+            (function(e) {
+                e.className = e.className.replace('no-js', 'js');
+            }(document.documentElement));
+        </script>
+        <!-- START Unitid website specific scripts/css -->
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css"
+        type="text/css">
+        <!-- END Unitid website specific scripts/css -->
+        <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>
+        <link rel="stylesheet" href="/assets/style/main.css" />
+        <link rel="stylesheet" href="/vendor/unitid-site/css/fonts.css" type="text/css">
+        <link rel="stylesheet" href="/modules/views/apple-watch/apple-watch.css" />
+        <script src="http://unitid.nl/wp-content/themes/unitid/js/jquery.min.js?ver=4.0.1"></script>
+        <!--[if IE 8 ]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-</head>
+    </head>
 
-<body>
-    <div class="row" id="language">
-        <div class="twelve columns">
-            <div class="ten columns wrapper"> <a href="http://www.unitid.nl/">Nederlands</a> | <a href="http://www.unitid.nl/english">English</a>                </div>
-        </div>
-    </div>
-    <div id="container" class="container" role="document">
-        <div class="row">
-            <header class="twelve columns" role="banner">
-                <div class="ten columns wrapper" id="logocontainer">
-                    <div class="four columns" id="logo" itemscope="" itemtype="http://www.unitid.nl">
-                        <a href="http://unitid.nl" title="Op zoek naar ons logo? Rechtermuis klik!" itemprop="url">
-                        <img src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
-                            alt="Logo UNITiD" itemprop="logo"> </a>
-                    </div>
-                    <p class="zoeken">
-                        <a href="#"><img src="http://unitid.nl/wp-content/themes/unitid/images/search.png" alt="Zoek op de UNITiD.nl website">
-                        </a>
-                    </p>
-                    <p class="menu"><a href="#" class="arrowdown"><span>Menu</span></a>
-                    </p>
-                    <div class="eight columns" id="main-navigation">
-                        <nav role="navigation" class="dropdown">
-                            <div class="default"></div>
-                            <ul class="nav-bar invisible">
-                                <li id="menu-item-7486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
-                                <a href="http://unitid.nl/">Home</a><span> |&nbsp;</span>
-                                </li>
-                                <li id="menu-item-7487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
-                                <a href="http://unitid.nl/blog/">Blog</a><span> |&nbsp;</span>
-                                </li>
-                                <li id="menu-item-7488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
-                                <a href="http://unitid.nl/portfolio/">Portfolio</a><span> |&nbsp;</span>                                    </li>
-                                <li id="menu-item-14275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
-                                <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span> |&nbsp;</span>                                    </li>
-                                <li id="menu-item-7489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
-                                <a href="http://unitid.nl/wie-zijn-we/">Team</a><span> |&nbsp;</span>                                    </li>
-                                <li id="menu-item-8915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
-                                <a href="http://unitid.nl/contact/">Contact</a><span> |&nbsp;</span>                                    </li>
-                            </ul>
-                            <a href="#" class="zoekmenu open"></a>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <div role="search" class="zoekformulier">
-                <div class="top-shadow"></div>
-                <form method="get" id="searchform" action="http://unitid.nl/">
-                    <a href="#" class="closesearch" title="Close"></a>
-                    <input type="text" value="" name="s" id="s">
-                    <input type="hidden" value="post" name="post_type">
-                    <input type="submit" id="searchsubmit" value="Search"> </form>
-                <div class="meestgezocht">
-                    <div class="meestgezochtlijst">
-                        <p>Veel gezocht:</p>
-                        <ul>
-                            <li><a href="http://unitid.nl/?s=tap">TAP</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=prototype">Prototype</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=ziggo">Ziggo</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=kieskeurig">Kieskeurig</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=fireworks">Fireworks</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=android">Android</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=ios">iOS</a>
-                            </li>
-                        </ul> <span class="fade"></span> </div>
-                </div>
-                <div class="bottom-shadow"></div>
+    <body>
+        <div class="row" id="language">
+            <div class="twelve columns">
+                <div class="ten columns wrapper"> <a href="http://www.unitid.nl/">Nederlands</a> | <a href="http://www.unitid.nl/english">English</a>                    </div>
             </div>
         </div>
-        <div class="case container apple-watch-container" role="document">
-            <section role="hero" class="whitespace-after">
-                <div class="uc-hero" data-component="uc-hero"> </div>
-                <div class="uc-streamer" data-component="uc-streamer">
-                    <div uc-row="">
-                        <h2>
+        <div id="container" class="container" role="document">
+            <div class="row">
+                <header class="twelve columns" role="banner">
+                    <div class="ten columns wrapper" id="logocontainer">
+                        <div class="four columns" id="logo" itemscope="" itemtype="http://www.unitid.nl">
+                            <a href="http://unitid.nl" title="Op zoek naar ons logo? Rechtermuis klik!" itemprop="url">
+                            <img src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
+                                alt="Logo UNITiD" itemprop="logo"> </a>
+                        </div>
+                        <p class="zoeken">
+                            <a href="#"><img src="http://unitid.nl/wp-content/themes/unitid/images/search.png" alt="Zoek op de UNITiD.nl website">
+                            </a>
+                        </p>
+                        <p class="menu"><a href="#" class="arrowdown"><span>Menu</span></a>
+                        </p>
+                        <div class="eight columns" id="main-navigation">
+                            <nav role="navigation" class="dropdown">
+                                <div class="default"></div>
+                                <ul class="nav-bar invisible">
+                                    <li id="menu-item-7486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
+                                    <a href="http://unitid.nl/">Home</a><span> |&nbsp;</span>
+                                    </li>
+                                    <li id="menu-item-7487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
+                                    <a href="http://unitid.nl/blog/">Blog</a><span> |&nbsp;</span>
+                                    </li>
+                                    <li id="menu-item-7488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
+                                    <a href="http://unitid.nl/portfolio/">Portfolio</a><span> |&nbsp;</span>                                        </li>
+                                    <li id="menu-item-14275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
+                                    <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span> |&nbsp;</span>                                        </li>
+                                    <li id="menu-item-7489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
+                                    <a href="http://unitid.nl/wie-zijn-we/">Team</a><span> |&nbsp;</span>                                        </li>
+                                    <li id="menu-item-8915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
+                                    <a href="http://unitid.nl/contact/">Contact</a><span> |&nbsp;</span>                                        </li>
+                                </ul>
+                                <a href="#" class="zoekmenu open"></a>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div role="search" class="zoekformulier">
+                    <div class="top-shadow"></div>
+                    <form method="get" id="searchform" action="http://unitid.nl/">
+                        <a href="#" class="closesearch" title="Close"></a>
+                        <input type="text" value="" name="s" id="s">
+                        <input type="hidden" value="post" name="post_type">
+                        <input type="submit" id="searchsubmit" value="Search"> </form>
+                    <div class="meestgezocht">
+                        <div class="meestgezochtlijst">
+                            <p>Veel gezocht:</p>
+                            <ul>
+                                <li><a href="http://unitid.nl/?s=tap">TAP</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=prototype">Prototype</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=ziggo">Ziggo</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=kieskeurig">Kieskeurig</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=fireworks">Fireworks</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=android">Android</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=ios">iOS</a>
+                                </li>
+                            </ul> <span class="fade"></span> </div>
+                    </div>
+                    <div class="bottom-shadow"></div>
+                </div>
+            </div>
+            <div class="case container apple-watch-container" role="document">
+                <section role="hero" class="whitespace-after">
+                    <div class="uc-hero" data-component="uc-hero"> </div>
+                    <div class="uc-streamer" data-component="uc-streamer">
+                        <div uc-row="">
+                            <h2>
           Nieuwe mogelijkheden met de <strong>Apple Watch</strong>
         </h2>
-                        <p> Het lange wachten wordt in 2015 dan toch echt beloond: de Apple Watch komt eraan!
-                            Bij UNITiD staan we te popelen om te gaan ontwerpen voor Apple’s smartwatch.
-                            Met dit handige apparaatje ontstaan er namelijk flink wat nieuwe mogelijkheden.
-                            Hieronder beschrijven we kort zes functionaliteiten die ons opvielen. </p>
+                            <p> Het lange wachten wordt in 2015 dan toch echt beloond: de Apple Watch komt
+                                eraan! Bij UNITiD staan we te popelen om te gaan ontwerpen voor Apple’s
+                                smartwatch. Met dit handige apparaatje ontstaan er namelijk flink wat
+                                nieuwe mogelijkheden. Hieronder beschrijven we kort zes functionaliteiten
+                                die ons opvielen. </p>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="divider-before whitespace-after contains-legend">
-                <div class="whitespace-after whitespace-before">
-                    <div uc-row class="mobile-spaceless">
-                        <ul class="legend-container flat-list">
-                            <li class="legend-item" data-toggler>
-                                <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_heartbeat.svg"
-                                    alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <h3>Hartslag-sensor</h3> </header>
-                                <div class="legend-item-body" data-toggler-body>
-                                    <p class="legend-item-content">Aan de onderkant van de Apple Watch zit een hartslag-sensor. Deze
-                                        communiceert met de GPS van je iPhone en meet zo allerlei fysieke
-                                        bewegingen. Op die manier kan de Watch een goed beeld schetsen
-                                        van je dagelijkse activiteiten en zie je of je persoonlijke doelen
-                                        zijn behaald.</p>
-                                </div>
-                            </li>
-                            <li class="legend-item" data-toggler>
-                                <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_notifications.svg"
-                                    alt="Notificaties" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <h3>Notificaties</h3> </header>
-                                <div class="legend-item-body" data-toggler-body>
-                                    <p class="legend-item-content">iPhone-apps die hun notificaties op de Apple Watch willen laten verschijnen
-                                        hebben de mogelijkheid om extra functionaliteiten toe te voegen.
-                                        Zo kun je via de Apple Watch direct iets met de notificatie doen:
-                                        bijvoorbeeld een bericht beantwoorden, je telefoon opnemen of
-                                        een actie binnen een app starten, zoals een navigatie.</p>
-                                </div>
-                            </li>
-                            <li class="legend-item" data-toggler>
-                                <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_taptic.svg"
-                                    alt="Taptic Engine" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <h3>Taptic Engine</h3> </header>
-                                <div class="legend-item-body" data-toggler-body>
-                                    <p class="legend-item-content">Een bijzondere toevoeging aan de Apple Watch is de ‘Taptic Engine’.
-                                        Deze is het best te omschrijven als een ‘ultra gevoelige en specifieke
-                                        vibratie-motor’. Door hele specifieke trillingen uit te voeren
-                                        kun je bijvoorbeeld tijdens het navigeren het verschil tussen
-                                        links en rechts voelen als je de Apple Watch draagt.</p>
-                                </div>
-                            </li>
-                            <li class="legend-item" data-toggler>
-                                <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_handoff.svg"
-                                    alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <h3>Handoff</h3> </header>
-                                <div class="legend-item-body" data-toggler-body>
-                                    <p class="legend-item-content">Met de Handoff-functie kun je snel switchen tussen je iPhone, iPad
-                                        en Mac. Zo kun je starten op het ene apparaat en makkelijk verder
-                                        werken op een ander apparaat. Denk hierbij aan e-mails, berichten,
-                                        openstaande websites in je browser of zelfs telefoongesprekken.
-                                        Enorm handig als je vaak met meerdere apparaten bezig bent.</p>
-                                </div>
-                            </li>
-                            <li class="legend-item" data-toggler>
-                                <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_force.svg"
-                                    alt="Force Touch" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <h3>Force Touch</h3> </header>
-                                <div class="legend-item-body" data-toggler-body>
-                                    <p class="legend-item-content">Het scherm van de Apple Watch is zó gevoelig dat hij kan onderscheiden
-                                        of de gebruiker kort ‘tapt’ met zijn vingers of echt drukt. Hierdoor
-                                        is het bijvoorbeeld mogelijk om een menu op te roepen als de
-                                        gebruiker duidelijk op het scherm drukt.</p>
-                                </div>
-                            </li>
-                            <li class="legend-item" data-toggler>
-                                <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_glances.svg"
-                                    alt="Glances" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <h3>Glances</h3> </header>
-                                <div class="legend-item-body" data-toggler-body>
-                                    <p class="legend-item-content">Door vanaf de onderkant van het scherm naar boven te vegen komen
-                                        er ‘glances’ tevoorschijn. Dit zijn korte en beknopte stukjes
-                                        informatie met bijvoorbeeld het laatste nieuws, het weer of je
-                                        belangrijkste vluchtgegevens.</p>
-                                </div>
-                            </li>
-                        </ul>
+                </section>
+                <section class="divider-before whitespace-after contains-legend">
+                    <div class="whitespace-after whitespace-before">
+                        <div uc-row class="mobile-spaceless">
+                            <ul class="legend-container flat-list">
+                                <li class="legend-item" data-toggler>
+                                    <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_heartbeat.svg"
+                                        alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <h3>Hartslag-sensor</h3> </header>
+                                    <div class="legend-item-body" data-toggler-body>
+                                        <p class="legend-item-content">Aan de onderkant van de Apple Watch zit een hartslag-sensor.
+                                            Deze communiceert met de GPS van je iPhone en meet zo allerlei
+                                            fysieke bewegingen. Op die manier kan de Watch een goed beeld
+                                            schetsen van je dagelijkse activiteiten en zie je of je persoonlijke
+                                            doelen zijn behaald.</p>
+                                    </div>
+                                </li>
+                                <li class="legend-item" data-toggler>
+                                    <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_notifications.svg"
+                                        alt="Notificaties" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <h3>Notificaties</h3> </header>
+                                    <div class="legend-item-body" data-toggler-body>
+                                        <p class="legend-item-content">iPhone-apps die hun notificaties op de Apple Watch willen laten
+                                            verschijnen hebben de mogelijkheid om extra functionaliteiten
+                                            toe te voegen. Zo kun je via de Apple Watch direct iets met
+                                            de notificatie doen: bijvoorbeeld een bericht beantwoorden,
+                                            je telefoon opnemen of een actie binnen een app starten,
+                                            zoals een navigatie.</p>
+                                    </div>
+                                </li>
+                                <li class="legend-item" data-toggler>
+                                    <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_taptic.svg"
+                                        alt="Taptic Engine" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <h3>Taptic Engine</h3> </header>
+                                    <div class="legend-item-body" data-toggler-body>
+                                        <p class="legend-item-content">Een bijzondere toevoeging aan de Apple Watch is de ‘Taptic Engine’.
+                                            Deze is het best te omschrijven als een ‘ultra gevoelige
+                                            en specifieke vibratie-motor’. Door hele specifieke trillingen
+                                            uit te voeren kun je bijvoorbeeld tijdens het navigeren het
+                                            verschil tussen links en rechts voelen als je de Apple Watch
+                                            draagt.</p>
+                                    </div>
+                                </li>
+                                <li class="legend-item" data-toggler>
+                                    <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_handoff.svg"
+                                        alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <h3>Handoff</h3> </header>
+                                    <div class="legend-item-body" data-toggler-body>
+                                        <p class="legend-item-content">Met de Handoff-functie kun je snel switchen tussen je iPhone,
+                                            iPad en Mac. Zo kun je starten op het ene apparaat en makkelijk
+                                            verder werken op een ander apparaat. Denk hierbij aan e-mails,
+                                            berichten, openstaande websites in je browser of zelfs telefoongesprekken.
+                                            Enorm handig als je vaak met meerdere apparaten bezig bent.</p>
+                                    </div>
+                                </li>
+                                <li class="legend-item" data-toggler>
+                                    <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_force.svg"
+                                        alt="Force Touch" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <h3>Force Touch</h3> </header>
+                                    <div class="legend-item-body" data-toggler-body>
+                                        <p class="legend-item-content">Het scherm van de Apple Watch is zó gevoelig dat hij kan onderscheiden
+                                            of de gebruiker kort ‘tapt’ met zijn vingers of echt drukt.
+                                            Hierdoor is het bijvoorbeeld mogelijk om een menu op te roepen
+                                            als de gebruiker duidelijk op het scherm drukt.</p>
+                                    </div>
+                                </li>
+                                <li class="legend-item" data-toggler>
+                                    <header class="legend-item-header" data-toggler-header> <img class="legend-item-icon" src="/assets/images/apple-watch/icon_glances.svg"
+                                        alt="Glances" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <h3>Glances</h3> </header>
+                                    <div class="legend-item-body" data-toggler-body>
+                                        <p class="legend-item-content">Door vanaf de onderkant van het scherm naar boven te vegen komen
+                                            er ‘glances’ tevoorschijn. Dit zijn korte en beknopte stukjes
+                                            informatie met bijvoorbeeld het laatste nieuws, het weer
+                                            of je belangrijkste vluchtgegevens.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="divider-before center">
-                <div uc-row="">
-                    <h2>
+                </section>
+                <section class="divider-before center">
+                    <div uc-row="">
+                        <h2>
       Een <strong>voorproefje</strong>
     </h2>
-                    <p> Omdat we het niet konden laten hebben we alvast een aantal ontwerp-
-                        <br>voorbeelden kort uitgewerkt. </p>
-                </div>
-            </section>
-            <section class="smoke center soundhound">
-                <div uc-row>
-                    <h2><strong>Soundhound</strong></h2>
-                    <p> Met de <a href="#">WatchKit</a> app van SoundHound kun je de muziek die je bijvoorbeeld
-                        hoort in een winkel of op de radio sneller dan ooit herkennen. Houd simpelweg
-                        de Apple Watch bij je oor en SoundHound begint met luisteren en herkennen. </p>
-                    <div uc-column="1/2" data-component="uc-column-half">
-                        <div id="Stage" class="edge-animation EDGE-9119118"></div>
+                        <p> Omdat we het niet konden laten hebben we alvast een aantal ontwerp-
+                            <br>voorbeelden kort uitgewerkt. </p>
                     </div>
-                    <div uc-column="1/2" data-component="uc-column-half">
-                        <ul class="icon-list">
-                            <li> <img src="/assets/images/apple-watch/icon_Taptic.svg" alt="Heartbeat sensor"
-                                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                <p> Door middel van voelbare feedback, in de vorm van trillingen, weet je
-                                    wanneer SoundHound klaar is met luisteren. </p>
-                            </li>
-                            <li> <img src="/assets/images/apple-watch/icon_Handoff.svg" alt="Heartbeat sensor"
-                                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                <p> Via de Handoff-functie open je snel met je iPhone of iPad de juiste app
-                                    om het nummer aan te schaffen. </p>
-                            </li>
-                        </ul>
+                </section>
+                <section class="smoke center soundhound">
+                    <div uc-row>
+                        <h2><strong>Soundhound</strong></h2>
+                        <p> Met de <a href="#">WatchKit</a> app van SoundHound kun je de muziek die je bijvoorbeeld
+                            hoort in een winkel of op de radio sneller dan ooit herkennen. Houd simpelweg
+                            de Apple Watch bij je oor en SoundHound begint met luisteren en herkennen.
+                            </p>
+                        <div uc-column="1/2" data-component="uc-column-half">
+                            <div id="Stage" class="edge-animation EDGE-9119118"></div>
+                        </div>
+                        <div uc-column="1/2" data-component="uc-column-half">
+                            <ul class="icon-list">
+                                <li> <img src="/assets/images/apple-watch/icon_Taptic.svg" alt="Heartbeat sensor"
+                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                    <p> Door middel van voelbare feedback, in de vorm van trillingen, weet
+                                        je wanneer SoundHound klaar is met luisteren. </p>
+                                </li>
+                                <li> <img src="/assets/images/apple-watch/icon_Handoff.svg" alt="Heartbeat sensor"
+                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                    <p> Via de Handoff-functie open je snel met je iPhone of iPad de juiste
+                                        app om het nummer aan te schaffen. </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="invert center strava">
-                <div uc-row>
-                    <h2><strong>Strava</strong></h2>
-                    <p> Met de <a href="#">'glances'</a> van de Strava-applicatie kun je in één oog opslag
-                        je statistieken bekijken tijdens het fietsen. Je kunt zien welke route je fietst
-                        of hebt gefietst, hoe snel je op bepaalde stukken bent en op de hoeveelste plek
-                        je bent geëindigd. </p>
-                    <div uc-column="1/2" data-component="uc-column-half">
-                        <div id="Stage" class="edge-animation EDGE-151779426"></div>
+                </section>
+                <section class="invert center strava">
+                    <div uc-row>
+                        <h2><strong>Strava</strong></h2>
+                        <p> Met de <a href="#">'glances'</a> van de Strava-applicatie kun je in één oog opslag
+                            je statistieken bekijken tijdens het fietsen. Je kunt zien welke route je
+                            fietst of hebt gefietst, hoe snel je op bepaalde stukken bent en op de hoeveelste
+                            plek je bent geëindigd. </p>
+                        <div uc-column="1/2" data-component="uc-column-half">
+                            <div id="Stage" class="edge-animation EDGE-151779426"></div>
+                        </div>
+                        <div uc-column="1/2" data-component="uc-column-half">
+                            <ul class="icon-list">
+                                <li> <img src="/assets/images/apple-watch/icon_taptic_white.svg" alt="Heartbeat sensor"
+                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                    <p> Als sportieve fietser krijg je feedback van de Taptic Engine om zo
+                                        je persoonlijke records te verbeteren. </p>
+                                </li>
+                                <li> <img src="/assets/images/apple-watch/icon_heartbeat_white.svg" alt="Heartbeat sensor"
+                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                    <p> Door de hartslag-sensor kun je continu je hartslag in de gaten houden.
+                                        </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div uc-column="1/2" data-component="uc-column-half">
-                        <ul class="icon-list">
-                            <li> <img src="/assets/images/apple-watch/icon_taptic_white.svg" alt="Heartbeat sensor"
-                                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                <p> Als sportieve fietser krijg je feedback van de Taptic Engine om zo je
-                                    persoonlijke records te verbeteren. </p>
-                            </li>
-                            <li> <img src="/assets/images/apple-watch/icon_heartbeat_white.svg" alt="Heartbeat sensor"
-                                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                <p> Door de hartslag-sensor kun je continu je hartslag in de gaten houden.
-                                    </p>
-                            </li>
-                        </ul>
+                </section>
+                <section class="action center schiphol">
+                    <div uc-row>
+                        <h2><strong>Schiphol</strong></h2>
+                        <p> Met de <a href="#">'Actionable Notifications’</a> van Schiphol kun je rustig
+                            je reis beginnen; je hoeft namelijk nooit meer de weg te zoeken op het vliegveld
+                            en je bent als eerste op de hoogte van de laatste vluchtwijzigingen. </p>
+                        <div uc-column="1/2" data-component="uc-column-half">
+                            <div id="Stage" class="edge-animation EDGE-8022608"></div>
+                        </div>
+                        <div uc-column="1/2" data-component="uc-column-half">
+                            <ul class="icon-list">
+                                <li> <img src="/assets/images/apple-watch/icon_Notifications.svg" alt="Heartbeat sensor"
+                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                    <p> De Schiphol-applicatie geeft notificaties op de Apple Watch en navigeert
+                                        je zo naar de juiste gate. </p>
+                                </li>
+                                <li> <img src="/assets/images/apple-watch/icon_Taptic.svg" alt="Heartbeat sensor"
+                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                    <p> Door voelbare feedback merk je direct welke kant je op moet lopen.
+                                        </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="action center schiphol">
-                <div uc-row>
-                    <h2><strong>Schiphol</strong></h2>
-                    <p> Met de <a href="#">'Actionable Notifications’</a> van Schiphol kun je rustig je reis
-                        beginnen; je hoeft namelijk nooit meer de weg te zoeken op het vliegveld en je
-                        bent als eerste op de hoogte van de laatste vluchtwijzigingen. </p>
-                    <div uc-column="1/2"
-                    data-component="uc-column-half">
-                        <div id="Stage" class="edge-animation EDGE-8022608"></div>
-                    </div>
-                    <div uc-column="1/2" data-component="uc-column-half">
-                        <ul class="icon-list">
-                            <li> <img src="/assets/images/apple-watch/icon_Notifications.svg" alt="Heartbeat sensor"
-                                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                <p> De Schiphol-applicatie geeft notificaties op de Apple Watch en navigeert
-                                    je zo naar de juiste gate. </p>
-                            </li>
-                            <li> <img src="/assets/images/apple-watch/icon_Taptic.svg" alt="Heartbeat sensor"
-                                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                <p> Door voelbare feedback merk je direct welke kant je op moet lopen. </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="divider-before center whitespace-after">
-                <div uc-row>
-                    <h3>
+                </section>
+                <section class="divider-before center whitespace-after">
+                    <div uc-row>
+                        <h3>
         Interesse in een ontwerp voor de Apple Watch?
       </h3>
-                    <p> Wil je meer weten over onze werkwijze? Of ben je benieuwd wat voor jouw project de
-                        mogelijkheden zijn met een Apple Watch? </p>
-                    <p> <strong>Neem dan gerust contact op met:</strong>
-                        <br /> Rick le Roy (<a href="#">rick@unitid.nl</a>, <span itemprop="telephone">06 46 28 20 96</span>)
-                        of
-                        <br /> Matthijs Collard (<a href="#">matthijs@unitid.nl</a>, <span itemprop="telephone">06 28 12 66 97</span>)
-                        </p>
-                </div>
-            </section>
-        </div>
-        <script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/strava_edge.js"></script>
-        <script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/soundhound_edge.js"></script>
-        <script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/schiphol_edge.js"></script>
-        <footer id="content-info" role="contentinfo">
-            <div class="row">
-                <div class="twelve columns">
-                    <ul id="menu-default-1" class="footer-nav">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
-                        <a href="http://unitid.nl/">Home</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
-                        <a href="http://unitid.nl/blog/">Blog</a><span class="menuspacer"> | </span>                            </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
-                        <a href="http://unitid.nl/portfolio/">Portfolio</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
-                        <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
-                        <a href="http://unitid.nl/wie-zijn-we/">Team</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
-                        <a href="http://unitid.nl/contact/">Contact</a><span class="menuspacer"> | </span>
-                        </li>
-                    </ul>
-                    <ul id="social">
-                        <li class="twitter">
-                            <a href="https://twitter.com/UNITiD/" onclick="_gaq.push(['_trackEvent', 'Footer - twitter', 'twitter-unitid', 'tweet', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
-                                alt="Twitter">
-                            </a>
-                        </li>
-                        <li class="facebook">
-                            <a href="https://www.facebook.com/pages/UNITiD/166497220054803" onclick="_gaq.push(['_trackEvent', 'Footer - Facebook', 'facebook-unitid', 'like', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
-                                alt="Facebook">
-                            </a>
-                        </li>
-                        <li class="linkedin">
-                            <a href="http://www.linkedin.com/company/356831" onclick="_gaq.push(['_trackEvent', 'Footer - GooglePlus', 'googleplus-unitid', 'googleplus', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
-                                alt="Linkedin">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul id="themas">
-                        <li class="thematitle">Thema's:</li>
-                        <li> <a href="http://unitid.nl/interactie-ontwerp-voor-overheid-en-gemeenten/">Gemeenten</a>                            </li>
-                        <li class="menuspacer"> |</li>
-                        <li> <a href="http://unitid.nl/interaction-design/">Interaction design</a> </li>
-                        <li
-                        class="menuspacer"> |</li>
-                            <li> <a href="http://unitid.nl/responsive-web-design/">Responsive Design</a> </li>
-                    </ul>
-                </div>
+                        <p> Wil je meer weten over onze werkwijze? Of ben je benieuwd wat voor jouw project
+                            de mogelijkheden zijn met een Apple Watch? </p>
+                        <p> <strong>Neem dan gerust contact op met:</strong>
+                            <br /> Rick le Roy (<a href="#">rick@unitid.nl</a>, <span itemprop="telephone">06 46 28 20 96</span>)
+                            of
+                            <br /> Matthijs Collard (<a href="#">matthijs@unitid.nl</a>, <span itemprop="telephone">06 28 12 66 97</span>)
+                            </p>
+                    </div>
+                </section>
             </div>
-        </footer>
-        <script src="/assets/scripts/vendor.js"></script>
-        <script src="/assets/scripts/main.js"></script>
-    </div>
-    <div class="secondnav"> <span class="copyright">© UNITiD 2014</span> &nbsp;<a href="http://unitid.nl/algemene-voorwaarden/">Algemene voorwaarden</a>        | <a href="http://www.unitid.nl/english/">English</a> | <a href="http://unitid.nl/event-calendar/">Event kalender</a>        </div>
-</body>
+            <script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/strava_edge.js"></script>
+            <script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/soundhound_edge.js"></script>
+            <script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/schiphol_edge.js"></script>
+            <footer id="content-info" role="contentinfo">
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul id="menu-default-1" class="footer-nav">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
+                            <a href="http://unitid.nl/">Home</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
+                            <a href="http://unitid.nl/blog/">Blog</a><span class="menuspacer"> | </span>                                </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
+                            <a href="http://unitid.nl/portfolio/">Portfolio</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
+                            <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
+                            <a href="http://unitid.nl/wie-zijn-we/">Team</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
+                            <a href="http://unitid.nl/contact/">Contact</a><span class="menuspacer"> | </span>
+                            </li>
+                        </ul>
+                        <ul id="social">
+                            <li class="twitter">
+                                <a href="https://twitter.com/UNITiD/" onclick="_gaq.push(['_trackEvent', 'Footer - twitter', 'twitter-unitid', 'tweet', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
+                                    alt="Twitter">
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/pages/UNITiD/166497220054803" onclick="_gaq.push(['_trackEvent', 'Footer - Facebook', 'facebook-unitid', 'like', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
+                                    alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="linkedin">
+                                <a href="http://www.linkedin.com/company/356831" onclick="_gaq.push(['_trackEvent', 'Footer - GooglePlus', 'googleplus-unitid', 'googleplus', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
+                                    alt="Linkedin">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul id="themas">
+                            <li class="thematitle">Thema's:</li>
+                            <li> <a href="http://unitid.nl/interactie-ontwerp-voor-overheid-en-gemeenten/">Gemeenten</a>                                </li>
+                            <li class="menuspacer"> |</li>
+                            <li> <a href="http://unitid.nl/interaction-design/">Interaction design</a> </li>
+                            <li class="menuspacer"> |</li>
+                            <li> <a href="http://unitid.nl/responsive-web-design/">Responsive Design</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <script src="/assets/scripts/vendor.js"></script>
+            <script src="/assets/scripts/main.js"></script>
+        </div>
+        <div class="secondnav"> <span class="copyright">© UNITiD 2014</span> &nbsp;<a href="http://unitid.nl/algemene-voorwaarden/">Algemene voorwaarden</a>            | <a href="http://www.unitid.nl/english/">English</a> | <a href="http://unitid.nl/event-calendar/">Event kalender</a>            </div>
+    </body>
 
 </html>

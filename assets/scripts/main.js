@@ -104,6 +104,40 @@ var u = {
 
 window.u = u;
 
+var UnHide = (function(document) {
+  'use strict';
+
+  var hasClassList = 'classList' in document.documentElement;
+
+  function UnHide(elements) {
+
+    var box;
+
+    window.onscroll = u.throttle(function() {
+      u.each(elements, function(el) {
+        box = el.getBoundingClientRect();
+        if (box.top < document.documentElement.clientHeight - 200) {
+          makeActive(el);
+        }
+      })
+    }, 100);
+
+    function makeActive(el) {
+      if (hasClassList) {
+        el.classList.remove('js-hide');
+      } else {
+        el.className = el.className.replace(/js\-hide/g, '');
+      }
+    }
+  }
+
+  return UnHide;
+}(document));
+
+(function(window) {
+  window.UnHide = new UnHide(u.qsa('.js-hide'));
+})(window);
+
 
 var Slider = (function() {
 
@@ -191,40 +225,6 @@ AdobeEdge.loadComposition('schiphol', 'EDGE-8022608', {
   minW: "0",
   maxW: "undefined"
 }, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"]}},"dom":[{"id":"Poster","type":"","rect":["0","0","auto","auto","auto","auto"]},{"rect":["0px","0px","487px","879px","auto","auto"],"id":"Poster22","fill":["rgba(0,0,0,0)","/schiphol/Poster22.png","0px","0px"],"type":"image","tag":"img"}]});
-
-var UnHide = (function(document) {
-	'use strict';
-
-	var hasClassList = 'classList' in document.documentElement;
-
-	function UnHide(elements) {
-
-		var box;
-
-		window.onscroll = u.throttle(function() {
-			u.each(elements, function(el) {
-				box = el.getBoundingClientRect();
-				if (box.top < document.documentElement.clientHeight - 200) {
-					makeActive(el);
-				}
-			})
-		}, 100);
-
-		function makeActive(el) {
-			if (hasClassList) {
-				el.classList.remove('js-hide');
-			} else {
-        el.className = el.className.replace(/js\-hide/g, '');
-      }
-		}
-	}
-
-	return UnHide;
-}(document));
-
-(function(window) {
-	window.UnHide = new UnHide(u.qsa('.js-hide'));
-})(window);
 
 /**
  * Draggable Background plugin for jQuery
@@ -383,40 +383,8 @@ var UnHide = (function(document) {
   };
 }(jQuery));
 
-var UnHide = (function(document) {
-  'use strict';
-
-  var hasClassList = 'classList' in document.documentElement;
-
-  function UnHide(elements) {
-
-    var box;
-
-    window.onscroll = u.throttle(function() {
-      u.each(elements, function(el) {
-        box = el.getBoundingClientRect();
-        if (box.top < document.documentElement.clientHeight - 200) {
-          makeActive(el);
-        }
-      })
-    }, 100);
-
-    function makeActive(el) {
-      if (hasClassList) {
-        el.classList.remove('js-hide');
-      } else {
-        el.className = el.className.replace(/js\-hide/g, '');
-      }
-    }
-  }
-
-  return UnHide;
-}(document));
-
-(function(window) {
-  window.UnHide = new UnHide(u.qsa('.js-hide'));
-})(window);
-
 $(function() {
-  $('[data-dragme]').backgroundDraggable();
+  if (!$('html').hasClass('oldie')) { // Quick and dirty, just like the entire Unitid site
+    $('[data-dragme]').backgroundDraggable();
+  }
 });

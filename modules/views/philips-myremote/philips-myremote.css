@@ -544,37 +544,94 @@ figcaption, li, p {
 
 [data-dragme] {
   cursor: move;
-  background-position: -300px 0px;
+  background-image: url("/assets/images/philips-myremote/visual-canvas.png");
+  background-position: -403px -585px;
   background-size: auto !important;
+}
+
+.oldie .dragnotice, html.no-js .dragnotice {
+  display: none;
+}
+.oldie [data-dragme], html.no-js [data-dragme] {
+  background-image: url("/assets/images/philips-myremote/visual-canvas-fixed.jpg");
+  background-size: 100%;
 }
 
 @-webkit-keyframes heartbeat {
   0% {
-    opacity: 0.25;
-    -webkit-transform: scale(0.85, 0.75);
+    -webkit-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
   }
-  25% {
-    opacity: 1;
+  20% {
     -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.75, 0.65);
+    -ms-transform: scale(0.75, 0.65);
+    transform: scale(0.75, 0.65);
+    opacity: 0;
   }
   100% {
-    opacity: 0.25;
-    -webkit-transform: scale(0.85, 0.75);
+    opacity: 0;
+  }
+}
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.75, 0.65);
+    -ms-transform: scale(0.75, 0.65);
+    transform: scale(0.75, 0.65);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .circle {
-  background-size: cover;
-  background-position: center;
   width: 18em;
   height: 18em;
+  background-size: cover;
+  background-position: center;
   /* 3 */
   /* 3 */
   /* 4 */
@@ -592,48 +649,55 @@ figcaption, li, p {
   border-radius: 10em;
   overflow: hidden;
 }
-.circle img {
+
+.heart {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   margin: auto;
+  margin: auto !important;
   width: 8em;
-  -webkit-animation: heartbeat 2s infinite;
 }
 
 .spinner {
   position: absolute;
-  background-image: url("/assets/images/philips-myremote/spinner-white.svg");
-  background-size: cover;
   height: 1.5em;
   width: 1.5em;
   right: 6em;
   top: 3em;
-  -webkit-animation: rotate 1s steps(12) infinite;
+  background-image: url("/assets/images/philips-myremote/spinner-white.svg");
+  background-size: cover;
 }
 
 .pairing {
   background-size: auto;
-  background-position: -150px -120px;
+  background-position: -58px -43px;
 }
 .pairing .bar {
   background-color: #3399FF;
-  width: 15em;
+  width: 18em;
   height: 5px;
-  margin-left: 3em;
   margin-top: 2em;
-  -webkit-transition: all 15s ease-out;
-  transition: all 15s ease-out;
 }
 
+html.js.csstransitions .pairing .bar {
+  margin-left: 3em;
+  width: 15em;
+  -webkit-transition: all 15s ease-out 0s;
+  transition: all 15s ease-out 0s;
+}
+html.js.csstransitions .spinner {
+  -webkit-animation: rotate 1s steps(12) infinite;
+  animation: rotate 1s steps(12) infinite;
+}
+html.js.csstransitions .circle .heart {
+  -webkit-animation: heartbeat 3s infinite;
+  animation: heartbeat 3s infinite;
+}
 html.js.csstransitions .pairing .bar.js-hide {
   width: 0em;
-}
-
-[uc-row] figure.circle img:last-child {
-  margin-bottom: auto;
 }
 
 /*# sourceMappingURL=philips-myremote.css.map */

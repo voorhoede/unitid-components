@@ -1,213 +1,221 @@
-<!DOCTYPE html>
-<html class="no-js">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-    <title> Front-end guide | unitid-components </title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="ADD A DESCRIPTION" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/ico" />
-    <script>
-        (function(e) {
-            e.className = e.className.replace('no-js', 'js');
-        }(document.documentElement));
-    </script>
-    <link rel="stylesheet" href="/assets/style/main.css">
-    <!--<link rel="stylesheet" href="./guide//voorhoede-core-styles.css">-->
-    <!--<link rel="stylesheet" href="./guide//core-layout.css">-->
-    <link rel="stylesheet" href="./guide/guide.css">
-    <link rel="stylesheet" href="./guide/vendor/prismjs/prism.css">
-    <script src="http://unitid.nl/wp-content/themes/unitid/js/jquery.min.js?ver=4.0.1"></script>
-    <!--[if IE 8 ]>
+
+    <head>
+        <title> Front-end guide | unitid-components </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="ADD A DESCRIPTION" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/ico" />
+        <script>
+            (function(e) {
+                e.className = e.className.replace('no-js', 'js');
+            }(document.documentElement));
+        </script>
+        <link rel="stylesheet" href="/assets/style/main.css">
+        <!--<link rel="stylesheet" href="./guide//voorhoede-core-styles.css">-->
+        <!--<link rel="stylesheet" href="./guide//core-layout.css">-->
+        <link rel="stylesheet" href="./guide/guide.css">
+        <link rel="stylesheet" href="./guide/vendor/prismjs/prism.css">
+        <script src="http://unitid.nl/wp-content/themes/unitid/js/jquery.min.js?ver=4.0.1"></script>
+        <!--[if IE 8 ]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-</head>
+    </head>
 
-<body>
-    <div id="container" class="container" role="document">
-        <div class="page app-guide">
-            <div class="core-layout">
-                <header class="app-guide-content"> <img class="logo" src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
-                    />
-                    <h1>unitid-components</h1> </header>
-                <main class="app-guide-main">
-                    <p> This front-end guide contains all the <a href="#section-views">views</a>, (pages)
-                        which will be served to the end user, as well as all <a href="#section-components">components</a>                        and <a href="#section-assets">assets</a> which allow back-end developers to integrate
-                        these views into the application. </p>
-                    <section id="section-app" class="app-guide-section app-guide-content">
-                        <h2 class="app-guide-section-title">
+    <body>
+        <div id="container" class="container" role="document">
+            <div class="page app-guide">
+                <div class="core-layout">
+                    <header class="app-guide-content"> <img class="logo" src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
+                        />
+                        <h1>unitid-components</h1> </header>
+                    <main class="app-guide-main">
+                        <p> This front-end guide contains all the <a href="#section-views">views</a>, (pages)
+                            which will be served to the end user, as well as all <a href="#section-components">components</a>                            and <a href="#section-assets">assets</a> which allow back-end developers
+                            to integrate these views into the application. </p>
+                        <section id="section-app"
+                        class="app-guide-section app-guide-content">
+                            <h2 class="app-guide-section-title">
 			App 
 <a href="#section-app"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <ul>
-                            <li> <a href="app.zip">Download as zip</a> - includes all views, components &amp;
-                                assets. </li>
-                            <li> <a href="guide/style-guide.html">Style guide</a> - all primary style rules
-                                and elements. </li>
-                        </ul>
-                    </section>
-                    <section id="section-views" class="app-guide-section app-guide-content">
-                        <h2 class="app-guide-section-title">
+                            <ul>
+                                <li> <a href="app.zip">Download as zip</a> - includes all views, components
+                                    &amp; assets. </li>
+                                <li> <a href="guide/style-guide.html">Style guide</a> - all primary style
+                                    rules and elements. </li>
+                            </ul>
+                        </section>
+                        <section id="section-views" class="app-guide-section app-guide-content">
+                            <h2 class="app-guide-section-title">
 			Views 
 <a href="#section-views"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <p> Each view is unique and compiled out of one or more components. </p>
-                        <ul>
-                            <li> <a href="modules/views/apple-watch/apple-watch.html">
+                            <p> Each view is unique and compiled out of one or more components. </p>
+                            <ul>
+                                <li> <a href="modules/views/apple-watch/apple-watch.html">
 					Apple watch
 				</a>
-                                <a class="app-guide-icon app-guide-icon-tags" href="modules/views/apple-watch/apple-watch.html?debug"></a>
-                            </li>
-                            <li> <a href="modules/views/case/case.html">
+                                    <a class="app-guide-icon app-guide-icon-tags" href="modules/views/apple-watch/apple-watch.html?debug"></a>
+                                </li>
+                                <li> <a href="modules/views/case/case.html">
 					Case
 				</a>
-                                <a class="app-guide-icon app-guide-icon-tags" href="modules/views/case/case.html?debug"></a>
-                            </li>
-                            <li> <a href="modules/views/nu-nl/nu-nl.html">
+                                    <a class="app-guide-icon app-guide-icon-tags" href="modules/views/case/case.html?debug"></a>
+                                </li>
+                                <li> <a href="modules/views/nu-nl/nu-nl.html">
 					Nu nl
 				</a>
-                                <a class="app-guide-icon app-guide-icon-tags" href="modules/views/nu-nl/nu-nl.html?debug"></a>
-                            </li>
-                            <li> <a href="modules/views/philips-myremote/philips-myremote.html">
+                                    <a class="app-guide-icon app-guide-icon-tags" href="modules/views/nu-nl/nu-nl.html?debug"></a>
+                                </li>
+                                <li> <a href="modules/views/philips-myremote/philips-myremote.html">
 					Philips myremote
 				</a>
-                                <a class="app-guide-icon app-guide-icon-tags" href="modules/views/philips-myremote/philips-myremote.html?debug"></a>
-                            </li>
-                        </ul>
-                        <p> All views are available in <code class="language-bash">modules/views/</code>.
-                            <br/> Select the tag icon <span class="app-guide-icon app-guide-icon-tags"></span>                            behind a view to see the view with annotated components. </p>
-                    </section>
-                    <section id="section-components" class="app-guide-section app-guide-content">
-                        <h2 class="app-guide-section-title">
+                                    <a class="app-guide-icon app-guide-icon-tags" href="modules/views/philips-myremote/philips-myremote.html?debug"></a>
+                                </li>
+                            </ul>
+                            <p> All views are available in <code class="language-bash">modules/views/</code>.
+                                <br/> Select the tag icon <span class="app-guide-icon app-guide-icon-tags"></span>                                behind a view to see the view with annotated components. </p>
+                        </section>
+                        <section id="section-components" class="app-guide-section app-guide-content">
+                            <h2 class="app-guide-section-title">
 			Components 
 <a href="#section-components"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <p> Components are your site's or app's building blocks. Each component has its own
-                            markup (structure), presentation and behavior. To keep each component self-contained
-                            each is wrapped in its own element with the component's name in camelcase
-                            as its namespace. For instance 'site header' becomes 'siteHeader'. </p>
-                        <ul>
-                            <li> <a href="modules/components/disclaimer/preview.html">
+                            <p> Components are your site's or app's building blocks. Each component has its
+                                own markup (structure), presentation and behavior. To keep each component
+                                self-contained each is wrapped in its own element with the component's
+                                name in camelcase as its namespace. For instance 'site header' becomes
+                                'siteHeader'. </p>
+                            <ul>
+                                <li> <a href="modules/components/disclaimer/preview.html">
 					Disclaimer
 				</a> </li>
-                            <li> <a href="modules/components/footer/preview.html">
+                                <li> <a href="modules/components/footer/preview.html">
 					Footer
 				</a> </li>
-                            <li> <a href="modules/components/language/preview.html">
+                                <li> <a href="modules/components/language/preview.html">
 					Language
 				</a> </li>
-                            <li> <a href="modules/components/navigation/preview.html">
+                                <li> <a href="modules/components/navigation/preview.html">
 					Navigation
 				</a> </li>
-                            <li> <a href="modules/components/uc-brief/preview.html">
+                                <li> <a href="modules/components/uc-brief/preview.html">
 					Uc brief
 				</a> </li>
-                            <li> <a href="modules/components/uc-column-fourth/preview.html">
+                                <li> <a href="modules/components/uc-column-fourth/preview.html">
 					Uc column fourth
 				</a> </li>
-                            <li> <a href="modules/components/uc-column-half/preview.html">
+                                <li> <a href="modules/components/uc-column-half/preview.html">
 					Uc column half
 				</a> </li>
-                            <li> <a href="modules/components/uc-column-third/preview.html">
+                                <li> <a href="modules/components/uc-column-third/preview.html">
 					Uc column third
 				</a> </li>
-                            <li> <a href="modules/components/uc-column-twothirds/preview.html">
+                                <li> <a href="modules/components/uc-column-twothirds/preview.html">
 					Uc column twothirds
 				</a> </li>
-                            <li> <a href="modules/components/uc-cta/preview.html">
+                                <li> <a href="modules/components/uc-cta/preview.html">
 					Uc cta
 				</a> </li>
-                            <li> <a href="modules/components/uc-fullbleed/preview.html">
+                                <li> <a href="modules/components/uc-fullbleed/preview.html">
 					Uc fullbleed
 				</a> </li>
-                            <li> <a href="modules/components/uc-hero/preview.html">
+                                <li> <a href="modules/components/uc-hero/preview.html">
 					Uc hero
 				</a> </li>
-                            <li> <a href="modules/components/uc-intro/preview.html">
+                                <li> <a href="modules/components/uc-intro/preview.html">
 					Uc intro
 				</a> </li>
-                            <li> <a href="modules/components/uc-slider/preview.html">
+                                <li> <a href="modules/components/uc-slider/preview.html">
 					Uc slider
 				</a> </li>
-                            <li> <a href="modules/components/uc-streamer/preview.html">
+                                <li> <a href="modules/components/uc-streamer/preview.html">
 					Uc streamer
 				</a> </li>
-                        </ul>
-                        <p> All components are available in <code class="language-bash">modules/components/</code>.
-                            </p>
-                    </section>
-                    <section id="section-assets" class="app-guide-section app-guide-content">
-                        <h2 class="app-guide-section-title">
+                            </ul>
+                            <p> All components are available in <code class="language-bash">modules/components/</code>.
+                                </p>
+                        </section>
+                        <section id="section-assets" class="app-guide-section app-guide-content">
+                            <h2 class="app-guide-section-title">
 			Assets 
 <a href="#section-assets"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <h3 id="section-styles" class="app-guide-section-title">
+                            <h3 id="section-styles" class="app-guide-section-title">
 			Styles 
 <a href="#section-styles"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h3>
-                        <p> All stylesheets of all views, components and common styles are combined and minified
-                            into <code class="language-bash">assets/style/main.css</code>. Please make
-                            sure to load the stylesheets in the <code class="language-markup">&lt;head&gt;</code>.
-                            </p>
-                        <h3 id="section-scripts" class="app-guide-section-title">
+                            <p> All stylesheets of all views, components and common styles are combined and
+                                minified into <code class="language-bash">assets/style/main.css</code>.
+                                Please make sure to load the stylesheets in the <code class="language-markup">&lt;head&gt;</code>.
+                                </p>
+                            <h3 id="section-scripts" class="app-guide-section-title">
 			Scripts 
 <a href="#section-scripts"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h3>
-                        <p> Likewise all scripts of all views, components and common scripts are combined
-                            and minified into <code class="language-bash">assets/scripts/main.js</code>.
-                            Vendor scripts are combined separately into <code class="language-bash">assets/scripts/vendor.js</code>.
-                            Minification of vendor scripts is left to the vendors and is not done by
-                            us. You only need to include these combined files in the production environment.
-                            Please make sure to include the scripts (vendor.js then main.js) just before
-                            the closing <code class="language-markup">&lt;/body&gt;</code> tag. This
-                            is because loading and parsing scripts blocks everything else and so should
-                            not be done before the DOM is loaded. </p>
-                        <h3 id="section-fonts" class="app-guide-section-title">
+                            <p> Likewise all scripts of all views, components and common scripts are combined
+                                and minified into <code class="language-bash">assets/scripts/main.js</code>.
+                                Vendor scripts are combined separately into <code class="language-bash">assets/scripts/vendor.js</code>.
+                                Minification of vendor scripts is left to the vendors and is not done
+                                by us. You only need to include these combined files in the production
+                                environment. Please make sure to include the scripts (vendor.js then
+                                main.js) just before the closing <code class="language-markup">&lt;/body&gt;</code>                                tag. This is because loading and parsing scripts blocks everything else
+                                and so should not be done before the DOM is loaded. </p>
+                            <h3 id="section-fonts"
+                            class="app-guide-section-title">
 			Fonts 
 <a href="#section-fonts"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h3>
-                        <p> All fonts are available in <code class="language-bash">assets/fonts/</code>.
-                            </p>
-                        <h3 id="section-images" class="app-guide-section-title">
+                            <p> All fonts are available in <code class="language-bash">assets/fonts/</code>.
+                                </p>
+                            <h3 id="section-images" class="app-guide-section-title">
 			Images 
 <a href="#section-images"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h3>
-                        <p> All global images which are part of the layout are optimized and available in
-                            <code class="language-bash">assets/images/</code>. Images only meant as placeholders
-                            are available in <code class="language-bash">stubs/</code> and should be
-                            replaced by real content. </p>
-                    </section>
-                </main>
+                            <p> All global images which are part of the layout are optimized and available
+                                in <code class="language-bash">assets/images/</code>. Images only meant
+                                as placeholders are available in <code class="language-bash">stubs/</code>                                and should be replaced by real content. </p>
+                        </section>
+                    </main>
+                </div>
             </div>
+            <script src="/assets/scripts/vendor.js"></script>
+            <script src="/assets/scripts/main.js"></script>
         </div>
-        <script src="/assets/scripts/vendor.js"></script>
-        <script src="/assets/scripts/main.js"></script>
-    </div>
-</body>
+    </body>
 
 </html>

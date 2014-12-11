@@ -1,480 +1,493 @@
-<!DOCTYPE html>
-<html class="no-js">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-    <title> Nu-nl | unitid-components </title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="ADD A DESCRIPTION" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/ico" />
-    <script>
-        (function(e) {
-            e.className = e.className.replace('no-js', 'js');
-        }(document.documentElement));
-    </script>
-    <!-- START Unitid website specific scripts/css -->
-    <link rel="stylesheet" href="/guide/vendor/unitid-site/css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css"
-    type="text/css">
-    <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css"
-    type="text/css">
-    <script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
-    <!-- END Unitid website specific scripts/css -->
-    <link rel="stylesheet" href="/assets/style/main.css" />
-    <link rel="stylesheet" href="/vendor/unitid-site/css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="/modules/views/nu-nl/nu-nl.css" />
-    <script src="http://unitid.nl/wp-content/themes/unitid/js/jquery.min.js?ver=4.0.1"></script>
-    <!--[if IE 8 ]>
+
+    <head>
+        <title> Nu-nl | unitid-components </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="ADD A DESCRIPTION" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/ico" />
+        <script>
+            (function(e) {
+                e.className = e.className.replace('no-js', 'js');
+            }(document.documentElement));
+        </script>
+        <!-- START Unitid website specific scripts/css -->
+        <link rel="stylesheet" href="/guide/vendor/unitid-site/css/fonts.css" type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css"
+        type="text/css">
+        <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css"
+        type="text/css">
+        <script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
+        <!-- END Unitid website specific scripts/css -->
+        <link rel="stylesheet" href="/assets/style/main.css" />
+        <link rel="stylesheet" href="/vendor/unitid-site/css/fonts.css" type="text/css">
+        <link rel="stylesheet" href="/modules/views/nu-nl/nu-nl.css" />
+        <script src="http://unitid.nl/wp-content/themes/unitid/js/jquery.min.js?ver=4.0.1"></script>
+        <!--[if IE 8 ]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-</head>
+    </head>
 
-<body>
-    <div class="row" id="language">
-        <div class="twelve columns">
-            <div class="ten columns wrapper"> <a href="http://www.unitid.nl/">Nederlands</a> | <a href="http://www.unitid.nl/english">English</a>                </div>
-        </div>
-    </div>
-    <div id="container" class="container" role="document">
-        <div class="row">
-            <header class="twelve columns" role="banner">
-                <div class="ten columns wrapper" id="logocontainer">
-                    <div class="four columns" id="logo" itemscope="" itemtype="http://www.unitid.nl">
-                        <a href="http://unitid.nl" title="Op zoek naar ons logo? Rechtermuis klik!" itemprop="url">
-                        <img src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
-                            alt="Logo UNITiD" itemprop="logo"> </a>
-                    </div>
-                    <p class="zoeken">
-                        <a href="#"><img src="http://unitid.nl/wp-content/themes/unitid/images/search.png" alt="Zoek op de UNITiD.nl website">
-                        </a>
-                    </p>
-                    <p class="menu"><a href="#" class="arrowdown"><span>Menu</span></a>
-                    </p>
-                    <div class="eight columns" id="main-navigation">
-                        <nav role="navigation" class="dropdown">
-                            <div class="default"></div>
-                            <ul class="nav-bar invisible">
-                                <li id="menu-item-7486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
-                                <a href="http://unitid.nl/">Home</a><span> |&nbsp;</span>
-                                </li>
-                                <li id="menu-item-7487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
-                                <a href="http://unitid.nl/blog/">Blog</a><span> |&nbsp;</span>
-                                </li>
-                                <li id="menu-item-7488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
-                                <a href="http://unitid.nl/portfolio/">Portfolio</a><span> |&nbsp;</span>                                    </li>
-                                <li id="menu-item-14275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
-                                <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span> |&nbsp;</span>                                    </li>
-                                <li id="menu-item-7489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
-                                <a href="http://unitid.nl/wie-zijn-we/">Team</a><span> |&nbsp;</span>                                    </li>
-                                <li id="menu-item-8915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
-                                <a href="http://unitid.nl/contact/">Contact</a><span> |&nbsp;</span>                                    </li>
-                            </ul>
-                            <a href="#" class="zoekmenu open"></a>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <div role="search" class="zoekformulier">
-                <div class="top-shadow"></div>
-                <form method="get" id="searchform" action="http://unitid.nl/">
-                    <a href="#" class="closesearch" title="Close"></a>
-                    <input type="text" value="" name="s" id="s">
-                    <input type="hidden" value="post" name="post_type">
-                    <input type="submit" id="searchsubmit" value="Search"> </form>
-                <div class="meestgezocht">
-                    <div class="meestgezochtlijst">
-                        <p>Veel gezocht:</p>
-                        <ul>
-                            <li><a href="http://unitid.nl/?s=tap">TAP</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=prototype">Prototype</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=ziggo">Ziggo</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=kieskeurig">Kieskeurig</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=fireworks">Fireworks</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=android">Android</a>
-                            </li>
-                            <li><a href="http://unitid.nl/?s=ios">iOS</a>
-                            </li>
-                        </ul> <span class="fade"></span> </div>
-                </div>
-                <div class="bottom-shadow"></div>
+    <body>
+        <div class="row" id="language">
+            <div class="twelve columns">
+                <div class="ten columns wrapper"> <a href="http://www.unitid.nl/">Nederlands</a> | <a href="http://www.unitid.nl/english">English</a>                    </div>
             </div>
         </div>
-        <div id="container" class="case container case-nu-nl" role="document">
-            <section role="hero" class="whitespace-after">
-                <div class="uc-hero" data-component="uc-hero">
-                    <header>
-                        <h1>
+        <div id="container" class="container" role="document">
+            <div class="row">
+                <header class="twelve columns" role="banner">
+                    <div class="ten columns wrapper" id="logocontainer">
+                        <div class="four columns" id="logo" itemscope="" itemtype="http://www.unitid.nl">
+                            <a href="http://unitid.nl" title="Op zoek naar ons logo? Rechtermuis klik!" itemprop="url">
+                            <img src="http://unitid.nl/wp-content/themes/unitid/images/logo.png?num=739"
+                                alt="Logo UNITiD" itemprop="logo"> </a>
+                        </div>
+                        <p class="zoeken">
+                            <a href="#"><img src="http://unitid.nl/wp-content/themes/unitid/images/search.png" alt="Zoek op de UNITiD.nl website">
+                            </a>
+                        </p>
+                        <p class="menu"><a href="#" class="arrowdown"><span>Menu</span></a>
+                        </p>
+                        <div class="eight columns" id="main-navigation">
+                            <nav role="navigation" class="dropdown">
+                                <div class="default"></div>
+                                <ul class="nav-bar invisible">
+                                    <li id="menu-item-7486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
+                                    <a href="http://unitid.nl/">Home</a><span> |&nbsp;</span>
+                                    </li>
+                                    <li id="menu-item-7487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
+                                    <a href="http://unitid.nl/blog/">Blog</a><span> |&nbsp;</span>
+                                    </li>
+                                    <li id="menu-item-7488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
+                                    <a href="http://unitid.nl/portfolio/">Portfolio</a><span> |&nbsp;</span>                                        </li>
+                                    <li id="menu-item-14275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
+                                    <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span> |&nbsp;</span>                                        </li>
+                                    <li id="menu-item-7489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
+                                    <a href="http://unitid.nl/wie-zijn-we/">Team</a><span> |&nbsp;</span>                                        </li>
+                                    <li id="menu-item-8915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
+                                    <a href="http://unitid.nl/contact/">Contact</a><span> |&nbsp;</span>                                        </li>
+                                </ul>
+                                <a href="#" class="zoekmenu open"></a>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div role="search" class="zoekformulier">
+                    <div class="top-shadow"></div>
+                    <form method="get" id="searchform" action="http://unitid.nl/">
+                        <a href="#" class="closesearch" title="Close"></a>
+                        <input type="text" value="" name="s" id="s">
+                        <input type="hidden" value="post" name="post_type">
+                        <input type="submit" id="searchsubmit" value="Search"> </form>
+                    <div class="meestgezocht">
+                        <div class="meestgezochtlijst">
+                            <p>Veel gezocht:</p>
+                            <ul>
+                                <li><a href="http://unitid.nl/?s=tap">TAP</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=prototype">Prototype</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=ziggo">Ziggo</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=kieskeurig">Kieskeurig</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=fireworks">Fireworks</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=android">Android</a>
+                                </li>
+                                <li><a href="http://unitid.nl/?s=ios">iOS</a>
+                                </li>
+                            </ul> <span class="fade"></span> </div>
+                    </div>
+                    <div class="bottom-shadow"></div>
+                </div>
+            </div>
+            <div id="container" class="case container case-nu-nl" role="document">
+                <section role="hero" class="whitespace-after">
+                    <div class="uc-hero" data-component="uc-hero">
+                        <header>
+                            <h1>
 					NU.nl redesign
 				</h1>
-                        <h2>
+                            <h2>
 					Meerdere platforms,<br/>
           één geheel
 				</h2> </header>
-                    <div class="image-over"></div>
-                </div>
-                <div class="uc-streamer" data-component="uc-streamer">
+                        <div class="image-over"></div>
+                    </div>
+                    <div class="uc-streamer" data-component="uc-streamer">
+                        <div uc-row>
+                            <h2>Er was eens...</h2>
+                            <h3>NU.nl bestaat al sinds 1999 en viert dit jaar zijn vijftiende verjaardag. De nieuwswebsite is niet alleen de grootste online nieuwsbron van Nederland, maar ook de meest innovatieve. Zo was NU.nl het eerste online nieuwsmedium met een eigen iPhone-, iPad-, smartwatch- en Google Glass-app.</h3> </div>
+                    </div>
+                </section>
+                <section class="smoke whitespace-after center">
+                    <h2><strong>Harde cijfers</strong></h2> </section>
+                <section class="smoke whitespace-after">
                     <div uc-row>
-                        <h2>Er was eens...</h2>
-                        <h3>NU.nl bestaat al sinds 1999 en viert dit jaar zijn vijftiende verjaardag. De nieuwswebsite is niet alleen de grootste online nieuwsbron van Nederland, maar ook de meest innovatieve. Zo was NU.nl het eerste online nieuwsmedium met een eigen iPhone-, iPad-, smartwatch- en Google Glass-app.</h3> </div>
-                </div>
-            </section>
-            <section class="smoke whitespace-after center">
-                <h2><strong>Harde cijfers</strong></h2> </section>
-            <section class="smoke whitespace-after">
-                <div uc-row>
-                    <ul class="numbers">
-                        <li class="about-breaking-news js-hide">
-                            <label>
-                                <figure> <img src="/assets/images/nu-nl/icon-breaking-news.svg" alt="Brekend nieuws"
-                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <figcaption>Breaking news
-                                        <br/>abonnees</figcaption>
-                                </figure>
-                            </label>
-                            <div>4,2mln</div>
-                        </li>
-                        <li class="about-visitors js-hide">
-                            <label>
-                                <figure class="visitors"> <img src="/assets/images/nu-nl/icon-visitors.svg" alt="Pictogram voor bezoekers"
-                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <figcaption class="double">Dagelijkse
-                                        <br/>bezoeken</figcaption>
-                                </figure>
-                            </label>
-                            <div>2,75mln</div>
-                        </li>
-                        <li class="about-articles js-hide">
-                            <label>
-                                <figure> <img src="/assets/images/nu-nl/icon-articles.svg" alt="Pictogram voor artikelen"
-                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <figcaption class="double">Artikelen
-                                        <br/>per dag</figcaption>
-                                </figure>
-                            </label>
-                            <div>275</div>
-                        </li>
-                        <li class="about-journalists js-hide">
-                            <label>
-                                <figure> <img src="/assets/images/nu-nl/icon-journalists.svg" alt="Pictogram voor journalisten"
-                                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                                    <figcaption>Journalisten</figcaption>
-                                </figure>
-                            </label>
-                            <div>40</div>
-                        </li>
-                        <li class="about-extensions js-hide">
-                            <label>
-                                <figure>
-                                    <figcaption class="double">12 verschillende
-                                        <br/>extensies</figcaption>
-                                </figure>
-                            </label>
-                            <div>
-                                <ul class="extensions">
-                                    <li> <span class="logo nu-nu"></span> </li>
-                                    <li> <span class="logo nu-z"></span> </li>
-                                    <li> <span class="logo nu-t"></span> </li>
-                                    <li> <span class="logo nu-s"></span> </li>
-                                    <li> <span class="logo nu-g"></span> </li>
-                                    <li> <span class="logo nu-e"></span> </li>
-                                    <li> <span class="logo nu-w"></span> </li>
-                                    <li> <span class="logo nu-dag"></span> </li>
-                                    <li> <span class="logo nu-live" </span> </li>
-                                    <li> <span class="logo nu-lab"></span> </li>
-                                    <li> <span class="logo nu-foto"></span> </li>
-                                    <li> <span class="logo nu-jij"></span> </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="smoke divider-before whitespace-after center">
-                <h2><strong>Vernieuwen,</strong> waarom?</h2> </section>
-            <section class="smoke whitespace-after">
-                <div uc-row>
-                    <ol class="bullets">
-                        <li class="about-style js-hide">
-                            <label>
-                                <h3>1</h3> </label>
-                            <div>
-                                <h4>Versnipperde stijl</h4>
-                                <p>Het productportfolio van NU.nl is de afgelopen jaren flink aangevuld
-                                    met verschillende producten. Snel innoveren heeft altijd voorop gestaan,
-                                    waardoor er door de jaren heen een versnipperde stijl ontstond.</p>
-                            </div>
-                        </li>
-                        <li class="about-viewports js-hide">
-                            <label>
-                                <h3>2</h3> </label>
-                            <div>
-                                <h4>Verschillende viewports</h4>
-                                <p>Er bestaat voor bijna ieder mobiel apparaat wel een applicatie van NU.nl.
-                                    Hierdoor is de kwaliteit van het via de browser bekijken van NU.nl
-                                    op kleinere apparaten erbij ingeschoten.</p>
-                            </div>
-                        </li>
-                        <li class="about-ads js-hide">
-                            <label>
-                                <h3>3</h3> </label>
-                            <div>
-                                <h4>Adverteren via mobiel</h4>
-                                <p>NU.nl kan niet bestaan zonder adverteerders. Hoewel het gros van de gebruikers
-                                    al een tijdje is verhuisd naar mobiel, werkten mobiele advertenties
-                                    nog niet optimaal als NU.nl vanuit de browser werd bekeken.</p>
-                            </div>
-                        </li>
-                    </ol>
-                    <div class="js-hide note">
-                        <p><q>Nieuwe inzichten en betere technieken,
-        brengen een optimale gebruikerservaring</q>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="center whitespace-after">
-                <h2><strong>Hoe</strong> doen we dat dan?</h2> </section>
-            <section class="how">
-                <div uc-row>
-                    <div uc-column="1/4" data-component="uc-column-third">
-                        <figure class="spraycans"> <img src="/assets/images/nu-nl/icon-spraycans.svg" alt="Spuitbus" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                            <figcaption class="large">Een nieuw uiterlijk</figcaption>
-                        </figure>
-                    </div>
-                    <div uc-column="1/2" data-component="uc-column-third">
-                        <figure class="devices"> <img src="/assets/images/nu-nl/icon-devices.svg" alt="Laptop & mobiele apparaten"
-                            onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                            <figcaption class="large">Responsive design</figcaption>
-                        </figure>
-                    </div>
-                    <div uc-column="1/4" data-component="uc-column-third">
-                        <figure class="coins"> <img src="/assets/images/nu-nl/icon-coins.svg" alt="Kleingeld" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                            <figcaption class="large">Slim adverteren</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </section>
-            <section class="smoke center divider-after">
-                <div uc-row> <img class="icon header-spraycans" src="/assets/images/nu-nl/icon-spraycans.svg" alt="Spuitbus"
-                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                    <h1>Een nieuw uiterlijk</h1>
-                    <h2>Terug naar de basis</h2>
-                    <p>Om de versnippering aan te pakken moesten we terug naar de basis. Hiervoor deden
-                        we samen met het team van NU.nl een workshop ‘Branding en Identiteit’. Hierbij
-                        gingen we aan de slag met zaken als de informatiedichtheid, scanbaarheid en kort
-                        en snel nieuws.</p>
-                    <div class="image-branding need-space"></div>
-                    <p> <strong>Eén styleguide voor alle uitingen</strong>
-                        <br/> De styleguide vormt de basis voor alle (digitale) uitingen van NU.nl. Met behulp
-                        van atomic design hebben we een overzichtelijke styleguide gecreëerd. Hierin
-                        worden alle ‘atoms’ gedefineerd. Met ‘atoms’ bedoelen we de kleinste bouwblokjes,
-                        zoals de gebruikte kleuren en de grootte van de lettertypes. </p>
-                </div>
-            </section>
-            <section class="smoke center">
-                <div uc-row>
-                    <h2>Nieuwe kleuren</h2>
-                    <p>Door de jaren heen werd het kleurenpalet van NU.nl steeds aangevuld met nieuwe kleuren.
-                        De kleuren werden vaak verschillende toegepast, waardoor een geheel ontbrak.
-                        Samen met NU.nl hebben we twee mogelijke kleurenpaletten samengesteld, waarbij
-                        we uiteindelijk kozen voor een helder en fris kleurenpalet.</p>
-                </div>
-            </section>
-            <section class="smoke whitespace-after">
-                <div uc-row class="vertical-align">
-                    <div uc-column="1/2" class="breathe-after">
-                        <h3>Fris en helder</h3>
-                        <p>Extensies van NU.nl, zoals NUsport en Nutech, hadden voorheen felle, heldere
-                            kleuren. Op basis van deze kleuren zijn we het nieuwe kleurenpalet gaan samenstellen.
-                            Dit zorgt voor een frisse uitstraling met herkenbare kleuren. Ook zie je
-                            duidelijk onderscheid tussen de verschillende onderdelen.</p>
-                    </div>
-                    <div uc-column="1/2"> <img src="/assets/images/nu-nl/colors-bright.png" alt="Helder kleurpalet voor NU.nl">                        </div>
-                </div>
-                <div uc-row class="vertical-align">
-                    <div uc-column="1/2"> <img src="/assets/images/nu-nl/colors-modest.png" alt="Helder kleurpalet voor NU.nl">                        </div>
-                    <div uc-column="1/2" class="breathe-before">
-                        <h3>Vertrouwd en herkenbaar?</h3>
-                        <p>Gezien het grote aantal dagelijkse bezoeken wordt NU.nl ook wel 'de huiskamer
-                            van Nederland' genoemd. Iets om trots op te zijn, maar dat betekent wel dat
-                            je voorzichtig moet omgaan met grote veranderingen. De katernen op de homepage
-                            van NU.nl werden voorheen aangeduid met pastelkleuren. Om de herkenbaarheid
-                            en het vertrouwde gevoel te behouden, kozen we voor het nieuwe ontwerp een
-                            ingetogen, maar toch fris kleurenpalet. Het was hierbij ook een uitdaging
-                            om de verschillende katernen onderdeel te laten uitmaken van NU.nl, maar
-                            ze toch een onderscheidend karakter te geven.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="center">
-                <div uc-row> <img class="icon header-devices" src="/assets/images/nu-nl/icon-devices.svg" alt="Laptop & mobiele apparaten"
-                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                    <h1>Responsive design</h1>
-                    <h2>Revolutie of evolutie</h2>
-                    <p>Uit user stories, tientallen sessies, iteraties, presentaties en ‘rapid prototyping’
-                        vloeiden twee concepten: een ‘evolutie’ en een iets radicaler concept; de ‘revolutie’.
-                        Deze twee concepten lieten we onder andere testen door het interne testlab van
-                        Sanoma. Uiteindelijk werd er gekozen voor de evolutie. Hierbij is wel ruimte
-                        gehouden voor revolutionaire redactionele formats.</p>
-                </div>
-            </section>
-            <section>
-                <div uc-row>
-                    <div uc-column="1/2"> <img src="/assets/images/nu-nl/fd-revolutie.png" alt="Responsive design revolutie voor NU.nl">
-                        <h3>Revolutie</h3>
-                        <p>Voor het iets radicalere ontwerp kozen we voor een tweekoloms-grid. Hierbij zit
-                            het menu verscholen achter de ‘hamburger’. Alleen de extensies zijn direct
-                            zichtbaar. De focus ligt daardoor volledig op de content. Door de extra ruimte
-                            die er ontstond kon ook de informatiedichtheid iets omlaag, waardoor het
-                            geheel een stuk ruimtelijker aanvoelt.</p>
-                    </div>
-                    <div uc-column="1/2"> <img src="/assets/images/nu-nl/fd-evolutie.png" alt="Responsive design evolutie voor NU.nl">
-                        <h3>Evolutie</h3>
-                        <p>Bij het evolutie-ontwerp besloten we om een driekoloms-grid aan te houden waarbij
-                            we alle atoms, oftewel de kleine bouwsteentjes, aanpakten. Dit zorgt voor
-                            een rustiger en consistenter geheel. Op die manier hoeft de gebruiker nauwelijks
-                            aan veranderingen te wennen, terwijl er op de achtergrond juist een hoop
-                            is opgeruimd en veranderd.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="center">
-                <div class="uc-fullbleed" data-component="uc-fullbleed">
-                    <figure class="uc-imagebox" style="background-image: url('/assets/images/nu-nl/visual-workshop.jpg')"></figure>
-                </div> <img class="icon header-coins" src="/assets/images/nu-nl/icon-coins.svg" alt="Kleingeld"
-                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
-                <h1>Slim adverteren</h1>
-                <h2>Content versus advertenties</h2> </section>
-            <section class="whitespace-before">
-                <div uc-row>
-                    <div uc-column="1/2">
-                        <h3>Advertenties</h3>
-                        <p>In een door ons georganiseerde workshop samen met de salesafdeling van Sanoma
-                            keken we naar de wensen van de adverteerder en de mogelijkheden hiervoor
-                            op het vernieuwde NU.nl. Voor het nieuwe ontwerp hebben de advertenties verschillende
-                            formaten zodat ze op alle apparaten die bezoekers gebruiken optimaal worden
-                            getoond. Ook kan de advertentie linken naar de website van de klant of een
-                            branded content artikel van de adverteerder op NU.nl.</p>
-                    </div>
-                    <div uc-column="1/2">
-                        <h3>Content</h3>
-                        <p>In een workshop met de redactie van NU.nl keken we naar de mogelijkheden van
-                            een aantal bestaande redactionele formats, zoals ‘liveblog’, ‘dag van NU’,
-                            artikelpagina’s en de fotoviewer. Ook op het gebied van content keken we
-                            naar de mogelijkheden voor adverteerders. Adverteerders kunnen in nauwe samenwerking
-                            met de redactie een branded content artikel plaatsen, waarbij de adverteerder
-                            zich positioneert als expert van een bepaald thema. Deze vorm van adverteren
-                            is inzetbaar op alle platformen: mobiel, tablet en web.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="center invert gradient-navy">
-                <div uc-row>
-                    <h1>Het eindresultaat</h1>
-                    <h2>Vernieuwd, solide en herkenbaar</h2>
-                    <p>Met veel succes hebben we wekenlang intensief met elkaar samengewerkt in een multidisciplinair
-                        Scrum-team. Hierbij waren we continu bezig met ontwerpen, gebruikerstesten en
-                        aanpassingen doen. Door alle kennis en ervaring die we hebben opgedaan tijdens
-                        het proces zijn we tot een resultaat gekomen dat er mag wezen: een vernieuwd,
-                        solide en herkenbaar ontwerp voor de grootste digitale nieuwswebsite van Nederland.</p>
-                </div>
-                <div class="uc-slider divider-after-wide" data-component="uc-slider">
-                    <a href="#/prev" class="prev">
-                        <svg viewBox="0 0 60 60" xml:space="preserve">
-                            <polyline class="triangle" points="60,0 0,30 60,60" /> </svg>
-                    </a>
-                    <div class="swipe" data-slider>
-                        <ul>
-                            <li> <img class="full large" src="/assets/images/nu-nl/screen-home-large.jpg">                                </li>
-                            <li> <img class="full large" src="/assets/images/nu-nl/screen-katern-large.jpg">                                </li>
-                            <li> <img class="full medium" src="/assets/images/nu-nl/screen-katern-medium.jpg">                                </li>
-                            <li> <img class="full medium" src="/assets/images/nu-nl/screen-katern-menu-medium.jpg">                                </li>
+                        <ul class="numbers">
+                            <li class="about-breaking-news js-hide">
+                                <label>
+                                    <figure> <img src="/assets/images/nu-nl/icon-breaking-news.svg" alt="Brekend nieuws"
+                                        onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <figcaption>Breaking news
+                                            <br/>abonnees</figcaption>
+                                    </figure>
+                                </label>
+                                <div>4,2mln</div>
+                            </li>
+                            <li class="about-visitors js-hide">
+                                <label>
+                                    <figure class="visitors"> <img src="/assets/images/nu-nl/icon-visitors.svg" alt="Pictogram voor bezoekers"
+                                        onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <figcaption class="double">Dagelijkse
+                                            <br/>bezoeken</figcaption>
+                                    </figure>
+                                </label>
+                                <div>2,75mln</div>
+                            </li>
+                            <li class="about-articles js-hide">
+                                <label>
+                                    <figure> <img src="/assets/images/nu-nl/icon-articles.svg" alt="Pictogram voor artikelen"
+                                        onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <figcaption class="double">Artikelen
+                                            <br/>per dag</figcaption>
+                                    </figure>
+                                </label>
+                                <div>275</div>
+                            </li>
+                            <li class="about-journalists js-hide">
+                                <label>
+                                    <figure> <img src="/assets/images/nu-nl/icon-journalists.svg" alt="Pictogram voor journalisten"
+                                        onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                        <figcaption>Journalisten</figcaption>
+                                    </figure>
+                                </label>
+                                <div>40</div>
+                            </li>
+                            <li class="about-extensions js-hide">
+                                <label>
+                                    <figure>
+                                        <figcaption class="double">12 verschillende
+                                            <br/>extensies</figcaption>
+                                    </figure>
+                                </label>
+                                <div>
+                                    <ul class="extensions">
+                                        <li> <span class="logo nu-nu"></span> </li>
+                                        <li> <span class="logo nu-z"></span> </li>
+                                        <li> <span class="logo nu-t"></span> </li>
+                                        <li> <span class="logo nu-s"></span> </li>
+                                        <li> <span class="logo nu-g"></span> </li>
+                                        <li> <span class="logo nu-e"></span> </li>
+                                        <li> <span class="logo nu-w"></span> </li>
+                                        <li> <span class="logo nu-dag"></span> </li>
+                                        <li> <span class="logo nu-live" </span> </li>
+                                        <li> <span class="logo nu-lab"></span> </li>
+                                        <li> <span class="logo nu-foto"></span> </li>
+                                        <li> <span class="logo nu-jij"></span> </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <a href="#/next" class="next">
-                        <svg viewBox="0 0 60 60" xml:space="preserve">
-                            <polyline class="triangle" points="0,0 60,30 0,60" /> </svg>
-                    </a>
-                </div>
-            </section>
-            <section class="center">
-                <div class="uc-cta" data-component="uc-cta">
-                    <h1>Het laatste nieuws<br/>
-				het eerst op nu.nl</h1> <a class="uc-button" href="http://nu.nl/nu-nl.html" target="_blank">Bekijk hier het resultaat</a>                    </div>
-            </section>
-        </div>
-        <footer id="content-info" role="contentinfo">
-            <div class="row">
-                <div class="twelve columns">
-                    <ul id="menu-default-1" class="footer-nav">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
-                        <a href="http://unitid.nl/">Home</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
-                        <a href="http://unitid.nl/blog/">Blog</a><span class="menuspacer"> | </span>                            </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
-                        <a href="http://unitid.nl/portfolio/">Portfolio</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
-                        <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
-                        <a href="http://unitid.nl/wie-zijn-we/">Team</a><span class="menuspacer"> | </span>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
-                        <a href="http://unitid.nl/contact/">Contact</a><span class="menuspacer"> | </span>
-                        </li>
-                    </ul>
-                    <ul id="social">
-                        <li class="twitter">
-                            <a href="https://twitter.com/UNITiD/" onclick="_gaq.push(['_trackEvent', 'Footer - twitter', 'twitter-unitid', 'tweet', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
-                                alt="Twitter">
-                            </a>
-                        </li>
-                        <li class="facebook">
-                            <a href="https://www.facebook.com/pages/UNITiD/166497220054803" onclick="_gaq.push(['_trackEvent', 'Footer - Facebook', 'facebook-unitid', 'like', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
-                                alt="Facebook">
-                            </a>
-                        </li>
-                        <li class="linkedin">
-                            <a href="http://www.linkedin.com/company/356831" onclick="_gaq.push(['_trackEvent', 'Footer - GooglePlus', 'googleplus-unitid', 'googleplus', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
-                                alt="Linkedin">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul id="themas">
-                        <li class="thematitle">Thema's:</li>
-                        <li> <a href="http://unitid.nl/interactie-ontwerp-voor-overheid-en-gemeenten/">Gemeenten</a>                            </li>
-                        <li class="menuspacer"> |</li>
-                        <li> <a href="http://unitid.nl/interaction-design/">Interaction design</a> </li>
-                        <li
-                        class="menuspacer"> |</li>
-                            <li> <a href="http://unitid.nl/responsive-web-design/">Responsive Design</a> </li>
-                    </ul>
-                </div>
+                </section>
+                <section class="smoke divider-before whitespace-after center">
+                    <h2><strong>Vernieuwen,</strong> waarom?</h2> </section>
+                <section class="smoke whitespace-after">
+                    <div uc-row>
+                        <ol class="bullets">
+                            <li class="about-style js-hide">
+                                <label>
+                                    <h3>1</h3> </label>
+                                <div>
+                                    <h4>Versnipperde stijl</h4>
+                                    <p>Het productportfolio van NU.nl is de afgelopen jaren flink aangevuld
+                                        met verschillende producten. Snel innoveren heeft altijd voorop
+                                        gestaan, waardoor er door de jaren heen een versnipperde stijl
+                                        ontstond.</p>
+                                </div>
+                            </li>
+                            <li class="about-viewports js-hide">
+                                <label>
+                                    <h3>2</h3> </label>
+                                <div>
+                                    <h4>Verschillende viewports</h4>
+                                    <p>Er bestaat voor bijna ieder mobiel apparaat wel een applicatie van
+                                        NU.nl. Hierdoor is de kwaliteit van het via de browser bekijken
+                                        van NU.nl op kleinere apparaten erbij ingeschoten.</p>
+                                </div>
+                            </li>
+                            <li class="about-ads js-hide">
+                                <label>
+                                    <h3>3</h3> </label>
+                                <div>
+                                    <h4>Adverteren via mobiel</h4>
+                                    <p>NU.nl kan niet bestaan zonder adverteerders. Hoewel het gros van
+                                        de gebruikers al een tijdje is verhuisd naar mobiel, werkten
+                                        mobiele advertenties nog niet optimaal als NU.nl vanuit de browser
+                                        werd bekeken.</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="js-hide note">
+                            <p><q>Nieuwe inzichten en betere technieken,
+        brengen een optimale gebruikerservaring</q>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="center whitespace-after">
+                    <h2><strong>Hoe</strong> doen we dat dan?</h2> </section>
+                <section class="how">
+                    <div uc-row>
+                        <div uc-column="1/4" data-component="uc-column-third">
+                            <figure class="spraycans"> <img src="/assets/images/nu-nl/icon-spraycans.svg" alt="Spuitbus" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                <figcaption class="large">Een nieuw uiterlijk</figcaption>
+                            </figure>
+                        </div>
+                        <div uc-column="1/2" data-component="uc-column-third">
+                            <figure class="devices"> <img src="/assets/images/nu-nl/icon-devices.svg" alt="Laptop & mobiele apparaten"
+                                onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                <figcaption class="large">Responsive design</figcaption>
+                            </figure>
+                        </div>
+                        <div uc-column="1/4" data-component="uc-column-third">
+                            <figure class="coins"> <img src="/assets/images/nu-nl/icon-coins.svg" alt="Kleingeld" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                                <figcaption class="large">Slim adverteren</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section class="smoke center divider-after">
+                    <div uc-row> <img class="icon header-spraycans" src="/assets/images/nu-nl/icon-spraycans.svg"
+                        alt="Spuitbus" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                        <h1>Een nieuw uiterlijk</h1>
+                        <h2>Terug naar de basis</h2>
+                        <p>Om de versnippering aan te pakken moesten we terug naar de basis. Hiervoor deden
+                            we samen met het team van NU.nl een workshop ‘Branding en Identiteit’. Hierbij
+                            gingen we aan de slag met zaken als de informatiedichtheid, scanbaarheid
+                            en kort en snel nieuws.</p>
+                        <div class="image-branding need-space"></div>
+                        <p> <strong>Eén styleguide voor alle uitingen</strong>
+                            <br/> De styleguide vormt de basis voor alle (digitale) uitingen van NU.nl. Met
+                            behulp van atomic design hebben we een overzichtelijke styleguide gecreëerd.
+                            Hierin worden alle ‘atoms’ gedefineerd. Met ‘atoms’ bedoelen we de kleinste
+                            bouwblokjes, zoals de gebruikte kleuren en de grootte van de lettertypes.
+                            </p>
+                    </div>
+                </section>
+                <section class="smoke center">
+                    <div uc-row>
+                        <h2>Nieuwe kleuren</h2>
+                        <p>Door de jaren heen werd het kleurenpalet van NU.nl steeds aangevuld met nieuwe
+                            kleuren. De kleuren werden vaak verschillende toegepast, waardoor een geheel
+                            ontbrak. Samen met NU.nl hebben we twee mogelijke kleurenpaletten samengesteld,
+                            waarbij we uiteindelijk kozen voor een helder en fris kleurenpalet.</p>
+                    </div>
+                </section>
+                <section class="smoke whitespace-after">
+                    <div uc-row class="vertical-align">
+                        <div uc-column="1/2" class="breathe-after">
+                            <h3>Fris en helder</h3>
+                            <p>Extensies van NU.nl, zoals NUsport en Nutech, hadden voorheen felle, heldere
+                                kleuren. Op basis van deze kleuren zijn we het nieuwe kleurenpalet gaan
+                                samenstellen. Dit zorgt voor een frisse uitstraling met herkenbare kleuren.
+                                Ook zie je duidelijk onderscheid tussen de verschillende onderdelen.</p>
+                        </div>
+                        <div uc-column="1/2"> <img src="/assets/images/nu-nl/colors-bright.png" alt="Helder kleurpalet voor NU.nl">                            </div>
+                    </div>
+                    <div uc-row class="vertical-align">
+                        <div uc-column="1/2"> <img src="/assets/images/nu-nl/colors-modest.png" alt="Helder kleurpalet voor NU.nl">                            </div>
+                        <div uc-column="1/2" class="breathe-before">
+                            <h3>Vertrouwd en herkenbaar?</h3>
+                            <p>Gezien het grote aantal dagelijkse bezoeken wordt NU.nl ook wel 'de huiskamer
+                                van Nederland' genoemd. Iets om trots op te zijn, maar dat betekent wel
+                                dat je voorzichtig moet omgaan met grote veranderingen. De katernen op
+                                de homepage van NU.nl werden voorheen aangeduid met pastelkleuren. Om
+                                de herkenbaarheid en het vertrouwde gevoel te behouden, kozen we voor
+                                het nieuwe ontwerp een ingetogen, maar toch fris kleurenpalet. Het was
+                                hierbij ook een uitdaging om de verschillende katernen onderdeel te laten
+                                uitmaken van NU.nl, maar ze toch een onderscheidend karakter te geven.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="center">
+                    <div uc-row> <img class="icon header-devices" src="/assets/images/nu-nl/icon-devices.svg" alt="Laptop & mobiele apparaten"
+                        onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                        <h1>Responsive design</h1>
+                        <h2>Revolutie of evolutie</h2>
+                        <p>Uit user stories, tientallen sessies, iteraties, presentaties en ‘rapid prototyping’
+                            vloeiden twee concepten: een ‘evolutie’ en een iets radicaler concept; de
+                            ‘revolutie’.  Deze twee concepten lieten we onder andere testen door het
+                            interne testlab van Sanoma. Uiteindelijk werd er gekozen voor de evolutie.
+                            Hierbij is wel ruimte gehouden voor revolutionaire redactionele formats.</p>
+                    </div>
+                </section>
+                <section>
+                    <div uc-row>
+                        <div uc-column="1/2"> <img src="/assets/images/nu-nl/fd-revolutie.png" alt="Responsive design revolutie voor NU.nl">
+                            <h3>Revolutie</h3>
+                            <p>Voor het iets radicalere ontwerp kozen we voor een tweekoloms-grid. Hierbij
+                                zit het menu verscholen achter de ‘hamburger’. Alleen de extensies zijn
+                                direct zichtbaar. De focus ligt daardoor volledig op de content. Door
+                                de extra ruimte die er ontstond kon ook de informatiedichtheid iets omlaag,
+                                waardoor het geheel een stuk ruimtelijker aanvoelt.</p>
+                        </div>
+                        <div uc-column="1/2"> <img src="/assets/images/nu-nl/fd-evolutie.png" alt="Responsive design evolutie voor NU.nl">
+                            <h3>Evolutie</h3>
+                            <p>Bij het evolutie-ontwerp besloten we om een driekoloms-grid aan te houden
+                                waarbij we alle atoms, oftewel de kleine bouwsteentjes, aanpakten. Dit
+                                zorgt voor een rustiger en consistenter geheel. Op die manier hoeft de
+                                gebruiker nauwelijks aan veranderingen te wennen, terwijl er op de achtergrond
+                                juist een hoop is opgeruimd en veranderd.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="center">
+                    <div class="uc-fullbleed" data-component="uc-fullbleed">
+                        <figure class="uc-imagebox" style="background-image: url('/assets/images/nu-nl/visual-workshop.jpg')"></figure>
+                    </div> <img class="icon header-coins" src="/assets/images/nu-nl/icon-coins.svg" alt="Kleingeld"
+                    onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+                    <h1>Slim adverteren</h1>
+                    <h2>Content versus advertenties</h2> </section>
+                <section class="whitespace-before">
+                    <div uc-row>
+                        <div uc-column="1/2">
+                            <h3>Advertenties</h3>
+                            <p>In een door ons georganiseerde workshop samen met de salesafdeling van Sanoma
+                                keken we naar de wensen van de adverteerder en de mogelijkheden hiervoor
+                                op het vernieuwde NU.nl. Voor het nieuwe ontwerp hebben de advertenties
+                                verschillende formaten zodat ze op alle apparaten die bezoekers gebruiken
+                                optimaal worden getoond. Ook kan de advertentie linken naar de website
+                                van de klant of een branded content artikel van de adverteerder op NU.nl.</p>
+                        </div>
+                        <div uc-column="1/2">
+                            <h3>Content</h3>
+                            <p>In een workshop met de redactie van NU.nl keken we naar de mogelijkheden
+                                van een aantal bestaande redactionele formats, zoals ‘liveblog’, ‘dag
+                                van NU’, artikelpagina’s en de fotoviewer. Ook op het gebied van content
+                                keken we naar de mogelijkheden voor adverteerders. Adverteerders kunnen
+                                in nauwe samenwerking met de redactie een branded content artikel plaatsen,
+                                waarbij de adverteerder zich positioneert als expert van een bepaald
+                                thema. Deze vorm van adverteren is inzetbaar op alle platformen: mobiel,
+                                tablet en web.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="center invert gradient-navy">
+                    <div uc-row>
+                        <h1>Het eindresultaat</h1>
+                        <h2>Vernieuwd, solide en herkenbaar</h2>
+                        <p>Met veel succes hebben we wekenlang intensief met elkaar samengewerkt in een
+                            multidisciplinair Scrum-team. Hierbij waren we continu bezig met ontwerpen,
+                            gebruikerstesten en aanpassingen doen. Door alle kennis en ervaring die we
+                            hebben opgedaan tijdens het proces zijn we tot een resultaat gekomen dat
+                            er mag wezen: een vernieuwd, solide en herkenbaar ontwerp voor de grootste
+                            digitale nieuwswebsite van Nederland.</p>
+                    </div>
+                    <div class="uc-slider divider-after-wide" data-component="uc-slider">
+                        <a href="#/prev" class="prev">
+                            <svg viewBox="0 0 60 60" xml:space="preserve">
+                                <polyline class="triangle" points="60,0 0,30 60,60" /> </svg>
+                        </a>
+                        <div class="swipe" data-slider>
+                            <ul>
+                                <li> <img class="full large" src="/assets/images/nu-nl/screen-home-large.jpg">                                    </li>
+                                <li> <img class="full large" src="/assets/images/nu-nl/screen-katern-large.jpg">                                    </li>
+                                <li> <img class="full medium" src="/assets/images/nu-nl/screen-katern-medium.jpg">                                    </li>
+                                <li> <img class="full medium" src="/assets/images/nu-nl/screen-katern-menu-medium.jpg">                                    </li>
+                            </ul>
+                        </div>
+                        <a href="#/next" class="next">
+                            <svg viewBox="0 0 60 60" xml:space="preserve">
+                                <polyline class="triangle" points="0,0 60,30 0,60" /> </svg>
+                        </a>
+                    </div>
+                </section>
+                <section class="center">
+                    <div class="uc-cta" data-component="uc-cta">
+                        <h1>Het laatste nieuws<br/>
+				het eerst op nu.nl</h1> <a class="uc-button" href="http://nu.nl/nu-nl.html" target="_blank">Bekijk hier het resultaat</a>                        </div>
+                </section>
             </div>
-        </footer>
-        <script src="/assets/scripts/vendor.js"></script>
-        <script src="/assets/scripts/main.js"></script>
-    </div>
-    <div class="secondnav"> <span class="copyright">© UNITiD 2014</span> &nbsp;<a href="http://unitid.nl/algemene-voorwaarden/">Algemene voorwaarden</a>        | <a href="http://www.unitid.nl/english/">English</a> | <a href="http://unitid.nl/event-calendar/">Event kalender</a>        </div>
-</body>
+            <footer id="content-info" role="contentinfo">
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul id="menu-default-1" class="footer-nav">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7486">
+                            <a href="http://unitid.nl/">Home</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7487">
+                            <a href="http://unitid.nl/blog/">Blog</a><span class="menuspacer"> | </span>                                </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7488">
+                            <a href="http://unitid.nl/portfolio/">Portfolio</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14275">
+                            <a href="http://unitid.nl/think-make-learn/">Werkwijze</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489">
+                            <a href="http://unitid.nl/wie-zijn-we/">Team</a><span class="menuspacer"> | </span>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8915">
+                            <a href="http://unitid.nl/contact/">Contact</a><span class="menuspacer"> | </span>
+                            </li>
+                        </ul>
+                        <ul id="social">
+                            <li class="twitter">
+                                <a href="https://twitter.com/UNITiD/" onclick="_gaq.push(['_trackEvent', 'Footer - twitter', 'twitter-unitid', 'tweet', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
+                                    alt="Twitter">
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/pages/UNITiD/166497220054803" onclick="_gaq.push(['_trackEvent', 'Footer - Facebook', 'facebook-unitid', 'like', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
+                                    alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="linkedin">
+                                <a href="http://www.linkedin.com/company/356831" onclick="_gaq.push(['_trackEvent', 'Footer - GooglePlus', 'googleplus-unitid', 'googleplus', 5, true]);"><img src="http://unitid.nl/wp-content/themes/unitid/images/social_spacer.png"
+                                    alt="Linkedin">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul id="themas">
+                            <li class="thematitle">Thema's:</li>
+                            <li> <a href="http://unitid.nl/interactie-ontwerp-voor-overheid-en-gemeenten/">Gemeenten</a>                                </li>
+                            <li class="menuspacer"> |</li>
+                            <li> <a href="http://unitid.nl/interaction-design/">Interaction design</a> </li>
+                            <li class="menuspacer"> |</li>
+                            <li> <a href="http://unitid.nl/responsive-web-design/">Responsive Design</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <script src="/assets/scripts/vendor.js"></script>
+            <script src="/assets/scripts/main.js"></script>
+        </div>
+        <div class="secondnav"> <span class="copyright">© UNITiD 2014</span> &nbsp;<a href="http://unitid.nl/algemene-voorwaarden/">Algemene voorwaarden</a>            | <a href="http://www.unitid.nl/english/">English</a> | <a href="http://unitid.nl/event-calendar/">Event kalender</a>            </div>
+    </body>
 
 </html>
