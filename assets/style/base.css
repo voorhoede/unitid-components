@@ -931,6 +931,16 @@ th {
   z-index: 1;
   margin-top: -96rem;
 }
+.divider-before > :first-child {
+  margin-top: 48.0px;
+  margin-top: 4.8rem;
+}
+@media screen and (min-width: 800px) {
+  .divider-before > :first-child {
+    margin-top: 74px;
+    margin-top: 7.4rem;
+  }
+}
 
 .divider-before-wide:before {
   box-shadow: 0 0 7.2rem rgba(0, 0, 0, 0.3);
