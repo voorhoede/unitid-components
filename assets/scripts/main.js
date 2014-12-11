@@ -204,27 +204,93 @@ function toggleAcordeon(event) {
   panel.addEventListener('click', toggleAcordeon, false);
 })
 
-//Adobe edge animations
-AdobeEdge.loadComposition('strava', 'EDGE-151779426', {
-  scaleToFit: "none",
-  centerStage: "none",
-  minW: "0",
-  maxW: "undefined"
-}, {"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"],"fill":["rgba(255,255,255,1)"]}},"dom":[{"rect":["0px","0px","487px","879px","auto","auto"],"id":"Poster2","fill":["rgba(0,0,0,0)","/strava/Poster2.png","0px","0px"],"type":"image","tag":"img"}]});
+if (typeof AdobeEdge !== 'undefined') {
 
-AdobeEdge.loadComposition('soundhound', 'EDGE-9119118', {
-  scaleToFit: "none",
-  centerStage: "none",
-  minW: "0",
-  maxW: "undefined"
-}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","1200px","500px"]}},"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"]}},"dom":[{"rect":["0","0","488px","880px","auto","auto"],"id":"Poster2","fill":["rgba(0,0,0,0)","/soundhound/Poster2.png","0px","0px"],"type":"image","tag":"img"}]});
+  //Adobe edge animations
+  AdobeEdge.loadComposition('strava', 'EDGE-151779426', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined"
+  }, {"dom": {}}, {
+    "style": {
+      "${symbolSelector}": {
+        "isStage": "true",
+        "rect": ["undefined", "undefined", "488px", "880px"],
+        "fill": ["rgba(255,255,255,1)"]
+      }
+    },
+    "dom": [{
+      "rect": ["0px", "0px", "487px", "879px", "auto", "auto"],
+      "id": "Poster2",
+      "fill": ["rgba(0,0,0,0)", "/strava/Poster2.png", "0px", "0px"],
+      "type": "image",
+      "tag": "img"
+    }]
+  });
 
-AdobeEdge.loadComposition('schiphol', 'EDGE-8022608', {
-  scaleToFit: "none",
-  centerStage: "none",
-  minW: "0",
-  maxW: "undefined"
-}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","488px","880px"]}},"dom":[{"id":"Poster","type":"","rect":["0","0","auto","auto","auto","auto"]},{"rect":["0px","0px","487px","879px","auto","auto"],"id":"Poster22","fill":["rgba(0,0,0,0)","/schiphol/Poster22.png","0px","0px"],"type":"image","tag":"img"}]});
+  AdobeEdge.loadComposition('soundhound', 'EDGE-9119118', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined"
+  }, {
+    "style": {
+      "${symbolSelector}": {
+        "isStage": "true",
+        "rect": ["undefined", "undefined", "1200px", "500px"]
+      }
+    }, "dom": {}
+  }, {
+    "style": {
+      "${symbolSelector}": {
+        "isStage": "true",
+        "rect": ["undefined", "undefined", "488px", "880px"]
+      }
+    },
+    "dom": [{
+      "rect": ["0", "0", "488px", "880px", "auto", "auto"],
+      "id": "Poster2",
+      "fill": ["rgba(0,0,0,0)", "/soundhound/Poster2.png", "0px", "0px"],
+      "type": "image",
+      "tag": "img"
+    }]
+  });
+
+  AdobeEdge.loadComposition('schiphol', 'EDGE-8022608', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined"
+  }, {
+    "style": {
+      "${symbolSelector}": {
+        "isStage": "true",
+        "rect": ["undefined", "undefined", "488px", "880px"],
+        "fill": ["rgba(255,255,255,1)"]
+      }
+    }, "dom": {}
+  }, {
+    "style": {
+      "${symbolSelector}": {
+        "isStage": "true",
+        "rect": ["undefined", "undefined", "488px", "880px"]
+      }
+    },
+    "dom": [{
+      "id": "Poster",
+      "type": "",
+      "rect": ["0", "0", "auto", "auto", "auto", "auto"]
+    }, {
+      "rect": ["0px", "0px", "487px", "879px", "auto", "auto"],
+      "id": "Poster22",
+      "fill": ["rgba(0,0,0,0)", "/schiphol/Poster22.png", "0px", "0px"],
+      "type": "image",
+      "tag": "img"
+    }]
+  });
+
+}
 
 /**
  * Draggable Background plugin for jQuery
