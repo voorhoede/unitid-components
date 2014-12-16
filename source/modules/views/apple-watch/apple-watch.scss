@@ -4,14 +4,26 @@
 /* APPLE-WATCH VIEW */
 
 .apple-watch-container {
+
+  // Typograpy
   .center {
     text-align: center;
   }
+  .case-footer h3 {
+    font-size: 40px;
+  }
+  .uc-streamer h2 {
+    font-size: 26px;
+  }
   .uc-streamer p {
-    position: relative;
     text-align: center;
     @include rem(margin-bottom, 5rem);
   }
+  // end Typography
+
+
+
+  // Layout
   .uc-hero {
     @include rem(height, 44.5rem);
     background-image: url('/assets/images/apple-watch/S_header.jpg');
@@ -26,6 +38,9 @@
   }
   [uc-column~="1/2"] {
     margin-left: 0;
+    img {
+      margin: 0; //overwrite
+    }
     .edge-animation {
       @include min-screen-between {
         @include rem(margin-top, 3rem);
@@ -46,6 +61,32 @@
       }
     }
   }
+  .soundhound {
+    box-shadow: inset 0 17px 3px -17px rgba($grey, 0.2);
+    overflow: hidden;
+  }
+  .soundhound:before {
+    @include transform(rotate(-45deg));
+    box-shadow: -3px 3px 2px -2px rgba($grey, 0.2);
+    border: 0.8em solid #fff;
+    border-color: transparent transparent #fff #fff;
+    box-sizing: border-box;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -0.8em;
+    position: absolute;
+    top: 0px;
+    transform-origin: 0 0;
+    width: 0;
+    @include min-screen-medium {
+      border:1.6em solid black;
+      border-color: transparent transparent #fff #fff;
+      margin-left: -1.6em;
+      top: -10px;
+    }
+  }
+
   @include min-screen-medium {
     .strava, .soundhound, .schiphol {
       background-repeat: no-repeat;
@@ -65,7 +106,7 @@
     }
   }
   .icon-list {
-    @include rem(padding-top, 5rem);
+    margin-bottom: 5rem;
     list-style: none;
     position: relative;
     @include min-screen-medium {
@@ -77,8 +118,8 @@
       }
     }
     img {
+      @include rem(margin, 0 auto 3.5rem);
       @include rem(width, 5.1rem);
-
       @include min-screen-between {
         @include rem(margin-bottom, 3rem);
         float: left;
@@ -91,6 +132,9 @@
         @include rem(margin-bottom, 2.5rem);
         position: relative;
         text-align: left;
+      }
+      &:last-child {
+        margin-bottom: 0; //overwrite
       }
     }
   }
@@ -107,15 +151,15 @@
 
   .edge-animation {
     @include origin(18%, top);
-    @include rem(height, 88rem);
-    @include rem(margin-top, 2.5rem);
-    @include rem(margin-bottom, -38rem);
-    @include rem(width, 48.8rem);
     @include transform(scale(0.6));
+    height: 880px;
+    margin-top: 25px;
+    margin-bottom: -380px;
     overflow: hidden;
+    width: 488px;
 
     @include min-screen(480px) {
-      @include origin(center, top);
+      @include origin(50%, top);
       margin-left: auto;
       margin-right: auto;
     }
@@ -126,17 +170,22 @@
     }
 
     @include min-screen-large {
-      @include origin(center, top);
+      @include origin(20%, top);
       @include rem(margin-bottom, -27.8rem);
     }
   }
 
   @include max-screen-between {
+    .contains-legend .whitespace-after,
     .contains-legend .whitespace-before {
-      @include rem(margin-top, 5rem);
+      @include rem(margin-top, 0);
     }
-    .divider-before:before {
+
+    .divider-before:not(.case-footer):before {
       box-shadow: none;
+    }
+    .divider-before:not(.case-footer) > :first-child {
+      margin-top: 0;
     }
     .mobile-spaceless {
       padding: 0;
@@ -145,14 +194,15 @@
 
   .legend-container {
     padding: 0;
+    margin: 0;
   }
 
   .legend-item {
-    width: 100%;
+    background: $white;
+    border-bottom: 1px solid $smoke;
     box-sizing: border-box;
     margin-bottom: 0;
-    border-bottom: 1px solid $smoke;
-    background: $white;
+    width: 100%;
 
     &:first-child {
       border-top: 1px solid $smoke;
@@ -214,8 +264,9 @@
 
     @include max-screen-between {
       .legend-item-header {
-        @include rem(height, -38rem);
-        @include rem(line-height, -38rem);
+        @include rem(height, 7rem);
+        @include rem(line-height, 7rem);
+        cursor: pointer;
         padding: 0 20px;
 
         &:before {
