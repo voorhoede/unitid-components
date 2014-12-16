@@ -2,7 +2,18 @@
 @import "../../../assets/scss/helpers";
 
 /* APPLE-WATCH VIEW */
-
+.ie8 .apple-watch-container {
+    background-repeat: no-repeat;
+    .strava .edge-animation {
+    background-image: url('strava/Poster2.png');
+     }
+    .soundhound .edge-animation {
+      background-image: url('soundhound/Poster2.png');
+    }
+    .schiphol .edge-animation {
+      background-image: url('schiphol/Poster22.png');
+    }
+}
 .apple-watch-container {
   // Typograpy
   .center {
@@ -126,7 +137,7 @@
     position: relative;
 
     @include min-screen-medium {
-      @include rem(padding-top, 2rem);
+      @include rem(padding-top, 17rem);
     }
 
     li {
