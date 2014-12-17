@@ -15,22 +15,31 @@
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+<script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
 <!-- END Unitid website specific scripts/css -->
-<script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script>
+<!--[if gt IE 8]><!--><script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/5.0.1/edge.5.0.1.min.js"></script><!--<![endif]-->
 {% endblock %}
 
 {% block header %}
 {% include "components/navigation/_navigation.html" %}
 {% endblock %}
 
+{% block scripts %}
+{{ super() }}
+<!--[if gt IE 8]><!-->
+<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/strava_edge.js"></script>
+<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/soundhound_edge.js"></script>
+<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/schiphol_edge.js"></script>
+<!--<![endif]-->
+{% endblock %}
+
 {% block content %}
-<div   class="case container apple-watch-container"
-       role="document">
+<div class="case container apple-watch-container" role="document">
   <section role="hero" class="whitespace-after">
     <div class="uc-hero" data-component="uc-hero">
     </div>
     <div class="uc-streamer" data-component="uc-streamer">
-      <div uc-row="">
+      <div uc-row>
         <h2>
           Nieuwe mogelijkheden met de <strong>Apple Watch</strong>
         </h2>
@@ -106,7 +115,7 @@
 
 
 <section class="divider-before center">
-  <div uc-row="">
+  <div uc-row>
     <h2>
       Een <strong>voorproefje</strong>
     </h2>
@@ -121,23 +130,23 @@
     <div uc-row>
       <h2><strong>Soundhound</strong></h2>
       <p>
-        Met de <a href="#">WatchKit</a> app van SoundHound kun je de muziek die je bijvoorbeeld hoort in een winkel of op de radio sneller dan ooit herkennen. Houd simpelweg de Apple Watch bij je oor en SoundHound begint met luisteren en herkennen.
+        Met de <a href="https://developer.apple.com/watchkit/" target="_blank">WatchKit</a> app van SoundHound kun je de muziek die je bijvoorbeeld hoort in een winkel of op de radio sneller dan ooit herkennen. Houd simpelweg de Apple Watch bij je oor en SoundHound begint met luisteren en herkennen.
       </p>
-
-
+    </div>
+    <div uc-row>
       <div uc-column="1/2" data-component="uc-column-half">
         <div id="Stage" class="edge-animation EDGE-9119118"></div>
       </div>
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_Taptic.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="{{ pathToAssets }}images/apple-watch/icon_taptic.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Door middel van voelbare feedback, in de vorm van trillingen, weet je wanneer SoundHound klaar is met luisteren.
             </p>
           </li>
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_Handoff.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="{{ pathToAssets }}images/apple-watch/icon_handoff.svg" alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Via de Handoff-functie open je snel met je iPhone of iPad de juiste app om het nummer aan te schaffen.
             </p>
@@ -151,8 +160,10 @@
     <div uc-row>
       <h2><strong>Strava</strong></h2>
       <p>
-        Met de <a href="#">'glances'</a> van de Strava-applicatie kun je in één oog opslag je statistieken bekijken tijdens het fietsen. Je kunt zien welke route je fietst of hebt gefietst, hoe snel je op bepaalde stukken bent en op de hoeveelste plek je bent geëindigd.
+        Met de <a href="https://developer.apple.com/watchkit/" target="_blank">'glances'</a> van de Strava-applicatie kun je in één oog opslag je statistieken bekijken tijdens het fietsen. Je kunt zien welke route je fietst of hebt gefietst, hoe snel je op bepaalde stukken bent en op de hoeveelste plek je bent geëindigd.
       </p>
+    </div>
+    <div uc-row>
       <div uc-column="1/2" data-component="uc-column-half">
         <div id="Stage" class="edge-animation EDGE-151779426"></div>
       </div>
@@ -160,7 +171,7 @@
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_taptic_white.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="{{ pathToAssets }}images/apple-watch/icon_taptic_white.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Als sportieve fietser krijg je feedback van de Taptic Engine om zo je persoonlijke records te verbeteren.
             </p>
@@ -181,22 +192,23 @@
     <div uc-row>
       <h2><strong>Schiphol</strong></h2>
       <p>
-        Met de <a href="#">'Actionable Notifications’</a> van Schiphol kun je rustig je reis beginnen; je hoeft namelijk nooit meer de weg te zoeken op het vliegveld en je bent als eerste op de hoogte van de laatste vluchtwijzigingen.
+        Met de <a href="https://developer.apple.com/watchkit/" target="_blank">'Actionable Notifications’</a> van Schiphol kun je rustig je reis beginnen; je hoeft namelijk nooit meer de weg te zoeken op het vliegveld en je bent als eerste op de hoogte van de laatste vluchtwijzigingen.
       </p>
-
+    </div>
+    <div uc-row>
       <div uc-column="1/2" data-component="uc-column-half">
         <div id="Stage" class="edge-animation EDGE-8022608"></div>
       </div>
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_Notifications.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="{{ pathToAssets }}images/apple-watch/icon_notifications.svg" alt="Notifications" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               De Schiphol-applicatie geeft notificaties op de Apple Watch en navigeert je zo naar de juiste gate.
             </p>
           </li>
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_Taptic.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="{{ pathToAssets }}images/apple-watch/icon_taptic.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Door voelbare feedback merk je direct welke kant je op moet lopen.
             </p>
@@ -205,7 +217,7 @@
       </div>
     </div>
   </section>
-  <section class="divider-before center whitespace-after">
+  <section class="divider-before center whitespace-after case-footer">
     <div uc-row>
       <h3>
         Interesse in een ontwerp voor de Apple Watch?
@@ -215,16 +227,17 @@
       </p>
       <p>
         <strong>Neem dan gerust contact op met:</strong><br />
-        Rick le Roy (<a href="#">rick@unitid.nl</a>, <span itemprop="telephone">06 46 28 20 96</span>) of<br />
-        Matthijs Collard (<a href="#">matthijs@unitid.nl</a>, <span itemprop="telephone">06 28 12 66 97</span>)
+        Rick le Roy (<a href="mailto:rick@unitid.nl" itemprop="email">rick@unitid.nl</a>, <span itemprop="telephone">06 46 28 20 96</span>) of<br />
+        Matthijs Collard (<a href="mailto:matthijs@unitid.nl" itemprop="email">matthijs@unitid.nl</a>, <span itemprop="telephone">06 28 12 66 97</span>)
       </p>
     </div>
   </section>
-</div>
 
-<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/strava_edge.js"></script>
-<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/soundhound_edge.js"></script>
-<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/schiphol_edge.js"></script>
+  <section class="center">
+   << Reageer button >>
+
+  </section>
+</div>
 
 {% endblock %}
 
