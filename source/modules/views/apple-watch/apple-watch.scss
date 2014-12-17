@@ -2,18 +2,16 @@
 @import "../../../assets/scss/helpers";
 
 /* APPLE-WATCH VIEW */
-.ie8 .apple-watch-container {
-    background-repeat: no-repeat;
-    .strava .edge-animation {
-    background-image: url('strava/Poster2.png');
-     }
-    .soundhound .edge-animation {
-      background-image: url('soundhound/Poster2.png');
-    }
-    .schiphol .edge-animation {
-      background-image: url('schiphol/Poster22.png');
-    }
+// ** IE8 OVERWRITES **
+.ie8 .edge-animation {
+  zoom: 0.5;
 }
+.ie8 .apple-watch-container .soundhound:before {
+  border: none;
+}
+// ** end IE8 OVERWRITES **
+
+
 .apple-watch-container {
   // Typograpy
   .center {
@@ -75,15 +73,28 @@
   }
 
   .strava {
+    .edge-animation {
+      background-image: url('strava/Poster2.png');
+    }
+
     @include min-screen-medium {
       [uc-column~="1/2"] {
         float: right;
       }
     }
   }
+  .schiphol {
+    .edge-animation {
+      background-image: url('schiphol/Poster22.png');
+    }
+  }
   .soundhound {
     box-shadow: inset 0 17px 3px -17px rgba($grey, 0.2);
     overflow: hidden;
+
+    .edge-animation {
+      background-image: url('soundhound/Poster2.png');
+    }
 
     &:before {
       @include origin(0, 0);
@@ -91,7 +102,6 @@
       box-shadow: -3px 3px 2px -2px rgba($grey, 0.2);
       border: 0.8em solid #fff;
       border-color: transparent transparent #fff #fff;
-      box-sizing: border-box;
       content: "";
       height: 0;
       left: 50%;
@@ -113,6 +123,16 @@
     .strava, .soundhound, .schiphol {
       background-repeat: no-repeat;
       background-size: 75%;
+
+      .edge-animation.is-enabled {
+        background: none;
+        background-color: transparent !important; //Iewh.. stage was colored white cant find how to unset it.
+        box-sizing: content-box;
+
+        * {
+          box-sizing: content-box;
+        }
+      }
     }
 
     .strava {
@@ -169,6 +189,7 @@
   .edge-animation {
     @include origin(18%, top);
     @include transform(scale(0.6));
+
     height: 880px;
     margin-top: 25px;
     margin-bottom: -380px;
