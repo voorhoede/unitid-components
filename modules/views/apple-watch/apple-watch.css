@@ -1,4 +1,12 @@
 /* APPLE-WATCH VIEW */
+.ie8 .edge-animation {
+  zoom: 0.5;
+}
+
+.ie8 .apple-watch-container .soundhound:before {
+  border: none;
+}
+
 .apple-watch-container .center {
   text-align: center;
 }
@@ -64,14 +72,23 @@
     background-size: cover;
   }
 }
+.apple-watch-container .strava .edge-animation {
+  background-image: url("strava/Poster2.png");
+}
 @media screen and (min-width: 800px) {
   .apple-watch-container .strava [uc-column~="1/2"] {
     float: right;
   }
 }
+.apple-watch-container .schiphol .edge-animation {
+  background-image: url("schiphol/Poster22.png");
+}
 .apple-watch-container .soundhound {
   box-shadow: inset 0 17px 3px -17px rgba(153, 153, 153, 0.2);
   overflow: hidden;
+}
+.apple-watch-container .soundhound .edge-animation {
+  background-image: url("soundhound/Poster2.png");
 }
 .apple-watch-container .soundhound:before {
   -webkit-transform-origin: 0 0;
@@ -83,7 +100,6 @@
   box-shadow: -3px 3px 2px -2px rgba(153, 153, 153, 0.2);
   border: 0.8em solid #fff;
   border-color: transparent transparent #fff #fff;
-  box-sizing: border-box;
   content: "";
   height: 0;
   left: 50%;
@@ -104,6 +120,14 @@
   .apple-watch-container .strava, .apple-watch-container .soundhound, .apple-watch-container .schiphol {
     background-repeat: no-repeat;
     background-size: 75%;
+  }
+  .apple-watch-container .strava .edge-animation.is-enabled, .apple-watch-container .soundhound .edge-animation.is-enabled, .apple-watch-container .schiphol .edge-animation.is-enabled {
+    background: none;
+    background-color: transparent !important;
+    box-sizing: content-box;
+  }
+  .apple-watch-container .strava .edge-animation.is-enabled *, .apple-watch-container .soundhound .edge-animation.is-enabled *, .apple-watch-container .schiphol .edge-animation.is-enabled * {
+    box-sizing: content-box;
   }
   .apple-watch-container .strava {
     background-image: url("/assets/images/apple-watch/fiets.svg");
@@ -131,9 +155,9 @@
     /* 6 */
     /* 6 */
     /* 7 */
-    padding-top: 20px;
+    padding-top: 170px;
     /* 9 */
-    padding-top: 2rem;
+    padding-top: 17rem;
     /* 9 */
   }
 }
