@@ -18,12 +18,16 @@
     text-align: center;
   }
 
-  .case-footer h3 {
-    font-size: 40px;
+  .case-footer h2 {
+   font-weight: bold;
   }
 
   .uc-streamer h2 {
-    font-size: 26px;
+    font-size: 3.2rem;
+    font-size: 32px;
+    @include min-screen-xlarge {
+      @include rem(font-size, $font-size-header-large);
+    }
   }
 
   .uc-streamer p {
@@ -94,6 +98,8 @@
 
     .edge-animation {
       background-image: url('soundhound/Poster2.png');
+      background-color: transparent !important; //Iewh.. stage was colored white cant find how to unset it.
+
     }
 
     &:before {
@@ -126,7 +132,6 @@
 
       .edge-animation.is-enabled {
         background: none;
-        background-color: transparent !important; //Iewh.. stage was colored white cant find how to unset it.
         box-sizing: content-box;
 
         * {
@@ -289,6 +294,7 @@
       @include rem(width, 5.1rem);
       display: inline;
       margin: 0;
+      margin-right: 15px;
       vertical-align: middle;
     }
 
