@@ -10,11 +10,26 @@
 .apple-watch-container .center {
   text-align: center;
 }
-.apple-watch-container .case-footer h3 {
-  font-size: 40px;
+.apple-watch-container .case-footer h2 {
+  font-weight: bold;
 }
 .apple-watch-container .uc-streamer h2 {
-  font-size: 26px;
+  font-size: 3.2rem;
+  font-size: 32px;
+}
+@media screen and (min-width: 1280px) {
+  .apple-watch-container .uc-streamer h2 {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    font-size: 36px;
+    /* 9 */
+    font-size: 3.6rem;
+    /* 9 */
+  }
 }
 .apple-watch-container .uc-streamer p {
   text-align: center;
@@ -89,6 +104,7 @@
 }
 .apple-watch-container .soundhound .edge-animation {
   background-image: url("soundhound/Poster2.png");
+  background-color: transparent !important;
 }
 .apple-watch-container .soundhound:before {
   -webkit-transform-origin: 0 0;
@@ -123,7 +139,6 @@
   }
   .apple-watch-container .strava .edge-animation.is-enabled, .apple-watch-container .soundhound .edge-animation.is-enabled, .apple-watch-container .schiphol .edge-animation.is-enabled {
     background: none;
-    background-color: transparent !important;
     box-sizing: content-box;
   }
   .apple-watch-container .strava .edge-animation.is-enabled *, .apple-watch-container .soundhound .edge-animation.is-enabled *, .apple-watch-container .schiphol .edge-animation.is-enabled * {
@@ -432,6 +447,7 @@
   /* 9 */
   display: inline;
   margin: 0;
+  margin-right: 15px;
   vertical-align: middle;
 }
 .apple-watch-container .legend-item-header h3 {
