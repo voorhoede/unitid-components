@@ -1,6 +1,8 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/helpers";
 
+@import "../../../assets/scss/main";
+
 /* APPLE-WATCH VIEW */
 // ** IE8 OVERWRITES **
 .ie8 .edge-animation {
@@ -65,12 +67,12 @@
 
   .uc-hero {
     @include rem(height, 44.5rem);
-    background-image: url('/assets/images/apple-watch/S_header.jpg');
+    background-image: url('assets/images/S_header.jpg');
     background-position: bottom;
 
     @include min-screen-between {
       @include rem(height, 25rem);
-      background-image: url('/assets/images/apple-watch/L_header.jpg');
+      background-image: url('assets/images/L_header.jpg');
       background-position: right;
       background-size: cover;
     }
@@ -141,17 +143,17 @@
     }
 
     .strava {
-      background-image: url('/assets/images/apple-watch/fiets.svg');
+      background-image: url('assets/images/fiets.svg');
       background-position: 20% 90%;
     }
 
     .soundhound {
-      background-image: url('/assets/images/apple-watch/mannetje.svg');
+      background-image: url('assets/images/mannetje.svg');
       background-position: 50% 75%;
     }
 
     .schiphol {
-      background-image: url('/assets/images/apple-watch/vliegtuig.svg');
+      background-image: url('assets/images/vliegtuig.svg');
       background-position: 70% 60%;
     }
   }

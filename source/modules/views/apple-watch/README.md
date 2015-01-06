@@ -1,4 +1,1 @@
-<!--
-Add an optional short description here for `Apple-watch` view.
-Or delete this file if not applicable.
--->
+To get this page working on the live site some urls have been changed. Need to check this with Anne@voorhoede.nl.

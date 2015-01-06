@@ -27,9 +27,9 @@
 {% block scripts %}
 {{ super() }}
 <!--[if gt IE 8]><!-->
-<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/strava_edge.js"></script>
-<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/soundhound_edge.js"></script>
-<script type="text/javascript" charset="utf-8" src="/modules/views/apple-watch/schiphol_edge.js"></script>
+<script type="text/javascript" charset="utf-8" src="strava_edge.js"></script>
+<script type="text/javascript" charset="utf-8" src="soundhound_edge.js"></script>
+<script type="text/javascript" charset="utf-8" src="schiphol_edge.js"></script>
 <!--<![endif]-->
 {% endblock %}
 
@@ -56,7 +56,7 @@
         <ul class="legend-container flat-list">
           <li class="legend-item" data-toggler>
             <header class="legend-item-header" data-toggler-header>
-              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <img class="legend-item-icon" src="assets/images/icon_heartbeat.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <h3>Hartslag-sensor</h3>
             </header>
             <div class="legend-item-body" data-toggler-body>
@@ -65,7 +65,7 @@
           </li>
           <li class="legend-item" data-toggler>
             <header class="legend-item-header" data-toggler-header>
-              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_notifications.svg" alt="Notificaties" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <img class="legend-item-icon" src="assets/images/icon_notifications.svg" alt="Notificaties" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <h3>Notificaties</h3>
             </header>
             <div class="legend-item-body" data-toggler-body>
@@ -74,7 +74,7 @@
           </li>
           <li class="legend-item" data-toggler>
             <header class="legend-item-header" data-toggler-header>
-              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_taptic.svg" alt="Taptic Engine" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <img class="legend-item-icon" src="assets/images/icon_taptic.svg" alt="Taptic Engine" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <h3>Taptic Engine</h3>
             </header>
             <div class="legend-item-body" data-toggler-body>
@@ -83,7 +83,7 @@
           </li>
           <li class="legend-item" data-toggler>
             <header class="legend-item-header" data-toggler-header>
-              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_handoff.svg" alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <img class="legend-item-icon" src="assets/images/icon_handoff.svg" alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <h3>Handoff</h3>
             </header>
             <div class="legend-item-body" data-toggler-body>
@@ -92,7 +92,7 @@
           </li>
           <li class="legend-item" data-toggler>
             <header class="legend-item-header" data-toggler-header>
-              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_force.svg" alt="Force Touch" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <img class="legend-item-icon" src="assets/images/icon_force.svg" alt="Force Touch" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <h3>Force Touch</h3>
             </header>
             <div class="legend-item-body" data-toggler-body>
@@ -101,7 +101,7 @@
           </li>
           <li class="legend-item" data-toggler>
             <header class="legend-item-header" data-toggler-header>
-              <img class="legend-item-icon" src="{{ pathToAssets }}images/apple-watch/icon_glances.svg" alt="Glances" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+              <img class="legend-item-icon" src="assets/images/icon_glances.svg" alt="Glances" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
               <h3>Glances</h3>
             </header>
             <div class="legend-item-body" data-toggler-body>
@@ -140,13 +140,13 @@
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_taptic.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="assets/images/icon_taptic.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Door middel van voelbare feedback, in de vorm van trillingen, weet je wanneer SoundHound klaar is met luisteren.
             </p>
           </li>
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_handoff.svg" alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="assets/images/icon_handoff.svg" alt="Handoff" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Via de Handoff-functie open je snel met je iPhone of iPad de juiste app om het nummer aan te schaffen.
             </p>
@@ -171,13 +171,13 @@
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_taptic_white.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="assets/images/icon_taptic_white.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Als sportieve fietser krijg je feedback van de Taptic Engine om zo je persoonlijke records te verbeteren.
             </p>
           </li>
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_heartbeat_white.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="assets/images/icon_heartbeat_white.svg" alt="Heartbeat sensor" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Door de hartslag-sensor kun je continu je hartslag in de gaten houden.
             </p>
@@ -202,13 +202,13 @@
       <div uc-column="1/2" data-component="uc-column-half">
         <ul class="icon-list">
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_notifications.svg" alt="Notifications" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="assets/images/icon_notifications.svg" alt="Notifications" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               De Schiphol-applicatie geeft notificaties op de Apple Watch en navigeert je zo naar de juiste gate.
             </p>
           </li>
           <li>
-            <img src="{{ pathToAssets }}images/apple-watch/icon_taptic.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
+            <img src="assets/images/icon_taptic.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'png'); this.onerror = null;">
             <p>
               Door voelbare feedback merk je direct welke kant je op moet lopen.
             </p>
