@@ -1,3 +1,4 @@
+//code from an other casepage. would like to rewrite but dont have the time..
 var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)),
   windowHeight = window.outerWidth || document.documentElement.clientHeight || document.body.clientHeight, //fix for ie8
   windowWidth = window.outerWidth || document.documentElement.clientWidth || document.body.clientWidth; //fix for ie8
@@ -7,6 +8,11 @@ var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.t
     controllers, ruler,
     int,
     fragment;
+
+    var config = {
+      containerSelector: '[data-before-after-container]',
+      container: document.querySelectorAll(this.containerSelector)
+    };
 
   ruler = document.createElement('div');
   ruler.className = 'ruler';
@@ -30,7 +36,7 @@ var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.t
   controllers.appendChild(fragment.cloneNode(true));
   controllers.className = 'js-beforeAfter-controllers before-after-controllers';
 
-  [].forEach.call(beforeAfter, function(baContainer){
+  [].forEach.call(document.querySelectorAll(config.containerSelector), function(baContainer){
     baContainer.appendChild(controllers.cloneNode(true));
     baContainer.querySelector('[data-image-container]').appendChild(ruler.cloneNode(true));
     baContainer.className += ' mobileBA ';
@@ -56,7 +62,7 @@ var mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.t
       clicked.className += ' '+activeClass;
     }
 
-    [].forEach.call(switchControllers, function(el){
+    [].forEach.call(switchControlls, function(el){
       function switchState () {
         baContainer = el.parentNode.parentNode;
         setActive(el);
@@ -185,4 +191,20 @@ if(mobile || windowWidth < 768 ) {
   beforeAfterMobile();
 } else {
   beforeAfter();
+}
+
+// animate function for ie8 and mobile browsers.
+function animate(object, property, start_value, end_value, time) {
+  var frame_rate, frame, delta, handle, value;
+  frame_rate = 0.06; // 60 FPS
+  frame = 0;
+  delta = (end_value - start_value) / time / frame_rate;
+  handle = setInterval(function() {
+    frame++;
+    value = parseInt(start_value) + delta * frame;
+    object.style[property] = value + '%';
+    if (value == end_value) {
+      clearInterval(handle);
+    }
+  }, 1 / frame_rate);
 }
