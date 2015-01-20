@@ -24,7 +24,12 @@
     @content;
   }
 }
-
+@mixin max-screen-medium
+{
+  @include max-screen($breakpoint-medium) {
+    @content;
+  }
+}
 
 @mixin min-screen-small
 {

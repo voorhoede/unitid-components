@@ -15,6 +15,27 @@ $grey: #f5f5f5;
   .divider-before > :first-child h2 {
     margin-top: 0
   }
+
+  .before-after-container {
+    @include rem(margin-bottom, 6.4rem);
+  }
+
+  .imageContainer img {
+    @include rem(margin-bottom, 1rem);
+  }
+
+  .ruler {
+    height: 102%;
+    top: 0;
+    background-color: #f8ce39;
+  }
+  .desktopBA .rulerEnd,
+  .desktopBA .ruler:before {
+    background: url('/modules/views/tweedehands-be/assets/images/ruler_end.png') no-repeat;
+  }
+  .desktopBA .ruler:hover, .desktopBA .ruler:active, .desktopBA .ruler:focus {
+    cursor: pointer;
+  }
   /* end overwrites */
 
   .section-number {
@@ -45,10 +66,18 @@ $grey: #f5f5f5;
     &.accent {
       background-color: $blue;
       color: $white;
+
+      h3 {
+        color: $white;
+      }
     }
     &.accent-dark {
       background-color: $blueDark;
       color: $white;
+
+      h3 {
+        color: $white;
+      }
     }
   }
 
@@ -72,22 +101,79 @@ $grey: #f5f5f5;
 
   .uc-hero {
     background-color: $blue;
+    @include max-screen-between {
+      height: auto;
+    }
 
-    header{
-      @include rem(bottom, 6rem);
+    header {
+      @include max-screen-between {
+        position: static;
+        width: 80%;
+        margin: 0 auto;
+        h1, h2 {
+          text-align: center;
+        }
+      }
+      @include max-screen-medium {
+        font-size: 65%;
+      }
+
+      @include min-screen-medium {
+        width: 53%;
+        @include rem(bottom, 2rem);
+      }
+      @include min-screen-large {
+        width: 42%;
+        @include rem(bottom, 4rem);
+      }
+      @include min-screen-xlarge {
+        @include rem(bottom, 6rem);
+      }
+    }
+    .image-over {
+      width: 50%;
+      @include rem(right, 15rem);
+      bottom: -3.4rem;
+
+      @include max-screen-between {
+        margin-top: -40px;
+        margin-right: 20%;
+        width: 90%;
+        position: relative;
+      }
+      @include min-screen-between {
+        right: 2rem;
+        left: auto;
+      }
+      @include min-screen-large {
+        right: 9rem;
+        bottom: -7.2rem;
+      }
+      @include min-screen-xlarge {
+        right: 15rem;
+      }
     }
   }
   .uc-hero-title {
+    @include max-screen-medium {
+      font-size: 250%;
+    }
+    @include max-screen-between {
+      font-size: 300%;
+    }
+
     @include font-regular;
     @include rem(font-size, 3.8rem);
     @include rem(margin-bottom, 4rem);
   }
   .uc-hero-subtitle {
+    @include max-screen-medium {
+      font-size: 160%;
+    }
+    @include max-screen-between {
+      font-size: 200%;
+    }
     @include rem(font-size, 2.2rem);
-  }
-  .image-over {
-    width: 50%;
-    @include rem(right, 15rem);
   }
 
   .large-title {
@@ -102,8 +188,15 @@ $grey: #f5f5f5;
     }
   }
 
-  .statistics-image {
+  .standalone-image {
     max-width: 70%;
+  }
+
+  [uc-column] .standalone-image {
+    @include max-screen-medium {
+      max-width: 70%;
+    }
+    max-width: 100%;
   }
 
   .todo-list {
@@ -224,6 +317,21 @@ $grey: #f5f5f5;
 
   .quote-author {
     margin-top: 0;
+  }
+
+  .divider-before-arrow {
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 60px;
+      position: absolute;
+      bottom: -25px;
+      left: 49%;
+      background: url('/modules/views/tweedehands-be/assets/images/arrow-blue.png') no-repeat bottom;
+      z-index: 2;
+    }
   }
 
 
