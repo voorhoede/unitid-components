@@ -1,0 +1,249 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* TWEEDEHANDS-BE VIEW */
+
+$blue: #5E8FD2;
+$blueDark: #5480BC;
+$blueDarkest: #0065A4;
+$yellow: #FFF7D8;
+$grey: #f5f5f5;
+
+.tweedehands-be {
+  /**overwrites**/
+
+  .divider-before > :first-child h2 {
+    margin-top: 0
+  }
+  /* end overwrites */
+
+  .section-number {
+    border-radius: 100%;
+    font-weight: bold;
+    background: $yellow;
+    font-size: 50px;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    display: block;
+    text-align: center;
+    color: $blue;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+
+    @include min-screen-large(){
+      font-size: 60px;
+      width: 90px;
+      height: 90px;
+    }
+  }
+  section {
+    &.smoke {
+      background-color: $grey;
+    }
+    &.accent {
+      background-color: $blue;
+      color: $white;
+    }
+    &.accent-dark {
+      background-color: $blueDark;
+      color: $white;
+    }
+  }
+
+  .accent {
+    color: $blue;
+  }
+  .accent-font {
+    font-family: "the great escape", sans-serif;
+  }
+  .regular-font {
+    @include font-regular;
+  }
+  .bold-font {
+    @include font-bold;
+  }
+  .left-align {
+    text-align: left;
+  }
+
+  /* Layout */
+
+  .uc-hero {
+    background-color: $blue;
+
+    header{
+      @include rem(bottom, 6rem);
+    }
+  }
+  .uc-hero-title {
+    @include font-regular;
+    @include rem(font-size, 3.8rem);
+    @include rem(margin-bottom, 4rem);
+  }
+  .uc-hero-subtitle {
+    @include rem(font-size, 2.2rem);
+  }
+  .image-over {
+    width: 50%;
+    @include rem(right, 15rem);
+  }
+
+  .large-title {
+    color: $blue;
+    @include rem(font-size, 2.8rem);
+    @include min-screen-between {
+      font-size: 220%;
+    }
+
+    @include min-screen-medium {
+      font-size: 270%;
+    }
+  }
+
+  .statistics-image {
+    max-width: 70%;
+  }
+
+  .todo-list {
+    @include clearfix;
+    @include rem(margin, 6.4rem 0);
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 250px;
+      min-height: 280px;
+    }
+  }
+  .todo-image {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  .todo-title {
+    font-weight: bold;
+    @include rem(margin, 1.5rem 0);
+  }
+
+  .todo-content {
+    @include rem(font-size, 1.4rem);
+  }
+
+  .no-whitespace-after [uc-row] > :last-child {
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .speedtest {
+    width: 100%;
+    background: url('/modules/views/tweedehands-be/assets/images/11_speedtest-s.png') no-repeat center;
+    background-size: 80%;
+    display: block;
+    height: 300px;
+    @include rem(margin-bottom, 3rem);
+
+    @include min-screen-between {
+      background-image: url('/modules/views/tweedehands-be/assets/images/11_speedtest-m.png');
+      background-size: 75%;
+      height: 400px;
+    }
+    @include min-screen-medium {
+      background-image: url('/modules/views/tweedehands-be/assets/images/11_speedtest-m.png');
+      background-size: 75%;
+      height: 400px;
+    }
+    @include min-screen-xlarge {
+      background-image: url('/modules/views/tweedehands-be/assets/images/11_speedtest-xl.png');
+      background-size: 100%;
+      height: 430px;
+    }
+  }
+
+  @media screen and (min-width: 800px){
+    .uc-fullbleed {
+      margin: 0;
+    }
+    .uc-fullbleed .uc-imagebox {
+      height: 416px;
+    }
+  }
+  .fullbleed-desc {
+    margin-top: 10px;
+    font-size: 80%;
+  }
+  .uc-imagebox {
+    margin: 0;
+
+    @include min-screen-xlarge{
+      background-size: 100%;
+    }
+
+  }
+  .quotes {
+    list-style: none;
+    margin: 0;
+    padding: 5% 0 0 0;
+    background: transparent;
+    position: relative;
+    text-align: center;
+
+    li {
+      width: 80%;
+      color: $white;
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      margin: 0;
+      text-shadow: 0 0.0625em 0.0625em rgba(0, 0, 0, 0.5);
+
+      .quote-author {
+        margin-top: 5px;
+        margin-bottom: 35px;
+        font-size: 70%;
+        text-shadow: none;
+      }
+
+      @include min-screen-medium {
+        width: 35%;
+        @include rem(font-size, 2.6rem);
+
+        &:first-child {
+          margin-right: 50px;
+        }
+        &:nth-child(2){
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .quote-author {
+    margin-top: 0;
+  }
+
+
+  .cta-video {
+    width: 580px;
+    height: 338px;
+    @include rem(margin-bottom, 6.4rem);
+  }
+  .cta-title {
+    color: $blueDarkest;
+    margin-bottom: 0;
+  }
+  .cta-subtitle {
+    @extend .large-title;
+    color: $black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .uc-button {
+    background-color: $blue;
+  }
+
+}
