@@ -303,7 +303,7 @@
   max-width: 100%;
 }
 @media screen and (max-width: 800px) {
-  .tweedehands-be [uc-column] .standalone-image {
+  .tweedehands-be [uc-column] .standalone-image:not(.full-width) {
     max-width: 70%;
   }
 }
@@ -395,7 +395,7 @@
     /* 9 */
   }
 }
-.tweedehands-be .no-whitespace-after [uc-row] > :last-child {
+.tweedehands-be .no-whitespace-after .no-space {
   margin-bottom: 0;
   display: block;
 }
