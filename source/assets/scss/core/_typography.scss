@@ -100,11 +100,7 @@
 	p, li {
 		line-height: $line-height-body;
 		@include rem(margin-bottom, $margin);
-		@include rem(font-size, $font-size-body-small);
-
-    @include min-screen-xlarge {
-      @include rem(font-size, $font-size-body);
-    }
+		@include rem(font-size, $base-size);
 
 		&:last-child {
 			margin-bottom: 0;
