@@ -186,11 +186,27 @@ function beforeAfter () {
   });
 }
 
-if(mobile || windowWidth < 768 ) {
+if(mobile || windowWidth < 800 ) {
 //if(mobile || isIE() && isIE() <=8 || windowWidth < 768 ) {
   beforeAfterMobile();
 } else {
+  showDesktopImages();
   beforeAfter();
+}
+
+
+function showDesktopImages(){
+  var desktopImages = document.querySelectorAll('[data-desktop-image]');
+  var mobileImages = document.querySelectorAll('[data-mobile-image]');
+
+  [].forEach.call(desktopImages, function (element){
+      element.src = element.getAttribute('data-desktop-image');
+      element.className = element.className.replace( /(?:^|\s)hidden(?!\S)/ , '' );
+  });
+
+  [].forEach.call(mobileImages, function(element) {
+      element.className += ' hidden';
+  });
 }
 
 // animate function for ie8 and mobile browsers.
