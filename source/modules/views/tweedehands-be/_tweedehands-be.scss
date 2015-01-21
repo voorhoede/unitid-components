@@ -17,7 +17,7 @@ $grey: #f5f5f5;
     border-radius: 100%;
     background: $yellow;
     font-size: 60px;
-    padding: 15px;
+    padding: 9px;
     width: 80px;
     height: 80px;
     display: block;
@@ -142,6 +142,7 @@ $grey: #f5f5f5;
     }
   }
   .uc-hero-title {
+    text-shadow: none;
     @include max-screen-medium {
       font-size: 250%;
     }
@@ -154,6 +155,7 @@ $grey: #f5f5f5;
     @include rem(margin-bottom, 4rem);
   }
   .uc-hero-subtitle {
+    text-shadow: none;
     @include max-screen-medium {
       font-size: 160%;
     }
@@ -179,11 +181,17 @@ $grey: #f5f5f5;
   }
 
   .whitespace-before {
-    @include rem(padding-top, 6rem);
+    @include min-screen-medium {
+      @include rem(padding-top, 6rem);
+    }
   }
 
   .standalone-image {
-    max-width: 70%;
+    max-width: 100%;
+    @include min-screen-medium {
+      max-width: 70%;
+    }
+
   }
 
   [uc-column] .standalone-image {
@@ -203,8 +211,12 @@ $grey: #f5f5f5;
     li {
       display: inline-block;
       vertical-align: top;
-      width: 250px;
+      width: 160px;
       min-height: 280px;
+
+      @include min-screen-between {
+        width: 260px;
+      }
     }
   }
   .todo-image {
@@ -261,7 +273,6 @@ $grey: #f5f5f5;
   }
   .fullbleed-desc {
     margin-top: 10px;
-    font-size: 110%;
     text-align: center;
   }
   .uc-imagebox {
@@ -336,10 +347,22 @@ $grey: #f5f5f5;
 
 
   .cta-video {
-    width: 580px;
-    height: 338px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
     @include rem(margin-bottom, 6.4rem);
   }
+
   .cta-title {
     color: $blueDarkest;
     margin-bottom: 0;
