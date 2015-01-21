@@ -723,7 +723,7 @@ th {
   /* 9 */
 }
 .case p, .case li {
-  line-height: 1.5;
+  line-height: 1.7;
   /* 3 */
   /* 3 */
   /* 4 */
@@ -740,24 +740,10 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  font-size: 18px;
+  font-size: 16px;
   /* 9 */
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   /* 9 */
-}
-@media screen and (min-width: 1280px) {
-  .case p, .case li {
-    /* 3 */
-    /* 3 */
-    /* 4 */
-    /* 6 */
-    /* 6 */
-    /* 7 */
-    font-size: 20px;
-    /* 9 */
-    font-size: 2rem;
-    /* 9 */
-  }
 }
 .case p:last-child, .case li:last-child {
   margin-bottom: 0;
