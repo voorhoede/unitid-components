@@ -46,9 +46,7 @@ $grey: #f5f5f5;
     }
   }
   .image-over {
-    img {
-      max-width: 90%;
-    }
+    max-width: 90%;
   }
   @include min-screen($breakpoint-between) {
     @include rem(height, 24rem);
@@ -67,8 +65,9 @@ $grey: #f5f5f5;
     }
     .image-over {
       @include rem(right, 2.4rem);
+      max-width: 50%;
+      left: auto;
       img {
-        max-width: 50%;
         float: right;
       }
     }
@@ -79,9 +78,7 @@ $grey: #f5f5f5;
   @include min-screen($breakpoint-xlarge) {
     @include rem(height, 36rem);
     .image-over {
-      img {
-        width: 50%;
-      }
+      width: 50%;
     }
   }
 }
