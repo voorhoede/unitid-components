@@ -32,3 +32,26 @@ $grey: #f5f5f5;
   // end of Typography
 
 }
+.uc-hero {
+  background-color: $blue;
+  @include min-screen($breakpoint-medium) {
+    .image-over {
+      right: -65.6rem;
+      img {
+        max-width: 42%;
+      }
+    }
+    header {
+      bottom: 0.6rem;
+    }
+  }
+  @include min-screen($breakpoint-xlarge) {
+    .image-over {
+      right: -48.6rem;
+      img {
+        max-width: 50%;
+      }
+    }
+  }
+
+}
