@@ -31,54 +31,61 @@ $grey: #f5f5f5;
   }
   // end of Typography
 
-}
-.uc-hero {
-  background-color: $blue;
-  @include rem(height, 43rem);
-  header {
-    width: 100%;
-    .uc-hero-title {
-      text-align: center;
-    }
-    .uc-hero-subtitle {
-      text-align: center;
-      @include rem(padding, 0 2rem);
-    }
-  }
-  .image-over {
-    max-width: 90%;
-  }
-  @include min-screen($breakpoint-between) {
-    @include rem(height, 24rem);
-    h1 {
-      margin: 0 0 0.25em 0;
-    }
+  .uc-hero {
+    background-color: $blue;
+    @include rem(height, 43rem);
     header {
-      width: 50%;
+      width: 100%;
       .uc-hero-title {
-        text-align: left;
+        text-align: center;
       }
       .uc-hero-subtitle {
-        text-align: left;
-        padding: 0;
+        text-align: center;
+        @include rem(padding, 0 2rem);
       }
     }
     .image-over {
-      @include rem(right, 2.4rem);
-      max-width: 50%;
-      left: auto;
-      img {
-        float: right;
+      max-width: 90%;
+    }
+    @include min-screen($breakpoint-between) {
+      @include rem(height, 24rem);
+      h1 {
+        margin: 0 0 0.25em 0;
+      }
+      header {
+        width: 50%;
+        .uc-hero-title {
+          text-align: left;
+        }
+        .uc-hero-subtitle {
+          text-align: left;
+          padding: 0;
+        }
+      }
+      .image-over {
+        @include rem(right, 2.4rem);
+        max-width: 50%;
+        left: auto;
+        img {
+          float: right;
+        }
+      }
+    }
+    @include min-screen($breakpoint-medium) {
+      @include rem(height, 28.8rem);
+    }
+    @include min-screen($breakpoint-xlarge) {
+      @include rem(height, 36rem);
+      .image-over {
+        width: 50%;
       }
     }
   }
-  @include min-screen($breakpoint-medium) {
-    @include rem(height, 28.8rem);
-  }
-  @include min-screen($breakpoint-xlarge) {
-    @include rem(height, 36rem);
-    .image-over {
-      width: 50%;
+  @include min-screen($breakpoint-large) {
+    figure {
+      .standalone-image {
+        width: 80%;
+      }
     }
   }
 }
