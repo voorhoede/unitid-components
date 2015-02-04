@@ -88,4 +88,26 @@ $grey: #f5f5f5;
       }
     }
   }
+  .todo-list {
+    @include clearfix();
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    li {
+      vertical-align: top;
+      padding: 0 5px;
+      display: inline-block;
+      width: 49%;
+      @include min-screen($breakpoint-large) {
+        width: 30%;
+      }
+    }
+  }
+  .no-space:last-child {
+    margin-bottom: 0;
+  }
+  section:after {
+    @include rem(margin-bottom, -0.3rem);
+  }
 }
+
