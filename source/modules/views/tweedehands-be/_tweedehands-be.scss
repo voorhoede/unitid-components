@@ -34,24 +34,54 @@ $grey: #f5f5f5;
 }
 .uc-hero {
   background-color: $blue;
-  @include min-screen($breakpoint-medium) {
-    .image-over {
-      right: -65.6rem;
-      img {
-        max-width: 42%;
-      }
+  height: 43rem;
+  header {
+    width: 100%;
+    .uc-hero-title {
+      text-align: center;
+    }
+    .uc-hero-subtitle {
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+  .image-over {
+    img {
+      max-width: 90%;
+    }
+  }
+  @include min-screen($breakpoint-between) {
+    height: 24rem;
+    h1 {
+      margin: 0 0 0.25em 0;
     }
     header {
-      bottom: 0.6rem;
+      width: 50%;
+      .uc-hero-title {
+        text-align: left;
+      }
+      .uc-hero-subtitle {
+        text-align: left;
+        padding: 0;
+      }
     }
-  }
-  @include min-screen($breakpoint-xlarge) {
     .image-over {
-      right: -48.6rem;
+      right: 2.4rem;
       img {
         max-width: 50%;
+        float: right;
       }
     }
   }
-
+  @include min-screen($breakpoint-medium) {
+    height: 28.8rem;
+  }
+  @include min-screen($breakpoint-xlarge) {
+    height: 36rem;
+    .image-over {
+      img {
+        width: 50%;
+      }
+    }
+  }
 }
