@@ -35,68 +35,92 @@ $grey: #f5f5f5;
   .uc-hero {
     background-color: $blue;
     @include rem(height, 55rem);
+
     header {
       width: 100%;
+
       .uc-hero-title {
         @include rem(margin-bottom, 4.8rem);
         @extend .regular-font;
         text-align: center;
         text-shadow: none;
       }
+
       .uc-hero-subtitle {
         @include rem(padding, 0 9rem);
         text-align: center;
         text-shadow: none;
       }
+
+
+      @include min-screen($breakpoint-between) {
+        width: 50%;
+
+        .uc-hero-title {
+          text-align: left;
+        }
+
+        .uc-hero-subtitle {
+          padding: 0;
+          text-align: left;
+        }
+
+      }
+
     }
+
     .image-over {
       @include rem(bottom, -4.2rem);
       max-width: 90%;
     }
+
     @include min-screen($breakpoint-between) {
       @include rem(height, 28rem);
+
       h1 {
         margin: 0 0 0.25em 0;
       }
-      header {
-        width: 50%;
-        .uc-hero-title {
-          text-align: left;
-        }
-        .uc-hero-subtitle {
-          text-align: left;
-          padding: 0;
-        }
-      }
+
       .image-over {
         @include rem(right, 2.4rem);
-        max-width: 50%;
         left: auto;
+        max-width: 50%;
+
         img {
           float: right;
         }
+
       }
+
     }
+
     @include min-screen($breakpoint-medium) {
       @include rem(height, 36rem);
     }
+
     @include min-screen($breakpoint-xlarge) {
       @include rem(height, 40rem);
       .image-over {
         width: 50%;
       }
+
     }
+
   }
   // end of section 1 header
 
 
   // section 2 users
   @include min-screen($breakpoint-large) {
+
     figure {
+
       .standalone-image {
         width: 80%;
       }
+
     }
+
   }
   // end of section 2 users
 
@@ -105,56 +129,72 @@ $grey: #f5f5f5;
   .todo-list {
     @include clearfix();
     list-style: none;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
+
     li {
-      vertical-align: top;
-      padding: 0 5px;
       display: inline-block;
+      padding: 0 5px;
+      vertical-align: top;
       width: 49%;
+
       @include min-screen($breakpoint-large) {
         width: 30%;
       }
+
     }
+
   }
+
   .no-space:last-child {
     margin-bottom: 0;
   }
+
   section:after {
     @include rem(margin-bottom, -0.3rem);
   }
+
   [uc-column="1/2"] {
     width: 100%;
+
     .standalone-image {
       max-width: 80%;
     }
   }
+
   // end of section 3 upgrade
 
 
   // section 4 scrum & section 5 usergroup
   @include min-screen($breakpoint-between) {
     [uc-column="1/2"] {
-      margin-left: 0%;
+      margin-left: 0;
     }
+
   }
+
   @include min-screen($breakpoint-large) {
     [uc-column="1/2"] {
       @include rem(margin-left, 2.4rem);
-//      @include rem(width, 37.2rem);
       width: 46%;
+
       .standalone-image {
         max-width: 100%;
       }
+
     }
+
     [uc-column="1/2"]:first-child {
       margin-left: 0;
     }
+
   }
+
   @include min-screen($breakpoint-xlarge) {
     [uc-column="1/2"] {
       width: 46.8rem;
     }
+
   }
   // end of section 4 scrum & section 5 usergroup
 
@@ -163,45 +203,58 @@ $grey: #f5f5f5;
   section.accent {
     background-color: $blue;
     color: $white;
+
     .section-number {
-      width: 10rem;
-      height: 10rem;
-      font-size: 10rem;
-      position: relative;
-      color: $blue;
       background-color: $yellow;
       border-radius: 30rem;
-      text-align: center;
+      color: $blue;
       float: right;
+      font-size: 10rem;
+      height: 10rem;
       margin: -8rem 40% 0 0;
+      position: relative;
+      text-align: center;
+      width: 10rem;
+
       @include min-screen($breakpoint-between) {
         margin: -8rem 42% 0 0;
       }
+
       @include min-screen($breakpoint-medium){
         margin: -8rem 45% 0 0;
       }
+
     }
+
     h3 {
       color: $white;
     }
+
     [uc-row] {
       [uc-column='1/2']:first-child {
-        visibility: hidden;
         display: none;
+        visibility: hidden;
       }
+
       @include min-screen($breakpoint-large) {
         [uc-column='1/2']:first-child {
-          visibility: visible;
           display: block;
+          visibility: visible;
         }
+
         [uc-column='1/2']:last-child {
           img {
-            visibility: hidden;
             display: none;
+            visibility: hidden;
           }
+
         }
+
       }
+
     }
+
   }
+
 }
 
