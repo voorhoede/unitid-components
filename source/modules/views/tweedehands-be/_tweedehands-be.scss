@@ -204,6 +204,32 @@ $grey: #f5f5f5;
     background-color: $blue;
     color: $white;
 
+    [uc-row] {
+      [uc-column='1/2']:first-child {
+        display: none;
+        visibility: hidden;
+      }
+
+      @include min-screen($breakpoint-medium) {
+        [uc-column='1/2']:first-child {
+          display: block;
+          visibility: visible;
+        }
+
+        [uc-column='1/2']:last-child {
+          img {
+            display: none;
+            visibility: hidden;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+  section.accent, section.accent-dark {
     .section-number {
       background-color: $yellow;
       border-radius: 30rem;
@@ -231,30 +257,38 @@ $grey: #f5f5f5;
       color: $white;
     }
 
-    [uc-row] {
-      [uc-column='1/2']:first-child {
-        display: none;
-        visibility: hidden;
-      }
+  }
+  // end of section 8 functions
 
-      @include min-screen($breakpoint-medium) {
-        [uc-column='1/2']:first-child {
-          display: block;
-          visibility: visible;
-        }
+  section.accent-dark {
+    background-color: $blueDark;
+    color: $white;
+  }
 
-        [uc-column='1/2']:last-child {
-          img {
-            display: none;
-            visibility: hidden;
-          }
+  .divider-before-arrow:after {
+    content: '';
+    background: url("assets/images/arrow-blue.svg");
+    width: 20px;
+    height: 45px;
+    left: 49%;
+    position: relative;
+    bottom: -25px;
+    z-index: 2;
+  }
 
-        }
-
-      }
-
+  .speedtest {
+    width: 100%;
+    background-size: 100%;
+    background: url("assets/images/11_speedtest-s.png");
+    @include min-screen($breakpoint-between){
     }
 
+    @include min-screen($breakpoint-medium){
+      background: url("assets/images/11_speedtest-m.png");
+    }
+    @include min-screen($breakpoint-xlarge){
+      background: url("assets/images/11_speedtest-xl.png");
+    }
   }
 
 }
