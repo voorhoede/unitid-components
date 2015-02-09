@@ -10,7 +10,6 @@ $yellow: #FFF7D8;
 $grey: #f5f5f5;
 
 
-
 .tweedehands-be {
   //Typography
   .accent {
@@ -158,5 +157,51 @@ $grey: #f5f5f5;
     }
   }
   // end of section 4 scrum & section 5 usergroup
+
+
+  // section 8 functions
+  section.accent {
+    background-color: $blue;
+    color: $white;
+    .section-number {
+      width: 10rem;
+      height: 10rem;
+      font-size: 10rem;
+      position: relative;
+      color: $blue;
+      background-color: $yellow;
+      border-radius: 30rem;
+      text-align: center;
+      float: right;
+      margin: -8rem 40% 0 0;
+      @include min-screen($breakpoint-between) {
+        margin: -8rem 42% 0 0;
+      }
+      @include min-screen($breakpoint-medium){
+        margin: -8rem 45% 0 0;
+      }
+    }
+    h3 {
+      color: $white;
+    }
+    [uc-row] {
+      [uc-column='1/2']:first-child {
+        visibility: hidden;
+        display: none;
+      }
+      @include min-screen($breakpoint-large) {
+        [uc-column='1/2']:first-child {
+          visibility: visible;
+          display: block;
+        }
+        [uc-column='1/2']:last-child {
+          img {
+            visibility: hidden;
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 
