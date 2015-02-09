@@ -31,24 +31,31 @@ $grey: #f5f5f5;
   }
   // end of Typography
 
+
+  // section 1 header
   .uc-hero {
     background-color: $blue;
-    @include rem(height, 43rem);
+    @include rem(height, 55rem);
     header {
       width: 100%;
       .uc-hero-title {
+        @include rem(margin-bottom, 4.8rem);
+        @extend .regular-font;
         text-align: center;
+        text-shadow: none;
       }
       .uc-hero-subtitle {
+        @include rem(padding, 0 9rem);
         text-align: center;
-        @include rem(padding, 0 2rem);
+        text-shadow: none;
       }
     }
     .image-over {
+      @include rem(bottom, -4.2rem);
       max-width: 90%;
     }
     @include min-screen($breakpoint-between) {
-      @include rem(height, 24rem);
+      @include rem(height, 28rem);
       h1 {
         margin: 0 0 0.25em 0;
       }
@@ -72,15 +79,19 @@ $grey: #f5f5f5;
       }
     }
     @include min-screen($breakpoint-medium) {
-      @include rem(height, 28.8rem);
+      @include rem(height, 36rem);
     }
     @include min-screen($breakpoint-xlarge) {
-      @include rem(height, 36rem);
+      @include rem(height, 40rem);
       .image-over {
         width: 50%;
       }
     }
   }
+  // end of section 1 header
+
+
+  // section 2 users
   @include min-screen($breakpoint-large) {
     figure {
       .standalone-image {
@@ -88,6 +99,10 @@ $grey: #f5f5f5;
       }
     }
   }
+  // end of section 2 users
+
+
+  // section 3 upgrade
   .todo-list {
     @include clearfix();
     list-style: none;
@@ -115,6 +130,10 @@ $grey: #f5f5f5;
       max-width: 80%;
     }
   }
+  // end of section 3 upgrade
+
+
+  // section 4 scrum & section 5 usergroup
   @include min-screen($breakpoint-between) {
     [uc-column="1/2"] {
       margin-left: 0%;
@@ -123,7 +142,8 @@ $grey: #f5f5f5;
   @include min-screen($breakpoint-large) {
     [uc-column="1/2"] {
       @include rem(margin-left, 2.4rem);
-      @include rem(width, 37.2rem);
+//      @include rem(width, 37.2rem);
+      width: 46%;
       .standalone-image {
         max-width: 100%;
       }
@@ -132,5 +152,11 @@ $grey: #f5f5f5;
       margin-left: 0;
     }
   }
+  @include min-screen($breakpoint-xlarge) {
+    [uc-column="1/2"] {
+      width: 46.8rem;
+    }
+  }
+  // end of section 4 scrum & section 5 usergroup
 }
 
