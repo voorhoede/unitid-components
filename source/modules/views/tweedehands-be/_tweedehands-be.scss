@@ -115,12 +115,21 @@ $grey: #f5f5f5;
       max-width: 80%;
     }
   }
+  @include min-screen($breakpoint-between) {
+    [uc-column="1/2"] {
+      margin-left: 0%;
+    }
+  }
   @include min-screen($breakpoint-large) {
     [uc-column="1/2"] {
+      @include rem(margin-left, 2.4rem);
       @include rem(width, 37.2rem);
       .standalone-image {
         max-width: 100%;
       }
+    }
+    [uc-column="1/2"]:first-child {
+      margin-left: 0;
     }
   }
 }
