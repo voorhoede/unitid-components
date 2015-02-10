@@ -100,6 +100,7 @@ $grey: #f5f5f5;
 
     @include min-screen($breakpoint-xlarge) {
       @include rem(height, 40rem);
+
       .image-over {
         width: 50%;
       }
@@ -134,7 +135,7 @@ $grey: #f5f5f5;
 
     li {
       display: inline-block;
-      padding: 0 5px;
+      @include rem(padding, 0 0.5rem);
       vertical-align: top;
       width: 49%;
 
@@ -192,7 +193,7 @@ $grey: #f5f5f5;
 
   @include min-screen($breakpoint-xlarge) {
     [uc-column="1/2"] {
-      width: 46.8rem;
+      @include rem(width, 46.8rem);
     }
 
   }
@@ -232,23 +233,23 @@ $grey: #f5f5f5;
   section.accent, section.accent-dark {
     .section-number {
       background-color: $yellow;
-      border-radius: 30rem;
+      @include rem(border-radius, 30rem);
       color: $blue;
       float: right;
-      font-size: 8rem;
-      height: 10rem;
-      margin: -8rem 40% 0 0;
-      padding-top: 1rem;
+      @include rem(font-size, 8rem);
+      @include rem(height, 10rem);
+      @include rem(margin, -8rem 40% 0 0);
+      @include rem(padding-top, 1rem);
       position: relative;
       text-align: center;
-      width: 10rem;
+      @include rem(width, 10rem);
 
       @include min-screen($breakpoint-between) {
-        margin: -8rem 42% 0 0;
+        @include rem(margin, -8rem 42% 0 0);
       }
 
       @include min-screen($breakpoint-medium){
-        margin: -8rem 45% 0 0;
+        @include rem(margin, -8rem 45% 0 0);
       }
 
     }
@@ -260,36 +261,122 @@ $grey: #f5f5f5;
   }
   // end of section 8 functions
 
+
+  // section 8, 9, 10
   section.accent-dark {
     background-color: $blueDark;
     color: $white;
   }
+  // end of section 8, 9, 10
 
+
+  // section 11
   .divider-before-arrow:after {
-    content: '';
     background: url("assets/images/arrow-blue.svg");
-    width: 20px;
-    height: 45px;
+    @include rem(bottom, -2.5rem);
+    content: '';
+    @include rem(height, 4.5rem);
     left: 49%;
     position: relative;
-    bottom: -25px;
+    width: 20px;
     z-index: 2;
   }
+  // end of section 11
 
+
+  // section 12
   .speedtest {
-    width: 100%;
+    background: url("assets/images/11_speedtest-s.png") no-repeat center;
     background-size: 100%;
-    background: url("assets/images/11_speedtest-s.png");
+    width: 100%;
+    @include rem(height, 45rem);
+    display: block;
+
     @include min-screen($breakpoint-between){
+      @include rem(height, 55rem);
     }
 
     @include min-screen($breakpoint-medium){
-      background: url("assets/images/11_speedtest-m.png");
+      background: url("assets/images/11_speedtest-m.png") no-repeat center;
+      background-size: 100%;
     }
+
     @include min-screen($breakpoint-xlarge){
-      background: url("assets/images/11_speedtest-xl.png");
+      background: url("assets/images/11_speedtest-xl.png") no-repeat center;
+      background-size: 100%;
     }
+
   }
 
+  .quote-author {
+     text-align: center;
+  }
+  // end of section 12
+
+
+  // section 15
+  .uc-imagebox {
+    @include rem(margin-bottom, 1rem);
+
+    @include min-screen($breakpoint-medium) {
+      @include rem(height, 37rem);
+    }
+
+  }
+
+  .quotes {
+    color: $white;
+    list-style: none;
+
+    li {
+      @include rem(margin, 4rem 0);
+      text-align: center;
+
+      p {
+        @include rem(margin, 1rem 0 0);
+      }
+
+    }
+
+  }
+  .fullbleed-desc {
+    text-align: center;
+  }
+  // end of section 15
+
+
+  // section 16
+  .video-spacer {
+    margin: 0 auto;
+    max-width: 80%;
+
+    @include min-screen($breakpoint-medium) {
+      max-width: 60%;
+    }
+
+    .video-container {
+      height: 0;
+      position: relative;
+      overflow: hidden;
+      @include rem(margin-bottom, 6.4rem);
+      max-width: 100%;
+      padding-bottom: 56.25%;
+
+      iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  .uc-button {
+    background-color: $blue;
+  }
+  // end of section 16
 }
 
