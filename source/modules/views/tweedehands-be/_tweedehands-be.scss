@@ -238,18 +238,18 @@ $grey: #f5f5f5;
       float: right;
       @include rem(font-size, 8rem);
       @include rem(height, 10rem);
-      @include rem(margin, -8rem 40% 0 0);
+      margin: -80px 40% 0 0;
       @include rem(padding-top, 1rem);
       position: relative;
       text-align: center;
       @include rem(width, 10rem);
 
       @include min-screen($breakpoint-between) {
-        @include rem(margin, -8rem 42% 0 0);
+        margin: -80px 42% 0 0;
       }
 
       @include min-screen($breakpoint-medium){
-        @include rem(margin, -8rem 45% 0 0);
+        margin: -80px 45% 0 0;
       }
 
     }
