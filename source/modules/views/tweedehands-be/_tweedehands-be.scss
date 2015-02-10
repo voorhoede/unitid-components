@@ -325,12 +325,25 @@ $grey: #f5f5f5;
   }
 
   .quotes {
+    @include clearfix();
+
+    @include min-screen($breakpoint-medium) {
+      margin: 0 auto;
+    }
+
     color: $white;
     list-style: none;
+    text-align: center;
 
     li {
+      width: 100%;
+
+      @include min-screen($breakpoint-medium) {
+        display: inline-block;
+        width: 40%;
+      }
+
       @include rem(margin, 4rem 0);
-      text-align: center;
 
       p {
         @include rem(margin, 1rem 0 0);
