@@ -50,8 +50,8 @@ $yellow-orange: #f8ce39;
         @include rem(padding, 0 9rem);
         text-align: center;
         text-shadow: none;
+        @include rem(font-size, 2.2rem);
       }
-
 
       @include min-screen($breakpoint-between) {
         width: 50%;
@@ -111,6 +111,11 @@ $yellow-orange: #f8ce39;
 
   .large-title {
     color: $blue;
+    @include rem(font-size, 2.8rem);
+
+    @include min-screen($breakpoint-medium) {
+      font-size: 270%;
+    }
   }
   // end of section 1 header
 
@@ -145,6 +150,10 @@ $yellow-orange: #f8ce39;
 
       @include min-screen($breakpoint-medium) {
         width: 30%;
+      }
+
+      .todo-title {
+        font-weight: bold;
       }
 
     }
@@ -351,7 +360,7 @@ $yellow-orange: #f8ce39;
     @include rem(margin-bottom, 1rem);
 
     @include min-screen($breakpoint-medium) {
-      @include rem(height, 37rem);
+      @include rem(height, 42rem);
     }
 
   }
@@ -369,11 +378,17 @@ $yellow-orange: #f8ce39;
 
     li {
       width: 100%;
+      text-shadow: 0 0.0625em 0.0625em rgba(0, 0, 0, 0.5);
 
       @include min-screen($breakpoint-medium) {
+        @include rem(font-size, 2.6rem);
         vertical-align: top;
         display: inline-block;
         width: 40%;
+
+        .quote-author {
+          text-shadow: none;
+        }
       }
 
       @include rem(margin, 4rem 0);
