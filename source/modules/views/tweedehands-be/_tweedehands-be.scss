@@ -41,6 +41,7 @@ $yellow-orange: #f8ce39;
 
       .uc-hero-title {
         @include rem(margin-bottom, 4.8rem);
+        @include rem(font-size, 3.8rem);
         @extend .regular-font;
         text-align: center;
         text-shadow: none;
@@ -112,6 +113,10 @@ $yellow-orange: #f8ce39;
   .large-title {
     color: $blue;
     @include rem(font-size, 2.8rem);
+
+    @include min-screen($breakpoint-between) {
+      font-size: 220%;
+    }
 
     @include min-screen($breakpoint-medium) {
       font-size: 270%;
@@ -433,6 +438,10 @@ $yellow-orange: #f8ce39;
 
     }
 
+  }
+
+  .cta-subtitle {
+    @include rem(font-size, 2.8rem);
   }
 
   .uc-button {
