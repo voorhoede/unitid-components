@@ -41,7 +41,11 @@ $yellow-orange: #f8ce39;
 
       .uc-hero-title {
         @include rem(margin-bottom, 4.8rem);
-        @include rem(font-size, 3.8rem);
+
+        @include min-screen($breakpoint-medium) {
+          @include rem(font-size, 3.8rem);
+        }
+
         @extend .regular-font;
         text-align: center;
         text-shadow: none;
@@ -251,24 +255,18 @@ $yellow-orange: #f8ce39;
   section.accent, section.accent-dark {
     .section-number {
       background-color: $yellow;
-      @include rem(border-radius, 30rem);
       color: $blue;
-      float: right;
+      display: block;
+      left: 50%;
+      margin: -80px 0 0 -50px;
+      position: absolute;
+      text-align: center;
+
+      @include rem(border-radius, 30rem);
       @include rem(font-size, 8rem);
       @include rem(height, 10rem);
-      margin: -80px 40% 0 0;
       @include rem(padding-top, 1rem);
-      position: relative;
-      text-align: center;
       @include rem(width, 10rem);
-
-      @include min-screen($breakpoint-between) {
-        margin: -80px 42% 0 0;
-      }
-
-      @include min-screen($breakpoint-medium){
-        margin: -80px 45% 0 0;
-      }
 
     }
 
@@ -289,6 +287,7 @@ $yellow-orange: #f8ce39;
   }
   .ruler {
     background: $yellow-orange;
+
     @include min-screen($breakpoint-medium) {
       height: 102%;
     }
@@ -296,6 +295,9 @@ $yellow-orange: #f8ce39;
   .desktopBA {
     .rulerEnd, .ruler:before {
       background: url("assets/images/ruler_end.png") no-repeat;
+    }
+    .ruler:hover, .ruler:active, .ruler:focus {
+      cursor: pointer;
     }
   }
   // end of section 9
