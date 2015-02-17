@@ -394,7 +394,7 @@ th {
   padding: 0;
 }
 
-[class*="column"] + [class*="column"]:last-child {
+.case [class*="column"] + [class*="column"]:last-child {
   float: none;
 }
 
