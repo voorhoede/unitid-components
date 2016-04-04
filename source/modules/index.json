@@ -1,5 +1,6 @@
 {
 	"components": [
+		"data-blocks",
 		"disclaimer",
 		"footer",
 		"language",
@@ -21,6 +22,7 @@
 		"case",
 		"nu-nl",
 		"philips-myremote",
-		"tweedehands-be"
+		"tweedehands-be",
+    	"drop-and-fly"
 	]
 }
