@@ -24,7 +24,7 @@
         "grunt-contrib-uglify": "~0.3.2",
         "grunt-contrib-watch": "~0.5.3",
         "grunt-devtools": "~0.2.1",
-        "grunt-grunticon": "^1.2.3",
+        "grunt-grunticon": "^2.2.2",
         "grunt-jsbeautifier": "~0.2.6",
         "grunt-prompt": "~0.1.2",
         "grunt-svgmin": "~0.3.0",
