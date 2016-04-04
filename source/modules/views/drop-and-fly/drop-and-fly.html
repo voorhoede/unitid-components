@@ -1,0 +1,232 @@
+{% extends "views/_base-view/base-view.html" %}
+
+{% from "components/data-blocks/_data-blocks.html" import dataBlocks %}
+
+{% block language %}
+{% include "components/language/_language.html" %}
+{% endblock %}
+
+{% block specific_scripts %}
+<!-- START Unitid website specific scripts/css -->
+<link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+<!-- END Unitid website specific scripts/css -->
+{% endblock %}
+
+{% block header %}
+{% include "components/navigation/_navigation.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="dropandfly-container" role="document">
+	<section role="hero" class="intro-text">
+		<div class="uc-hero" data-component="uc-hero">
+			<header>
+				<div class="uc-hero-header">
+					<h1>Hello Drop&Fly, <br/><span>goodbye lange <br/>wachtrij</span></h1>
+				</div>
+			</header>
+			<div class="uc-hero-gadget"></div>
+		</div>
+		<div class="uc-streamer " data-component="uc-streamer">
+			<div uc-row>
+				<h3>Snelle en efficiente bagage drop-off: <br/>Snel en eenvoudig zelf je bagage inchecken, op steeds meer vliegvelden over de hele wereld.</h3>
+				<p>
+					Type22, inmiddels beter bekend onder de naar <a href="http://www.sita.aero/pressroom/news-releases/sita-acquires-innovator-type22-positioned-to-become-self-bag-drop-leader" target="_blank">SITA</a>, is leverancier van check-in-systemen voor bagage op vliegvelden. Met hun nieuwste aanwinst, Drop&Fly, kunnen luchthavenpassagiers supersnel zelf hun bagage inchecken op steeds meer internationale vliegvelden. Mede dankzij de simpele interface met instructievideo’s en illustraties checken passagiers binnen een minuut hun bagage in: een stuk vlotter dan bij een bemande balie. Met veel plezier werkten we mee aan dit innovatieve product.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="divider-before">
+		<div class="uc-streamer vliegende-start" data-component="uc-streamer">
+			<div uc-row>
+				<h2>Een vliegende start</h2>
+				<p>Het project startte met een design sprint volgens de methode van Google Ventures: in 40 uur tijd, verdeeld over 5 dagen, een idee uitwerken tot een prototype en deze vervolgens testen met gebruikers. Met het hele team werkten we elke dag aan een duidelijk doel: ‘Unpack’, ‘Sketch’, ‘Decide’, ‘Prototype’ en op dag 5 ‘Test’</p>
+			</div>
+		</div>
+	</section>
+	<section class="smoke datablocks">
+		<div uc-row >
+			<ul class="data-blocks-list">
+				<li class="data-blocks-item">{{ dataBlocks('#5C96D9', 'Mon', 'Unpack') }}</li>
+				<li class="data-blocks-item">{{ dataBlocks('#F48C09', 'Tue', 'Sketch') }}</li>
+				<li class="data-blocks-item">{{ dataBlocks('#D0021B', 'Wed', 'Decide') }}</li>
+				<li class="data-blocks-item">{{ dataBlocks('#5DC1B8', 'Thu', 'Prototype') }}</li>
+				<li class="data-blocks-item">{{ dataBlocks('#999999', 'Fri', 'Test') }}</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<section class="smoke whitespace-before">
+		<div uc-row>
+			<div uc-column="1/2" data-component="uc-column-half" class="polaroid-text">
+				<h4>Dag 1: passagiers observeren</h4>
+				<p class="text-column">De ‘Unpack’-dag begon in alle vroegte op Eindhoven Airport. Vanaf 5 uur ‘s ochtends observeerden en interviewden we passagiers bij de voorganger van Drop&Fly: de <a href="http://www.sita.aero/solutions-and-services/products/scanfly" target="_blank">Scan&Fly-balies</a>. Na 3 uur kwam het hele team samen om zoveel mogelijk informatie te verzamelen: van businessdoelen en concurrentie tot de technische eisen van de units.</p>
+			</div>
+			<div uc-column="1/2" data-component="uc-column-half">
+				<div id="polaroid1" class="polaroid">
+					<span class="sketchfont">Passagiers observeren op Eindhoven Airport</span>
+				</div>
+			</div>
+		</div>
+		<div uc-row>
+			<div uc-column="1/2" data-component="uc-column-half">
+				<div id="polaroid2" class="polaroid">
+					<span class="sketchfont">Een wand vol mogelijke oplossingen</span>
+				</div>
+			</div>
+			<div uc-column="1/2" data-component="uc-column-half" class="polaroid-text">
+				<h4>Dag 2: schetsen, schetsen, schetsen</h4>
+				<p class="text-column">De ‘Unpack’-dag begon in alle vroegte op Eindhoven Airport. Vanaf 5 uur ‘s ochtends observeerden en interviewden we passagiers bij de voorganger van Drop&Fly: de Scan&Fly-balies. Na 3 uur kwam het hele team samen om zoveel mogelijk informatie te verzamelen: van businessdoelen en concurrentie tot de technische eisen van de units.</p>
+			</div>
+		</div>
+		<div uc-row>
+			<div uc-column="1/2" data-component="uc-column-half" class="polaroid-text">
+				<h4>Dag 3 en 4: prototypes maken</h4>
+				<p class="text-column">Op dag 3 en 4 selecteerden we de beste ideeën, om zo snel mogelijk tot een prototype te komen. We werkten 2 richtingen uit: een prototype met animaties en iconen én een prototype met video-instructies en foto’s. De twee varianten testten we vervolgens op dag 5.</p>
+			</div>
+			<div uc-column="1/2" data-component="uc-column-half">
+				<div id="polaroid3" class="polaroid">
+					<span class="sketchfont">Prototypes installeren op bestaande units</span>
+				</div>
+			</div>
+		</div>
+		<div uc-row>
+			<div uc-column="1/2" data-component="uc-column-half">
+				<div id="polaroid4" class="polaroid">
+					<span class="sketchfont">Gebruikerstest op Eindhoven Airport</span>
+				</div>
+			</div>
+			<div uc-column="1/2" data-component="uc-column-half" class="polaroid-text">
+				<h4>Dag 5: demo’s op het vliegveld</h4>
+				<p class="text-column">We plakten iPads op bestaande Scan&Fly-schermen zodat de prototypes net echte interfaces leken. Type22 koppelde laptops aan de schermen om ervoor te zorgen dat passagiers, ondanks de test-opzet, toch direct hun bagage konden inchecken. De meeste passagiers doorliepen de prototypes snel en waren enthousiast over de eenvoud. Beide prototypes hadden hun voor- en nadelen en de nodige aandachtspunten. Kortom, een goed startpunt voor het vervolgtraject: scrum.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="uc-streamer" data-component="uc-streamer">
+			<div uc-row>
+				<h2>Het concept: Get closer!</h2>
+				<p>De interface trekt vanaf een afstand de aandacht van passagiers: al bij 10 meter afstand zie je in één oogopslag wat je bij de units kunt doen. Kom je dichterbij, dan verschijnt automatisch stap 1 van het bagage-incheckproces. Video’s helpen je vervolgens bij het scannen van je instapkaart en het plaatsen van de bagage. Illustraties en animaties informeren je tijdens het wachten, bijvoorbeeld als de inhoud van je koffer wordt gescand.</p>
+			</div>
+		</div>
+		<div class="image-full">
+			<img src="assets/images/het-concept-unit.jpg" />
+		</div>
+	</section>
+
+	<section class="het-concept">
+		<div class="row-clean bg-green-drop flexbox flexbox-alt">
+			<div class="onethird set-right ">
+				<h3>Language support</h3>
+				<p class="text-column">Als je begint start je altijd in de taal van de vorige passagier: grote kans dat je voor dezelfde vlucht komt. Door een slim algoritme switch je met één klik naar de taal van het land waar je bent of de meest gebruikte taal van het afgelopen half uur. Voor talen die van rechts naar links worden geschreven spiegelden we de complete interface. Alle teksten, maar ook de transities worden omgekeerd weergegeven.</p>
+			</div>
+			<div class="twothird set-left set-center bg-grey-light flexbox-image">
+				<img src="assets/images/language-support.png" >
+			</div>
+		</div>
+		<div class="row-clean bg-grey flexbox">
+			<div class="onethird set-left bg-grey-dark">
+				<h3>Maintenance menu</h3>
+				<p class="text-column">Voor hulp, noodgevallen of onderhoud is er een speciaal ‘host en maintenance’-menu. Hier kan grondpersoneel toegang tot krijgen door het scannen van hun badge. Via dit gebruiksvriendelijke service-menu kan de medewerker snel zaken regelen, zoals labels opnieuw printen, papier vervangen en passagiersgegevens inzien als een passagier vastloopt in het proces.</p>
+			</div>
+			<div class="twothird set-right  flexbox-image">
+				<div class="set-center"><img src="assets/images/maintenance-menu.png" ></div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="darkblue">
+		<div class="uc-streamer" data-component="uc-streamer" class="flexbox">
+			<div uc-row >
+				<h2>Een heldere visuele stijl</h2>
+				<p>Het ontwerp leunt op 3 pijlers: persoonlijk, toegankelijk en flexibel. Deze vormen een solide basis voor de uitstraling van de Drop&Fly-interface. Het resultaat is een aantrekkelijke interface, zowel visueel als in gebruik.</p>
+			</div>
+		</div>
+		<div>
+			<img src="assets/images/visuele-stijl-unit.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'gif'); this.onerror = null;">
+		</div>
+		<div uc-row>
+			<div class="row-clean set-center">
+				<h3 class="set-center">Persoonlijk</h3>
+				<p class="text-column">Uit de testen met gebruikers bleek dat instructies het best overkomen aan de hand van duidelijke first-person video’s. Om de aandacht van de gebruiker bij het scherm te houden kozen we voor een geanimeerde, illustratieve stijl van iconen. Deze vriendelijke ‘rode draad’ loopt van het begin tot het einde van het incheckproces.</p>
+			</div>
+		</div>
+		<div uc-row class="row-clean flexbox flexbox-alt">
+			<div class="onethird set-right">
+				<h3 class="head-column">Toegankelijk</h3>
+				<p class="text-column">Het ontwerp is vrij rustig met veel witruimte en één duidelijke actieknop op elk scherm. Ook keken we naar de contrastwaarde en maakten we een gedegen typografie-keuze. Leesbaarheid en toepasbaarheid in meerdere talen stonden hierbij voorop. De interface werkt ook gemakkelijk voor mensen met weinig digitale ervaring of een visuele beperking.</p>
+			</div>
+			<div class="twothird set-left flexbox-image">
+				<img src="assets/images/visele-stijl-toegankelijk.png" />
+			</div>
+		</div>
+		<div uc-row class="row-clean flexbox">
+			<div class="onethird set-left">
+				<h3 class="head-column">Flexibel</h3>
+				<p class="text-column">De units worden verkocht aan luchthavens en gebruikt voor vluchten van verschillende vliegmaatschappijen. Het was daarom de wens dat de (huis)stijl eenvoudig aangepast kon worden. De lay-out van de interface is flexibel opgesteld en geschikt voor verschillende vliegmaatschappijen, talen en leesrichtingen.</p>
+			</div>
+			<div class="twothird set-right flexbox-image">
+				<img src="assets/images/visuele-stijl-flexibel.png" />
+			</div>
+		</div>
+	</section>
+
+
+	<section class="het-resultaat">
+		<div class="uc-streamer" data-component="uc-streamer">
+			<div uc-row>
+				<h2>Het resultaat</h2>
+				<p>De succesvolle voorganger van Type22, de <a href="http://www.sita.aero/solutions-and-services/products/scanfly" target="_blank">Scan&Fly</a> selfservice-balie, was een goede opstap naar de geheel onbemande Drop&Fly-units. Samen met <a href="https://www.voorhoede.nl" target="_blank">De Voorhoede</a> werkten we mee aan dit nieuwe systeem, waarvan de eerste 10 units vorig jaar op feestelijke wijze in Korea werden gelanceerd. Met de Drop&Fly-units speelt Type22 (SITA) in op de huidige selfservice-trend, profiteren passagiers van een snellere doorlooptijd én is er minder personeel nodig tijdens het incheck-proces. Doordat de interface volledig te personaliseren is, voldoet onze klant aan individuele wensen van luchthavens over de hele wereld.</p>
+				<p>Voor ons was dit een fantastische klus om aan te werken. We zijn supertrots dat de units op steeds meer vliegvelden worden gebruikt en dat er zo’n spectaculaire lancering in Korea was.</p>
+			</div>
+		</div>
+		<div>
+			<img src="assets/images/resultaat-feestelijke-lancering-incheon-airport.jpg" alt="" width="100%">
+		</div>
+		<div class="flexbox">
+			<img class="onethird set-left" src="assets/images/resultaat-ingebruikname-eerste-units-drop-fly.jpg" alt="" width="100%">
+			<img class="twothird set-right" src="assets/images/resultaat-eerste-gebruiker-incheon-airport.jpg" alt="" width="100%">
+		</div>
+	</section>
+
+	<section class="quote">
+		<div uc-row  class="set-center">
+			<h2><q>Met Drop&Fly wilden we passagiers een geweldige gebruikerservaring bieden wanneer ze zelf hun koffer inchecken. Dat is gelukt dankzij de prettige en productieve samenwerking met UNITiD!</q></h2>
+			<br/>
+			<p>Reinout van der Meulen, product owner Type22/SITA</p>
+		</div>
+	</section>
+	<section class="interesse">
+		<div class="uc-streamer" data-component="uc-streamer">
+			<div uc-row>
+				<h2>Interesse?</h2>
+				<p>Word jij net zo enthousiast als wij van dit project? En heb je ook een selfservice-systeem waarbij je onze creativiteit en expertise kunt gebruiken? <a href="http://www.unitid.nl/contact">Bel ons</a> even of stuur een mailtje naar <a href="mailto:matthijs@unitid.nl">Matthijs</a>.</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "components/footer/_footer.html" %}
+{% endblock %}
+
+{% block disclaimer %}
+{% include "components/disclaimer/_disclaimer.html" %}
+{% endblock %}

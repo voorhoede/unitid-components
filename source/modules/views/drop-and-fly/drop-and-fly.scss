@@ -1,0 +1,373 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+@import "../../../assets/scss/main";
+
+.dropandfly-container {
+
+	section {
+		border: none;
+		background-color: $white;
+
+		&.darkblue {
+			background-color: $darkblue;
+			color: $white;
+		}
+
+		&.smoke {
+			background-color: $smoke;
+		}
+
+	}
+
+	header {
+		padding: 0;
+		bottom: auto;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 3.2rem;
+	}
+
+	h2 {
+		margin: 0;
+		padding-top: 4rem;
+		width: 100%;
+		font-size: 3.6rem;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 3.6rem;
+		@include font-regular;
+		margin: 2rem 0;
+	}
+
+	h4 {
+		font-size: 2.4rem;
+		@include font-bold;
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+		font-size: 2rem;
+	}
+
+	.head-column {
+		text-align: left;
+	}
+
+	.text-column {
+		font-size: 1.6rem;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.uc-hero {
+	margin-bottom: 11rem;
+	padding: 2rem;
+
+	@include rem(height, 44.5rem);
+	background-image: url('assets/images/header-background-s.png');
+	background-position: bottom;
+
+	@include min-screen-between {
+		@include rem(height, 38rem);
+		background-image: url('assets/images/header-background.png');
+		background-position: left;
+		background-size: cover;
+		padding: 6rem;
+	}
+}
+
+.uc-hero-header {
+	width: 400px;
+
+	h1 {
+		text-shadow: 0 0.0625em 0.0625em rgba(0, 0, 0, 0.5);
+		@include font-bold;
+		@include rem(font-size, $font-size-header-large);
+
+		@include min-screen-between {
+			@include rem(font-size, $font-size-header-xlarge);
+		}
+
+
+		span {
+			@include font-regular;
+		}
+	}
+}
+
+.uc-hero-gadget {
+	position: absolute;
+	bottom: -37px;
+	right: 0;
+	background-image: url('assets/images/header-unit-s.png');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	height: 253px;
+	width: 281px;
+
+	@include min-screen-medium {
+		background-image: url('assets/images/header-unit.png');
+		background-size: cover;
+		@include rem(height, 25.7rem);
+		@include rem(width, 56rem);
+		bottom: -36px;
+	}
+
+	@include min-screen-xlarge {
+		@include rem(width, 70.3rem);
+		@include rem(height, 32.3rem);
+		bottom: -46px;
+	}
+}
+
+.uc-streamer {
+	text-align: center;
+
+	h2 {
+		margin-bottom: 4rem;
+		@include font-bold;
+	}
+
+	h3 {
+		margin: 0 auto;
+		padding-bottom: 1rem;
+	}
+}
+
+
+
+[uc-row] {
+	padding-top: 4rem;
+
+
+	p:last-child {
+		margin-bottom: 10rem;
+	}
+}
+
+.darkblue {
+	h3 {
+		@include font-regular;
+		color: $white;
+	}
+
+
+
+	p {
+		color: $white;
+		margin-top: 0;
+	}
+
+
+
+
+	.onethird,
+	.twothird {
+		padding: 0rem;
+	}
+
+
+	@include min-screen-medium {
+		.set-left {
+			padding-right: 2rem;
+		}
+
+		.set-right {
+			padding-left: 2rem;
+		}
+	}
+
+}
+
+#polaroid1 {
+	background-image: url('assets/images/vliegende-start-dag-1.png');
+
+	span {
+		transform: rotate(3deg);
+	}
+}
+
+#polaroid2 {
+	background-image: url('assets/images/vliegende-start-dag-2.png');
+
+	span {
+		transform: rotate(-1deg);
+	}
+}
+
+#polaroid3 {
+	background-image: url('assets/images/vliegende-start-dag-3-4.png');
+
+	span {
+		transform: rotate(-3deg);
+	}
+}
+
+#polaroid4 {
+	background-image: url('assets/images/vliegende-start-dag-5.png');
+
+	span {
+		transform: rotate(1deg);
+	}
+}
+
+.polaroid {
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	min-width: 400px;
+	height: 386px;
+
+	span {
+		font-family: "the great escape", sans-serif;
+		position: absolute;
+		top: 310px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.polaroid-text {
+	padding: 4rem 2rem;
+}
+
+.het-concept {
+
+	h3 {
+		@include font-bold;
+		text-align: left;
+		color: $white;
+	}
+
+	p {
+		color: $white;
+		margin-top: 0;
+	}
+
+	.onethird,
+	.twothird {
+		padding: 4rem;
+	}
+}
+
+
+.flexbox {
+
+	@include min-screen-medium {
+		display: flex;
+		align-items: stretch;
+	}
+}
+.flexbox-alt {
+	@include min-screen-medium {
+	flex-direction: row-reverse;
+	}
+}
+
+.image-full {
+	line-height:0;
+}
+
+.flexbox-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.onethird {
+	width: 100%;
+
+	@include min-screen-medium {
+		width: 33%;
+	}
+}
+
+.twothird {
+	width: 100%;
+
+	@include min-screen-medium {
+		width: 67%;
+	}
+}
+
+.set-right {
+	@include min-screen-medium {
+		float: right;
+	}
+}
+
+.set-left {
+	@include min-screen-medium {
+		float: left;
+	}
+}
+
+.set-center {
+	text-align: center;
+}
+
+.bg-grey-light 	{
+	@include min-screen-medium {
+		background-color: #F5F5F5;
+	}
+}
+
+.bg-grey {
+	background-color: #9B9B9B;
+
+	@include min-screen-medium {
+		background-color: #DADADA;
+	}
+
+}
+
+.bg-grey-dark	{
+	background-color: #9B9B9B;
+}
+
+.bg-green-drop	{
+	background-color: #539A94;
+}
+
+.row-clean {
+	clear: both;
+}
+
+.quote {
+	background-color: blue;
+
+	[uc-row] p {
+		margin-bottom: 4rem;
+	}
+}
+
+.interesse {
+	[uc-row] {
+		padding-top: 0;
+	}
+}
+
+.vliegende-start {
+	[uc-row] {
+		padding-top: 0;
+	}
+}
+
+.intro-text {
+	h3 {
+		padding-bottom: 4rem;
+	}
+}
+.datablocks {
+	[uc-row] {
+		padding-top: 0;
+	}
+	padding-bottom: 2rem;
+}
