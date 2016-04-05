@@ -153,20 +153,16 @@
 }
 
 .darkblue {
+
 	h3 {
 		@include font-regular;
 		color: $white;
 	}
 
-
-
 	p {
 		color: $white;
 		margin-top: 0;
 	}
-
-
-
 
 	.onethird,
 	.twothird {
@@ -189,9 +185,9 @@
 #polaroid1 {
 	background-image: url('assets/images/vliegende-start-dag-1.png');
 
-	span {
-		transform: rotate(3deg);
-	}
+	// span {
+	// 	transform: rotate(3deg);
+	// }
 }
 
 #polaroid2 {
@@ -219,23 +215,64 @@
 }
 
 .polaroid {
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	position: relative;
-	min-width: 400px;
-	height: 386px;
+	min-width: 280px;
+	height: 271px;
 
 	span {
 		font-family: "the great escape", sans-serif;
 		position: absolute;
-		top: 310px;
+		top: 213px;
 		width: 100%;
 		text-align: center;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	@include min-screen-small {
+		min-width: 400px;
+		height: 386px;
+
+		span {
+			top: 310px;
+			margin: 0;
+			padding: 0;
+		}
 	}
 }
 
 .polaroid-text {
-	padding: 4rem 2rem;
+	padding: 2rem 2rem;
+
+	p:last-child {
+		margin-bottom: 4rem;
+	}
+
+	@include min-screen-large {
+		padding: 4rem 2rem;
+
+		p:last-child {
+			margin-bottom: 10rem;
+		}
+	}
+}
+
+.polaroids {
+	padding-bottom: 6rem;
+
+	@include min-screen-medium {
+		padding-bottom: 0;
+
+		.set-left {
+			margin-left: 0;
+		}
+		.set-right {
+			padding-left: 4rem;
+		}
+	}
 }
 
 .het-concept {
@@ -251,7 +288,14 @@
 		margin-top: 0;
 	}
 
-	.onethird,
+	.onethird {
+		padding: 4rem;
+
+		@include min-screen-medium {
+			min-height: 50rem;
+		}
+	}
+
 	.twothird {
 		padding: 4rem;
 	}
@@ -271,8 +315,8 @@
 	}
 }
 
-.image-full {
-	line-height:0;
+.image-clean {
+	line-height: 0;
 }
 
 .flexbox-image {
@@ -312,6 +356,19 @@
 .set-center {
 	text-align: center;
 }
+
+.set-border-bottom {
+	@include min-screen-medium {
+		border-bottom: 3px solid $white;
+	}
+}
+
+.set-border-right {
+	@include min-screen-medium {
+		border-right: 3px solid $white;
+	}
+}
+
 
 .bg-grey-light 	{
 	@include min-screen-medium {
