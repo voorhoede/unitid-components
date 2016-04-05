@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAGA,wBAAwB",
+"sources": ["../../../../source/modules/components/uc-brief/_uc-brief.scss"],
 "names": [],
 "file": "_uc-brief.css"
 }

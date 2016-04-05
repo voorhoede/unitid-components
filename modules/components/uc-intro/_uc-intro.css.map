@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAGA,wBAAwB",
+"sources": ["../../../../source/modules/components/uc-intro/_uc-intro.scss"],
 "names": [],
 "file": "_uc-intro.css"
 }

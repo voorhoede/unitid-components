@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAGA,+BAA+B",
+"sources": ["../../../../source/modules/components/uc-column-third/_uc-column-third.scss"],
 "names": [],
 "file": "_uc-column-third.css"
 }

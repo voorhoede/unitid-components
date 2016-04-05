@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAGA,mCAAmC",
+"sources": ["../../../../source/modules/components/uc-column-twothirds/_uc-column-twothirds.scss"],
 "names": [],
 "file": "_uc-column-twothirds.css"
 }

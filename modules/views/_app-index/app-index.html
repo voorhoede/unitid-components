@@ -26,9 +26,9 @@
 					{{ view | replace("-"," ") | capitalize }}
 				</a> {% if (mode == 'distribution') %}
                 <a class="app-guide-icon app-guide-icon-tags" href="{{ 'modules/views/' + view + '/' + view + '.html?debug' }}"></a> {% endif %} </li> {% endfor %} </ul>
-        <p> All views are available in <code class="language-bash">modules/views/</code>.
-            <br/> Select the tag icon <span class="app-guide-icon app-guide-icon-tags"></span> behind a view
-            to see the view with annotated components. </p>
+        <p> All views are available in <code class="language-bash">modules/views/</code>.<br/> Select the
+            tag icon <span class="app-guide-icon app-guide-icon-tags"></span> behind a view to see the
+            view with annotated components. </p>
     </section>
     <section id="section-components" class="app-guide-section app-guide-content">
         <h2 class="app-guide-section-title">
@@ -53,7 +53,7 @@
 		</h3>
         <p> All stylesheets of all views, components and common styles are combined and minified into
             <code
-            class="language-bash">assets/style/main.css</code>. Please make sure to load the stylesheets in the <code class="language-markup">&lt;head&gt;</code>.
+                class="language-bash">assets/style/main.css</code>. Please make sure to load the stylesheets in the <code class="language-markup">&lt;head&gt;</code>.
                 </p>
         <h3 id="section-scripts" class="app-guide-section-title">
 			Scripts {{ guide.linkSection('scripts') }}
@@ -71,7 +71,7 @@
 		</h3>
         <p> All fonts are available in <code class="language-bash">assets/fonts/</code>. </p>
         <h3 id="section-images"
-        class="app-guide-section-title">
+            class="app-guide-section-title">
 			Images {{ guide.linkSection('images') }}
 		</h3>
         <p> All global images which are part of the layout are optimized and available in <code class="language-bash">assets/images/</code>.

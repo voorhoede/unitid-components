@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAGA,8BAA8B",
+"sources": ["../../../../source/modules/components/uc-column-half/_uc-column-half.scss"],
 "names": [],
 "file": "_uc-column-half.css"
 }

@@ -432,7 +432,7 @@ th {
     /* 6 */
     /* 6 */
     /* 7 */
-    font-size: 48.0px;
+    font-size: 48px;
     /* 9 */
     font-size: 4.8rem;
     /* 9 */
@@ -469,7 +469,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  margin-bottom: 48.0px;
+  margin-bottom: 48px;
   /* 9 */
   margin-bottom: 4.8rem;
   /* 9 */
@@ -540,7 +540,7 @@ th {
     /* 6 */
     /* 6 */
     /* 7 */
-    font-size: 48.0px;
+    font-size: 48px;
     /* 9 */
     font-size: 4.8rem;
     /* 9 */
@@ -553,7 +553,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  font-size: 24.0px;
+  font-size: 24px;
   /* 9 */
   font-size: 2.4rem;
   /* 9 */
@@ -613,7 +613,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  margin-top: 48.0px;
+  margin-top: 48px;
   /* 9 */
   margin-top: 4.8rem;
   /* 9 */
@@ -653,7 +653,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  font-size: 24.0px;
+  font-size: 24px;
   /* 9 */
   font-size: 2.4rem;
   /* 9 */
@@ -679,7 +679,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  font-size: 24.0px;
+  font-size: 24px;
   /* 9 */
   font-size: 2.4rem;
   /* 9 */
@@ -717,7 +717,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  font-size: 24.0px;
+  font-size: 24px;
   /* 9 */
   font-size: 2.4rem;
   /* 9 */
@@ -882,7 +882,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  margin-bottom: 48.0px;
+  margin-bottom: 48px;
   /* 9 */
   margin-bottom: 4.8rem;
   /* 9 */
@@ -1065,7 +1065,7 @@ th {
     /* 6 */
     /* 6 */
     /* 7 */
-    padding: 0 96.0px;
+    padding: 0 96px;
     /* 9 */
     padding: 0 9.6rem;
     /* 9 */
@@ -1120,7 +1120,7 @@ th {
     /* 6 */
     /* 6 */
     /* 7 */
-    margin-left: 48.0px;
+    margin-left: 48px;
     /* 9 */
     margin-left: 4.8rem;
     /* 9 */
@@ -1130,7 +1130,7 @@ th {
     /* 6 */
     /* 6 */
     /* 7 */
-    margin-right: 48.0px;
+    margin-right: 48px;
     /* 9 */
     margin-right: 4.8rem;
     /* 9 */
@@ -1173,7 +1173,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  font-size: 24.0px;
+  font-size: 24px;
   /* 9 */
   font-size: 2.4rem;
   /* 9 */
@@ -1204,7 +1204,7 @@ th {
   /* 6 */
   /* 6 */
   /* 7 */
-  margin: 0 auto 48.0px;
+  margin: 0 auto 48px;
   /* 9 */
   margin: 0 auto 4.8rem;
   /* 9 */
@@ -1315,7 +1315,7 @@ th {
     /* 6 */
     /* 6 */
     /* 7 */
-    width: 372.0px;
+    width: 372px;
     /* 9 */
     width: 37.2rem;
     /* 9 */
@@ -1505,6 +1505,70 @@ figcaption.large {
     page-break-after: avoid;
   }
 }
+.data-blocks-list {
+  width: 100%;
+  text-align: center;
+  margin-top: -45px;
+}
+
+.data-blocks-item {
+  display: inline-block;
+}
+
+.data-blocks {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  border: 0;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 1rem 1rem;
+}
+@media screen and (min-width: 800px) {
+  .data-blocks {
+    margin: 0 2rem;
+  }
+}
+
+.data-blocks-header {
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+}
+.data-blocks-header:before {
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.data-blocks-header:after {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.data-blocks-body {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  color: #362F34;
+  padding-top: 1rem;
+}
+
 /* uc-brief component */
 /* uc-column-fourth component */
 /* uc-column-half component */
@@ -2014,7 +2078,7 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
   /* 6 */
   /* 6 */
   /* 7 */
-  margin-top: 48.0px;
+  margin-top: 48px;
   /* 9 */
   margin-top: 4.8rem;
   /* 9 */
@@ -2040,7 +2104,7 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
     /* 6 */
     /* 6 */
     /* 7 */
-    margin-bottom: 48.0px;
+    margin-bottom: 48px;
     /* 9 */
     margin-bottom: 4.8rem;
     /* 9 */
@@ -2287,7 +2351,7 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
     /* 6 */
     /* 6 */
     /* 7 */
-    font-size: 24.0px;
+    font-size: 24px;
     /* 9 */
     font-size: 2.4rem;
     /* 9 */
