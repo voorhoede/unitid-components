@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '0.10'
+- '0.12'
 before_install:
 - gem install sass
 - npm install -g grunt-cli
@@ -9,4 +9,4 @@ before_install:
 script: npm run travis
 env:
   global:
-  - secure: "HmEkxMb4Z4Q74LZF1hm0zoxwKJwvI9Wwf81kXICTv8fLloOu5k0rjZdIMbroJpp2AA+7kqL23zmNf/zEF4jgwO+6PjAsYxMt85YHfTBifwYRtMd8oso9rj/BS3qkCm6Z2SsfQzGuD8Z83x1wW7hlKQRG7J6/uQAI2md5vMI23Q8="
+  - secure: "ruogbCgGbexOTJ9+tP0eP6R0DjC42/9EFUdAuH7KZzLqhB5rR3/x/YwQ+Cj0ZwRb4JJCAOHYZiuFfEvnXEU7QruU9HXIC2yqGvSolyr2vS2oEvPWHbANYrutm6fiOplq2DkgQTxLPNCCstArR3iBUXMll6esFDj/3vJXr1YfZrg="
