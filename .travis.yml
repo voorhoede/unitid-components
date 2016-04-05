@@ -9,4 +9,4 @@ before_install:
 script: npm run travis
 env:
   global:
-  - secure: "ruogbCgGbexOTJ9+tP0eP6R0DjC42/9EFUdAuH7KZzLqhB5rR3/x/YwQ+Cj0ZwRb4JJCAOHYZiuFfEvnXEU7QruU9HXIC2yqGvSolyr2vS2oEvPWHbANYrutm6fiOplq2DkgQTxLPNCCstArR3iBUXMll6esFDj/3vJXr1YfZrg="
+    secure: rs19ABwb7/BOAGCF+Y6x2eu1g9GY/DeF1vQygcrz/j8VMsXOoNxHhThZFGvAZXaK2qsA8V8N9cuc27GbNcex6f3sXjpEGJVcsAa8IV/ijsAkwipWh4PHjNu7JAmR3lo60OTfu2TNBnvXrepBlHn36bUfKU9tb2+Otq8WwAxf4zs=
