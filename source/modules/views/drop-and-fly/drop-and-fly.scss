@@ -357,6 +357,14 @@
 	text-align: center;
 }
 
+.set-left-center {
+	text-align: left;
+
+	@include min-screen-medium {
+		text-align: center;
+	}
+}
+
 .set-border-bottom {
 	@include min-screen-medium {
 		border-bottom: 3px solid $white;
