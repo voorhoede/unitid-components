@@ -10,13 +10,15 @@
 <!-- START Unitid website specific scripts/css -->
 <link rel="stylesheet" href="http://unitid.nl/wp-content/plugins/comment-validation/comment-validation.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/foundation.css?ver=4.0" type="text/css">
-<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="text/css">
+<link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/app.css?ver=4.0" type="tWext/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/style.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/responsive.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/css/retina.css?ver=4.0" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/ziggo-site/css/style.css" type="text/css">
 <link rel="stylesheet" href="http://unitid.nl/wp-content/themes/unitid/casepages/css/casepage.css" type="text/css">
+
+<script src="http://unitid.nl/wp-content/themes/unitid/js/modernizr.custom.16079.js?ver=3.4.2"></script>
 <!-- END Unitid website specific scripts/css -->
 {% endblock %}
 
@@ -121,7 +123,7 @@
 			</div>
 		</div>
 		<div class="image-clean">
-			<img src="assets/images/het-concept-unit.jpg" />
+			<img src="{{ pathToAssets }}images/drop-and-fly/het-concept-unit.jpg" />
 		</div>
 	</section>
 
@@ -132,7 +134,7 @@
 				<p class="text-column">Als je begint start je altijd in de taal van de vorige passagier: grote kans dat je voor dezelfde vlucht komt. Door een slim algoritme switch je met één klik naar de taal van het land waar je bent of de meest gebruikte taal van het afgelopen half uur. Voor talen die van rechts naar links worden geschreven spiegelden we de complete interface. Alle teksten, maar ook de transities worden omgekeerd weergegeven.</p>
 			</div>
 			<div class="twothird set-left set-center bg-grey-light flexbox-image">
-				<img src="assets/images/language-support.png" >
+				<img src="{{ pathToAssets }}images/drop-and-fly/language-support.png" >
 			</div>
 		</div>
 		<div class="row-clean bg-grey flexbox">
@@ -141,7 +143,7 @@
 				<p class="text-column">Voor hulp, noodgevallen of onderhoud is er een speciaal ‘host en maintenance’-menu. Hier kan grondpersoneel toegang tot krijgen door het scannen van hun badge. Via dit gebruiksvriendelijke service-menu kan de medewerker snel zaken regelen, zoals labels opnieuw printen, papier vervangen en passagiersgegevens inzien als een passagier vastloopt in het proces.</p>
 			</div>
 			<div class="twothird set-right  flexbox-image">
-				<div class="set-center"><img src="assets/images/maintenance-menu.png" ></div>
+				<div class="set-center"><img src="{{ pathToAssets }}images/drop-and-fly/maintenance-menu.png" ></div>
 			</div>
 		</div>
 	</section>
@@ -154,7 +156,7 @@
 			</div>
 		</div>
 		<div>
-			<img src="assets/images/visuele-stijl-unit.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'gif'); this.onerror = null;">
+			<img src="{{ pathToAssets }}images/drop-and-fly/visuele-stijl-unit.svg" alt="Taptic" onerror="this.src=this.src.replace(/svg/, 'gif'); this.onerror = null;">
 		</div>
 		<div uc-row>
 			<div class="row-clean set-left-center">
@@ -168,7 +170,7 @@
 				<p class="text-column">Het ontwerp is vrij rustig met veel witruimte en één duidelijke actieknop op elk scherm. Ook keken we naar de contrastwaarde en maakten we een gedegen typografie-keuze. Leesbaarheid en toepasbaarheid in meerdere talen stonden hierbij voorop. De interface werkt ook gemakkelijk voor mensen met weinig digitale ervaring of een visuele beperking.</p>
 			</div>
 			<div class="twothird set-left flexbox-image">
-				<img src="assets/images/visele-stijl-toegankelijk.png" />
+				<img src="{{ pathToAssets }}images/drop-and-fly/visele-stijl-toegankelijk.png" />
 			</div>
 		</div>
 		<div uc-row class="row-clean flexbox">
@@ -177,7 +179,7 @@
 				<p class="text-column">De units worden verkocht aan luchthavens en gebruikt voor vluchten van verschillende vliegmaatschappijen. Het was daarom de wens dat de (huis)stijl eenvoudig aangepast kon worden. De lay-out van de interface is flexibel opgesteld en geschikt voor verschillende vliegmaatschappijen, talen en leesrichtingen.</p>
 			</div>
 			<div class="twothird set-right flexbox-image">
-				<img src="assets/images/visuele-stijl-flexibel.png" />
+				<img src="{{ pathToAssets }}images/drop-and-fly/visuele-stijl-flexibel.png" />
 			</div>
 		</div>
 	</section>
@@ -191,11 +193,11 @@
 			</div>
 		</div>
 		<div class="image-clean">
-			<img class="set-border-bottom" src="assets/images/resultaat-feestelijke-lancering-incheon-airport.jpg" alt="" width="100%">
+			<img class="set-border-bottom" src="{{ pathToAssets }}images/drop-and-fly/resultaat-feestelijke-lancering-incheon-airport.jpg" alt="" width="100%">
 		</div>
 		<div class="flexbox image-clean">
-			<img class="onethird set-left set-border-right" src="assets/images/resultaat-ingebruikname-eerste-units-drop-fly.jpg" alt="" width="100%">
-			<img class="twothird set-right" src="assets/images/resultaat-eerste-gebruiker-incheon-airport.jpg" alt="" width="100%">
+			<img class="onethird set-left set-border-right" src="{{ pathToAssets }}images/drop-and-fly/resultaat-ingebruikname-eerste-units-drop-fly.jpg" alt="" width="100%">
+			<img class="twothird set-right" src="{{ pathToAssets }}images/drop-and-fly/resultaat-eerste-gebruiker-incheon-airport.jpg" alt="" width="100%">
 		</div>
 	</section>
 
