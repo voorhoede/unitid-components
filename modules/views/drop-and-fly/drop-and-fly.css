@@ -2422,7 +2422,7 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
   /* 9 */
   height: 44.5rem;
   /* 9 */
-  background-image: url("assets/images/header-background-s.png");
+  background-image: url("/assets/images/drop-and-fly/header-background-s.png");
   background-position: bottom;
 }
 @media screen and (min-width: 568px) {
@@ -2437,7 +2437,7 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
     /* 9 */
     height: 38rem;
     /* 9 */
-    background-image: url("assets/images/header-background.png");
+    background-image: url("/assets/images/drop-and-fly/header-background.png");
     background-position: left;
     background-size: cover;
     padding: 6rem;
@@ -2485,7 +2485,7 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
   position: absolute;
   bottom: -37px;
   right: 0;
-  background-image: url("assets/images/header-unit-s.png");
+  background-image: url("/assets/images/drop-and-fly/header-unit-s.png");
   background-position: left bottom;
   background-repeat: no-repeat;
   height: 253px;
@@ -2493,7 +2493,7 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
 }
 @media screen and (min-width: 800px) {
   .uc-hero-gadget {
-    background-image: url("assets/images/header-unit.png");
+    background-image: url("/assets/images/drop-and-fly/header-unit.png");
     background-size: cover;
     /* 3 */
     /* 3 */
@@ -2587,25 +2587,25 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
 }
 
 #polaroid1 {
-  background-image: url("assets/images/vliegende-start-dag-1.png");
+  background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-1.png");
 }
 
 #polaroid2 {
-  background-image: url("assets/images/vliegende-start-dag-2.png");
+  background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-2.png");
 }
 #polaroid2 span {
   transform: rotate(-1deg);
 }
 
 #polaroid3 {
-  background-image: url("assets/images/vliegende-start-dag-3-4.png");
+  background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-3-4.png");
 }
 #polaroid3 span {
   transform: rotate(-3deg);
 }
 
 #polaroid4 {
-  background-image: url("assets/images/vliegende-start-dag-5.png");
+  background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-5.png");
 }
 #polaroid4 span {
   transform: rotate(1deg);
