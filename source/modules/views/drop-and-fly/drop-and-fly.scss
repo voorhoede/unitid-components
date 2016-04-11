@@ -64,6 +64,15 @@
 		padding: 0;
 		margin: 0;
 	}
+
+	[uc-row] {
+		padding-top: 4rem;
+
+
+		p:last-child {
+			margin-bottom: 10rem;
+		}
+	}
 }
 
 .uc-hero {
@@ -143,14 +152,7 @@
 
 
 
-[uc-row] {
-	padding-top: 4rem;
 
-
-	p:last-child {
-		margin-bottom: 10rem;
-	}
-}
 
 .darkblue {
 
@@ -185,16 +187,16 @@
 #polaroid1 {
 	background-image: url('/assets/images/drop-and-fly/vliegende-start-dag-1.png');
 
-	// span {
-	// 	transform: rotate(3deg);
-	// }
+	span {
+		@include transform( rotate(3deg) );
+	}
 }
 
 #polaroid2 {
 	background-image: url('/assets/images/drop-and-fly/vliegende-start-dag-2.png');
 
 	span {
-		transform: rotate(-1deg);
+		@include transform( rotate(-1deg) );
 	}
 }
 
@@ -202,7 +204,7 @@
 	background-image: url('/assets/images/drop-and-fly/vliegende-start-dag-3-4.png');
 
 	span {
-		transform: rotate(-3deg);
+		@include transform( rotate(-3deg) );
 	}
 }
 
@@ -210,7 +212,7 @@
 	background-image: url('/assets/images/drop-and-fly/vliegende-start-dag-5.png');
 
 	span {
-		transform: rotate(1deg);
+		@include transform( rotate(1deg) );
 	}
 }
 
