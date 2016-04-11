@@ -2408,6 +2408,12 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
   padding: 0;
   margin: 0;
 }
+.dropandfly-container [uc-row] {
+  padding-top: 4rem;
+}
+.dropandfly-container [uc-row] p:last-child {
+  margin-bottom: 10rem;
+}
 
 .uc-hero {
   margin-bottom: 11rem;
@@ -2557,13 +2563,6 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
   padding-bottom: 1rem;
 }
 
-[uc-row] {
-  padding-top: 4rem;
-}
-[uc-row] p:last-child {
-  margin-bottom: 10rem;
-}
-
 .darkblue h3 {
   font-family: 'proxima nova regular', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
   font-weight: normal;
@@ -2589,11 +2588,18 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
 #polaroid1 {
   background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-1.png");
 }
+#polaroid1 span {
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
 
 #polaroid2 {
   background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-2.png");
 }
 #polaroid2 span {
+  -webkit-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
   transform: rotate(-1deg);
 }
 
@@ -2601,6 +2607,8 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
   background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-3-4.png");
 }
 #polaroid3 span {
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
 
@@ -2608,6 +2616,8 @@ html.js .uc-slider .prev, html.js .uc-slider .next {
   background-image: url("/assets/images/drop-and-fly/vliegende-start-dag-5.png");
 }
 #polaroid4 span {
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
   transform: rotate(1deg);
 }
 
